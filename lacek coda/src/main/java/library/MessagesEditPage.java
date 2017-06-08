@@ -166,10 +166,10 @@ public class MessagesEditPage extends PageBase{
 	public MessagesEditPage updateVariablesTo(String newvariablename)
 	{
 		readconfig();
-		driver.findElement(By.xpath(library.getProperty("mes_add_variable"))).sendKeys(newvariablename);
-		driver.findElement(By.xpath(library.getProperty("mes_add_variable"))).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath(library.getProperty("mes_edit_variable"))).sendKeys(newvariablename);
+		driver.findElement(By.xpath(library.getProperty("mes_edit_variable"))).sendKeys(Keys.ENTER);
 		//assert and verify
-		Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("mes_add_variable"))).isEnabled());
+		Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("mes_edit_variable"))).isEnabled());
 		Assert.assertEquals(driver.getTitle(),library.getProperty("mess_edit_page_title"));
 		//return messages edit page
 		return new MessagesEditPage(driver);

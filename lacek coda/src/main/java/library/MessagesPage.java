@@ -523,7 +523,7 @@ public class MessagesPage extends PageBase{
 		}
 		driver.findElement(By.xpath(library.getProperty("message_massadvance"))).click();
 		System.out.println("test.mass");
-		driver.findElement(By.xpath(library.getProperty("message_mass_checkbox"))).click();
+		/*driver.findElement(By.xpath(library.getProperty("message_mass_checkbox"))).click();
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -532,7 +532,7 @@ public class MessagesPage extends PageBase{
 		System.out.println("test.checkbox");
 		Select newworkflow=new Select (driver.findElement(By.xpath(library.getProperty("message_newworkflow"))));
 		newworkflow.selectByVisibleText("Approved - Keep current state");
-		System.out.println("test.approved");
+		System.out.println("test.approved");*/
 				
 		
 		return new MessagesPage(driver);

@@ -143,7 +143,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
 		.deleteEntryInVariablesField()
-		.updateVariablesTo("First Name")
+		.updateVariablesTo("First_Name")
 		.clickSubmitButton()
 		.getTitle()
 		.logout();	
