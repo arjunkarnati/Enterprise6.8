@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (3)]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="LIBRARY REGRESSION RUN(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="library.CommunicationsPublish_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.CommunicationsPublish_Testcases -->
+      <class name="library.SeriesRestore_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.SeriesRestore_Testcases -->
+      <class name="library.CommunicationsEdit_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.CommunicationsEdit_Testcases -->
+      <class name="library.TracksRestore_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.TracksRestore_Testcases -->
+      <class name="library.SeriesPublish_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.SeriesPublish_Testcases -->
+      <class name="library.VariablesRestore_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.VariablesRestore_Testcases -->
+      <class name="library.VariableEdit_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="inactivate_variable"/>
+          <include name="update_variable_brands_to_previous"/>
+          <include name="update_variable_brands"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.VariableEdit_Testcases -->
+      <class name="library.Series_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.Series_Testcases -->
+      <class name="library.CampaignsPublish_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.CampaignsPublish_Testcases -->
+      <class name="library.MessagesPublish_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.MessagesPublish_Testcases -->
+      <class name="library.TracksPublish_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.TracksPublish_Testcases -->
+      <class name="library.Campaigns_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="tearDown"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.Campaigns_Testcases -->
+      <class name="library.TracksEdit_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.TracksEdit_Testcases -->
+      <class name="library.SeriesEdit_Testcases">
+        <methods>
+          <include name="update_series_programs"/>
+          <include name="BeforeSuite"/>
+          <include name="update_series_tracks"/>
+          <include name="update_series_clientname_to_previous_client"/>
+          <include name="update_series_programs_to_previous"/>
+          <include name="update_series_tracks_to_previous"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="inactivate_series"/>
+        </methods>
+      </class> <!-- library.SeriesEdit_Testcases -->
+      <class name="library.Tracks_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.Tracks_Testcases -->
+      <class name="library.MessagesEdit_Testcases">
+        <methods>
+          <include name="inactivate_message"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.MessagesEdit_Testcases -->
+      <class name="library.CampaignsRestore_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.CampaignsRestore_Testcases -->
+      <class name="library.Variables_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="create_a_duplicate_variable"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="create_a_new_global_variable"/>
+        </methods>
+      </class> <!-- library.Variables_TestCases -->
+      <class name="library.Communications_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.Communications_TestCases -->
+      <class name="library.MessagesRestore_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.MessagesRestore_Testcases -->
+      <class name="library.Messages_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="create_a_new_message_without_brand"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="create_a_new_message"/>
+        </methods>
+      </class> <!-- library.Messages_TestCases -->
+      <class name="library.CanpaignsEdit_TestCases">
+        <methods>
+          <include name="inactivate_campaign"/>
+          <include name="BeforeSuite"/>
+          <include name="update_campaign_name"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.CanpaignsEdit_TestCases -->
+      <class name="library.CommunicationsRestore_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.CommunicationsRestore_Testcases -->
+    </classes>
+  </test> <!-- LIBRARY REGRESSION RUN(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (3)] -->

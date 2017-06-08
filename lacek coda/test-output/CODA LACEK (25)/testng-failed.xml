@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (25)]" parallel="tests" allow-return-values="true">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="PERMISSION GROUPS EDIT TEST CASES(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="access.PermissionGroups_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.PermissionGroups_TestCases -->
+      <class name="access.PermissionGroupsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.PermissionGroupsRestore_testcases -->
+      <class name="access.PermissionGroupsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="restore_permission_groups"/>
+          <include name="archive_permission_groups"/>
+          <include name="inactivate_permission_groups"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="activate_permission_groups"/>
+        </methods>
+      </class> <!-- access.PermissionGroupsEdit_testcases -->
+    </classes>
+  </test> <!-- PERMISSION GROUPS EDIT TEST CASES(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (25)] -->

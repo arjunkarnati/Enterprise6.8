@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (0)]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="ASSETS REGRESSION RUN(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="assets.MediaGallery_TestCases">
+        <methods>
+          <include name="create_a_new_media_gallery_without_uploadig_an_image"/>
+          <include name="BeforeSuite"/>
+          <include name="database_delete_media_gallery"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- assets.MediaGallery_TestCases -->
+      <class name="assets.MediaGalleryEdit_testcases">
+        <methods>
+          <include name="update_media_gallery_clientname"/>
+          <include name="update_media_gallery_name_to_previous_name"/>
+          <include name="update_media_gallery_clientname_to_previous"/>
+          <include name="update_media_gallery_Alt_Tag_to_previous"/>
+          <include name="update_media_gallery_Alt_Tag"/>
+          <include name="update_media_gallery_brand_to_previous"/>
+          <include name="update_media_gallery_program"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="update_media_gallery_name"/>
+          <include name="BeforeSuite"/>
+          <include name="inactivate_media_gallery"/>
+          <include name="update_media_gallery_connectors"/>
+          <include name="update_media_gallery_workflow_to_approved"/>
+          <include name="restore_media_gallery"/>
+          <include name="update_media_gallery_description"/>
+          <include name="update_media_gallery_program_to_previous"/>
+          <include name="activate_media_gallery"/>
+          <include name="archive_media_gallery"/>
+          <include name="update_media_gallery_workflow_to_draft"/>
+        </methods>
+      </class> <!-- assets.MediaGalleryEdit_testcases -->
+      <class name="assets.MediaGalleryPublish_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="tearDown"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- assets.MediaGalleryPublish_testcases -->
+    </classes>
+  </test> <!-- ASSETS REGRESSION RUN(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (0)] -->

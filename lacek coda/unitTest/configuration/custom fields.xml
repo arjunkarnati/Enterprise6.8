@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" allow-return-values="true" verbose="1"
+	parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="ACF TEST CASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="configuration.ACF_testcases" />
+		</classes>
+	</test>
+	<test name="ACF EDIT TEST CASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="configuration.ACFEdit_testcases" />
+		</classes>
+	</test>
+</suite>
+
+
+	
+		

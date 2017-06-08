@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TEMPLATES TESTCASES"
+           tests="16"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="636.233">
+  <properties />
+  
+  
+            <testcase name="select_button_save_in_template_page" time="39.202" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="restore_template" time="30.335" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_channel_to_previous" time="43.267" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_channel" time="42.260" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="select_button_cancel_in_template_page" time="34.279" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_brand_to_previous" time="45.453" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_clientname" time="42.840" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_name" time="44.465" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="activate_template" time="40.752" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_name_to_previous" time="43.864" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_brand" time="48.079" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="set_template_workflow_to_draft" time="36.436" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="archive_template" time="18.763" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_clientname_to_previous" time="45.928" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="set_template_workflow_to_approved" time="37.548" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="inactivate_template" time="42.762" classname="layout.TemplatesEdit_testcases" />
+      
+</testsuite>

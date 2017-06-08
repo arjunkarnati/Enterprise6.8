@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" parallel="classes" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="ASSETS REGRESSION RUN">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="assets.MediaGalleryPublish_testcases" />
+					<class name="assets.MediaGallery_TestCases" />
+			<class name="assets.MediaGalleryEdit_testcases" />
+			<class name="assets.MediaGallery_TestCases" />
+		</classes>
+	</test>
+</suite>

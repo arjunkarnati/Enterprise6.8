@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ROLES TESTCASES"
+           tests="15"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="927.296">
+  <properties />
+            <testcase name="update_role_parent_role_to_previous" time="42.537" classname="access.RolesEdit_testcases">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="Cannot locate element with text: selenium_role_6
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: unknown"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: selenium_role_6
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+  org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+  access.RolesEditPage.updateParentRole(RolesEditPage.java:40)
+  access.RolesEdit_testcases.update_role_parent_role_to_previous(RolesEdit_testcases.java:78)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="update_role_business_rule_to_previous" time="69.540" classname="access.RolesEdit_testcases" />
+                <testcase name="activate_role" time="71.429" classname="access.RolesEdit_testcases" />
+                <testcase name="archive_role" time="69.115" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_name_to_previous" time="73.154" classname="access.RolesEdit_testcases" />
+                <testcase name="inactivate_role" time="70.248" classname="access.RolesEdit_testcases" />
+                <testcase name="edit_archiveroleto_previous" time="76.092" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_name_permissions_to_previous" time="44.323" classname="access.RolesEdit_testcases" />
+                <testcase name="restore_role" time="76.333" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_name" time="72.730" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_business_rule" time="68.648" classname="access.RolesEdit_testcases" />
+                <testcase name="edit_archiverole" time="75.211" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_parent_role" time="15.237" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_name_permissions" time="56.348" classname="access.RolesEdit_testcases" />
+                <testcase name="fail_to_update_role_when_name_field_is_not_populated" time="46.351" classname="access.RolesEdit_testcases" />
+      
+</testsuite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="USERS TESTCASES"
+           tests="23"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1029.152">
+  <properties />
+  
+  
+            <testcase name="fail_to_create_user_when_first_name_field_is_empty" time="43.537" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_a_username" time="43.250" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_username_field_is_empty" time="44.401" classname="access.Users_TestCases" />
+                <testcase name="select_button_cancel_in_user_add_page" time="26.582" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_a_last_name" time="42.742" classname="access.Users_TestCases" />
+                <testcase name="database_delete_user" time="5.827" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_password_field_is_empty" time="43.934" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_email_address_field_is_empty" time="43.402" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_a_password" time="44.008" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_a_username" time="44.448" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user" time="75.996" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_confirm_password_field_does_not_match_the_password" time="46.331" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_an_email_address" time="42.938" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_confirm_password_field_is_empty" time="45.008" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_a_last_name" time="44.665" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_last_name_field_is_empty" time="43.995" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_a_password" time="43.773" classname="access.Users_TestCases" />
+                <testcase name="create_a_duplicate_user" time="48.426" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_a_first_name" time="46.626" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_a_first_name" time="43.312" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_an_email_address" time="43.987" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user" time="75.254" classname="access.Users_TestCases" />
+                <testcase name="create_a_user_with_an_invalid_email_address_format" time="46.710" classname="access.Users_TestCases" />
+      
+</testsuite>

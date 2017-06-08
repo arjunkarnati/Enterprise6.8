@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (7)]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="SESSION REGRESSION RUN(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="logs.Sessions_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="test_is_empty"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- logs.Sessions_TestCases -->
+    </classes>
+  </test> <!-- SESSION REGRESSION RUN(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (7)] -->

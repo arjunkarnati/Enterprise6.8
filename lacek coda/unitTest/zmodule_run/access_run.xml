@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" parallel="classes" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="ACCESS REGRESSION RUN">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="access.Roles_TestCases" />
+			<class name="access.RolesEdit_testcases" />
+			<class name="access.RolesRestore_testcases" />
+			<class name="access.PermissionActions_TestCases" />
+			<class name="access.PermissionActionsEdit_TestCases" />
+			<class name="access.PermissionGroupsRestore_testcases" />
+			<class name="access.PermissionGroupsEdit_testcases" />
+			<class name="access.PermissionGroups_TestCases" />
+			<class name="access.PemissionsEdit_TestCases" />
+			<class name="access.Permissions_TestCases" />
+		</classes>
+	</test>
+</suite>

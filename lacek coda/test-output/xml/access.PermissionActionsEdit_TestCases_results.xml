@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PERMISSION ACTIONS TESTCASES"
+           tests="15"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="952.000">
+  <properties />
+  
+  
+            <testcase name="update_permission_action_controller_action_name_to_previous" time="71.664" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="restore_permission_action" time="76.892" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_name" time="74.312" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_permission_to_previous" time="70.144" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="return_to_permission_actions_main_page_from_edit_page" time="33.426" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="inactivate_permission_actions" time="70.579" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_permission" time="70.135" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="empty_permission_field_in_permission_actions_edit_page" time="54.586" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="click_cancel_in_permission_action_edit_page" time="36.160" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_controller_action_name" time="72.312" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="archive_permission_action" time="70.571" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="activate_permission_actions" time="73.050" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_name_to_previous" time="73.539" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="empty_name_field_in_permission_actions_edit_page" time="51.963" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="empty_controller_action_field_in_permission_actions_edit_page" time="52.667" classname="access.PermissionActionsEdit_TestCases" />
+      
+</testsuite>

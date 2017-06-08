@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SEGMENTS TESTCASES"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="20.991">
+  <properties />
+  
+  
+            <testcase name="validate_segments_page" time="20.991" classname="configuration.SegmentsRestore_testcases" />
+      
+</testsuite>

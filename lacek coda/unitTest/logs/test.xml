@@ -1,0 +1,7 @@
+<suite name="Suite" parallel="false">
+<test name="LoginTest">
+<classes>
+<class name="Utility.test2"/>
+</classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->

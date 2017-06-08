@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [CODA LACEK]]" parallel="tests" allow-return-values="true">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="MESSAGES EDIT TESTCASES(failed)(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="library.MessagesEdit_Testcases">
+        <methods>
+          <include name="restore_message"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- library.MessagesEdit_Testcases -->
+    </classes>
+  </test> <!-- MESSAGES EDIT TESTCASES(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [CODA LACEK]] -->

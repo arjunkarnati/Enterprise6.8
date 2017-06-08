@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [lacek coda by packages]">
+  <test name="access(failed)">
+    <classes>
+      <class name="access.PermissionGroupsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.PermissionGroupsEdit_testcases -->
+      <class name="access.Permissions_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.Permissions_TestCases -->
+      <class name="access.PermissionGroupsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.PermissionGroupsRestore_testcases -->
+      <class name="access.PermissionCategories_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.PermissionCategories_TestCases -->
+      <class name="access.PermissionGroups_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.PermissionGroups_TestCases -->
+      <class name="access.UsersEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.UsersEdit_testcases -->
+      <class name="access.PermissionActions_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.PermissionActions_TestCases -->
+      <class name="access.UsersRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.UsersRestore_testcases -->
+      <class name="access.PermissionActionsEdit_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.PermissionActionsEdit_TestCases -->
+      <class name="access.RolesRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.RolesRestore_testcases -->
+      <class name="access.RolesEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="inactivate_role"/>
+          <include name="update_role_name_to_previous"/>
+          <include name="update_role_name"/>
+          <include name="AfterLogin"/>
+          <include name="update_role_parent_role_to_previous"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.RolesEdit_testcases -->
+      <class name="access.PemissionsEdit_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="inactivate_permissions"/>
+        </methods>
+      </class> <!-- access.PemissionsEdit_TestCases -->
+      <class name="access.PermissionCategoriesEdit_TestCases">
+        <methods>
+          <include name="inactivate_permission_categories"/>
+          <include name="update_permission_categories_name"/>
+          <include name="update_permission_categories_name_to_previous"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="update_permission_categories_conttroller_name"/>
+          <include name="BeforeSuite"/>
+          <include name="restore_permission_categories"/>
+          <include name="archive_permission_categories"/>
+          <include name="activate_permission_categories"/>
+          <include name="click_cancel_in_permission_categories_edit_page"/>
+          <include name="return_to_main_page_from_permission_categories_edit_page"/>
+          <include name="update_permission_categories_conttroller_name_to_previous"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- access.PermissionCategoriesEdit_TestCases -->
+      <class name="access.Users_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.Users_TestCases -->
+      <class name="access.Roles_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.Roles_TestCases -->
+    </classes>
+  </test> <!-- access(failed) -->
+</suite> <!-- Failed suite [lacek coda by packages] -->

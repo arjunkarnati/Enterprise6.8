@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  ROLES EDIT TESTCASES</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ROLES EDIT TESTCASES</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 23 11:03:00 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1166 seconds (1166671 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_name_permissions_to_previous()'><b>update_role_name_permissions_to_previous</b><br>Test class: access.RolesEdit_testcases</td>
+<td><div><pre>java.lang.AssertionError: expected [MMS - Roles] but found [MMS - Roles - Edit]
+	at access.RolesEditPage.Submit(RolesEditPage.java:96)
+	at access.RolesEdit_testcases.update_role_name_permissions_to_previous(RolesEdit_testcases.java:117)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace540649130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace540649130'><pre>java.lang.AssertionError: expected [MMS - Roles] but found [MMS - Roles - Edit]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at access.RolesEditPage.Submit(RolesEditPage.java:96)
+	at access.RolesEdit_testcases.update_role_name_permissions_to_previous(RolesEdit_testcases.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:402)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>81</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='access.RolesEdit_testcases.activate_role()'><b>activate_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>81</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.archive_role()'><b>archive_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>78</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.fail_to_update_role_when_name_field_is_not_populated()'><b>fail_to_update_role_when_name_field_is_not_populated</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>63</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.inactivate_role()'><b>inactivate_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>81</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.restore_role()'><b>restore_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>87</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_business_rule()'><b>update_role_business_rule</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>77</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_business_rule_to_previous()'><b>update_role_business_rule_to_previous</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>79</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_name()'><b>update_role_name</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>83</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_name_permissions()'><b>update_role_name_permissions</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>94</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_name_to_previous()'><b>update_role_name_to_previous</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>81</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_parent_role()'><b>update_role_parent_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>79</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_parent_role_to_previous()'><b>update_role_parent_role_to_previous</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>82</td>
+<td>access.RolesEdit_testcases@11758f2a</td></tr>
+</table><p>
+</body>
+</html>

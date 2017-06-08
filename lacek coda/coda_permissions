@@ -1,0 +1,332 @@
+Permission	Category
+Workflow States Table View	Workflow States
+Workflow States Restore Record	Workflow States
+Workflow States Page View	Workflow States
+Workflow States LowChild	Workflow States
+Workflow States Edit	Workflow States
+Workflow States Archive Record	Workflow States
+Workflow States Archive Page View	Workflow States
+Workflow States Add	Workflow States
+Workflow Manager Table View	Workflow Manager
+Workflow Manager Restore Record	Workflow Manager
+Workflow Manager Page View	Workflow Manager
+Workflow Manager Edit	Workflow Manager
+Workflow Manager Detailgen	Workflow Manager
+Workflow Manager Archive Record	Workflow Manager
+Workflow Manager Archive Page View	Workflow Manager
+Workflow Manager Add	Workflow Manager
+Variables Table View	Variables
+Variables Restore Record	Variables
+Variables Page View	Variables
+Variables Edit	Variables
+Variables Archive Record	Variables
+Variables Archive Page View	Variables
+Variables Add	Variables
+Users Table View	Users
+Users Settings	Users
+Users Restore Record	Users
+Users Page View	Users
+Users Edit	Users
+Users Archive Record	Users
+Users Archive Page View	Users
+Users Add	Users
+Tracks TrackExport	Tracks
+Tracks TrackDownload	Tracks
+Tracks Table View	Tracks
+Tracks Restore Record	Tracks
+Tracks Publishhistory	Tracks
+Tracks Page View	Tracks
+Tracks List	Tracks
+Tracks Export	Tracks
+Tracks Edit	Tracks
+Tracks DatatableCommunications	Tracks
+Tracks CommunicationFormPart	Tracks
+Tracks Archive Record	Tracks
+Tracks Archive Page View	Tracks
+Tracks Add	Tracks
+Templates Table View	Templates
+Templates Restore Record	Templates
+Templates RegionModal	Templates
+Templates Region	Templates
+Templates PublishHistory	Templates
+Templates Page View	Templates
+Templates Edit	Templates
+Templates Archive Record	Templates
+Templates Archive Page View	Templates
+Templates Ajax	Templates
+Templates AddRegion	Templates
+Templates Add	Templates
+Targeting Criteria Table View	Targeting Criteria
+Targeting Criteria Restore Record	Targeting Criteria
+Targeting Criteria Page View	Targeting Criteria
+Targeting Criteria Edit	Targeting Criteria
+Targeting Criteria Archive Record	Targeting Criteria
+Targeting Criteria Archive Page View	Targeting Criteria
+Targeting Criteria Add	Targeting Criteria
+Session Session	Sessions
+Session Page View	Sessions
+Series Table View	Series
+Series Restore Record	Series
+Series Publish History	Series
+Series Page View	Series
+Series List	Series
+Series Export	Series
+Series Export	Series
+Series Edit	Series
+Series Download	Series
+Series Archive Page View	Series
+Series Archive Record	Series
+Series Add	Series
+Segments Table View	Segments
+Segments Restore Record	Segments
+Segments Page View	Segments
+Segments Edit	Segments
+Segments Archive Record	Segments
+Segments Archive Page View	Segments
+Segments Add	Segments
+Segment Groups Table View	Segment Groups
+Segment Groups Restore Record	Segment Groups
+Segment Groups Page View	Segment Groups
+Segment Groups Edit	Segment Groups
+Segment Groups Archive Record	Segment Groups
+Segment Groups Archive Page View	Segment Groups
+Segment Groups Add	Segment Groups
+Search Page View	Search
+Roles Table View	Roles
+Roles Restore Record	Roles
+Roles Page View	Roles
+Roles Edit	Roles
+Roles Archive Record	Roles
+Roles Archive Page View	Roles
+Roles Add	Roles
+Regions Table View	Regions
+Regions Restore Record	Regions
+Regions Page View	Regions
+Regions Edit	Regions
+Regions Archive Record	Regions
+Regions Archive Page View	Regions
+Regions Add	Regions
+Publish Track	Publish
+Publish Series	Publish
+Publish Queue	Publish
+Publish Message	Publish
+Publish MediaGallery	Publish
+Publish Details	Publish
+Publish Communication	Publish
+Publish Campaign	Publish
+Publish AjaxMessagePublishDetails	Publish
+Publish AjaxMediaGalleryPublishDetails	Publish
+Publish AjaxCommunicationPublishDetails	Publish
+Programs Table View	Programs
+Programs Restore Record	Programs
+Programs Page View	Programs
+Programs Edit	Programs
+Programs Archive Record	Programs
+Programs Archive Page View	Programs
+Programs Add	Programs
+Permissions Table View	Permissions
+Permissions Restore Record	Permissions
+Permissions Page View	Permissions
+Permissions Edit	Permissions
+Permissions Archive Record	Permissions
+Permissions Archive Page View	Permissions
+Permissions Add	Permissions
+Permission Groups Table View	Permission Groups
+Permission Groups Restore Record	Permission Groups
+Permission Groups Page View	Permission Groups
+Permission Groups Edit	Permission Groups
+Permission Groups Archive Record	Permission Groups
+Permission Groups Archive Page View	Permission Groups
+Permission Groups Add	Permission Groups
+Permission Categories Table View	Permission Categories
+Permission Categories Restore Record	Permission Categories
+Permission Categories Page View	Permission Categories
+Permission Categories Edit	Permission Categories
+Permission Categories Archive Record	Permission Categories
+Permission Categories Archive Page View	Permission Categories
+Permission Categories Add	Permission Categories
+Permission Actions Table View	Permission Actions
+Permission Actions Restore Record	Permission Actions
+Permission Actions Page View	Permission Actions
+Permission Actions Edit	Permission Actions
+Permission Actions Archive Record	Permission Actions
+Permission Actions Archive Page View	Permission Actions
+Permission Actions Add	Permission Actions
+Messages View	Messages
+Messages VersionRollback	Messages
+Messages VersionPublishhistory	Messages
+Messages VersionMessage	Messages
+Messages Version	Messages
+Messages Table View	Messages
+Messages SendPreview	Messages
+Messages Rollback	Messages
+Messages Restore Record	Messages
+Messages Publishhistory	Messages
+Messages PreviewVersion	Messages
+Messages Page View	Messages
+Messages Object Preview	Messages
+Messages MessageVersions	Messages
+Messages MessageVersionHistoryView	Messages
+Messages MessageVersionHistoryPreview	Messages
+Messages MessageVersionHistory	Messages
+Messages MessageVersion	Messages
+Messages MessagesHistory	Messages
+Messages MessageHistoryView	Messages
+Messages MessageHistoryPreview	Messages
+Messages MessageHistory	Messages
+Messages LoadTesting	Messages
+Messages List	Messages
+Messages GetTemplate	Messages
+Messages EditVersion	Messages
+Messages Edit	Messages
+Messages Clone (copy)	Messages
+Messages Archive Record	Messages
+Messages Archive Page View	Messages
+Messages Add	Messages
+Message Version Restore Record	Message Version
+Message Version Clone	Message Version
+Message Version Archive Record	Message Version
+Message Version - Images Table View	Message Version - Images
+Message Version - Images Page View	Message Version - Images
+Message Version - Images Delete Record	Message Version - Images
+Message Version - Hyperlinks Table View	Message Version - Hyperlinks
+Message Version - Hyperlinks Page View	Message Version - Hyperlinks
+Message Version - Hyperlinks Edit	Message Version - Hyperlinks
+Message Version - Hyperlinks Delete Record	Message Version - Hyperlinks
+Message Version - HTML Table View	Message Version - HTML
+Message Version - HTML Page View	Message Version - HTML
+Message Version - HTML Object Preview	Message Version - HTML
+Message Version - HTML Edit	Message Version - HTML
+Message Version - HTML Delete Record	Message Version - HTML
+Message Types Table View	Message Types
+Message Types Restore Record	Message Types
+Message Types Page View	Message Types
+Message Types Edit	Message Types
+Message Types Archive Record	Message Types
+Message Types Archive Page View	Message Types
+Message Types Add	Message Types
+Message - Images Table View	Message - Images
+Message - Images Page View	Message - Images
+Message - Images Delete Record	Message - Images
+Message - Hyperlinks Table View	Message - Hyperlinks
+Message - Hyperlinks Page View	Message - Hyperlinks
+Message - Hyperlinks Edit	Message - Hyperlinks
+Message - Hyperlinks Delete Record	Message - Hyperlinks
+Message - HTML Table View	Message - HTML
+Message - HTML Page View	Message - HTML
+Message - HTML Object Preview	Message - HTML
+Message - HTML Edit	Message - HTML
+Message - HTML Delete Record	Message - HTML
+Media Gallery Url	Media Gallery
+Media Gallery Table View	Media Gallery
+Media Gallery Restore Record	Media Gallery
+Media Gallery Publishhistory	Media Gallery
+Media Gallery Page View	Media Gallery
+Media Gallery MessageVersionModal	Media Gallery
+Media Gallery MessageModal	Media Gallery
+Media Gallery Message	Media Gallery
+Media Gallery List	Media Gallery
+Media Gallery Edit	Media Gallery
+Media Gallery Archive Record	Media Gallery
+Media Gallery Archive Page View	Media Gallery
+Media Gallery Add	Media Gallery
+Locale Table View	Locale
+Locale Restore Record	Locale
+Locale Preview	Locale
+Locale Page View	Locale
+Locale Import	Locale
+Locale Export File	Locale
+Locale Export	Locale
+Locale Edit	Locale
+Locale Archive Record	Locale
+Locale Archive Page View	Locale
+Locale Add	Locale
+Dashboard Table View	Dashboard
+Dashboard SetRefreshInterval	Dashboard
+Dashboard Page View	Dashboard
+Dashboard DeleteRefreshInterval	Dashboard
+Custom Fields Table View	Custom Fields
+Custom Fields Restore Record	Custom Fields
+Custom Fields Page View	Custom Fields
+Custom Fields Objectlist	Custom Fields
+Custom Fields Form	Custom Fields
+Custom Fields Field	Custom Fields
+Custom Fields Edit	Custom Fields
+Custom Fields Archive Record	Custom Fields
+Custom Fields Archive Page View	Custom Fields
+Custom Fields Add	Custom Fields
+Connectors Table View	Connectors
+Connectors Restore Record	Connectors
+Connectors Page View	Connectors
+Connectors Edit	Connectors
+Connectors Archive Record	Connectors
+Connectors Archive Page View	Connectors
+Connectors Add	Connectors
+Communications Table View	Communications
+Communications SendPreview	Communications
+Communications Restore Record	Communications
+Communications Publishhistory	Communications
+Communications Permalinks	Communications
+Communications Page View	Communications
+Communications Object Preview	Communications
+Communications Messages	Communications
+Communications MessageFormPart	Communications
+Communications Message	Communications
+Communications Loading	Communications
+Communications List	Communications
+Communications GeneratePreview	Communications
+Communications GenerateCartesian	Communications
+Communications FindReplaceCommunicationVariables	Communications
+Communications Export	Communications
+Communications EditPermalink	Communications
+Communications Edit	Communications
+Communications DownloadPreview	Communications
+Communications DatatableMessages	Communications
+Communications CommunicationExport	Communications
+Communications CommunicationDownload	Communications
+Communications Clone (copy)	Communications
+Communications Archive Record	Communications
+Communications Archive Page View	Communications
+Communications AddPermalink	Communications
+Communications Add	Communications
+Clients Table View	Clients
+Clients Restore Record	Clients
+Clients Page View	Clients
+Clients Edit	Clients
+Clients Archive Record	Clients
+Clients Archive Page View	Clients
+Clients Add	Clients
+Channels Table View	Channels
+Channels Restore Record	Channels
+Channels Page View	Channels
+Channels Archive Record	Channels
+Change Log Table View	Change Log
+Change Log Restore Record	Change Log
+Change Log Page View	Change Log
+Change Log Edit	Change Log
+Change Log Delete Record	Change Log
+Change Log Archive Record	Change Log
+Change Log Archive Page View	Change Log
+Change Log Add	Change Log
+Campaigns Table View	Campaigns
+Campaigns Restore Record	Campaigns
+Campaigns Publish History	Campaigns
+Campaigns Page View	Campaigns
+Campaigns List	Campaigns
+Campaigns Export	Campaigns
+Campaigns Edit	Campaigns
+Campaigns Download	Campaigns
+Campaigns CampaignExport	Campaigns
+Campaigns Archive Page View	Campaigns
+Campaigns Archive Record	Campaigns
+Campaigns Add	Campaigns
+Brands Table View	Brands
+Brands Restore Record	Brands
+Brands Page View	Brands
+Brands Edit	Brands
+Brands Archive Record	Brands
+Brands Archive Page View	Brands
+Brands Add	Brands
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" parallel="classes" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="LOCALIZATION REGRESSION RUN">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="localization.Export_TestCases" />
+			<class name="localization.Import_TestCases" />
+			<class name="localization.Locales_TestCases" />
+			<class name="localization.LocalesEdit_TestCases" />
+		</classes>
+	</test>
+</suite>

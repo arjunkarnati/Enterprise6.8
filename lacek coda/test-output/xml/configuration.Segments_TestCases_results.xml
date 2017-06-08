@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SEGMENTS TESTCASES"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="264.090">
+  <properties />
+  
+  
+            <testcase name="create_a_new_segment_without_a_clienname" time="34.992" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment_without_a_non_numerical_code" time="40.126" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment_without_a_name" time="37.957" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment_without_a_code" time="37.547" classname="configuration.Segments_TestCases" />
+                <testcase name="database_delete_segment_groups" time="2.079" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment" time="48.281" classname="configuration.Segments_TestCases" />
+                <testcase name="select_cancel_button_in_segements_add_page" time="24.695" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment_without_a_segment_group" time="38.413" classname="configuration.Segments_TestCases" />
+      
+</testsuite>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" allow-return-values="true" verbose="1"
+	parallel="tests" thread-count="4">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="MEDIA GALLERY ADD TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="assets.MediaGallery_TestCases" />
+		</classes>
+	</test>
+	<test name="MEDIA GALLERY EDIT TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="assets.MediaGalleryEdit_testcases" />
+		</classes>
+	</test>
+	<test name="MEDIA GALLERY RESTORE TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="assets.MediaGalleryRestore_testcases" />
+		</classes>
+	</test>
+	<test name="MEDIA GALLERY PUBLISH TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="assets.MediaGalleryPublish_testcases" />
+		</classes>
+	</test>
+</suite>
+
+
+

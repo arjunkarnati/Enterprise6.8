@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [LACEK MMS]" parallel="tests">
+  <parameter name="browser" value="browserstack"/>
+  <test name="CAMPAIGN EDIT TESTCASES(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="library.Campaigns_Testcases">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+        </methods>
+      </class> <!-- library.Campaigns_Testcases -->
+      <class name="library.CampaignsPublish_Testcases">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+        </methods>
+      </class> <!-- library.CampaignsPublish_Testcases -->
+      <class name="library.CanpaignsEdit_TestCases">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="activate_campaign"/>
+          <include name="update_campaign_clientname_to_previous_client"/>
+          <include name="update_campaign_brands_to_previous"/>
+          <include name="AfterLogin"/>
+          <include name="restorte_campaign"/>
+          <include name="update_campaign_client"/>
+          <include name="update_campaign_workflow_to_draft"/>
+          <include name="inactivate_campaign"/>
+          <include name="update_campaign_name_to_previous_name"/>
+          <include name="BeforeSuite"/>
+          <include name="update_campaign_series"/>
+          <include name="archive_campaign"/>
+          <include name="update_campaign_series_to_previous"/>
+        </methods>
+      </class> <!-- library.CanpaignsEdit_TestCases -->
+    </classes>
+  </test> <!-- CAMPAIGN EDIT TESTCASES(failed) -->
+</suite> <!-- Failed suite [LACEK MMS] -->

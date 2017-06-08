@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (8)]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="SETTINGS REGRESSION RUN(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="settings.ConnectorsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="test_is_empty"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- settings.ConnectorsRestore_testcases -->
+      <class name="settings.Channels_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="test_is_empty"/>
+          <include name="tearDown"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- settings.Channels_TestCases -->
+      <class name="settings.ChannelsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="empty_test"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- settings.ChannelsEdit_testcases -->
+      <class name="settings.WorkflowStateEdit_testcases">
+        <methods>
+          <include name="empty_color_field_in_wf_state_edit_page"/>
+          <include name="inactivate_workflow_state"/>
+          <include name="activate_workflow_state"/>
+          <include name="restore_wf_state"/>
+          <include name="update_workflow_state_description"/>
+          <include name="update_workflow_state_description_to_previous"/>
+          <include name="update_workflow_state_color"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="return_to_wf_state_main_page_from_edit"/>
+          <include name="update_workflow_state_color_to_previous"/>
+          <include name="BeforeSuite"/>
+          <include name="archive_wf_state"/>
+          <include name="update_workflow_state_name_to_previous"/>
+          <include name="empty_name_field_in_wf_state_edit_page"/>
+          <include name="click_cancel_in_wf_state_edit_page"/>
+          <include name="update_workflow_state_name"/>
+        </methods>
+      </class> <!-- settings.WorkflowStateEdit_testcases -->
+      <class name="settings.Connectors_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="relaod_workflow_page"/>
+          <include name="AfterLogin"/>
+          <include name="click_print_view_print"/>
+          <include name="open_connector_page"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- settings.Connectors_TestCases -->
+      <class name="settings.WorkflowRestore_testcases">
+        <methods>
+          <include name="test_is_empty"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- settings.WorkflowRestore_testcases -->
+      <class name="settings.ChannelsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="empty_test"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- settings.ChannelsRestore_testcases -->
+      <class name="settings.ConnectorsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="test_is_empty"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- settings.ConnectorsEdit_testcases -->
+      <class name="settings.WorkflowState_TestCases">
+        <methods>
+          <include name="create_a_new_wf_state_without_color"/>
+          <include name="BeforeSuite"/>
+          <include name="click_cancel_in_wf_state_add_page"/>
+          <include name="delete_workflow_state_from_database"/>
+          <include name="create_a_new_wf_state_without_name"/>
+          <include name="return_to_wf_state_main_page_from_add"/>
+          <include name="create_a_new_wf_state"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- settings.WorkflowState_TestCases -->
+      <class name="settings.WorkflowManager_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="create_a_workflow_manager"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="delete_workflow_manager_from_database"/>
+        </methods>
+      </class> <!-- settings.WorkflowManager_testcases -->
+    </classes>
+  </test> <!-- SETTINGS REGRESSION RUN(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (8)] -->

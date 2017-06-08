@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (11)]" parallel="tests" allow-return-values="true">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="SEGMENT GROUPS EDIT TESTCASES(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="configuration.SegmentGroupsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="update_segment_groups_clientname_to_previous"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentGroupsEdit_testcases -->
+      <class name="configuration.SegmentGroupsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentGroupsRestore_testcases -->
+      <class name="configuration.SegmentGroups_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentGroups_TestCases -->
+    </classes>
+  </test> <!-- SEGMENT GROUPS EDIT TESTCASES(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (11)] -->

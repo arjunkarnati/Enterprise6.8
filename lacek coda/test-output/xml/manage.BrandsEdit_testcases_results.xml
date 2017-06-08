@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BRANDS TESTCASES"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="350.752">
+  <properties />
+  
+  
+            <testcase name="update_brand_color_to_previous_color" time="35.522" classname="manage.BrandsEdit_testcases" />
+                <testcase name="archive_brand" time="18.471" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_url" time="38.552" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_color" time="36.789" classname="manage.BrandsEdit_testcases" />
+                <testcase name="inactivate_brand" time="38.114" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_url_to_previous" time="37.786" classname="manage.BrandsEdit_testcases" />
+                <testcase name="activate_brand" time="38.618" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_name_to_previous" time="38.836" classname="manage.BrandsEdit_testcases" />
+                <testcase name="restore_brand" time="29.621" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_name" time="38.443" classname="manage.BrandsEdit_testcases" />
+      
+</testsuite>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (12)]" parallel="tests" allow-return-values="true">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="SEGMENTS RESTORE TESTCASES(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="configuration.SegmentsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentsEdit_testcases -->
+      <class name="configuration.SegmentsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="validate_segments_page"/>
+        </methods>
+      </class> <!-- configuration.SegmentsRestore_testcases -->
+      <class name="configuration.Segments_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.Segments_TestCases -->
+    </classes>
+  </test> <!-- SEGMENTS RESTORE TESTCASES(failed) -->
+  <test name="SEGMENTS EDIT TESTCASES(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="configuration.SegmentsEdit_testcases">
+        <methods>
+          <include name="select_button_cancel_in_segments_edit_page"/>
+          <include name="activate_segment"/>
+          <include name="restore_segment"/>
+          <include name="archive_segment"/>
+          <include name="empty_name_field_in_segements_edit_page"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="update_segment_clientname_to_previous"/>
+          <include name="update_segment_code_to_previous"/>
+          <include name="update_segment_name"/>
+          <include name="BeforeSuite"/>
+          <include name="update_segment_segment_group_to_previous"/>
+          <include name="update_segment_clientname"/>
+          <include name="update_segment_code"/>
+          <include name="empty_code_field_in_segements_edit_page"/>
+          <include name="update_segment_segment_group"/>
+          <include name="inactivate_segment"/>
+          <include name="update_segment_name_to_previous"/>
+        </methods>
+      </class> <!-- configuration.SegmentsEdit_testcases -->
+      <class name="configuration.SegmentsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentsRestore_testcases -->
+      <class name="configuration.Segments_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.Segments_TestCases -->
+    </classes>
+  </test> <!-- SEGMENTS EDIT TESTCASES(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (12)] -->

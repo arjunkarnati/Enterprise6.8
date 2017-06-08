@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TEMPLATES TESTCASES"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="16.943">
+  <properties />
+  
+  
+            <testcase name="validate_template_page" time="16.943" classname="layout.TemplatesRestore_testcases" />
+      
+</testsuite>

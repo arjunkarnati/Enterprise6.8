@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" allow-return-values="true" verbose="1"
+	parallel="tests" thread-count="4">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="CAMPAIGN ADD TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="browserstack" />
+		<classes>
+			<class name="library.Campaigns_Testcases" />
+		</classes>
+	</test>
+	<test name="CAMPAIGN EDIT TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="browserstack" />
+		<classes>
+			<class name="library.CanpaignsEdit_TestCases" />
+		</classes>
+	</test>
+	<test name="CAMPAIGN PUBLISH TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="browserstack" />
+		<classes>
+			<class name="library.CampaignsPublish_Testcases" />
+		</classes>
+	</test>
+	<test name="CAMPAIGN RESTORE TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="browserstack" />
+		<classes>
+			<class name="library.CampaignsRestore_Testcases" />
+		</classes>
+	</test>
+</suite> 

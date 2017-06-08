@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>TestNG:  MEDIA GALLERY TESTCASES</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MEDIA GALLERY TESTCASES</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>33/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 06 17:33:47 CDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>2028 seconds (2028343 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.activate_media_gallery()'><b>activate_media_gallery</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>94</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.archive_media_gallery()'><b>archive_media_gallery</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>23</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryPublish_testcases.cancel_publish_campaign()'><b>cancel_publish_campaign</b><br>Test class: assets.MediaGalleryPublish_testcases</td>
+<td></td>
+<td>40</td>
+<td>assets.MediaGalleryPublish_testcases@44a3ec6b</td></tr>
+<tr>
+<td title='assets.MediaGalleryPublish_testcases.cancel_publish_campaign_Carnival_AE()'><b>cancel_publish_campaign_Carnival_AE</b><br>Test class: assets.MediaGalleryPublish_testcases</td>
+<td></td>
+<td>42</td>
+<td>assets.MediaGalleryPublish_testcases@44a3ec6b</td></tr>
+<tr>
+<td title='assets.MediaGallery_TestCases.create_a_new_media_gallery()'><b>create_a_new_media_gallery</b><br>Test class: assets.MediaGallery_TestCases</td>
+<td></td>
+<td>17</td>
+<td>assets.MediaGallery_TestCases@16022d9d</td></tr>
+<tr>
+<td title='assets.MediaGallery_TestCases.create_a_new_media_gallery_without_clientname()'><b>create_a_new_media_gallery_without_clientname</b><br>Test class: assets.MediaGallery_TestCases</td>
+<td></td>
+<td>28</td>
+<td>assets.MediaGallery_TestCases@16022d9d</td></tr>
+<tr>
+<td title='assets.MediaGallery_TestCases.create_a_new_media_gallery_without_uploadig_an_image()'><b>create_a_new_media_gallery_without_uploadig_an_image</b><br>Test class: assets.MediaGallery_TestCases</td>
+<td></td>
+<td>48</td>
+<td>assets.MediaGallery_TestCases@16022d9d</td></tr>
+<tr>
+<td title='assets.MediaGallery_TestCases.database_delete_media_gallery()'><b>database_delete_media_gallery</b><br>Test class: assets.MediaGallery_TestCases</td>
+<td></td>
+<td>2</td>
+<td>assets.MediaGallery_TestCases@16022d9d</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.delete_messagemedia_connectors()'><b>delete_messagemedia_connectors</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>37</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.inactivate_media_gallery()'><b>inactivate_media_gallery</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>93</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryRestore_testcases.open_archive_page()'><b>open_archive_page</b><br>Test class: assets.MediaGalleryRestore_testcases</td>
+<td></td>
+<td>25</td>
+<td>assets.MediaGalleryRestore_testcases@71623278</td></tr>
+<tr>
+<td title='assets.MediaGalleryPublish_testcases.publish_media_gallery()'><b>publish_media_gallery</b><br>Test class: assets.MediaGalleryPublish_testcases</td>
+<td></td>
+<td>65</td>
+<td>assets.MediaGalleryPublish_testcases@44a3ec6b</td></tr>
+<tr>
+<td title='assets.MediaGalleryPublish_testcases.publish_media_gallery_Carnival_AE()'><b>publish_media_gallery_Carnival_AE</b><br>Test class: assets.MediaGalleryPublish_testcases</td>
+<td></td>
+<td>67</td>
+<td>assets.MediaGalleryPublish_testcases@44a3ec6b</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.restore_media_gallery()'><b>restore_media_gallery</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>33</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_Alt_Tag()'><b>update_media_gallery_Alt_Tag</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>95</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_Alt_Tag_to_previous()'><b>update_media_gallery_Alt_Tag_to_previous</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>94</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_brand()'><b>update_media_gallery_brand</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>46</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_brand_to_previous()'><b>update_media_gallery_brand_to_previous</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>53</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_clientname()'><b>update_media_gallery_clientname</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>43</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_clientname_to_previous()'><b>update_media_gallery_clientname_to_previous</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>64</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_connectors()'><b>update_media_gallery_connectors</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>51</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_description()'><b>update_media_gallery_description</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>43</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_name()'><b>update_media_gallery_name</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>94</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_name_to_previous_name()'><b>update_media_gallery_name_to_previous_name</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>93</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_program()'><b>update_media_gallery_program</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>46</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_program_to_previous()'><b>update_media_gallery_program_to_previous</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>47</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_workflow_to_approved()'><b>update_media_gallery_workflow_to_approved</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>51</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_workflow_to_approved_Carnival_AE()'><b>update_media_gallery_workflow_to_approved_Carnival_AE</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>52</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_workflow_to_approved_EHI_AE()'><b>update_media_gallery_workflow_to_approved_EHI_AE</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>53</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_workflow_to_draft()'><b>update_media_gallery_workflow_to_draft</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>51</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_workflow_to_draft_Carnival_AE()'><b>update_media_gallery_workflow_to_draft_Carnival_AE</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>52</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_media_gallery_workflow_to_draft_EHI_AE()'><b>update_media_gallery_workflow_to_draft_EHI_AE</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>49</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+<tr>
+<td title='assets.MediaGalleryEdit_testcases.update_messagemedia_connectors()'><b>update_messagemedia_connectors</b><br>Test class: assets.MediaGalleryEdit_testcases</td>
+<td></td>
+<td>44</td>
+<td>assets.MediaGalleryEdit_testcases@7e9a5fbe</td></tr>
+</table><p>
+</body>
+</html>

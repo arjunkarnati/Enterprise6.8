@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PROGRAMS TESTCASES"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="129.048">
+  <properties />
+  
+  
+            <testcase name="delete_program_from_db" time="2.134" classname="manage.Programs_testcases" />
+                <testcase name="create_a_new_program_without_a_client_name" time="33.853" classname="manage.Programs_testcases" />
+                <testcase name="create_a_new_program" time="55.582" classname="manage.Programs_testcases" />
+                <testcase name="create_a_new_program_without_a_name" time="37.479" classname="manage.Programs_testcases" />
+      
+</testsuite>

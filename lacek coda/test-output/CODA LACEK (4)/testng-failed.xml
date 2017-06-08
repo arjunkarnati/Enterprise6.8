@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (4)]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="LOCALIZATION REGRESSION RUN(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="localization.Locales_TestCases">
+        <methods>
+          <include name="click_cancel_in_locales_add_page"/>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- localization.Locales_TestCases -->
+      <class name="localization.LocalesEdit_TestCases">
+        <methods>
+          <include name="empty_name_field_in_locales_edit_page"/>
+          <include name="AfterLogin"/>
+          <include name="empty_code_field_in_locales_edit_page"/>
+          <include name="beforeTest"/>
+          <include name="archive_locales"/>
+          <include name="click_cancel_in_locales_edit_page"/>
+          <include name="BeforeSuite"/>
+          <include name="restore_locales"/>
+          <include name="update_locale_code"/>
+          <include name="activate_locales"/>
+          <include name="inactivate_locales"/>
+          <include name="update_locale_code_to_previous"/>
+          <include name="return_to_locales_main_page_from_edit"/>
+        </methods>
+      </class> <!-- localization.LocalesEdit_TestCases -->
+      <class name="localization.Import_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- localization.Import_TestCases -->
+      <class name="localization.Export_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="export_a_camapign_format_type_xlsx"/>
+          <include name="tearDown"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="export_a_camapign_format_type_xliff"/>
+        </methods>
+      </class> <!-- localization.Export_TestCases -->
+    </classes>
+  </test> <!-- LOCALIZATION REGRESSION RUN(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (4)] -->

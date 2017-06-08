@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Failed suite [Default suite]]]">
+  <test name="Default test(failed)(failed)(failed)">
+    <classes>
+      <class name="access.RolesEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="update_role_name_to_previous"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- access.RolesEdit_testcases -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->

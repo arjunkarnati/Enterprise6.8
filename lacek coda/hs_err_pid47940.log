@@ -1,0 +1,694 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=47940, tid=0x000000000000ae44
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_121-b13) (build 1.8.0_121-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.121-b13 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000054f02800):  VMThread [stack: 0x0000000055870000,0x0000000055970000] [id=44612]
+
+Stack: [0x0000000055870000,0x0000000055970000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+VM_Operation (0x0000000058bbdff0): BulkRevokeBias, mode: safepoint, requested by thread 0x00000000575fd800
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00000000572f5000 JavaThread "UrlChecker-10" daemon [_thread_blocked, id=70548, stack(0x0000000073a60000,0x0000000073b60000)]
+  0x00000000572f4800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=35272, stack(0x0000000074380000,0x0000000074480000)]
+  0x00000000572f3800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=60688, stack(0x0000000079e00000,0x0000000079f00000)]
+  0x0000000058099000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69312, stack(0x00000000692e0000,0x00000000693e0000)]
+  0x00000000572f2000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69840, stack(0x0000000079b90000,0x0000000079c90000)]
+  0x00000000572f1800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69812, stack(0x0000000079c90000,0x0000000079d90000)]
+  0x00000000572f0800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=70028, stack(0x0000000079a10000,0x0000000079b10000)]
+  0x00000000572f0000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65764, stack(0x0000000079900000,0x0000000079a00000)]
+  0x00000000572ef000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66668, stack(0x0000000079660000,0x0000000079760000)]
+  0x00000000572ee800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=63636, stack(0x00000000797e0000,0x00000000798e0000)]
+  0x00000000572ed800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=70604, stack(0x0000000079560000,0x0000000079660000)]
+  0x00000000572ed000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=70572, stack(0x00000000791f0000,0x00000000792f0000)]
+  0x00000000572ec000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69316, stack(0x0000000079330000,0x0000000079430000)]
+  0x00000000572eb800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=70160, stack(0x0000000078670000,0x0000000078770000)]
+  0x00000000572ea800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=70084, stack(0x00000000790e0000,0x00000000791e0000)]
+  0x00000000572ea000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=70152, stack(0x0000000078cf0000,0x0000000078df0000)]
+  0x00000000572e9000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69660, stack(0x0000000078fe0000,0x00000000790e0000)]
+  0x00000000572e8800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69676, stack(0x0000000078e50000,0x0000000078f50000)]
+  0x00000000580b9800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69648, stack(0x0000000078bf0000,0x0000000078cf0000)]
+  0x00000000580b8800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=70192, stack(0x0000000077940000,0x0000000077a40000)]
+  0x00000000580b8000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=70188, stack(0x0000000078a80000,0x0000000078b80000)]
+  0x00000000580b7000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=70176, stack(0x0000000078970000,0x0000000078a70000)]
+  0x00000000580b6800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69728, stack(0x0000000078780000,0x0000000078880000)]
+  0x00000000580b5800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69724, stack(0x0000000078570000,0x0000000078670000)]
+  0x00000000580b5000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69712, stack(0x0000000077b50000,0x0000000077c50000)]
+  0x00000000580b4000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66740, stack(0x00000000783d0000,0x00000000784d0000)]
+  0x00000000580b3800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69044, stack(0x00000000776f0000,0x00000000777f0000)]
+  0x00000000580b2800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68408, stack(0x0000000078290000,0x0000000078390000)]
+  0x00000000580b2000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=59248, stack(0x0000000078120000,0x0000000078220000)]
+  0x00000000580b1000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=27532, stack(0x0000000077f20000,0x0000000078020000)]
+  0x00000000580b0800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69492, stack(0x0000000077dd0000,0x0000000077ed0000)]
+  0x00000000580af800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67216, stack(0x0000000077c70000,0x0000000077d70000)]
+  0x00000000580af000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66648, stack(0x0000000077a40000,0x0000000077b40000)]
+  0x00000000580ae000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66568, stack(0x0000000077800000,0x0000000077900000)]
+  0x00000000580ad800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67148, stack(0x0000000076290000,0x0000000076390000)]
+  0x00000000580ac800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69240, stack(0x00000000768b0000,0x00000000769b0000)]
+  0x00000000580ac000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68896, stack(0x00000000775c0000,0x00000000776c0000)]
+  0x00000000580ab000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=29908, stack(0x0000000077450000,0x0000000077550000)]
+  0x00000000580aa800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67888, stack(0x0000000076e30000,0x0000000076f30000)]
+  0x00000000579ad000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66520, stack(0x0000000076ce0000,0x0000000076de0000)]
+  0x00000000579ac800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67312, stack(0x0000000076b20000,0x0000000076c20000)]
+  0x00000000579ab800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69132, stack(0x00000000769b0000,0x0000000076ab0000)]
+  0x00000000579ab000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67292, stack(0x0000000076780000,0x0000000076880000)]
+  0x00000000579aa000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67600, stack(0x00000000765c0000,0x00000000766c0000)]
+  0x00000000579a9800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69016, stack(0x00000000691d0000,0x00000000692d0000)]
+  0x00000000579a8800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=63328, stack(0x0000000076410000,0x0000000076510000)]
+  0x00000000579a8000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=57644, stack(0x0000000076180000,0x0000000076280000)]
+  0x00000000579a7000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68320, stack(0x0000000075fc0000,0x00000000760c0000)]
+  0x00000000579a6800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68256, stack(0x0000000073840000,0x0000000073940000)]
+  0x00000000579a5800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67596, stack(0x0000000075e00000,0x0000000075f00000)]
+  0x00000000579a5000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68904, stack(0x0000000075700000,0x0000000075800000)]
+  0x00000000579a4000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=55256, stack(0x0000000075d00000,0x0000000075e00000)]
+  0x00000000579a3000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68784, stack(0x0000000075c00000,0x0000000075d00000)]
+  0x00000000579a2800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=12000, stack(0x0000000075a10000,0x0000000075b10000)]
+  0x00000000579a1800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68044, stack(0x0000000075820000,0x0000000075920000)]
+  0x00000000579a1000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68732, stack(0x0000000075600000,0x0000000075700000)]
+  0x00000000579a0000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68740, stack(0x0000000074de0000,0x0000000074ee0000)]
+  0x000000005799f800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68964, stack(0x0000000075450000,0x0000000075550000)]
+  0x000000005799e800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69604, stack(0x0000000075350000,0x0000000075450000)]
+  0x000000005799e000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68432, stack(0x0000000075240000,0x0000000075340000)]
+  0x00000000580a0000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=61804, stack(0x00000000750b0000,0x00000000751b0000)]
+  0x000000005809f000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68712, stack(0x00000000744b0000,0x00000000745b0000)]
+  0x000000005809e800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67720, stack(0x0000000074ee0000,0x0000000074fe0000)]
+  0x000000005809d800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67668, stack(0x0000000074ce0000,0x0000000074de0000)]
+  0x000000005809d000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66304, stack(0x0000000074af0000,0x0000000074bf0000)]
+  0x000000005809c000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69440, stack(0x0000000074990000,0x0000000074a90000)]
+  0x000000005809b800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67236, stack(0x0000000066b60000,0x0000000066c60000)]
+  0x000000005809a800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64644, stack(0x0000000074800000,0x0000000074900000)]
+  0x000000005809a000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=10600, stack(0x00000000746b0000,0x00000000747b0000)]
+  0x0000000057972000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68736, stack(0x00000000690b0000,0x00000000691b0000)]
+  0x0000000058098800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69556, stack(0x00000000729b0000,0x0000000072ab0000)]
+  0x0000000058097800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68148, stack(0x0000000073d80000,0x0000000073e80000)]
+  0x0000000058097000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=65648, stack(0x00000000741a0000,0x00000000742a0000)]
+  0x0000000058096000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=24476, stack(0x0000000074070000,0x0000000074170000)]
+  0x0000000058095800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68672, stack(0x0000000073e80000,0x0000000073f80000)]
+  0x0000000058094800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67748, stack(0x0000000072b20000,0x0000000072c20000)]
+  0x0000000058094000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66968, stack(0x0000000073950000,0x0000000073a50000)]
+  0x0000000058093000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=23640, stack(0x0000000073740000,0x0000000073840000)]
+  0x0000000058092800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69124, stack(0x0000000073610000,0x0000000073710000)]
+  0x0000000058091800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69188, stack(0x0000000073490000,0x0000000073590000)]
+  0x0000000058091000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68308, stack(0x0000000073350000,0x0000000073450000)]
+  0x0000000057974800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67900, stack(0x0000000073250000,0x0000000073350000)]
+  0x0000000057973800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68068, stack(0x0000000073150000,0x0000000073250000)]
+  0x0000000057973000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=6472, stack(0x000000006d120000,0x000000006d220000)]
+  0x0000000057c2f000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69268, stack(0x0000000059310000,0x0000000059410000)]
+  0x0000000057971800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68248, stack(0x0000000072c90000,0x0000000072d90000)]
+  0x0000000057970800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69172, stack(0x0000000073020000,0x0000000073120000)]
+  0x0000000057970000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67908, stack(0x0000000072e70000,0x0000000072f70000)]
+  0x000000005796f000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=49972, stack(0x0000000072170000,0x0000000072270000)]
+  0x000000005796e800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69624, stack(0x000000006b550000,0x000000006b650000)]
+  0x000000005796d800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69576, stack(0x000000006a920000,0x000000006aa20000)]
+  0x000000005796d000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68508, stack(0x00000000726b0000,0x00000000727b0000)]
+  0x000000005796c000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68876, stack(0x00000000724f0000,0x00000000725f0000)]
+  0x000000005796b800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67904, stack(0x0000000072320000,0x0000000072420000)]
+  0x000000005796a800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69612, stack(0x0000000071da0000,0x0000000071ea0000)]
+  0x000000005796a000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69304, stack(0x0000000072070000,0x0000000072170000)]
+  0x0000000057969000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69380, stack(0x0000000071ef0000,0x0000000071ff0000)]
+  0x0000000057968800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69420, stack(0x000000006fef0000,0x000000006fff0000)]
+  0x0000000057967800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69332, stack(0x0000000071c90000,0x0000000071d90000)]
+  0x0000000057967000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68196, stack(0x0000000071b40000,0x0000000071c40000)]
+  0x0000000057966000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=69560, stack(0x0000000070cb0000,0x0000000070db0000)]
+  0x0000000057965800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67728, stack(0x0000000071a20000,0x0000000071b20000)]
+  0x000000005721a800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=69508, stack(0x0000000071890000,0x0000000071990000)]
+  0x0000000057219800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68648, stack(0x00000000716e0000,0x00000000717e0000)]
+  0x0000000057219000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68656, stack(0x00000000715c0000,0x00000000716c0000)]
+  0x0000000057218000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68660, stack(0x0000000071460000,0x0000000071560000)]
+  0x0000000057217800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68928, stack(0x00000000712e0000,0x00000000713e0000)]
+  0x0000000057216800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68924, stack(0x0000000071130000,0x0000000071230000)]
+  0x0000000057216000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68912, stack(0x0000000071000000,0x0000000071100000)]
+  0x0000000057215000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67896, stack(0x0000000070e10000,0x0000000070f10000)]
+  0x0000000057214000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=14732, stack(0x0000000070610000,0x0000000070710000)]
+  0x0000000057213800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67680, stack(0x0000000070b90000,0x0000000070c90000)]
+  0x0000000057212800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68576, stack(0x00000000709a0000,0x0000000070aa0000)]
+  0x0000000057212000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65948, stack(0x00000000708a0000,0x00000000709a0000)]
+  0x0000000057211000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=61944, stack(0x0000000070720000,0x0000000070820000)]
+  0x0000000057210800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=63824, stack(0x00000000704b0000,0x00000000705b0000)]
+  0x000000005720f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68316, stack(0x00000000703a0000,0x00000000704a0000)]
+  0x000000005720f000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66800, stack(0x00000000701b0000,0x00000000702b0000)]
+  0x000000005720e000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=45872, stack(0x0000000070010000,0x0000000070110000)]
+  0x000000005720d800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=62564, stack(0x000000006fde0000,0x000000006fee0000)]
+  0x000000005720c800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67988, stack(0x000000006fcd0000,0x000000006fdd0000)]
+  0x000000005720c000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=44588, stack(0x000000006fb40000,0x000000006fc40000)]
+  0x000000005720b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68568, stack(0x000000006f950000,0x000000006fa50000)]
+  0x0000000057995000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=55652, stack(0x000000006f7e0000,0x000000006f8e0000)]
+  0x0000000057994800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67764, stack(0x000000006edc0000,0x000000006eec0000)]
+  0x0000000057993800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68040, stack(0x000000006d740000,0x000000006d840000)]
+  0x0000000057993000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67616, stack(0x000000006ec60000,0x000000006ed60000)]
+  0x0000000057992000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68156, stack(0x000000006ea70000,0x000000006eb70000)]
+  0x0000000057991800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65932, stack(0x000000006e8b0000,0x000000006e9b0000)]
+  0x0000000057990800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67592, stack(0x000000006e6c0000,0x000000006e7c0000)]
+  0x0000000057990000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67772, stack(0x000000006e4e0000,0x000000006e5e0000)]
+  0x000000005798f000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=47572, stack(0x000000006d540000,0x000000006d640000)]
+  0x000000005798e800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68060, stack(0x000000006e300000,0x000000006e400000)]
+  0x000000005798d800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66576, stack(0x000000006e140000,0x000000006e240000)]
+  0x000000005798d000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66840, stack(0x000000006cf00000,0x000000006d000000)]
+  0x000000005798c000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66084, stack(0x000000006df90000,0x000000006e090000)]
+  0x000000005798b800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=57180, stack(0x000000006de40000,0x000000006df40000)]
+  0x000000005798a800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68436, stack(0x000000006dd10000,0x000000006de10000)]
+  0x000000005798a000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67796, stack(0x000000006dba0000,0x000000006dca0000)]
+  0x0000000057989000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67944, stack(0x000000006da40000,0x000000006db40000)]
+  0x0000000057988800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68388, stack(0x000000006d640000,0x000000006d740000)]
+  0x0000000057987800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=51036, stack(0x000000006cce0000,0x000000006cde0000)]
+  0x0000000057987000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66756, stack(0x000000006d430000,0x000000006d530000)]
+  0x0000000057986000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67784, stack(0x000000006d300000,0x000000006d400000)]
+  0x0000000062549800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66872, stack(0x000000006d010000,0x000000006d110000)]
+  0x0000000057c2e000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68588, stack(0x000000005b340000,0x000000005b440000)]
+  0x0000000057c2d000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67624, stack(0x000000006cdf0000,0x000000006cef0000)]
+  0x0000000057c2c800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=61044, stack(0x000000006b760000,0x000000006b860000)]
+  0x0000000057c2b800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68540, stack(0x000000006cbc0000,0x000000006ccc0000)]
+  0x0000000057c2b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68532, stack(0x000000006caa0000,0x000000006cba0000)]
+  0x0000000057c2a000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68340, stack(0x000000006c8d0000,0x000000006c9d0000)]
+  0x0000000057c29800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67976, stack(0x000000006c700000,0x000000006c800000)]
+  0x0000000057c28800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68088, stack(0x000000006c580000,0x000000006c680000)]
+  0x0000000057c28000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=45224, stack(0x000000006c400000,0x000000006c500000)]
+  0x0000000057c27000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68272, stack(0x000000006c2a0000,0x000000006c3a0000)]
+  0x0000000057c26800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68264, stack(0x000000006c190000,0x000000006c290000)]
+  0x0000000057c25800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68244, stack(0x000000006c040000,0x000000006c140000)]
+  0x0000000057c25000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67824, stack(0x000000006bef0000,0x000000006bff0000)]
+  0x0000000057c24000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67820, stack(0x000000006bd90000,0x000000006be90000)]
+  0x0000000057c23800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67740, stack(0x000000006a1e0000,0x000000006a2e0000)]
+  0x0000000057c22800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66836, stack(0x000000006bc90000,0x000000006bd90000)]
+  0x0000000057c22000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=17484, stack(0x000000006bb40000,0x000000006bc40000)]
+  0x0000000057c21000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=18244, stack(0x000000006ad90000,0x000000006ae90000)]
+  0x0000000057c20800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68108, stack(0x000000006b9c0000,0x000000006bac0000)]
+  0x0000000057c1f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=68104, stack(0x000000006b8a0000,0x000000006b9a0000)]
+  0x0000000057b11000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=68092, stack(0x000000006b650000,0x000000006b750000)]
+  0x0000000057b10000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67660, stack(0x000000006b450000,0x000000006b550000)]
+  0x0000000057b0f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67656, stack(0x000000006b280000,0x000000006b380000)]
+  0x0000000057b0e800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67644, stack(0x000000006b160000,0x000000006b260000)]
+  0x0000000057b0e000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64540, stack(0x000000006b060000,0x000000006b160000)]
+  0x0000000057b0d000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=45844, stack(0x000000006ae90000,0x000000006af90000)]
+  0x0000000057b0c800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67020, stack(0x000000006ac70000,0x000000006ad70000)]
+  0x0000000057b0b800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66068, stack(0x000000006a720000,0x000000006a820000)]
+  0x0000000057b0b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=47624, stack(0x000000006ab70000,0x000000006ac70000)]
+  0x0000000057b0a000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66656, stack(0x000000006aa20000,0x000000006ab20000)]
+  0x0000000057b09800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65308, stack(0x000000006a820000,0x000000006a920000)]
+  0x0000000057b08800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66572, stack(0x0000000069a50000,0x0000000069b50000)]
+  0x0000000057b08000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=65008, stack(0x000000006a590000,0x000000006a690000)]
+  0x0000000057b07000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=58480, stack(0x000000006a3e0000,0x000000006a4e0000)]
+  0x0000000057b06800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67028, stack(0x000000006a2e0000,0x000000006a3e0000)]
+  0x0000000057b05800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=64488, stack(0x000000006a0b0000,0x000000006a1b0000)]
+  0x0000000057b05000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=50956, stack(0x0000000069ee0000,0x0000000069fe0000)]
+  0x0000000057b04000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=55956, stack(0x0000000069d90000,0x0000000069e90000)]
+  0x0000000057b03800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=43592, stack(0x00000000696e0000,0x00000000697e0000)]
+  0x0000000057b02800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66556, stack(0x0000000069c90000,0x0000000069d90000)]
+  0x0000000057b02000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=49528, stack(0x0000000069b90000,0x0000000069c90000)]
+  0x0000000062550000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=43084, stack(0x0000000066c60000,0x0000000066d60000)]
+  0x000000006254f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64992, stack(0x0000000069900000,0x0000000069a00000)]
+  0x000000006254e800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=52208, stack(0x0000000069800000,0x0000000069900000)]
+  0x000000006254e000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=65852, stack(0x00000000695c0000,0x00000000696c0000)]
+  0x000000006254d000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65556, stack(0x0000000067db0000,0x0000000067eb0000)]
+  0x000000006254c800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66020, stack(0x00000000693e0000,0x00000000694e0000)]
+  0x000000006254b800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66408, stack(0x0000000059430000,0x0000000059530000)]
+  0x000000006254b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=63012, stack(0x0000000068f90000,0x0000000069090000)]
+  0x000000006254a000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65624, stack(0x0000000058610000,0x0000000058710000)]
+  0x0000000057147800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=64752, stack(0x00000000598c0000,0x00000000599c0000)]
+  0x00000000578d5800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66980, stack(0x0000000068e40000,0x0000000068f40000)]
+  0x00000000578d5000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=47284, stack(0x0000000068c60000,0x0000000068d60000)]
+  0x00000000578d4000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67568, stack(0x0000000068a90000,0x0000000068b90000)]
+  0x00000000578d3800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=52740, stack(0x0000000068940000,0x0000000068a40000)]
+  0x00000000578d2800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=44884, stack(0x0000000068760000,0x0000000068860000)]
+  0x00000000578d2000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=56380, stack(0x0000000068310000,0x0000000068410000)]
+  0x00000000578d1000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66988, stack(0x0000000065740000,0x0000000065840000)]
+  0x00000000578d0800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=44660, stack(0x0000000068570000,0x0000000068670000)]
+  0x00000000578cf800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=42108, stack(0x0000000068430000,0x0000000068530000)]
+  0x00000000578cf000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=23648, stack(0x0000000068210000,0x0000000068310000)]
+  0x000000005714c800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=59892, stack(0x00000000680b0000,0x00000000681b0000)]
+  0x000000005714c000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66184, stack(0x0000000067ec0000,0x0000000067fc0000)]
+  0x000000005714b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=55856, stack(0x0000000067c90000,0x0000000067d90000)]
+  0x000000005714a800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67080, stack(0x0000000067aa0000,0x0000000067ba0000)]
+  0x0000000057149800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=47892, stack(0x0000000067930000,0x0000000067a30000)]
+  0x0000000057149000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=49812, stack(0x0000000067780000,0x0000000067880000)]
+  0x0000000057148000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66976, stack(0x0000000067630000,0x0000000067730000)]
+  0x0000000057351800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=65568, stack(0x0000000067350000,0x0000000067450000)]
+  0x0000000057146800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=47232, stack(0x0000000067460000,0x0000000067560000)]
+  0x0000000057146000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=13208, stack(0x0000000067240000,0x0000000067340000)]
+  0x0000000057356800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66420, stack(0x0000000066d90000,0x0000000066e90000)]
+  0x0000000057355800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64236, stack(0x00000000670e0000,0x00000000671e0000)]
+  0x0000000057354800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=62420, stack(0x000000005c530000,0x000000005c630000)]
+  0x0000000057354000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=58220, stack(0x0000000066fc0000,0x00000000670c0000)]
+  0x0000000057353000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=52036, stack(0x0000000066ea0000,0x0000000066fa0000)]
+  0x0000000057352800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66964, stack(0x00000000664b0000,0x00000000665b0000)]
+  0x0000000057351000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=61576, stack(0x0000000059000000,0x0000000059100000)]
+  0x0000000057350000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=63720, stack(0x0000000066a60000,0x0000000066b60000)]
+  0x000000005734f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66480, stack(0x00000000662b0000,0x00000000663b0000)]
+  0x000000005734e800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=59260, stack(0x0000000066870000,0x0000000066970000)]
+  0x000000005734d800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65024, stack(0x0000000066760000,0x0000000066860000)]
+  0x000000005734c800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66748, stack(0x00000000665b0000,0x00000000666b0000)]
+  0x000000005734c000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67128, stack(0x00000000663b0000,0x00000000664b0000)]
+  0x000000005734b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=61556, stack(0x0000000065cf0000,0x0000000065df0000)]
+  0x000000005734a800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=43216, stack(0x0000000066150000,0x0000000066250000)]
+  0x0000000057349800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=53672, stack(0x0000000065fa0000,0x00000000660a0000)]
+  0x0000000057349000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=11596, stack(0x0000000065df0000,0x0000000065ef0000)]
+  0x0000000057348000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=59112, stack(0x0000000065ba0000,0x0000000065ca0000)]
+  0x0000000057347800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=33372, stack(0x0000000065a20000,0x0000000065b20000)]
+  0x0000000057120000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=56676, stack(0x0000000065840000,0x0000000065940000)]
+  0x000000005711f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66072, stack(0x00000000648e0000,0x00000000649e0000)]
+  0x000000005711e800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66904, stack(0x0000000065630000,0x0000000065730000)]
+  0x000000005711e000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=53824, stack(0x00000000654b0000,0x00000000655b0000)]
+  0x000000005711d000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=61336, stack(0x0000000064ee0000,0x0000000064fe0000)]
+  0x000000005711c800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=59408, stack(0x0000000065310000,0x0000000065410000)]
+  0x000000005711b800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66852, stack(0x00000000651c0000,0x00000000652c0000)]
+  0x000000005711b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66220, stack(0x0000000065010000,0x0000000065110000)]
+  0x000000005711a000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66056, stack(0x0000000063a00000,0x0000000063b00000)]
+  0x0000000057119800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=59200, stack(0x0000000064da0000,0x0000000064ea0000)]
+  0x00000000578e9800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66096, stack(0x0000000064be0000,0x0000000064ce0000)]
+  0x00000000578e8800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=64388, stack(0x0000000064a10000,0x0000000064b10000)]
+  0x00000000578e8000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64944, stack(0x0000000064560000,0x0000000064660000)]
+  0x00000000578e7000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=53320, stack(0x00000000647d0000,0x00000000648d0000)]
+  0x00000000578e6800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=64996, stack(0x00000000646c0000,0x00000000647c0000)]
+  0x00000000578e5800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65608, stack(0x0000000064450000,0x0000000064550000)]
+  0x00000000578e5000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67048, stack(0x0000000063c30000,0x0000000063d30000)]
+  0x00000000578e4000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=44316, stack(0x0000000064300000,0x0000000064400000)]
+  0x00000000578e3800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=45136, stack(0x0000000064180000,0x0000000064280000)]
+  0x00000000578e2800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67296, stack(0x0000000064050000,0x0000000064150000)]
+  0x0000000057056000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=64700, stack(0x00000000637c0000,0x00000000638c0000)]
+  0x0000000057055000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=60148, stack(0x0000000063eb0000,0x0000000063fb0000)]
+  0x0000000057054800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66048, stack(0x0000000063d40000,0x0000000063e40000)]
+  0x0000000057053800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=51604, stack(0x0000000063240000,0x0000000063340000)]
+  0x0000000057052000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66776, stack(0x0000000061c90000,0x0000000061d90000)]
+  0x0000000057051800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=23216, stack(0x0000000063b00000,0x0000000063c00000)]
+  0x0000000057050800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=57700, stack(0x00000000638e0000,0x00000000639e0000)]
+  0x0000000057050000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=50868, stack(0x0000000063690000,0x0000000063790000)]
+  0x000000005704f000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64544, stack(0x0000000063530000,0x0000000063630000)]
+  0x0000000056f26000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=61244, stack(0x0000000063340000,0x0000000063440000)]
+  0x0000000056f25800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=51528, stack(0x0000000062fd0000,0x00000000630d0000)]
+  0x0000000056f24800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=50972, stack(0x0000000063130000,0x0000000063230000)]
+  0x0000000056f24000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=780, stack(0x0000000062eb0000,0x0000000062fb0000)]
+  0x0000000056f23000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=36880, stack(0x0000000061da0000,0x0000000061ea0000)]
+  0x0000000056f22800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66588, stack(0x0000000061b80000,0x0000000061c80000)]
+  0x0000000056f21800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=63868, stack(0x0000000061410000,0x0000000061510000)]
+  0x0000000056f21000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=50536, stack(0x00000000619a0000,0x0000000061aa0000)]
+  0x0000000056f20000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64684, stack(0x0000000060930000,0x0000000060a30000)]
+  0x0000000056f1f000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=49260, stack(0x0000000061890000,0x0000000061990000)]
+  0x0000000057076000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=5920, stack(0x0000000061770000,0x0000000061870000)]
+  0x0000000057075800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=37252, stack(0x0000000061580000,0x0000000061680000)]
+  0x0000000057074800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=39260, stack(0x00000000612f0000,0x00000000613f0000)]
+  0x0000000057074000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=63284, stack(0x000000005f860000,0x000000005f960000)]
+  0x0000000057073000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=2808, stack(0x000000005d370000,0x000000005d470000)]
+  0x0000000057072000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=43472, stack(0x0000000061180000,0x0000000061280000)]
+  0x0000000057071800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65276, stack(0x0000000061050000,0x0000000061150000)]
+  0x0000000057070800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67520, stack(0x0000000060ea0000,0x0000000060fa0000)]
+  0x0000000057070000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66636, stack(0x0000000060da0000,0x0000000060ea0000)]
+  0x000000005706f000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65320, stack(0x0000000060550000,0x0000000060650000)]
+  0x0000000057af3000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=61736, stack(0x0000000060bc0000,0x0000000060cc0000)]
+  0x0000000057af2000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=65912, stack(0x0000000060a30000,0x0000000060b30000)]
+  0x0000000057af1800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=49760, stack(0x0000000060830000,0x0000000060930000)]
+  0x0000000057af0800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67564, stack(0x0000000060660000,0x0000000060760000)]
+  0x0000000057af0000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=52008, stack(0x000000005fc30000,0x000000005fd30000)]
+  0x0000000057aef000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66176, stack(0x00000000603d0000,0x00000000604d0000)]
+  0x0000000057aee800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=43300, stack(0x0000000060010000,0x0000000060110000)]
+  0x0000000057aed800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=47360, stack(0x0000000060250000,0x0000000060350000)]
+  0x0000000057aed000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=29380, stack(0x0000000060140000,0x0000000060240000)]
+  0x0000000057aec000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=43912, stack(0x000000005ff00000,0x0000000060000000)]
+  0x00000000578a1000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=18728, stack(0x000000005fd60000,0x000000005fe60000)]
+  0x00000000578a0800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=47740, stack(0x000000005fb00000,0x000000005fc00000)]
+  0x000000005789f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65832, stack(0x000000005f960000,0x000000005fa60000)]
+  0x000000005789f000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=48312, stack(0x000000005f760000,0x000000005f860000)]
+  0x000000005789e000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65200, stack(0x000000005f620000,0x000000005f720000)]
+  0x000000005789d800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67580, stack(0x000000005e530000,0x000000005e630000)]
+  0x000000005789c800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=52300, stack(0x000000005f4e0000,0x000000005f5e0000)]
+  0x000000005789c000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=43100, stack(0x000000005f2f0000,0x000000005f3f0000)]
+  0x000000005789b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=51104, stack(0x000000005f000000,0x000000005f100000)]
+  0x000000005789a800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=50280, stack(0x000000005f110000,0x000000005f210000)]
+  0x0000000056fa9000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=62432, stack(0x000000005ee80000,0x000000005ef80000)]
+  0x0000000056fa8800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=40528, stack(0x000000005e8b0000,0x000000005e9b0000)]
+  0x0000000056fa7800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=52612, stack(0x000000005ed30000,0x000000005ee30000)]
+  0x0000000056fa7000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67428, stack(0x000000005eb60000,0x000000005ec60000)]
+  0x0000000056fa6000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=46904, stack(0x000000005e9d0000,0x000000005ead0000)]
+  0x0000000056fa5800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67032, stack(0x000000005e760000,0x000000005e860000)]
+  0x0000000056fa4800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=22852, stack(0x000000005b140000,0x000000005b240000)]
+  0x0000000056fa4000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=27696, stack(0x000000005e630000,0x000000005e730000)]
+  0x0000000056fa3000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=46756, stack(0x000000005cc20000,0x000000005cd20000)]
+  0x0000000056fa2800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=61496, stack(0x000000005e430000,0x000000005e530000)]
+  0x0000000057016800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=58608, stack(0x000000005e2e0000,0x000000005e3e0000)]
+  0x0000000057016000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66596, stack(0x000000005e150000,0x000000005e250000)]
+  0x0000000057015000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=5576, stack(0x000000005dfc0000,0x000000005e0c0000)]
+  0x0000000057014800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64056, stack(0x000000005ddd0000,0x000000005ded0000)]
+  0x0000000057013800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67044, stack(0x000000005dc60000,0x000000005dd60000)]
+  0x0000000057013000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=49576, stack(0x000000005dab0000,0x000000005dbb0000)]
+  0x0000000057012000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=63996, stack(0x000000005d950000,0x000000005da50000)]
+  0x0000000057011800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=64580, stack(0x000000005ce40000,0x000000005cf40000)]
+  0x0000000057010800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67092, stack(0x000000005d7c0000,0x000000005d8c0000)]
+  0x0000000057010000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=57924, stack(0x000000005c8c0000,0x000000005c9c0000)]
+  0x000000005637c000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=67060, stack(0x000000005d630000,0x000000005d730000)]
+  0x000000005637b800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=58076, stack(0x000000005d470000,0x000000005d570000)]
+  0x000000005637a800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=55188, stack(0x000000005d270000,0x000000005d370000)]
+  0x000000005637a000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=61632, stack(0x000000005d100000,0x000000005d200000)]
+  0x0000000056379000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65748, stack(0x000000005cf60000,0x000000005d060000)]
+  0x0000000056378800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=61368, stack(0x000000005cd30000,0x000000005ce30000)]
+  0x0000000056377800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=62276, stack(0x000000005cb20000,0x000000005cc20000)]
+  0x0000000056376800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=27092, stack(0x000000005c9c0000,0x000000005cac0000)]
+  0x0000000056376000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=52464, stack(0x000000005c170000,0x000000005c270000)]
+  0x0000000056375000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=51400, stack(0x000000005c7c0000,0x000000005c8c0000)]
+  0x0000000057bee800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67496, stack(0x000000005c630000,0x000000005c730000)]
+  0x0000000057bee000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67144, stack(0x000000005c430000,0x000000005c530000)]
+  0x0000000057bed000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=59012, stack(0x000000005c2b0000,0x000000005c3b0000)]
+  0x0000000057bec800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=59616, stack(0x000000005bac0000,0x000000005bbc0000)]
+  0x0000000057beb800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67264, stack(0x000000005bcd0000,0x000000005bdd0000)]
+  0x0000000057beb000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66708, stack(0x000000005c020000,0x000000005c120000)]
+  0x0000000057bea000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66252, stack(0x000000005be30000,0x000000005bf30000)]
+  0x0000000057be9800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67136, stack(0x000000005bbd0000,0x000000005bcd0000)]
+  0x0000000057be8800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=65888, stack(0x000000005b990000,0x000000005ba90000)]
+  0x0000000057be8000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=46232, stack(0x000000005b570000,0x000000005b670000)]
+  0x0000000056f66000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65484, stack(0x000000005b840000,0x000000005b940000)]
+  0x0000000056f65000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=59788, stack(0x000000005b6a0000,0x000000005b7a0000)]
+  0x0000000056f64800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=61656, stack(0x000000005b440000,0x000000005b540000)]
+  0x0000000056f63800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=64604, stack(0x000000005a750000,0x000000005a850000)]
+  0x0000000056f63000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=65380, stack(0x000000005b240000,0x000000005b340000)]
+  0x0000000056f62000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=58316, stack(0x000000005ad60000,0x000000005ae60000)]
+  0x0000000056f61800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=65700, stack(0x000000005a3c0000,0x000000005a4c0000)]
+  0x0000000056f60800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=48716, stack(0x000000005ab30000,0x000000005ac30000)]
+  0x0000000056f5f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=11600, stack(0x000000005ac60000,0x000000005ad60000)]
+  0x0000000056f5f000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67188, stack(0x000000005aa30000,0x000000005ab30000)]
+  0x0000000057650000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66744, stack(0x000000005a870000,0x000000005a970000)]
+  0x000000005764f800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=66256, stack(0x000000005a180000,0x000000005a280000)]
+  0x000000005764e800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=67124, stack(0x000000005a640000,0x000000005a740000)]
+  0x000000005764e000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=66140, stack(0x000000005a530000,0x000000005a630000)]
+  0x000000005764d000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=46680, stack(0x0000000059f60000,0x000000005a060000)]
+  0x000000005764c800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=7460, stack(0x000000005a2c0000,0x000000005a3c0000)]
+  0x000000005764b800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=16596, stack(0x00000000582b0000,0x00000000583b0000)]
+  0x000000005764b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=58396, stack(0x0000000059d20000,0x0000000059e20000)]
+  0x000000005764a000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=59036, stack(0x000000005a070000,0x000000005a170000)]
+  0x0000000057649800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=47176, stack(0x0000000059e20000,0x0000000059f20000)]
+  0x0000000057097000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=58340, stack(0x0000000059740000,0x0000000059840000)]
+  0x0000000056625000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=60304, stack(0x0000000059bd0000,0x0000000059cd0000)]
+  0x0000000056624800 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=58688, stack(0x0000000059ab0000,0x0000000059bb0000)]
+  0x0000000057839000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=47248, stack(0x00000000589a0000,0x0000000058aa0000)]
+  0x000000005785b000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=57972, stack(0x0000000059160000,0x0000000059260000)]
+  0x000000005785d000 JavaThread "Exec Default Executor" daemon [_thread_in_native, id=63072, stack(0x0000000058440000,0x0000000058540000)]
+  0x00000000575fd800 JavaThread "TestNG" [_thread_blocked, id=57156, stack(0x0000000058ac0000,0x0000000058bc0000)]
+  0x000000005633c000 JavaThread "Service Thread" daemon [_thread_blocked, id=61700, stack(0x0000000056810000,0x0000000056910000)]
+  0x0000000054f82000 JavaThread "C1 CompilerThread1" daemon [_thread_blocked, id=64744, stack(0x0000000056220000,0x0000000056320000)]
+  0x0000000054f77800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=51976, stack(0x0000000055990000,0x0000000055a90000)]
+  0x0000000054f72800 JavaThread "Attach Listener" daemon [_thread_blocked, id=43396, stack(0x0000000056000000,0x0000000056100000)]
+  0x0000000054f71000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=46140, stack(0x0000000055e50000,0x0000000055f50000)]
+  0x0000000054f54000 JavaThread "Finalizer" daemon [_thread_blocked, id=64532, stack(0x0000000055be0000,0x0000000055ce0000)]
+  0x0000000054f0b000 JavaThread "Reference Handler" daemon [_thread_blocked, id=33692, stack(0x0000000055ab0000,0x0000000055bb0000)]
+  0x00000000022f4000 JavaThread "main" [_thread_blocked, id=29736, stack(0x0000000002690000,0x0000000002790000)]
+
+Other Threads:
+=>0x0000000054f02800 VMThread [stack: 0x0000000055870000,0x0000000055970000] [id=44612]
+  0x000000005637e000 WatcherThread [stack: 0x00000000569e0000,0x0000000056ae0000] [id=56784]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00000000022f2380] Threads_lock - owner thread: 0x0000000054f02800
+
+Heap:
+ PSYoungGen      total 46592K, used 19991K [0x00000000eab00000, 0x00000000ee100000, 0x0000000100000000)
+  eden space 40960K, 43% used [0x00000000eab00000,0x00000000ebc75b98,0x00000000ed300000)
+  from space 5632K, 37% used [0x00000000edb80000,0x00000000edd90150,0x00000000ee100000)
+  to   space 7168K, 0% used [0x00000000ed300000,0x00000000ed300000,0x00000000eda00000)
+ ParOldGen       total 41984K, used 22388K [0x00000000c0000000, 0x00000000c2900000, 0x00000000eab00000)
+  object space 41984K, 53% used [0x00000000c0000000,0x00000000c15dd218,0x00000000c2900000)
+ Metaspace       used 21833K, capacity 22082K, committed 22448K, reserved 1069056K
+  class space    used 2402K, capacity 2499K, committed 2560K, reserved 1048576K
+
+Card table byte_map: [0x0000000011e20000,0x0000000012030000] byte_map_base: 0x0000000011820000
+
+Marking Bits: (ParMarkBitMap*) 0x000000006f72b6d0
+ Begin Bits: [0x00000000123d0000, 0x00000000133d0000)
+ End Bits:   [0x00000000133d0000, 0x00000000143d0000)
+
+Polling page: 0x0000000000340000
+
+CodeCache: size=245760Kb used=14059Kb max_used=14139Kb free=231700Kb
+ bounds [0x0000000002a60000, 0x0000000003850000, 0x0000000011a60000]
+ total_blobs=4391 nmethods=3950 adapters=355
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 30520.776 Thread 0x0000000054f82000 4780   !   3       sun.net.www.protocol.http.HttpURLConnection::plainConnect0 (698 bytes)
+Event: 30520.794 Thread 0x0000000054f82000 nmethod 4780 0x0000000003418d10 code [0x0000000003419480, 0x000000000341e218]
+Event: 30520.794 Thread 0x0000000054f82000 4781       3       sun.net.www.ParseUtil::toString (57 bytes)
+Event: 30520.796 Thread 0x0000000054f82000 nmethod 4781 0x00000000034169d0 code [0x0000000003416c20, 0x00000000034180d8]
+Event: 30520.797 Thread 0x0000000054f82000 4782       3       sun.net.www.ParseUtil::checkPath (37 bytes)
+Event: 30520.797 Thread 0x0000000054f82000 nmethod 4782 0x0000000003416010 code [0x00000000034161c0, 0x0000000003416758]
+Event: 30530.586 Thread 0x0000000054f82000 4783       1       java.util.ResourceBundle$BundleReference::getCacheKey (5 bytes)
+Event: 30530.586 Thread 0x0000000054f82000 nmethod 4783 0x0000000003291a90 code [0x0000000003291be0, 0x0000000003291cf0]
+Event: 30530.602 Thread 0x0000000054f82000 4784       3       java.lang.StackTraceElement::equals (80 bytes)
+Event: 30530.602 Thread 0x0000000054f82000 nmethod 4784 0x000000000326a990 code [0x000000000326ab60, 0x000000000326b3c8]
+
+GC Heap History (10 events):
+Event: 7181.259 GC heap before
+{Heap before GC invocations=17 (full 0):
+ PSYoungGen      total 52224K, used 47648K [0x00000000eab00000, 0x00000000ee780000, 0x0000000100000000)
+  eden space 46592K, 100% used [0x00000000eab00000,0x00000000ed880000,0x00000000ed880000)
+  from space 5632K, 18% used [0x00000000ee200000,0x00000000ee308040,0x00000000ee780000)
+  to   space 7680K, 0% used [0x00000000ed880000,0x00000000ed880000,0x00000000ee000000)
+ ParOldGen       total 44032K, used 22468K [0x00000000c0000000, 0x00000000c2b00000, 0x00000000eab00000)
+  object space 44032K, 51% used [0x00000000c0000000,0x00000000c15f13a0,0x00000000c2b00000)
+ Metaspace       used 20155K, capacity 20392K, committed 20608K, reserved 1067008K
+  class space    used 2265K, capacity 2370K, committed 2432K, reserved 1048576K
+Event: 7181.277 GC heap after
+Heap after GC invocations=17 (full 0):
+ PSYoungGen      total 46080K, used 928K [0x00000000eab00000, 0x00000000ee600000, 0x0000000100000000)
+  eden space 45056K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000ed700000)
+  from space 1024K, 90% used [0x00000000ed880000,0x00000000ed968040,0x00000000ed980000)
+  to   space 7680K, 0% used [0x00000000ede80000,0x00000000ede80000,0x00000000ee600000)
+ ParOldGen       total 44032K, used 22765K [0x00000000c0000000, 0x00000000c2b00000, 0x00000000eab00000)
+  object space 44032K, 51% used [0x00000000c0000000,0x00000000c163b460,0x00000000c2b00000)
+ Metaspace       used 20155K, capacity 20392K, committed 20608K, reserved 1067008K
+  class space    used 2265K, capacity 2370K, committed 2432K, reserved 1048576K
+}
+Event: 7277.180 GC heap before
+{Heap before GC invocations=18 (full 0):
+ PSYoungGen      total 46080K, used 18178K [0x00000000eab00000, 0x00000000ee600000, 0x0000000100000000)
+  eden space 45056K, 38% used [0x00000000eab00000,0x00000000ebbd8a00,0x00000000ed700000)
+  from space 1024K, 90% used [0x00000000ed880000,0x00000000ed968040,0x00000000ed980000)
+  to   space 7680K, 0% used [0x00000000ede80000,0x00000000ede80000,0x00000000ee600000)
+ ParOldGen       total 44032K, used 22765K [0x00000000c0000000, 0x00000000c2b00000, 0x00000000eab00000)
+  object space 44032K, 51% used [0x00000000c0000000,0x00000000c163b460,0x00000000c2b00000)
+ Metaspace       used 20861K, capacity 21146K, committed 21296K, reserved 1069056K
+  class space    used 2314K, capacity 2405K, committed 2432K, reserved 1048576K
+Event: 7277.186 GC heap after
+Heap after GC invocations=18 (full 0):
+ PSYoungGen      total 49664K, used 1907K [0x00000000eab00000, 0x00000000ee480000, 0x0000000100000000)
+  eden space 43520K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000ed580000)
+  from space 6144K, 31% used [0x00000000ede80000,0x00000000ee05cf98,0x00000000ee480000)
+  to   space 7680K, 0% used [0x00000000ed580000,0x00000000ed580000,0x00000000edd00000)
+ ParOldGen       total 44032K, used 23005K [0x00000000c0000000, 0x00000000c2b00000, 0x00000000eab00000)
+  object space 44032K, 52% used [0x00000000c0000000,0x00000000c1677520,0x00000000c2b00000)
+ Metaspace       used 20861K, capacity 21146K, committed 21296K, reserved 1069056K
+  class space    used 2314K, capacity 2405K, committed 2432K, reserved 1048576K
+}
+Event: 7277.186 GC heap before
+{Heap before GC invocations=19 (full 1):
+ PSYoungGen      total 49664K, used 1907K [0x00000000eab00000, 0x00000000ee480000, 0x0000000100000000)
+  eden space 43520K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000ed580000)
+  from space 6144K, 31% used [0x00000000ede80000,0x00000000ee05cf98,0x00000000ee480000)
+  to   space 7680K, 0% used [0x00000000ed580000,0x00000000ed580000,0x00000000edd00000)
+ ParOldGen       total 44032K, used 23005K [0x00000000c0000000, 0x00000000c2b00000, 0x00000000eab00000)
+  object space 44032K, 52% used [0x00000000c0000000,0x00000000c1677520,0x00000000c2b00000)
+ Metaspace       used 20861K, capacity 21146K, committed 21296K, reserved 1069056K
+  class space    used 2314K, capacity 2405K, committed 2432K, reserved 1048576K
+Event: 7278.231 GC heap after
+Heap after GC invocations=19 (full 1):
+ PSYoungGen      total 49664K, used 0K [0x00000000eab00000, 0x00000000ee480000, 0x0000000100000000)
+  eden space 43520K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000ed580000)
+  from space 6144K, 0% used [0x00000000ede80000,0x00000000ede80000,0x00000000ee480000)
+  to   space 7680K, 0% used [0x00000000ed580000,0x00000000ed580000,0x00000000edd00000)
+ ParOldGen       total 41984K, used 21328K [0x00000000c0000000, 0x00000000c2900000, 0x00000000eab00000)
+  object space 41984K, 50% used [0x00000000c0000000,0x00000000c14d4208,0x00000000c2900000)
+ Metaspace       used 20835K, capacity 21106K, committed 21296K, reserved 1069056K
+  class space    used 2308K, capacity 2395K, committed 2432K, reserved 1048576K
+}
+Event: 13437.019 GC heap before
+{Heap before GC invocations=20 (full 1):
+ PSYoungGen      total 49664K, used 43520K [0x00000000eab00000, 0x00000000ee480000, 0x0000000100000000)
+  eden space 43520K, 100% used [0x00000000eab00000,0x00000000ed580000,0x00000000ed580000)
+  from space 6144K, 0% used [0x00000000ede80000,0x00000000ede80000,0x00000000ee480000)
+  to   space 7680K, 0% used [0x00000000ed580000,0x00000000ed580000,0x00000000edd00000)
+ ParOldGen       total 41984K, used 21328K [0x00000000c0000000, 0x00000000c2900000, 0x00000000eab00000)
+  object space 41984K, 50% used [0x00000000c0000000,0x00000000c14d4208,0x00000000c2900000)
+ Metaspace       used 21688K, capacity 21948K, committed 22192K, reserved 1069056K
+  class space    used 2399K, capacity 2498K, committed 2560K, reserved 1048576K
+Event: 13437.029 GC heap after
+Heap after GC invocations=20 (full 1):
+ PSYoungGen      total 46080K, used 3848K [0x00000000eab00000, 0x00000000ee300000, 0x0000000100000000)
+  eden space 41984K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000ed400000)
+  from space 4096K, 93% used [0x00000000ed580000,0x00000000ed9420b8,0x00000000ed980000)
+  to   space 7680K, 0% used [0x00000000edb80000,0x00000000edb80000,0x00000000ee300000)
+ ParOldGen       total 41984K, used 21336K [0x00000000c0000000, 0x00000000c2900000, 0x00000000eab00000)
+  object space 41984K, 50% used [0x00000000c0000000,0x00000000c14d6208,0x00000000c2900000)
+ Metaspace       used 21688K, capacity 21948K, committed 22192K, reserved 1069056K
+  class space    used 2399K, capacity 2498K, committed 2560K, reserved 1048576K
+}
+Event: 13698.198 GC heap before
+{Heap before GC invocations=21 (full 1):
+ PSYoungGen      total 46080K, used 45832K [0x00000000eab00000, 0x00000000ee300000, 0x0000000100000000)
+  eden space 41984K, 100% used [0x00000000eab00000,0x00000000ed400000,0x00000000ed400000)
+  from space 4096K, 93% used [0x00000000ed580000,0x00000000ed9420b8,0x00000000ed980000)
+  to   space 7680K, 0% used [0x00000000edb80000,0x00000000edb80000,0x00000000ee300000)
+ ParOldGen       total 41984K, used 21336K [0x00000000c0000000, 0x00000000c2900000, 0x00000000eab00000)
+  object space 41984K, 50% used [0x00000000c0000000,0x00000000c14d6208,0x00000000c2900000)
+ Metaspace       used 21772K, capacity 22018K, committed 22192K, reserved 1069056K
+  class space    used 2400K, capacity 2499K, committed 2560K, reserved 1048576K
+Event: 13698.209 GC heap after
+Heap after GC invocations=21 (full 1):
+ PSYoungGen      total 46592K, used 2112K [0x00000000eab00000, 0x00000000ee100000, 0x0000000100000000)
+  eden space 40960K, 0% used [0x00000000eab00000,0x00000000eab00000,0x00000000ed300000)
+  from space 5632K, 37% used [0x00000000edb80000,0x00000000edd90150,0x00000000ee100000)
+  to   space 7168K, 0% used [0x00000000ed300000,0x00000000ed300000,0x00000000eda00000)
+ ParOldGen       total 41984K, used 22388K [0x00000000c0000000, 0x00000000c2900000, 0x00000000eab00000)
+  object space 41984K, 53% used [0x00000000c0000000,0x00000000c15dd218,0x00000000c2900000)
+ Metaspace       used 21772K, capacity 22018K, committed 22192K, reserved 1069056K
+  class space    used 2400K, capacity 2499K, committed 2560K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 7278.881 Thread 0x00000000575fd800 Uncommon trap: reason=predicate action=maybe_recompile pc=0x00000000037a45d4 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 49
+Event: 7278.902 Thread 0x00000000575fd800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00000000037a2414 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 7278.903 Thread 0x00000000575fd800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00000000037a2414 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 7278.903 Thread 0x00000000575fd800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00000000037a2414 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 7278.903 Thread 0x00000000575fd800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x00000000037a2414 method=java.util.AbstractCollection.toArray([Ljava/lang/Object;)[Ljava/lang/Object; @ 119
+Event: 13338.898 Thread 0x00000000575fd800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000034f69b8 method=java.lang.ref.SoftReference.get()Ljava/lang/Object; @ 6
+Event: 13338.907 Thread 0x00000000575fd800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002d75720 method=java.lang.reflect.Field.getFieldAccessor(Ljava/lang/Object;)Lsun/reflect/FieldAccessor; @ 22
+Event: 13338.927 Thread 0x00000000575fd800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00000000037141cc method=java.lang.ref.SoftReference.get()Ljava/lang/Object; @ 6
+Event: 13463.537 Thread 0x00000000575fd800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002cf104c method=java.lang.ref.SoftReference.get()Ljava/lang/Object; @ 6
+Event: 15010.153 Thread 0x00000000575fd800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000003759abc method=java.util.jar.Attributes.read(Ljava/util/jar/Manifest$FastInputStream;[B)V @ 17
+
+Internal exceptions (10 events):
+Event: 30530.610 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb71118) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.610 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb71590) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.610 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb719d8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.610 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb720f0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.610 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb72568) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.611 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb729b0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.611 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb72f78) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.611 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb733f0) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.611 Thread 0x00000000575fd800 Exception <a 'java/io/IOException'> (0x00000000ebb73838) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 30530.611 Thread 0x00000000575fd800 Exception <a 'java/net/SocketException': Connection reset by peer: socket write error> (0x00000000ebbc6898) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, line 735]
+
+Events (10 events):
+Event: 30510.612 Thread 0x00000000572f6000 Thread added: 0x00000000572f6000
+Event: 30510.612 Thread 0x00000000572f6800 Thread added: 0x00000000572f6800
+Event: 30510.737 Executing VM operation: RevokeBias
+Event: 30510.738 Executing VM operation: RevokeBias done
+Event: 30510.738 Thread 0x00000000572f6800 Thread exited: 0x00000000572f6800
+Event: 30510.738 Thread 0x00000000572f6000 Thread exited: 0x00000000572f6000
+Event: 30510.742 Executing VM operation: RevokeBias
+Event: 30510.743 Executing VM operation: RevokeBias done
+Event: 30510.743 Thread 0x00000000572f3000 Thread exited: 0x00000000572f3000
+Event: 30530.611 Executing VM operation: BulkRevokeBias
+
+
+Dynamic libraries:
+0x000000013f520000 - 0x000000013f557000 	C:\Program Files\Java\jdk1.8.0_121\bin\javaw.exe
+0x00000000771c0000 - 0x0000000077369000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000076fa0000 - 0x00000000770bf000 	C:\Windows\system32\kernel32.dll
+0x000007fefd220000 - 0x000007fefd28c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefdf20000 - 0x000007fefdffb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff320000 - 0x000007feff3bf000 	C:\Windows\system32\msvcrt.dll
+0x000007feff4b0000 - 0x000007feff4cf000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefddc0000 - 0x000007fefdeed000 	C:\Windows\system32\RPCRT4.dll
+0x00000000770c0000 - 0x00000000771ba000 	C:\Windows\system32\USER32.dll
+0x000007fefe000000 - 0x000007fefe067000 	C:\Windows\system32\GDI32.dll
+0x000007fefdb70000 - 0x000007fefdb7e000 	C:\Windows\system32\LPK.dll
+0x000007fefda20000 - 0x000007fefdae9000 	C:\Windows\system32\USP10.dll
+0x000007fefbb60000 - 0x000007fefbd54000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefd9a0000 - 0x000007fefda11000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefdef0000 - 0x000007fefdf1e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefd890000 - 0x000007fefd999000 	C:\Windows\system32\MSCTF.dll
+0x0000000070ad0000 - 0x0000000070b09000 	C:\PROGRA~2\Sophos\SOPHOS~1\SOPHOS~2.DLL
+0x0000000077390000 - 0x0000000077397000 	C:\Windows\system32\PSAPI.DLL
+0x000000006d8a0000 - 0x000000006d972000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\msvcr100.dll
+0x000000006ef10000 - 0x000000006f7ab000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\server\jvm.dll
+0x000007fef3600000 - 0x000007fef3609000 	C:\Windows\system32\WSOCK32.dll
+0x000007feff3c0000 - 0x000007feff40d000 	C:\Windows\system32\WS2_32.dll
+0x000007feff060000 - 0x000007feff068000 	C:\Windows\system32\NSI.dll
+0x000007fefacb0000 - 0x000007fefaceb000 	C:\Windows\system32\WINMM.dll
+0x000007fefc160000 - 0x000007fefc16c000 	C:\Windows\system32\VERSION.dll
+0x0000000074c80000 - 0x0000000074c8f000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\verify.dll
+0x0000000072dd0000 - 0x0000000072df9000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\java.dll
+0x00000000745c0000 - 0x00000000745d6000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\zip.dll
+0x000007fefe2b0000 - 0x000007feff038000 	C:\Windows\system32\SHELL32.dll
+0x000007fefd3a0000 - 0x000007fefd5a3000 	C:\Windows\system32\ole32.dll
+0x000007fefcf70000 - 0x000007fefcf7f000 	C:\Windows\system32\profapi.dll
+0x0000000072d90000 - 0x0000000072daa000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\net.dll
+0x000007fefc170000 - 0x000007fefc19f000 	C:\ProgramData\Sophos\Web Intelligence\swi_ifslsp_64.dll
+0x000007fefc7a0000 - 0x000007fefc7f5000 	C:\Windows\system32\mswsock.dll
+0x000007fefc790000 - 0x000007fefc797000 	C:\Windows\System32\wship6.dll
+0x000007fefc140000 - 0x000007fefc147000 	C:\Windows\System32\wshtcpip.dll
+0x000007fefc620000 - 0x000007fefc67b000 	C:\Windows\system32\DNSAPI.dll
+0x000007fefb610000 - 0x000007fefb637000 	C:\Windows\system32\IPHLPAPI.DLL
+0x000007fefc150000 - 0x000007fefc15b000 	C:\Windows\system32\WINNSI.DLL
+0x000007fef9e30000 - 0x000007fef9e38000 	C:\Windows\system32\rasadhlp.dll
+0x000007fefa640000 - 0x000007fefa693000 	C:\Windows\System32\fwpuclnt.dll
+0x000007fefc800000 - 0x000007fefc817000 	C:\Windows\system32\CRYPTSP.dll
+0x000007fefc500000 - 0x000007fefc547000 	C:\Windows\system32\rsaenh.dll
+0x000007fefc320000 - 0x000007fefc33e000 	C:\Windows\system32\USERENV.dll
+0x000007fefce60000 - 0x000007fefce6f000 	C:\Windows\system32\CRYPTBASE.dll
+0x000007fefa6f0000 - 0x000007fefa701000 	C:\Windows\system32\dhcpcsvc6.DLL
+0x000007fefa6d0000 - 0x000007fefa6e8000 	C:\Windows\system32\dhcpcsvc.DLL
+0x0000000072c20000 - 0x0000000072c31000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\nio.dll
+0x0000000072ad0000 - 0x0000000072af4000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\sunec.dll
+0x000007fefce00000 - 0x000007fefce57000 	C:\Windows\system32\apphelp.dll
+0x000007fefaaa0000 - 0x000007fefaab5000 	C:\Windows\system32\NLAapi.dll
+0x000007fef92c0000 - 0x000007fef92d5000 	C:\Windows\system32\napinsp.dll
+0x000007fef9320000 - 0x000007fef9339000 	C:\Windows\system32\pnrpnsp.dll
+0x000007fef9310000 - 0x000007fef931b000 	C:\Windows\System32\winrnr.dll
+0x0000000074c70000 - 0x0000000074c7b000 	C:\Program Files\Java\jdk1.8.0_121\jre\bin\sunmscapi.dll
+0x000007fefd0a0000 - 0x000007fefd20c000 	C:\Windows\system32\CRYPT32.dll
+0x000007fefd010000 - 0x000007fefd01f000 	C:\Windows\system32\MSASN1.dll
+
+VM Arguments:
+jvm_args: -ea -Dfile.encoding=Cp1252 
+java_command: org.testng.remote.RemoteTestNG -serport 50019 -protocol json -d H:\project2.11\lacek coda\test-output H:\project2.11\lacek coda\testng.xml
+java_class_path (initial): C:\Users\arjun.karnati\.p2\pool\plugins\org.testng.eclipse_6.10.0.201612030230\lib\testng-remote.jar;H:\project2.11\lacek coda\target\test-classes;H:\project2.11\lacek coda\target\classes;C:\Users\arjun.karnati\.p2\pool\plugins\org.testng.eclipse_6.10.0.201612030230\lib\testng.jar;C:\Users\arjun.karnati\.p2\pool\plugins\org.testng.eclipse_6.10.0.201612030230\lib\jcommander.jar;C:\Users\arjun.karnati\.p2\pool\plugins\org.testng.eclipse_6.10.0.201612030230\lib\bsh-2.0b4.jar;C:\Users\arjun.karnati\.p2\pool\plugins\org.testng.eclipse_6.10.0.201612030230\lib\snakeyaml.jar;C:\Users\arjun.karnati\Downloads\sqljdbc4.jar;C:\Users\arjun.karnati\.m2\repository\org\seleniumhq\selenium\selenium-java\3.0.1\selenium-java-3.0.1.jar;C:\Users\arjun.karnati\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.0.1\selenium-chrome-driver-3.0.1.jar;C:\Users\arjun.karnati\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.0.1\selenium-edge-driver-3.0.1.jar;C:\Users\arjun.karnati\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.0.1\selenium-ie-driver-3.0.1.jar;C:\Users\arjun.karnati\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.0.1\selenium-opera-driver-3.0.1.jar;C:\Users\arjun.karnati\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.0.1\selenium-safari-driver-3.0.1.jar;C:\Users\arjun.karnati\.m2\repository\io\netty\netty\3.5.7.Final\netty-3.5.7.Final.jar;C:\Users\arjun.karnati\.m2\repository\org\seleniumhq\selenium\selenium-support\3.0.1\selenium-support-3.0.1.jar;C:\Users\arjun.karnati\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\arjun.karnati\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\arjun.karnati\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.23\htmlunit-2.23.jar;C:\Users\arjun.karnati\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\arjun.karnati\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\arjun.karnati\.m2\rep
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_121
+PATH=C:/Program Files/Java/jdk1.8.0_121/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_121/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_121/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Users\arjun.karnati\apache-maven-3.3.9-bin\apache-maven-3.3.9\bin;C:\Windows\system32;
+USERNAME=arjun.karnati
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 2 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.18409)
+
+CPU:total 2 (1 cores per cpu, 1 threads per core) family 6 model 2 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, popcnt, tsc
+
+Memory: 4k page, physical 4193904k(849152k free), swap 16773756k(4740k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.121-b13) for windows-amd64 JRE (1.8.0_121-b13), built on Dec 12 2016 18:21:36 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Feb 11 20:49:52 2017
+elapsed time: 30530 seconds (0d 8h 28m 50s)
+

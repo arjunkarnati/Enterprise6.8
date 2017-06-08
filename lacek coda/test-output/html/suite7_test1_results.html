@@ -1,0 +1,2525 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - LIBRARY REGRESSION RUN</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>LIBRARY REGRESSION RUN</h1>
+<p>
+  Test duration: 5548.318s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">library.CanpaignsEdit_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  inactivate_campaign
+      </td>
+  <td class="duration">
+    23.005s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/campaign/edit/11&apos;)]&quot;}<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 10.10 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir22144_26690}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 590308fef3ddf1ff99f51f3e69d6a0e9<br/>
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/campaign/edit/11&apos;)]}</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)<br />
+              library.CampaignPage.editCampaign(CampaignPage.java:87)<br />
+              library.CanpaignsEdit_TestCases.inactivate_campaign(CanpaignsEdit_TestCases.java:182)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_name
+      </td>
+  <td class="duration">
+    28.155s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [null] but found [MMS - Campaigns]</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:130)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              library.CampaignEditPage.clickSubmit(CampaignEditPage.java:162)<br />
+              library.CanpaignsEdit_TestCases.update_campaign_name(CanpaignsEdit_TestCases.java:18)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.MessagesEdit_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  inactivate_message
+      </td>
+  <td class="duration">
+    37.237s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/message/edit/1746&apos;)]&quot;}<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 10.08 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir24256_4748}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 7f63fb21d2d270b4fa2e7a7f4b1cee86<br/>
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/message/edit/1746&apos;)]}</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)<br />
+              library.MessagesPage.editMessage(MessagesPage.java:64)<br />
+              library.MessagesEdit_Testcases.inactivate_message(MessagesEdit_Testcases.java:203)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.Messages_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  create_a_new_message
+      </td>
+  <td class="duration">
+    108.519s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [4] but found [3]</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              library.MessagesPage.validateUpdates(MessagesPage.java:229)<br />
+              library.Messages_TestCases.create_a_new_message(Messages_TestCases.java:32)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_message_without_brand
+      </td>
+  <td class="duration">
+    88.244s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [2] but found [1]</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              library.MessagesPage.validateUpdates(MessagesPage.java:229)<br />
+              library.Messages_TestCases.create_a_new_message_without_brand(Messages_TestCases.java:90)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.SeriesEdit_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  inactivate_series
+      </td>
+  <td class="duration">
+    22.938s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/series/edit/16&apos;)]&quot;}<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 10.09 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir23952_22313}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 38610cfdcc3ca79fed7f1fcbb4d69860<br/>
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/series/edit/16&apos;)]}</b></a><br />
+    <div class="stackTrace" id="exception-5">
+              sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)<br />
+              library.SeriesPage.editSeries(SeriesPage.java:89)<br />
+              library.SeriesEdit_Testcases.inactivate_series(SeriesEdit_Testcases.java:184)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_clientname_to_previous_client
+      </td>
+  <td class="duration">
+    34.693s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1172, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 76 milliseconds<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir17944_20757}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 6011ca2619d7b58bff6798510dc70ba6</b></a><br />
+    <div class="stackTrace" id="exception-6">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              library.SeriesEditPage.clickSubmitButton(SeriesEditPage.java:168)<br />
+              library.SeriesEdit_Testcases.update_series_clientname_to_previous_client(SeriesEdit_Testcases.java:60)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_programs
+      </td>
+  <td class="duration">
+    26.678s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1172, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 71 milliseconds<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir9484_10458}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: ec06f1056b19f8ccab4b31a53e0c6b7c</b></a><br />
+    <div class="stackTrace" id="exception-7">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              library.SeriesEditPage.clickSubmitButton(SeriesEditPage.java:168)<br />
+              library.SeriesEdit_Testcases.update_series_programs(SeriesEdit_Testcases.java:104)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_programs_to_previous
+      </td>
+  <td class="duration">
+    28.497s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1172, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 70 milliseconds<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir20964_12248}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: ba6a4fc38e08ad00b638cd7647c60b12</b></a><br />
+    <div class="stackTrace" id="exception-8">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              library.SeriesEditPage.clickSubmitButton(SeriesEditPage.java:168)<br />
+              library.SeriesEdit_Testcases.update_series_programs_to_previous(SeriesEdit_Testcases.java:119)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_tracks
+      </td>
+  <td class="duration">
+    25.689s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1172, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 54 milliseconds<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir12548_16286}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: c949260c5e1df4f43401efa8d7c93bf7</b></a><br />
+    <div class="stackTrace" id="exception-9">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              library.SeriesEditPage.clickSubmitButton(SeriesEditPage.java:168)<br />
+              library.SeriesEdit_Testcases.update_series_tracks(SeriesEdit_Testcases.java:133)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_tracks_to_previous
+      </td>
+  <td class="duration">
+    28.279s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-10', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1172, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 49 milliseconds<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir23368_9686}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: bf13f09c4e957f65c6af5834989803ea</b></a><br />
+    <div class="stackTrace" id="exception-10">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              library.SeriesEditPage.clickSubmitButton(SeriesEditPage.java:168)<br />
+              library.SeriesEdit_Testcases.update_series_tracks_to_previous(SeriesEdit_Testcases.java:148)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.VariableEdit_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  inactivate_variable
+      </td>
+  <td class="duration">
+    28.273s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-11', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/variable/edit/292&apos;)]&quot;}<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 10.06 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir22944_32290}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: fd22c31e62b8c3782364786641271321<br/>
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/variable/edit/292&apos;)]}</b></a><br />
+    <div class="stackTrace" id="exception-11">
+              sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)<br />
+              library.VariablesPage.editVariables(VariablesPage.java:73)<br />
+              library.VariableEdit_Testcases.inactivate_variable(VariableEdit_Testcases.java:97)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_variable_brands
+      </td>
+  <td class="duration">
+    33.959s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-12', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1193, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 62 milliseconds<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir22436_25086}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 8b886fb39feaaa3f228e72fcb355bafc</b></a><br />
+    <div class="stackTrace" id="exception-12">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              library.VariablesEditPage.clickSubmitButon(VariablesEditPage.java:82)<br />
+              library.VariableEdit_Testcases.update_variable_brands(VariableEdit_Testcases.java:46)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_variable_brands_to_previous
+      </td>
+  <td class="duration">
+    31.343s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-13', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1193, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 61 milliseconds<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir16072_31136}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: dd306d893fbb2a40f29d13ceb0b05f8f</b></a><br />
+    <div class="stackTrace" id="exception-13">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              library.VariablesEditPage.clickSubmitButon(VariablesEditPage.java:82)<br />
+              library.VariableEdit_Testcases.update_variable_brands_to_previous(VariableEdit_Testcases.java:60)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.Variables_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  create_a_duplicate_variable
+      </td>
+  <td class="duration">
+    43.858s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-14', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [MMS - Variables - Add] but found [MMS - Variables]</b></a><br />
+    <div class="stackTrace" id="exception-14">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              library.VariablesAddPage.failToCreate(VariablesAddPage.java:120)<br />
+              library.Variables_TestCases.create_a_duplicate_variable(Variables_TestCases.java:72)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_global_variable
+      </td>
+  <td class="duration">
+    56.208s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-15', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;search&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=54.0.2840.99)<br/>
+&nbsp; (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 10.06 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;<br/>
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir23432_4945}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
+Session ID: 802a1a6cc54ad2ebb02cb11d428bba88<br/>
+*** Element info: {Using=xpath, value=//input[@type=&apos;search&apos;]}</b></a><br />
+    <div class="stackTrace" id="exception-15">
+              sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+              java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)<br />
+              library.VariablesPage.validateUpdates(VariablesPage.java:149)<br />
+              library.Variables_TestCases.create_a_new_global_variable(Variables_TestCases.java:49)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:646)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">library.CampaignsPublish_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  cancel_publish_campaign
+      </td>
+  <td class="duration">
+    20.591s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  publish_campaign
+      </td>
+  <td class="duration">
+    48.571s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.CampaignsRestore_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  test_is_empty
+      </td>
+  <td class="duration">
+    6.478s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.Campaigns_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  click_cancel_button_in_campaign_add_page
+      </td>
+  <td class="duration">
+    17.693s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_campaign
+      </td>
+  <td class="duration">
+    54.321s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_campaign_without_brand
+      </td>
+  <td class="duration">
+    33.542s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_campaign_without_campaignname
+      </td>
+  <td class="duration">
+    30.077s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_campaign_without_clientname
+      </td>
+  <td class="duration">
+    21.901s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_campaign_without_program
+      </td>
+  <td class="duration">
+    31.356s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_campaign_without_series
+      </td>
+  <td class="duration">
+    31.406s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  delete_campaign_from_db
+      </td>
+  <td class="duration">
+    2.121s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.CanpaignsEdit_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  activate_campaign
+      </td>
+  <td class="duration">
+    28.291s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  archive_campaign
+      </td>
+  <td class="duration">
+    19.279s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  restorte_campaign
+      </td>
+  <td class="duration">
+    27.419s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_brands
+      </td>
+  <td class="duration">
+    33.896s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_brands_to_previous
+      </td>
+  <td class="duration">
+    30.448s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_client
+      </td>
+  <td class="duration">
+    27.506s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_clientname_to_previous_client
+      </td>
+  <td class="duration">
+    35.362s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_name_to_previous_name
+      </td>
+  <td class="duration">
+    27.811s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_programs
+      </td>
+  <td class="duration">
+    30.206s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_programs_to_previous
+      </td>
+  <td class="duration">
+    30.642s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_series
+      </td>
+  <td class="duration">
+    34.600s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_series_to_previous
+      </td>
+  <td class="duration">
+    32.209s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_workflow_to_approved
+      </td>
+  <td class="duration">
+    22.381s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_workflow_to_draft
+      </td>
+  <td class="duration">
+    21.889s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.CommunicationsEdit_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  update_communcation_brands
+      </td>
+  <td class="duration">
+    37.412s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_communcation_brands_to_previous
+      </td>
+  <td class="duration">
+    34.735s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_communication_client_field
+      </td>
+  <td class="duration">
+    22.745s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_communication_name
+      </td>
+  <td class="duration">
+    29.448s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_communication_name_to_previous_name
+      </td>
+  <td class="duration">
+    28.934s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_communication_programs
+      </td>
+  <td class="duration">
+    33.129s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_clientname_to_previous_client
+      </td>
+  <td class="duration">
+    10.522s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.CommunicationsPublish_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  cancel_publish_campaign
+      </td>
+  <td class="duration">
+    14.112s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  publish_series
+      </td>
+  <td class="duration">
+    11.183s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.CommunicationsRestore_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  test_is_empty
+      </td>
+  <td class="duration">
+    6.307s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.Communications_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  click_cancel_Button_in_communication_add_page
+      </td>
+  <td class="duration">
+    26.844s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_communication_without_communicationnname
+      </td>
+  <td class="duration">
+    45.981s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_communication
+      </td>
+  <td class="duration">
+    72.957s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_communication_without_clientname
+      </td>
+  <td class="duration">
+    29.967s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_communication_without_template
+      </td>
+  <td class="duration">
+    43.843s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  delete_communication_from_db
+      </td>
+  <td class="duration">
+    2.754s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.MessagesEdit_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  activate_message
+      </td>
+  <td class="duration">
+    68.410s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  archive_message
+      </td>
+  <td class="duration">
+    28.580s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  restore_message
+      </td>
+  <td class="duration">
+    37.480s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_brands
+      </td>
+  <td class="duration">
+    69.489s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_brands_to_previous
+      </td>
+  <td class="duration">
+    71.424s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_name
+      </td>
+  <td class="duration">
+    70.734s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_name_to_previous_name
+      </td>
+  <td class="duration">
+    67.687s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_programs
+      </td>
+  <td class="duration">
+    71.493s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_programs_to_previous
+      </td>
+  <td class="duration">
+    68.880s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_template
+      </td>
+  <td class="duration">
+    76.582s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_template_to_previous
+      </td>
+  <td class="duration">
+    68.742s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_variable
+      </td>
+  <td class="duration">
+    61.153s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_workflow_to_approved
+      </td>
+  <td class="duration">
+    50.171s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_message_workflow_to_draft
+      </td>
+  <td class="duration">
+    49.776s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.MessagesPublish_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  cancel_publish_campaign
+      </td>
+  <td class="duration">
+    36.837s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  publish_message
+      </td>
+  <td class="duration">
+    36.186s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.MessagesRestore_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  test_is_empty
+      </td>
+  <td class="duration">
+    6.356s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.Messages_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  click_cancel_message_button
+      </td>
+  <td class="duration">
+    26.679s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_message_without_a_message_name
+      </td>
+  <td class="duration">
+    59.772s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_message_without_clientname
+      </td>
+  <td class="duration">
+    43.190s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  delete_message_from_db
+      </td>
+  <td class="duration">
+    3.477s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.SeriesEdit_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  activate_series
+      </td>
+  <td class="duration">
+    29.553s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  archive_series
+      </td>
+  <td class="duration">
+    18.049s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  restore_series
+      </td>
+  <td class="duration">
+    27.324s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_brands
+      </td>
+  <td class="duration">
+    37.765s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_brands_to_previous
+      </td>
+  <td class="duration">
+    34.990s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_client
+      </td>
+  <td class="duration">
+    31.464s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_name
+      </td>
+  <td class="duration">
+    29.601s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_name_to_previous_name
+      </td>
+  <td class="duration">
+    32.090s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_workflow_to_approved
+      </td>
+  <td class="duration">
+    27.600s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_series_workflow_to_draft
+      </td>
+  <td class="duration">
+    25.006s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.SeriesPublish_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  cancel_publish_series
+      </td>
+  <td class="duration">
+    29.020s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  publish_series
+      </td>
+  <td class="duration">
+    49.248s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.SeriesRestore_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  test_is_empty
+      </td>
+  <td class="duration">
+    6.599s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.Series_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  click_cancel_series_button
+      </td>
+  <td class="duration">
+    22.863s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_serie
+      </td>
+  <td class="duration">
+    58.505s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_serie_without_clientname
+      </td>
+  <td class="duration">
+    31.617s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_series_without_brand
+      </td>
+  <td class="duration">
+    37.899s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_series_without_seriesnname
+      </td>
+  <td class="duration">
+    33.125s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  delete_series_from_db
+      </td>
+  <td class="duration">
+    2.488s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.TracksEdit_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  activate_track
+      </td>
+  <td class="duration">
+    38.396s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  archive_track
+      </td>
+  <td class="duration">
+    16.566s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  restore_track
+      </td>
+  <td class="duration">
+    26.838s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_brands
+      </td>
+  <td class="duration">
+    40.747s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_brands_to_previous
+      </td>
+  <td class="duration">
+    39.899s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_name
+      </td>
+  <td class="duration">
+    36.283s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_name_to_previous_name
+      </td>
+  <td class="duration">
+    38.676s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_series
+      </td>
+  <td class="duration">
+    40.896s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_series_to_previous
+      </td>
+  <td class="duration">
+    41.349s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_workflow_to_approved
+      </td>
+  <td class="duration">
+    27.041s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_track_workflow_to_draft
+      </td>
+  <td class="duration">
+    28.238s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_tracks_programs
+      </td>
+  <td class="duration">
+    38.872s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_tracks_programs_to_previous
+      </td>
+  <td class="duration">
+    42.221s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.TracksPublish_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  cancel_publish_tracks
+      </td>
+  <td class="duration">
+    34.390s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  publish_tracks
+      </td>
+  <td class="duration">
+    58.725s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.TracksRestore_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  test_is_empty
+      </td>
+  <td class="duration">
+    6.198s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.Tracks_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  click_cancel_track_button
+      </td>
+  <td class="duration">
+    23.981s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_track
+      </td>
+  <td class="duration">
+    63.389s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_track_without_brand
+      </td>
+  <td class="duration">
+    42.281s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_track_without_clientname
+      </td>
+  <td class="duration">
+    32.722s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_track_without_tracksnname
+      </td>
+  <td class="duration">
+    41.214s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  delete_tracks_from_db
+      </td>
+  <td class="duration">
+    2.209s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.VariableEdit_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  activate_variable
+      </td>
+  <td class="duration">
+    38.116s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  archive_variable
+      </td>
+  <td class="duration">
+    16.927s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  restore_variable
+      </td>
+  <td class="duration">
+    27.032s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_Variable_client
+      </td>
+  <td class="duration">
+    38.421s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_variable_clientname_to_previous_client
+      </td>
+  <td class="duration">
+    37.953s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_variable_name
+      </td>
+  <td class="duration">
+    37.226s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_variable_name_to_previous_name
+      </td>
+  <td class="duration">
+    36.967s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.VariablesRestore_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  validate_region_page
+      </td>
+  <td class="duration">
+    11.608s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">library.Variables_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  click_cancel_variable_button
+      </td>
+  <td class="duration">
+    22.513s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_locale_variable
+      </td>
+  <td class="duration">
+    57.725s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_variablle_without_clientname
+      </td>
+  <td class="duration">
+    33.530s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_variablle_without_name
+      </td>
+  <td class="duration">
+    33.016s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  delete_variable_from_db
+      </td>
+  <td class="duration">
+    2.082s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

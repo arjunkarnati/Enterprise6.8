@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [CODA LACEK (6)]]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="MANAGE REGRESSION RUN(failed)(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="manage.ClientsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- manage.ClientsRestore_testcases -->
+      <class name="manage.ClientsEdit_testcases">
+        <methods>
+          <include name="empty_url_field_in_client_edit_page"/>
+          <include name="BeforeSuite"/>
+          <include name="update_client_color_to_previous"/>
+          <include name="empty_code_field_in_client_edit_page"/>
+          <include name="empty_color_field_in_client_edit_page"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="inactivate_client"/>
+          <include name="update_client_color"/>
+        </methods>
+      </class> <!-- manage.ClientsEdit_testcases -->
+      <class name="manage.Clients_Testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- manage.Clients_Testcases -->
+      <class name="manage.BrandsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- manage.BrandsRestore_testcases -->
+      <class name="manage.Brands_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- manage.Brands_testcases -->
+      <class name="manage.Programs_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- manage.Programs_testcases -->
+      <class name="manage.ProgramsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- manage.ProgramsRestore_testcases -->
+      <class name="manage.BrandsEdit_testcases">
+        <methods>
+          <include name="update_brand_url_to_previous"/>
+          <include name="BeforeSuite"/>
+          <include name="empty_color_field_in_brands_edit_page"/>
+          <include name="AfterSuite"/>
+          <include name="restore_brand"/>
+          <include name="update_brand_name_to_previous"/>
+          <include name="inactivate_brand"/>
+          <include name="empty_name_field_in_brands_edit_page"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- manage.BrandsEdit_testcases -->
+      <class name="manage.ProgramsEdit_testcases">
+        <methods>
+          <include name="update_program_clientname_to_previous"/>
+          <include name="BeforeSuite"/>
+          <include name="update_program_brands_to_previous"/>
+          <include name="update_program_brands"/>
+          <include name="AfterLogin"/>
+          <include name="restore_program"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- manage.ProgramsEdit_testcases -->
+    </classes>
+  </test> <!-- MANAGE REGRESSION RUN(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [CODA LACEK (6)]] -->

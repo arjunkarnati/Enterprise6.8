@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LOCALIZATION TESTCASES"
+           tests="12"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="413.588">
+  <properties />
+  
+  
+            <testcase name="update_locale_name_to_previous" time="40.587" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="update_locale_code" time="38.080" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="update_locale_name" time="38.180" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="click_cancel_in_locales_edit_page" time="29.902" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="inactivate_locales" time="37.731" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="archive_locales" time="17.897" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="empty_name_field_in_locales_edit_page" time="36.070" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="return_to_locales_main_page_from_edit" time="34.109" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="activate_locales" time="37.522" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="restore_locales" time="29.578" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="update_locale_code_to_previous" time="38.031" classname="localization.LocalesEdit_TestCases" />
+                <testcase name="empty_code_field_in_locales_edit_page" time="35.901" classname="localization.LocalesEdit_TestCases" />
+      
+</testsuite>

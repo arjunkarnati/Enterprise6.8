@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="COMMUNICATIONS TESTCASES"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="7.659">
+  <properties />
+  
+  
+            <testcase name="test_is_empty" time="7.659" classname="library.CommunicationsRestore_Testcases" />
+      
+</testsuite>

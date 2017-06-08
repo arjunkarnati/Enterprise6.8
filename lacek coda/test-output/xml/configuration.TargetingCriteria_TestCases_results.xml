@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TARGETING CRITERIA TESTCASES"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="149.275">
+  <properties />
+  
+  
+            <testcase name="create_a_new_targeting_criteria" time="51.782" classname="configuration.TargetingCriteria_TestCases" />
+                <testcase name="create_a_new_targeting_criteria_without_a_clientname" time="32.590" classname="configuration.TargetingCriteria_TestCases" />
+                <testcase name="select_button_cancel_in_targeting_criteria_add_page" time="27.331" classname="configuration.TargetingCriteria_TestCases" />
+                <testcase name="create_a_new_targeting_criteria_without_a_name" time="35.461" classname="configuration.TargetingCriteria_TestCases" />
+                <testcase name="database_delete_targeting_criteria" time="2.111" classname="configuration.TargetingCriteria_TestCases" />
+      
+</testsuite>

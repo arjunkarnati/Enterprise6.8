@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="INTEGRATION TEST RBAC"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="53.251">
+  <properties />
+  
+  
+            <testcase name="integration_create_a_permission_groups_1" time="40.924" classname="integration.rbac_testcases" />
+                <testcase name="delete_role_from_database_2" time="2.076" classname="integration.rbac_testcases" />
+                <testcase name="validate_user_wit_testrole2" time="10.251" classname="integration.rbac_testcases" />
+      
+</testsuite>

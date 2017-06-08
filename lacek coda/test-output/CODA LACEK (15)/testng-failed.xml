@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (15)]" parallel="tests" allow-return-values="true">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="ACF EDIT TEST CASES(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="configuration.ACFEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="update_acf_brand_to_previous"/>
+          <include name="AfterSuite"/>
+          <include name="update_acf_brand"/>
+          <include name="update_acf_group_name_to_previous"/>
+          <include name="update_acf_program_to_prvious"/>
+          <include name="update_acf_group_name"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="update_acf_program"/>
+        </methods>
+      </class> <!-- configuration.ACFEdit_testcases -->
+      <class name="configuration.ACF_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.ACF_testcases -->
+    </classes>
+  </test> <!-- ACF EDIT TEST CASES(failed) -->
+  <test name="ACF TEST CASES(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="configuration.ACFEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.ACFEdit_testcases -->
+      <class name="configuration.ACF_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="create_an_acf_data_type_decimal_field_type_select"/>
+          <include name="create_an_acf_data_type_varchar_field_type_select"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="create_an_acf_data_type_int_field_type_select"/>
+        </methods>
+      </class> <!-- configuration.ACF_testcases -->
+    </classes>
+  </test> <!-- ACF TEST CASES(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (15)] -->

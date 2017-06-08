@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  CLIENTS TESTCASES</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CLIENTS TESTCASES</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 06 18:36:25 CDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>951 seconds (951381 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.activate_client()'><b>activate_client</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>34</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.archive_client()'><b>archive_client</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>17</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.Clients_Testcases.cancel_client_add_process()'><b>cancel_client_add_process</b><br>Test class: manage.Clients_Testcases</td>
+<td></td>
+<td>24</td>
+<td>manage.Clients_Testcases@48a242ce</td></tr>
+<tr>
+<td title='manage.Clients_Testcases.create_a_new_client()'><b>create_a_new_client</b><br>Test class: manage.Clients_Testcases</td>
+<td></td>
+<td>59</td>
+<td>manage.Clients_Testcases@48a242ce</td></tr>
+<tr>
+<td title='manage.Clients_Testcases.create_a_new_client_without_color()'><b>create_a_new_client_without_color</b><br>Test class: manage.Clients_Testcases</td>
+<td></td>
+<td>40</td>
+<td>manage.Clients_Testcases@48a242ce</td></tr>
+<tr>
+<td title='manage.Clients_Testcases.create_a_new_client_without_name()'><b>create_a_new_client_without_name</b><br>Test class: manage.Clients_Testcases</td>
+<td></td>
+<td>42</td>
+<td>manage.Clients_Testcases@48a242ce</td></tr>
+<tr>
+<td title='manage.Clients_Testcases.create_a_new_client_witout_a_default_locales()'><b>create_a_new_client_witout_a_default_locales</b><br>Test class: manage.Clients_Testcases</td>
+<td></td>
+<td>38</td>
+<td>manage.Clients_Testcases@48a242ce</td></tr>
+<tr>
+<td title='manage.Clients_Testcases.create_a_new_client_witout_a_url()'><b>create_a_new_client_witout_a_url</b><br>Test class: manage.Clients_Testcases</td>
+<td></td>
+<td>41</td>
+<td>manage.Clients_Testcases@48a242ce</td></tr>
+<tr>
+<td title='manage.Clients_Testcases.create_a_new_client_witout_locales()'><b>create_a_new_client_witout_locales</b><br>Test class: manage.Clients_Testcases</td>
+<td></td>
+<td>36</td>
+<td>manage.Clients_Testcases@48a242ce</td></tr>
+<tr>
+<td title='manage.Clients_Testcases.delete_client_from_db()'><b>delete_client_from_db</b><br>Test class: manage.Clients_Testcases</td>
+<td></td>
+<td>2</td>
+<td>manage.Clients_Testcases@48a242ce</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.empty_code_field_in_client_edit_page()'><b>empty_code_field_in_client_edit_page</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>33</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.empty_color_field_in_client_edit_page()'><b>empty_color_field_in_client_edit_page</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>33</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.empty_name_field_in_client_edit_page()'><b>empty_name_field_in_client_edit_page</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>34</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.empty_url_field_in_client_edit_page()'><b>empty_url_field_in_client_edit_page</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>34</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.inactivate_client()'><b>inactivate_client</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>35</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.restore_client()'><b>restore_client</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>28</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.update_client_color()'><b>update_client_color</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>32</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.update_client_color_to_previous()'><b>update_client_color_to_previous</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>32</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.update_client_name()'><b>update_client_name</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>40</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.update_client_name_to_previous()'><b>update_client_name_to_previous</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>40</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.update_client_url()'><b>update_client_url</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>36</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsEdit_testcases.update_client_url_to_previous()'><b>update_client_url_to_previous</b><br>Test class: manage.ClientsEdit_testcases</td>
+<td></td>
+<td>37</td>
+<td>manage.ClientsEdit_testcases@1e4a7dd4</td></tr>
+<tr>
+<td title='manage.ClientsRestore_testcases.validate_client_archive_page()'><b>validate_client_archive_page</b><br>Test class: manage.ClientsRestore_testcases</td>
+<td></td>
+<td>15</td>
+<td>manage.ClientsRestore_testcases@4f51b3e0</td></tr>
+</table><p>
+</body>
+</html>

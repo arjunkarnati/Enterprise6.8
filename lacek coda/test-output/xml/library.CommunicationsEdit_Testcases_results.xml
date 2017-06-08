@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="COMMUNICATIONS TESTCASES"
+           tests="22"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="747.681">
+  <properties />
+  
+  
+            <testcase name="update_communication_name_to_previous_name" time="38.279" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_track_clientname_to_previous_client" time="12.087" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communcation_brands_to_previous" time="42.626" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_name" time="37.368" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_workflow_to_approved" time="37.545" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_programs_to_previous" time="38.966" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="inactivate_communication" time="37.246" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_track_workflow_to_draft" time="36.832" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="activate_communication" time="35.525" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="Verify_access_EHIQA" time="32.014" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="uncheck_publishCommunications" time="59.551" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_client_field" time="27.367" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="archive_communication" time="21.290" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_tracks_to_previous" time="41.686" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="clienttesting_to_internaltesting" time="29.835" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="manage_workflow_ehi_qa" time="23.250" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_segment_groups" time="24.651" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="comm_massadvance_workflow" time="15.512" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communcation_brands" time="43.807" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_tracks" time="38.745" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_programs" time="43.426" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="restore_communication" time="30.073" classname="library.CommunicationsEdit_Testcases" />
+      
+</testsuite>

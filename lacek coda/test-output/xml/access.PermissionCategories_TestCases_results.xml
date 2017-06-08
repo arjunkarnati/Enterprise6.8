@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PERMISSION CATEGORIES TESTCASES"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="218.489">
+  <properties />
+  
+  
+            <testcase name="create_a_new_permission_categories_without_name" time="39.380" classname="access.PermissionCategories_TestCases" />
+                <testcase name="create_a_new_permission_categories_without_controller_name" time="39.668" classname="access.PermissionCategories_TestCases" />
+                <testcase name="create_a_new_permission_categories" time="80.314" classname="access.PermissionCategories_TestCases" />
+                <testcase name="click_cancel_in_permission_categories_add_page" time="28.351" classname="access.PermissionCategories_TestCases" />
+                <testcase name="return_to_permission_categories_main_page_from_add" time="28.682" classname="access.PermissionCategories_TestCases" />
+                <testcase name="delete_permission_category_from_database" time="2.094" classname="access.PermissionCategories_TestCases" />
+      
+</testsuite>

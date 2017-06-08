@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MEDIA GALLERY TESTCASES"
+           tests="24"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1414.206">
+  <properties />
+  
+  
+            <testcase name="update_media_gallery_program_to_previous" time="47.164" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_brand_to_previous" time="53.936" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_clientname" time="43.623" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="delete_messagemedia_connectors" time="37.935" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_description" time="43.265" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="inactivate_media_gallery" time="93.372" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_draft_Carnival_AE" time="52.771" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="restore_media_gallery" time="33.833" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_approved_Carnival_AE" time="52.758" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_clientname_to_previous" time="64.826" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_approved" time="51.006" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="archive_media_gallery" time="23.647" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_Alt_Tag" time="95.135" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="activate_media_gallery" time="94.392" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_approved_EHI_AE" time="53.868" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_brand" time="46.719" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_Alt_Tag_to_previous" time="94.670" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_messagemedia_connectors" time="44.805" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_name_to_previous_name" time="93.973" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_program" time="46.477" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_name" time="94.257" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_draft" time="51.713" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_draft_EHI_AE" time="49.050" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_connectors" time="51.011" classname="assets.MediaGalleryEdit_testcases" />
+      
+</testsuite>

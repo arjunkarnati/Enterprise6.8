@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="classes">
+  <test name="CAMPAIGN TESTCASES(failed)" parallel="classes">
+    <classes>
+      <class name="library.Campaigns_Testcases">
+        <methods>
+          <include name="create_a_new_campaign"/>
+          <include name="BeforeSuite"/>
+          <include name="beforeLogin"/>
+          <include name="AfterLogin"/>
+        </methods>
+      </class> <!-- library.Campaigns_Testcases -->
+      <class name="library.CanpaignsEdit_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="beforeLogin"/>
+          <include name="update_campaign_name"/>
+          <include name="AfterLogin"/>
+        </methods>
+      </class> <!-- library.CanpaignsEdit_TestCases -->
+    </classes>
+  </test> <!-- CAMPAIGN TESTCASES(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

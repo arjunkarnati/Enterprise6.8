@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CAMPAIGN TESTCASES"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="253.495">
+  <properties />
+  
+  
+            <testcase name="create_a_new_campaign_without_campaignname" time="32.450" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign" time="57.359" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_program" time="37.392" classname="library.Campaigns_Testcases" />
+                <testcase name="click_cancel_button_in_campaign_add_page" time="20.452" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_series" time="34.973" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_clientname" time="24.605" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_brand" time="42.784" classname="library.Campaigns_Testcases" />
+                <testcase name="delete_campaign_from_db" time="3.480" classname="library.Campaigns_Testcases" />
+      
+</testsuite>

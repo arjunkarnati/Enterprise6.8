@@ -1,0 +1,1234 @@
+<html>
+<head>
+<title>TestNG:  ACCESS REGRESSION RUN</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ACCESS REGRESSION RUN</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>71/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 12 16:19:57 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>1829 seconds (1829285 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.click_cancel_in_permission_action_edit_page()'><b>click_cancel_in_permission_action_edit_page</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir7628_310}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 842c4010f4ff2b67c382352b9288d9a2
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.click_cancel_in_permission_action_edit_page(PermissionActionsEdit_TestCases.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1763760097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1763760097'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir7628_310}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 842c4010f4ff2b67c382352b9288d9a2
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.click_cancel_in_permission_action_edit_page(PermissionActionsEdit_TestCases.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>29</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.click_cancel_in_permission_groups_edit_page()'><b>click_cancel_in_permission_groups_edit_page</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir16904_2314}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 53777b9afb51e9d751ba3882c03e554d
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionGroupsPage.editPermissionGroups(PermissionGroupsPage.java:69)
+	at access.PermissionGroupsEdit_testcases.click_cancel_in_permission_groups_edit_page(PermissionGroupsEdit_testcases.java:131)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1052540506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1052540506'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir16904_2314}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 53777b9afb51e9d751ba3882c03e554d
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionGroupsPage.editPermissionGroups(PermissionGroupsPage.java:69)
+	at access.PermissionGroupsEdit_testcases.click_cancel_in_permission_groups_edit_page(PermissionGroupsEdit_testcases.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>24</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.click_cancel_in_permissions_edit_page()'><b>click_cancel_in_permissions_edit_page</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permission/edit/548&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir20656_2686}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cebef39e7dfbfd8c32277ba57032a345
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permission/edit/548&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionsPage.editPermissions(PermissionsPage.java:83)
+	at access.PemissionsEdit_TestCases.click_cancel_in_permissions_edit_page(PemissionsEdit_TestCases.java:115)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13076872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13076872'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permission/edit/548&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir20656_2686}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cebef39e7dfbfd8c32277ba57032a345
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permission/edit/548&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionsPage.editPermissions(PermissionsPage.java:83)
+	at access.PemissionsEdit_TestCases.click_cancel_in_permissions_edit_page(PemissionsEdit_TestCases.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>30</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.empty_a_required_field_and_click_save_in_permission_edit_page()'><b>empty_a_required_field_and_click_save_in_permission_edit_page</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir18560_31406}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 59ad2d874339f6fe6aa0c76612efd814
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionGroupsPage.editPermissionGroups(PermissionGroupsPage.java:69)
+	at access.PermissionGroupsEdit_testcases.empty_a_required_field_and_click_save_in_permission_edit_page(PermissionGroupsEdit_testcases.java:120)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace296943422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace296943422'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir18560_31406}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 59ad2d874339f6fe6aa0c76612efd814
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionGroupsPage.editPermissionGroups(PermissionGroupsPage.java:69)
+	at access.PermissionGroupsEdit_testcases.empty_a_required_field_and_click_save_in_permission_edit_page(PermissionGroupsEdit_testcases.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>23</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.empty_controller_action_field_in_permission_actions_edit_page()'><b>empty_controller_action_field_in_permission_actions_edit_page</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir13204_12782}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 66adfbc9cb5f510a13408caab18d0de4
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.empty_controller_action_field_in_permission_actions_edit_page(PermissionActionsEdit_TestCases.java:104)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1396424840", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1396424840'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir13204_12782}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 66adfbc9cb5f510a13408caab18d0de4
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.empty_controller_action_field_in_permission_actions_edit_page(PermissionActionsEdit_TestCases.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.empty_name_field_in_permission_actions_edit_page()'><b>empty_name_field_in_permission_actions_edit_page</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir8948_9744}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b5f55bee20e0812ab009443e8c68f872
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.empty_name_field_in_permission_actions_edit_page(PermissionActionsEdit_TestCases.java:92)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace833540181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace833540181'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir8948_9744}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b5f55bee20e0812ab009443e8c68f872
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.empty_name_field_in_permission_actions_edit_page(PermissionActionsEdit_TestCases.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>29</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.empty_permission_field_in_permission_actions_edit_page()'><b>empty_permission_field_in_permission_actions_edit_page</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir5936_32220}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: abf06e6e6ee15f11cbd98c21e93b4d95
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.empty_permission_field_in_permission_actions_edit_page(PermissionActionsEdit_TestCases.java:116)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1765914278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1765914278'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir5936_32220}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: abf06e6e6ee15f11cbd98c21e93b4d95
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.empty_permission_field_in_permission_actions_edit_page(PermissionActionsEdit_TestCases.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>29</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.fail_to_update_role_when_name_field_is_not_populated()'><b>fail_to_update_role_when_name_field_is_not_populated</b><br>Test class: access.RolesEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/role/edit/42&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir19476_27993}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ea81afcac7b3c7ccbbb11d8db66be7cf
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/role/edit/42&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.RolesPage.editRole(RolesPage.java:65)
+	at access.RolesEdit_testcases.fail_to_update_role_when_name_field_is_not_populated(RolesEdit_testcases.java:178)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1297997646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1297997646'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/role/edit/42&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir19476_27993}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ea81afcac7b3c7ccbbb11d8db66be7cf
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/role/edit/42&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.RolesPage.editRole(RolesPage.java:65)
+	at access.RolesEdit_testcases.fail_to_update_role_when_name_field_is_not_populated(RolesEdit_testcases.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>30</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.inactivate_permission_actions()'><b>inactivate_permission_actions</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir6352_15540}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: af20041faddf5b3a15652662dd3e08ff
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.inactivate_permission_actions(PermissionActionsEdit_TestCases.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1536713484", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1536713484'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir6352_15540}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: af20041faddf5b3a15652662dd3e08ff
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/PermissionAction/edit/937&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionActionsPage.editPermissionActions(PermissionActionsPage.java:84)
+	at access.PermissionActionsEdit_TestCases.inactivate_permission_actions(PermissionActionsEdit_TestCases.java:150)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>29</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.inactivate_permission_groups()'><b>inactivate_permission_groups</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir188_5113}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fc0dcf9e0f7ddaa23912b8ca8deaf9fa
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionGroupsPage.editPermissionGroups(PermissionGroupsPage.java:69)
+	at access.PermissionGroupsEdit_testcases.inactivate_permission_groups(PermissionGroupsEdit_testcases.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace600036942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace600036942'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir188_5113}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: fc0dcf9e0f7ddaa23912b8ca8deaf9fa
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permissiongroup/edit/225&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionGroupsPage.editPermissionGroups(PermissionGroupsPage.java:69)
+	at access.PermissionGroupsEdit_testcases.inactivate_permission_groups(PermissionGroupsEdit_testcases.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>23</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.inactivate_permissions()'><b>inactivate_permissions</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permission/edit/548&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir15780_23295}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2c6b47cad1d3fc858f5aa9b34b3c8948
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permission/edit/548&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionsPage.editPermissions(PermissionsPage.java:83)
+	at access.PemissionsEdit_TestCases.inactivate_permissions(PemissionsEdit_TestCases.java:137)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767592791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767592791'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/permission/edit/548&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir15780_23295}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2c6b47cad1d3fc858f5aa9b34b3c8948
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/permission/edit/548&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.PermissionsPage.editPermissions(PermissionsPage.java:83)
+	at access.PemissionsEdit_TestCases.inactivate_permissions(PemissionsEdit_TestCases.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>29</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.inactivate_role()'><b>inactivate_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/role/edit/42&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir14548_5255}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8aecdb82918d626b07f5993e23a5c94a
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/role/edit/42&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.RolesPage.editRole(RolesPage.java:65)
+	at access.RolesEdit_testcases.inactivate_role(RolesEdit_testcases.java:127)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace660932097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace660932097'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/role/edit/42&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir14548_5255}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 8aecdb82918d626b07f5993e23a5c94a
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/role/edit/42&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at access.RolesPage.editRole(RolesPage.java:65)
+	at access.RolesEdit_testcases.inactivate_role(RolesEdit_testcases.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>31</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='access.Roles_TestCases.acces_level_field_is_empty_in_role_add_page()'><b>acces_level_field_is_empty_in_role_add_page</b><br>Test class: access.Roles_TestCases</td>
+<td></td>
+<td>46</td>
+<td>access.Roles_TestCases@3c0ecd4b</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.activate_permission_actions()'><b>activate_permission_actions</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>73</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.activate_permission_groups()'><b>activate_permission_groups</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>56</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.activate_permissions()'><b>activate_permissions</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>70</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.activate_role()'><b>activate_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>67</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.archive_permission_action()'><b>archive_permission_action</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>69</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.archive_permission_groups()'><b>archive_permission_groups</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>42</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.archive_permissions()'><b>archive_permissions</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>68</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.archive_role()'><b>archive_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>66</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.PermissionActions_TestCases.click_cancel_in_permission_action_add_page()'><b>click_cancel_in_permission_action_add_page</b><br>Test class: access.PermissionActions_TestCases</td>
+<td></td>
+<td>36</td>
+<td>access.PermissionActions_TestCases@553f17c</td></tr>
+<tr>
+<td title='access.PermissionGroups_TestCases.click_cancel_in_permission_groups_add_page()'><b>click_cancel_in_permission_groups_add_page</b><br>Test class: access.PermissionGroups_TestCases</td>
+<td></td>
+<td>20</td>
+<td>access.PermissionGroups_TestCases@42dafa95</td></tr>
+<tr>
+<td title='access.Permissions_TestCases.click_cancel_in_permissions_add_page()'><b>click_cancel_in_permissions_add_page</b><br>Test class: access.Permissions_TestCases</td>
+<td></td>
+<td>29</td>
+<td>access.Permissions_TestCases@402a079c</td></tr>
+<tr>
+<td title='access.PermissionActions_TestCases.create_a_duplicate_permission_action()'><b>create_a_duplicate_permission_action</b><br>Test class: access.PermissionActions_TestCases</td>
+<td></td>
+<td>42</td>
+<td>access.PermissionActions_TestCases@553f17c</td></tr>
+<tr>
+<td title='access.Roles_TestCases.create_a_duplicate_role()'><b>create_a_duplicate_role</b><br>Test class: access.Roles_TestCases</td>
+<td></td>
+<td>46</td>
+<td>access.Roles_TestCases@3c0ecd4b</td></tr>
+<tr>
+<td title='access.PermissionActions_TestCases.create_a_new_permission_action()'><b>create_a_new_permission_action</b><br>Test class: access.PermissionActions_TestCases</td>
+<td></td>
+<td>64</td>
+<td>access.PermissionActions_TestCases@553f17c</td></tr>
+<tr>
+<td title='access.PermissionActions_TestCases.create_a_new_permission_action_without_controller_name()'><b>create_a_new_permission_action_without_controller_name</b><br>Test class: access.PermissionActions_TestCases</td>
+<td></td>
+<td>44</td>
+<td>access.PermissionActions_TestCases@553f17c</td></tr>
+<tr>
+<td title='access.PermissionActions_TestCases.create_a_new_permission_action_without_name()'><b>create_a_new_permission_action_without_name</b><br>Test class: access.PermissionActions_TestCases</td>
+<td></td>
+<td>42</td>
+<td>access.PermissionActions_TestCases@553f17c</td></tr>
+<tr>
+<td title='access.PermissionActions_TestCases.create_a_new_permission_action_without_permission()'><b>create_a_new_permission_action_without_permission</b><br>Test class: access.PermissionActions_TestCases</td>
+<td></td>
+<td>42</td>
+<td>access.PermissionActions_TestCases@553f17c</td></tr>
+<tr>
+<td title='access.PermissionGroups_TestCases.create_a_new_permission_groups()'><b>create_a_new_permission_groups</b><br>Test class: access.PermissionGroups_TestCases</td>
+<td></td>
+<td>54</td>
+<td>access.PermissionGroups_TestCases@42dafa95</td></tr>
+<tr>
+<td title='access.PermissionGroups_TestCases.create_a_new_permission_groups_without_name()'><b>create_a_new_permission_groups_without_name</b><br>Test class: access.PermissionGroups_TestCases</td>
+<td></td>
+<td>35</td>
+<td>access.PermissionGroups_TestCases@42dafa95</td></tr>
+<tr>
+<td title='access.Permissions_TestCases.create_a_new_permissions()'><b>create_a_new_permissions</b><br>Test class: access.Permissions_TestCases</td>
+<td></td>
+<td>76</td>
+<td>access.Permissions_TestCases@402a079c</td></tr>
+<tr>
+<td title='access.Permissions_TestCases.create_a_new_permissions_without_name()'><b>create_a_new_permissions_without_name</b><br>Test class: access.Permissions_TestCases</td>
+<td></td>
+<td>39</td>
+<td>access.Permissions_TestCases@402a079c</td></tr>
+<tr>
+<td title='access.Permissions_TestCases.create_a_new_permissions_without_permission_category()'><b>create_a_new_permissions_without_permission_category</b><br>Test class: access.Permissions_TestCases</td>
+<td></td>
+<td>40</td>
+<td>access.Permissions_TestCases@402a079c</td></tr>
+<tr>
+<td title='access.Roles_TestCases.create_a_new_role()'><b>create_a_new_role</b><br>Test class: access.Roles_TestCases</td>
+<td></td>
+<td>94</td>
+<td>access.Roles_TestCases@3c0ecd4b</td></tr>
+<tr>
+<td title='access.Roles_TestCases.create_a_new_role_without_a_name()'><b>create_a_new_role_without_a_name</b><br>Test class: access.Roles_TestCases</td>
+<td></td>
+<td>46</td>
+<td>access.Roles_TestCases@3c0ecd4b</td></tr>
+<tr>
+<td title='access.PermissionActions_TestCases.delete_permission_action_from_database()'><b>delete_permission_action_from_database</b><br>Test class: access.PermissionActions_TestCases</td>
+<td></td>
+<td>2</td>
+<td>access.PermissionActions_TestCases@553f17c</td></tr>
+<tr>
+<td title='access.PermissionGroups_TestCases.delete_permission_groups_in_database()'><b>delete_permission_groups_in_database</b><br>Test class: access.PermissionGroups_TestCases</td>
+<td></td>
+<td>3</td>
+<td>access.PermissionGroups_TestCases@42dafa95</td></tr>
+<tr>
+<td title='access.Permissions_TestCases.delete_permissions_from_database()'><b>delete_permissions_from_database</b><br>Test class: access.Permissions_TestCases</td>
+<td></td>
+<td>2</td>
+<td>access.Permissions_TestCases@402a079c</td></tr>
+<tr>
+<td title='access.Roles_TestCases.delete_role_from_database()'><b>delete_role_from_database</b><br>Test class: access.Roles_TestCases</td>
+<td></td>
+<td>2</td>
+<td>access.Roles_TestCases@3c0ecd4b</td></tr>
+<tr>
+<td title='access.Roles_TestCases.fail_to_create_role_when_require_field_is_not_populated()'><b>fail_to_create_role_when_require_field_is_not_populated</b><br>Test class: access.Roles_TestCases</td>
+<td></td>
+<td>40</td>
+<td>access.Roles_TestCases@3c0ecd4b</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.restore_permission_action()'><b>restore_permission_action</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>79</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.restore_permission_groups()'><b>restore_permission_groups</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>45</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.restore_permissions()'><b>restore_permissions</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>76</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.restore_role()'><b>restore_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>73</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.PermissionActions_TestCases.returm_to_permission_actions_main_page()'><b>returm_to_permission_actions_main_page</b><br>Test class: access.PermissionActions_TestCases</td>
+<td></td>
+<td>23</td>
+<td>access.PermissionActions_TestCases@553f17c</td></tr>
+<tr>
+<td title='access.PermissionGroups_TestCases.returm_to_permission_groups_main_page()'><b>returm_to_permission_groups_main_page</b><br>Test class: access.PermissionGroups_TestCases</td>
+<td></td>
+<td>19</td>
+<td>access.PermissionGroups_TestCases@42dafa95</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.returm_to_permissions_main_page_from_edit()'><b>returm_to_permissions_main_page_from_edit</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>31</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.return_to_permission_actions_main_page_from_edit_page()'><b>return_to_permission_actions_main_page_from_edit_page</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>30</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.return_to_permission_groups_main_page()'><b>return_to_permission_groups_main_page</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>19</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.Permissions_TestCases.return_to_permissions_main_page_from_add()'><b>return_to_permissions_main_page_from_add</b><br>Test class: access.Permissions_TestCases</td>
+<td></td>
+<td>26</td>
+<td>access.Permissions_TestCases@402a079c</td></tr>
+<tr>
+<td title='access.Roles_TestCases.select_cancel_button_in_roles_add_page()'><b>select_cancel_button_in_roles_add_page</b><br>Test class: access.Roles_TestCases</td>
+<td></td>
+<td>33</td>
+<td>access.Roles_TestCases@3c0ecd4b</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.update_permission_action_controller_action_name()'><b>update_permission_action_controller_action_name</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>74</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.update_permission_action_controller_action_name_to_previous()'><b>update_permission_action_controller_action_name_to_previous</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>69</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.update_permission_action_name()'><b>update_permission_action_name</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>69</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.update_permission_action_name_to_previous()'><b>update_permission_action_name_to_previous</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>69</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.update_permission_action_permission()'><b>update_permission_action_permission</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>69</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionActionsEdit_TestCases.update_permission_action_permission_to_previous()'><b>update_permission_action_permission_to_previous</b><br>Test class: access.PermissionActionsEdit_TestCases</td>
+<td></td>
+<td>69</td>
+<td>access.PermissionActionsEdit_TestCases@4f7d0008</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.update_permission_groups_business_groups()'><b>update_permission_groups_business_groups</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.update_permission_groups_business_rule_to_previous()'><b>update_permission_groups_business_rule_to_previous</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.update_permission_groups_name()'><b>update_permission_groups_name</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>44</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.update_permission_groups_name_to_previous()'><b>update_permission_groups_name_to_previous</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>40</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.update_permission_groups_parent_permission()'><b>update_permission_groups_parent_permission</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.update_permission_groups_parent_permission_to_previous()'><b>update_permission_groups_parent_permission_to_previous</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.update_permission_groups_permissions()'><b>update_permission_groups_permissions</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>48</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PermissionGroupsEdit_testcases.update_permission_groups_permissions_to_previous()'><b>update_permission_groups_permissions_to_previous</b><br>Test class: access.PermissionGroupsEdit_testcases</td>
+<td></td>
+<td>46</td>
+<td>access.PermissionGroupsEdit_testcases@589838eb</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.update_permissions_business_rule()'><b>update_permissions_business_rule</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>68</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.update_permissions_business_rule_to_previous()'><b>update_permissions_business_rule_to_previous</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>72</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.update_permissions_name()'><b>update_permissions_name</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>89</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.update_permissions_name_to_previous()'><b>update_permissions_name_to_previous</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>70</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.update_permissions_permission_category()'><b>update_permissions_permission_category</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>71</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.PemissionsEdit_TestCases.update_permissions_permission_category_to_previous()'><b>update_permissions_permission_category_to_previous</b><br>Test class: access.PemissionsEdit_TestCases</td>
+<td></td>
+<td>71</td>
+<td>access.PemissionsEdit_TestCases@6500df86</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_business_rule()'><b>update_role_business_rule</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>66</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_business_rule_to_previous()'><b>update_role_business_rule_to_previous</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>67</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_name()'><b>update_role_name</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>69</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_name_permissions()'><b>update_role_name_permissions</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>49</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_name_permissions_to_previous()'><b>update_role_name_permissions_to_previous</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>41</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_name_to_previous()'><b>update_role_name_to_previous</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>76</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_parent_role()'><b>update_role_parent_role</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>68</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.RolesEdit_testcases.update_role_parent_role_to_previous()'><b>update_role_parent_role_to_previous</b><br>Test class: access.RolesEdit_testcases</td>
+<td></td>
+<td>71</td>
+<td>access.RolesEdit_testcases@14bf9759</td></tr>
+<tr>
+<td title='access.PermissionGroupsRestore_testcases.verify_permission_archive_page()'><b>verify_permission_archive_page</b><br>Test class: access.PermissionGroupsRestore_testcases</td>
+<td></td>
+<td>12</td>
+<td>access.PermissionGroupsRestore_testcases@271053e1</td></tr>
+<tr>
+<td title='access.RolesRestore_testcases.verify_roles_archive_page()'><b>verify_roles_archive_page</b><br>Test class: access.RolesRestore_testcases</td>
+<td></td>
+<td>20</td>
+<td>access.RolesRestore_testcases@5f341870</td></tr>
+</table><p>
+</body>
+</html>

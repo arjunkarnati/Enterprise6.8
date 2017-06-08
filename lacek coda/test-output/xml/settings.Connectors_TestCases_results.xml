@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CONNECTORS TESTCASES"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="82.195">
+  <properties />
+  
+  
+            <testcase name="add_connector_validate" time="41.536" classname="settings.Connectors_TestCases" />
+                <testcase name="open_connector_page" time="13.000" classname="settings.Connectors_TestCases" />
+                <testcase name="relaod_workflow_page" time="12.648" classname="settings.Connectors_TestCases" />
+                <testcase name="click_print_view_print" time="12.908" classname="settings.Connectors_TestCases" />
+                <testcase name="delete_connector_from_db" time="2.103" classname="settings.Connectors_TestCases" />
+      
+</testsuite>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" allow-return-values="true" verbose="1" parallel="tests" thread-count="1">
+<listeners>
+		 <listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+     <test name="LOGIN TESTCASES">
+		<classes>
+			<class name="login.Login_testcases" />
+		</classes>
+	</test>
+	 <test name="PASSWORD RESET">
+		<classes>
+			<class name="login.Reset_your_password_testcases" />
+		</classes>
+	</test>
+	<test name="SYSTEM CONFIGURATION TESTCASES">
+		<classes>
+			<class name="login.System_configuration_testcases" />
+		</classes>
+	</test> 
+	<test name="CAMPAIGN TESTCASES">
+		<classes>
+			 <class name="library.Campaigns_Testcases" />
+			<class name="library.CanpaignsEdit_TestCases" />
+	 		<class name="library.CampaignsRestore_Testcases" />
+			<class name="library.CampaignsPublish_Testcases" /> 
+		</classes>
+	</test> 
+	<test name="SERIES TESTCASES">
+		<classes>
+			<class name="library.Series_Testcases" />
+			<class name="library.SeriesEdit_Testcases" />
+			<class name="library.SeriesRestore_Testcases" />
+			<class name="library.SeriesPublish_Testcases" />
+		</classes>
+	</test>
+	<test name="TRACKS TESTCASES">
+		<classes>
+			<class name="library.Tracks_Testcases" />
+			<class name="library.TracksEdit_Testcases" />
+			<class name="library.TracksRestore_Testcases" />
+			<class name="library.TracksPublish_Testcases" />
+		</classes>
+	</test>
+	<test name="COMMUNICATIONS TESTCASES">
+		<classes>
+			<class name="library.Communications_TestCases" />
+			<class name="library.CommunicationsEdit_Testcases" />
+			<class name="library.CommunicationsRestore_Testcases" />
+			<class name="library.CommunicationsPublish_Testcases" />
+		</classes>
+	</test>
+	<test name="MESSAGES TESTCASES">
+		<classes>
+			<class name="library.Messages_TestCases" />
+			<class name="library.MessagesEdit_Testcases" />
+			<class name="library.MessagesRestore_Testcases" />
+			<class name="library.MessagesPublish_Testcases" />
+		</classes>
+	</test>
+	<test name="VARIABLES TESTCASES">
+		<classes>
+			<class name="library.Variables_TestCases" />
+			<class name="library.VariableEdit_Testcases" />
+			<class name="library.VariablesRestore_Testcases" />
+		</classes>
+	</test>
+	 <test name="MEDIA GALLERY TESTCASES">
+		<classes>
+			<class name="assets.MediaGallery_TestCases" />
+			<class name="assets.MediaGalleryEdit_testcases" />
+			<class name="assets.MediaGalleryPublish_testcases" />
+			<class name="assets.MediaGalleryRestore_testcases" />
+		</classes>
+	</test>
+	<test name="REGIONS TESTCASES">
+		<classes>
+			<class name="layout.Regions_TestCases" />
+			<class name="layout.RegionsEdit_testcases" />
+			<class name="layout.RegionsRestore_testcases" />
+		</classes>
+	</test>
+	<test name="TEMPLATES TESTCASES">
+		<classes>
+			<class name="layout.Templates_TestCases" />
+			<class name="layout.TemplatesEdit_testcases" />
+			<class name="layout.TemplatesRestore_testcases" />
+		</classes>
+	</test>
+	<test name="CLIENTS TESTCASES">
+		<classes>
+			<class name="manage.Clients_Testcases" />
+			<class name="manage.ClientsEdit_testcases" />
+			<class name="manage.ClientsRestore_testcases" />
+		</classes>
+	</test>
+	<test name="BRANDS TESTCASES">
+		<classes>
+			<class name="manage.Brands_testcases" />
+			<class name="manage.BrandsEdit_testcases" />
+			<class name="manage.BrandsRestore_testcases" />
+		</classes>
+	</test>
+	<test name="PROGRAMS TESTCASES">
+		<classes>
+			<class name="manage.Programs_testcases" />
+			<class name="manage.ProgramsEdit_testcases" />
+			<class name="manage.ProgramsRestore_testcases" />
+		</classes>
+	</test>
+	
+	 <test name="SEGMENT GROUPS TESTCASES">
+		<classes>
+			<class name="configuration.SegmentGroups_TestCases" />
+			<class name="configuration.SegmentGroupsEdit_testcases" />
+			<class name="configuration.SegmentGroupsRestore_testcases" />
+		</classes>
+	</test>
+	<test name="SEGMENTS TESTCASES">
+		<classes>
+			<class name="configuration.Segments_TestCases" />
+			<class name="configuration.SegmentsEdit_testcases" />
+			<class name="configuration.SegmentsRestore_testcases" />
+		</classes>
+	</test>
+	<test name="TARGETING CRITERIA TESTCASES">
+		<classes>
+			<class name="configuration.TargetingCriteria_TestCases" />
+			<class name="configuration.TargetingCriteriaEdit_testcases" />
+			<class name="configuration.TargetingCriteriaRestore_testcases" />
+		</classes>
+	</test>
+	<test name="CONNECTORS TESTCASES">
+		<classes>
+			<class name="settings.Connectors_TestCases" />
+			<class name="settings.ConnectorsEdit_testcases" />
+			<class name="settings.ConnectorsRestore_testcases" />
+		</classes>
+	</test>
+	<test name="CHANNELS TESTCASES">
+		<classes>
+			<class name="settings.Channels_TestCases" />
+			<class name="settings.ChannelsEdit_testcases" />
+			<class name="settings.ChannelsRestore_testcases" />
+		</classes>
+	</test>
+	 <test name="WORKFLOW STATES TESTCASES">
+		<classes>
+			<class name="settings.WorkflowState_TestCases" />
+			<class name="settings.WorkflowStateEdit_testcases" />
+		</classes>
+	</test> 
+	<test name="MESSAGE TYPES TESTCASES">
+		<classes>
+			<class name="configuration.MessageTypes_TestCases" />
+		</classes>
+	</test>
+	<test name="USERS TESTCASES">
+		<classes>
+			<class name="access.Users_TestCases" />
+			<class name="access.UsersEdit_testcases" />
+			<class name="access.UsersRestore_testcases" />
+		</classes>
+	</test>
+	<test name="ROLES TESTCASES">
+		<classes>
+			<class name="access.Roles_TestCases" />
+			<class name="access.RolesEdit_testcases" />
+			<class name="access.RolesRestore_testcases" />
+		</classes>
+	</test>
+	<test name="PERMISSION ACTIONS TESTCASES">
+		<classes>
+			<class name="access.PermissionActions_TestCases" />
+			<class name="access.PermissionActionsEdit_TestCases" />
+		</classes>
+	</test>
+	<test name="PERMISSION CATEGORIES TESTCASES">
+		<classes>
+			<class name="access.PermissionCategories_TestCases" />
+			<class name="access.PermissionCategoriesEdit_TestCases" />
+		</classes>
+	</test>
+	<test name="PERMISSION GROUPS TESTCASES">
+		<classes>
+			<class name="access.PermissionGroups_TestCases" />
+			<class name="access.PermissionGroupsEdit_testcases" />
+			<class name="access.PermissionGroupsRestore_testcases" />
+		</classes>
+	</test>
+	<test name="PERMISSIONS TESTCASES">
+		<classes>
+			<class name="access.Permissions_TestCases" />
+			<class name="access.PemissionsEdit_TestCases" />
+		</classes>
+	</test>
+	<test name="LOCALIZATION TESTCASES">
+		<classes>
+			<class name="localization.Locales_TestCases" />
+			<class name="localization.LocalesEdit_TestCases" />
+		</classes>
+	</test>
+	<test name="LOCALIZATION EXPORT TESTCASES">
+		<classes>
+			<class name="localization.Export_TestCases" />
+		</classes>
+	</test>
+	<test name="LOCALIZATION IMPORT TESTCASES">
+		<classes>
+			<class name="localization.Import_TestCases" />
+		</classes>
+	</test>
+	<test name="WORKFLOW STATE TESTCASES">
+		<classes>
+			<class name="settings.WorkflowState_TestCases" />
+			<class name="settings.WorkflowStateEdit_testcases" />
+			<class name="settings.WorkflowRestore_testcases" />
+		</classes>
+	</test>
+	 <test name="WORKFLOW MANAGER TESTCASES">
+		<classes>
+			<class name="settings.WorkflowManager_testcases" />
+		</classes>
+	</test>
+	<test name="ACF TESTCASES">
+		<classes>
+			<class name="configuration.ACF_testcases" />
+			<class name="configuration.ACFEdit_testcases" />
+		</classes>
+	</test>
+	<test name="INTEGRATION TEST RBAC">
+		<classes>
+			<class name="integration.rbac_testcases" />
+		</classes>
+	</test>
+	<test name="EXECUTE FAILED TESTS FOR A SECOND TIME TO CONFIRM THE STATUS">
+		<classes>
+			<class name="Utility.fails" />
+		</classes>
+	</test> 
+	<test name="DASHBOARD TESTCASES">
+		<classes>
+			<class name="login.Dashboard_TestCases" />
+		</classes>
+	</test>
+</suite> 

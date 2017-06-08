@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SERIES TESTCASES"
+           tests="19"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="596.385">
+  <properties />
+  
+  
+            <testcase name="activate_series" time="34.163" classname="library.SeriesEdit_Testcases" />
+                <testcase name="inactivate_series" time="34.563" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_brands_to_previous" time="38.701" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_name1" time="12.991" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_programs_to_previous" time="36.003" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_client" time="35.932" classname="library.SeriesEdit_Testcases" />
+                <testcase name="archive_series" time="19.990" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_name" time="36.234" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_name_to_previous_name" time="35.016" classname="library.SeriesEdit_Testcases" />
+                <testcase name="restore_series" time="29.105" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_tracks_to_previous" time="39.660" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_workflow_to_approved" time="29.261" classname="library.SeriesEdit_Testcases" />
+                <testcase name="Series_column_search" time="13.225" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_clientname_to_previous_client" time="46.251" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_programs" time="37.351" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_tracks" time="35.954" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_workflow_to_draft" time="30.249" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_brands" time="39.258" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_name2" time="12.478" classname="library.SeriesEdit_Testcases" />
+      
+</testsuite>

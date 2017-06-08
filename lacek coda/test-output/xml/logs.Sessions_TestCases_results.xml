@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SESSIONS TEST CASES"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.878">
+  <properties />
+  
+  
+            <testcase name="test_is_empty" time="12.878" classname="logs.Sessions_TestCases" />
+      
+</testsuite>

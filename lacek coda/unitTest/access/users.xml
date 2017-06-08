@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" allow-return-values="true" verbose="1"  parallel="tests" thread-count="3">
+<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="MEDIA GALLERY ADD TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="access.Users_TestCases" />
+		</classes>
+	</test>
+	<test name="MEDIA GALLERY EDIT TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="access.UsersEdit_testcases" />
+		</classes>
+	</test>
+	<test name="MEDIA GALLERY RESTORE TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="access.UsersRestore_testcases" />
+		</classes>
+	</test>
+		<test name="EXECUTE FAILED TESTS FOR A SECOND TIME TO CONFIRM THE STATUS">
+		<classes>
+			<class name="Utility.fails" />
+		</classes>
+	</test>
+</suite>
+

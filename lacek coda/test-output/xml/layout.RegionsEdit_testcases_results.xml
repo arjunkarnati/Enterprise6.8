@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="REGIONS TESTCASES"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="239.778">
+  <properties />
+  
+  
+            <testcase name="update_region_name_to_previous" time="40.839" classname="layout.RegionsEdit_testcases" />
+                <testcase name="update_region_name" time="39.803" classname="layout.RegionsEdit_testcases" />
+                <testcase name="inactivate_region" time="37.831" classname="layout.RegionsEdit_testcases" />
+                <testcase name="activate_region" time="36.229" classname="layout.RegionsEdit_testcases" />
+                <testcase name="update_region_description" time="36.307" classname="layout.RegionsEdit_testcases" />
+                <testcase name="archive_region" time="19.656" classname="layout.RegionsEdit_testcases" />
+                <testcase name="restore_region" time="29.113" classname="layout.RegionsEdit_testcases" />
+      
+</testsuite>

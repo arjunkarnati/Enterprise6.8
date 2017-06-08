@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DASHBOARD TESTCASES"
+           tests="34"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="440.198">
+  <properties />
+  
+  
+            <testcase name="open_workflow_manager_page" time="13.527" classname="login.Dashboard_TestCases" />
+                <testcase name="open_roles_page" time="12.705" classname="login.Dashboard_TestCases" />
+                <testcase name="open_change_log_page" time="11.954" classname="login.Dashboard_TestCases" />
+                <testcase name="open_users_page" time="12.977" classname="login.Dashboard_TestCases" />
+                <testcase name="login_and_logout" time="10.660" classname="login.Dashboard_TestCases" />
+                <testcase name="open_campaign_page" time="13.588" classname="login.Dashboard_TestCases" />
+                <testcase name="select_dupont_in_client_dropdown" time="13.705" classname="login.Dashboard_TestCases" />
+                <testcase name="open_clietns_page" time="11.607" classname="login.Dashboard_TestCases" />
+                <testcase name="open_permission_action_page" time="13.326" classname="login.Dashboard_TestCases" />
+                <testcase name="open_tracks_page" time="12.504" classname="login.Dashboard_TestCases" />
+                <testcase name="open_locales_export_page" time="11.752" classname="login.Dashboard_TestCases" />
+                <testcase name="open_permissions_page" time="7.950" classname="login.Dashboard_TestCases" />
+                <testcase name="open_media_gallery_page" time="16.462" classname="login.Dashboard_TestCases" />
+                <testcase name="open_permission_categories_page" time="13.224" classname="login.Dashboard_TestCases" />
+                <testcase name="open_variables_page" time="13.137" classname="login.Dashboard_TestCases" />
+                <testcase name="open_locales_import_page" time="11.885" classname="login.Dashboard_TestCases" />
+                <testcase name="open_brands_page" time="13.204" classname="login.Dashboard_TestCases" />
+                <testcase name="open_messages_types_page" time="12.218" classname="login.Dashboard_TestCases" />
+                <testcase name="open_sessions_page" time="14.525" classname="login.Dashboard_TestCases" />
+                <testcase name="open_connectors_page" time="12.592" classname="login.Dashboard_TestCases" />
+                <testcase name="open_permission_group_page" time="20.419" classname="login.Dashboard_TestCases" />
+                <testcase name="open_messages_page" time="17.715" classname="login.Dashboard_TestCases" />
+                <testcase name="open_segments_page" time="12.166" classname="login.Dashboard_TestCases" />
+                <testcase name="open_communications_page" time="12.840" classname="login.Dashboard_TestCases" />
+                <testcase name="open_locales_page" time="12.196" classname="login.Dashboard_TestCases" />
+                <testcase name="open_segments_groups_page" time="11.745" classname="login.Dashboard_TestCases" />
+                <testcase name="open_regions_page" time="12.523" classname="login.Dashboard_TestCases" />
+                <testcase name="open_targeting_criteria_page" time="12.664" classname="login.Dashboard_TestCases" />
+                <testcase name="open_workflow_state_page" time="12.500" classname="login.Dashboard_TestCases" />
+                <testcase name="open_programs_page" time="12.216" classname="login.Dashboard_TestCases" />
+                <testcase name="select_allclient_in_client_dropdown" time="13.309" classname="login.Dashboard_TestCases" />
+                <testcase name="open_system_configuration_page" time="11.343" classname="login.Dashboard_TestCases" />
+                <testcase name="open_templates_page" time="12.484" classname="login.Dashboard_TestCases" />
+                <testcase name="open_channels_page" time="12.576" classname="login.Dashboard_TestCases" />
+      
+</testsuite>

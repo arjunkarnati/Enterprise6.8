@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" allow-return-values="true" verbose="1"
+	parallel="tests" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="PERMISSION GROUPS ADD TEST CASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="access.PermissionGroups_TestCases" />
+		</classes>
+	</test>
+	<test name="PERMISSION GROUPS EDIT TEST CASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="access.PermissionGroupsEdit_testcases" />
+		</classes>
+	</test>
+	<test name="PERMISSION GROUPS RESTORE TEST CASES"
+		group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="access.PermissionGroupsRestore_testcases" />
+		</classes>
+	</test>
+</suite>
+
+

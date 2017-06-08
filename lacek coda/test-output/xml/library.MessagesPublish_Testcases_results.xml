@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MESSAGES TESTCASES"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="76.683">
+  <properties />
+  
+  
+            <testcase name="cancel_publish_campaign" time="38.447" classname="library.MessagesPublish_Testcases" />
+                <testcase name="publish_message" time="38.236" classname="library.MessagesPublish_Testcases" />
+      
+</testsuite>

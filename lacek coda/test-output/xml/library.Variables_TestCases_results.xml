@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="VARIABLES TESTCASES"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="267.456">
+  <properties />
+  
+  
+            <testcase name="create_a_new_locale_variable" time="64.848" classname="library.Variables_TestCases" />
+                <testcase name="create_a_new_variablle_without_clientname" time="33.927" classname="library.Variables_TestCases" />
+                <testcase name="delete_variable_from_db" time="2.129" classname="library.Variables_TestCases" />
+                <testcase name="click_cancel_variable_button" time="24.675" classname="library.Variables_TestCases" />
+                <testcase name="create_a_new_variablle_without_name" time="36.237" classname="library.Variables_TestCases" />
+                <testcase name="create_a_duplicate_variable" time="44.381" classname="library.Variables_TestCases" />
+                <testcase name="create_a_new_global_variable" time="61.259" classname="library.Variables_TestCases" />
+      
+</testsuite>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (2)]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="LAYOUT REGRESSION RUN(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="layout.Regions_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="tearDown"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- layout.Regions_TestCases -->
+      <class name="layout.TemplatesRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- layout.TemplatesRestore_testcases -->
+      <class name="layout.RegionsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="inactivate_region"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- layout.RegionsEdit_testcases -->
+      <class name="layout.RegionsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- layout.RegionsRestore_testcases -->
+      <class name="layout.Templates_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- layout.Templates_TestCases -->
+      <class name="layout.TemplatesEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="inactivate_template"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- layout.TemplatesEdit_testcases -->
+    </classes>
+  </test> <!-- LAYOUT REGRESSION RUN(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (2)] -->

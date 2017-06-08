@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>TestNG:  PROGRAMS TESTCASES</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PROGRAMS TESTCASES</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 06 19:03:41 CDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>825 seconds (825906 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.activate_program()'><b>activate_program</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>37</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.archive_program()'><b>archive_program</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>17</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.Programs_testcases.create_a_new_program()'><b>create_a_new_program</b><br>Test class: manage.Programs_testcases</td>
+<td></td>
+<td>55</td>
+<td>manage.Programs_testcases@2df32bf7</td></tr>
+<tr>
+<td title='manage.Programs_testcases.create_a_new_program_without_a_client_name()'><b>create_a_new_program_without_a_client_name</b><br>Test class: manage.Programs_testcases</td>
+<td></td>
+<td>33</td>
+<td>manage.Programs_testcases@2df32bf7</td></tr>
+<tr>
+<td title='manage.Programs_testcases.create_a_new_program_without_a_name()'><b>create_a_new_program_without_a_name</b><br>Test class: manage.Programs_testcases</td>
+<td></td>
+<td>37</td>
+<td>manage.Programs_testcases@2df32bf7</td></tr>
+<tr>
+<td title='manage.Programs_testcases.delete_program_from_db()'><b>delete_program_from_db</b><br>Test class: manage.Programs_testcases</td>
+<td></td>
+<td>2</td>
+<td>manage.Programs_testcases@2df32bf7</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.empty_name_field_in_programs_edit_page()'><b>empty_name_field_in_programs_edit_page</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>34</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.inactivate_program()'><b>inactivate_program</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.restore_program()'><b>restore_program</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>29</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.select_cancel_button_in_program_edit_page()'><b>select_cancel_button_in_program_edit_page</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>30</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_brands()'><b>update_program_brands</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>49</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_brands_to_previous()'><b>update_program_brands_to_previous</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>43</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_clientname()'><b>update_program_clientname</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>27</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_clientname_to_previous()'><b>update_program_clientname_to_previous</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>26</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_description()'><b>update_program_description</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_name()'><b>update_program_name</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>39</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_name_to_previous()'><b>update_program_name_to_previous</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>39</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_url()'><b>update_program_url</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsEdit_testcases.update_program_url_to_previous()'><b>update_program_url_to_previous</b><br>Test class: manage.ProgramsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>manage.ProgramsEdit_testcases@530612ba</td></tr>
+<tr>
+<td title='manage.ProgramsRestore_testcases.validate_program_archive_page()'><b>validate_program_archive_page</b><br>Test class: manage.ProgramsRestore_testcases</td>
+<td></td>
+<td>12</td>
+<td>manage.ProgramsRestore_testcases@2a40cd94</td></tr>
+</table><p>
+</body>
+</html>

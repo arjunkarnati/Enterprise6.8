@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LOGIN TESTCASES"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="34.298">
+  <properties />
+  
+  
+            <testcase name="login_with_empty_username_password" time="5.048" classname="login.Login_testcases" />
+                <testcase name="login_with_empty_password" time="5.284" classname="login.Login_testcases" />
+                <testcase name="login_with_invalid_password" time="5.501" classname="login.Login_testcases" />
+                <testcase name="login_with_invalid_username" time="5.382" classname="login.Login_testcases" />
+                <testcase name="login_with_valid_username_and_valid_password" time="7.829" classname="login.Login_testcases" />
+                <testcase name="login_with_empty_username" time="5.254" classname="login.Login_testcases" />
+      
+</testsuite>

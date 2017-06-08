@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>TestNG:  DASHBOARD TESTCASES</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DASHBOARD TESTCASES</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 07 00:04:03 CDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>708 seconds (708556 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='login.Dashboard_TestCases.login_and_logout()'><b>login_and_logout</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>10</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_brands_page()'><b>open_brands_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>13</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_campaign_page()'><b>open_campaign_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>13</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_change_log_page()'><b>open_change_log_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>11</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_channels_page()'><b>open_channels_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_clietns_page()'><b>open_clietns_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>11</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_communications_page()'><b>open_communications_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_connectors_page()'><b>open_connectors_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_locales_export_page()'><b>open_locales_export_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>11</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_locales_import_page()'><b>open_locales_import_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>11</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_locales_page()'><b>open_locales_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_media_gallery_page()'><b>open_media_gallery_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>16</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_messages_page()'><b>open_messages_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>17</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_messages_types_page()'><b>open_messages_types_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_permission_action_page()'><b>open_permission_action_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>13</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_permission_categories_page()'><b>open_permission_categories_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>13</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_permission_group_page()'><b>open_permission_group_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>20</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_permissions_page()'><b>open_permissions_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>7</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_programs_page()'><b>open_programs_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_regions_page()'><b>open_regions_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_roles_page()'><b>open_roles_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_segments_groups_page()'><b>open_segments_groups_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>11</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_segments_page()'><b>open_segments_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_sessions_page()'><b>open_sessions_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>14</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_system_configuration_page()'><b>open_system_configuration_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>11</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_targeting_criteria_page()'><b>open_targeting_criteria_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_templates_page()'><b>open_templates_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_tracks_page()'><b>open_tracks_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_users_page()'><b>open_users_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_variables_page()'><b>open_variables_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>13</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_workflow_manager_page()'><b>open_workflow_manager_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>13</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.open_workflow_state_page()'><b>open_workflow_state_page</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>12</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.select_allclient_in_client_dropdown()'><b>select_allclient_in_client_dropdown</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>13</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+<tr>
+<td title='login.Dashboard_TestCases.select_dupont_in_client_dropdown()'><b>select_dupont_in_client_dropdown</b><br>Test class: login.Dashboard_TestCases</td>
+<td></td>
+<td>13</td>
+<td>login.Dashboard_TestCases@3f6db3fb</td></tr>
+</table><p>
+</body>
+</html>

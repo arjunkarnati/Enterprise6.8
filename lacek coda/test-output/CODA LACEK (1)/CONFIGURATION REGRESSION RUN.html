@@ -1,0 +1,1248 @@
+<html>
+<head>
+<title>TestNG:  CONFIGURATION REGRESSION RUN</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CONFIGURATION REGRESSION RUN</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>85/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 12 16:53:39 CST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>2113 seconds (2113723 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='configuration.TargetingCriteria_TestCases.create_a_new_targeting_criteria_without_a_clientname()'><b>create_a_new_targeting_criteria_without_a_clientname</b><br>Test class: configuration.TargetingCriteria_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: no such session
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 226 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir20220_25310}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 868467e755ec9ec343e8fdf6f2b51720
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
+	at Utility.PageBase$1.apply(PageBase.java:61)
+	at Utility.PageBase$1.apply(PageBase.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at Utility.PageBase.waitForAjax(PageBase.java:58)
+	at login.LoginPage.loginAs(LoginPage.java:33)
+	at configuration.TargetingCriteria_TestCases.create_a_new_targeting_criteria_without_a_clientname(TargetingCriteria_TestCases.java:36)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1853042864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1853042864'><pre>org.openqa.selenium.NoSuchSessionException: no such session
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 226 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir20220_25310}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 868467e755ec9ec343e8fdf6f2b51720
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
+	at Utility.PageBase$1.apply(PageBase.java:61)
+	at Utility.PageBase$1.apply(PageBase.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at Utility.PageBase.waitForAjax(PageBase.java:58)
+	at login.LoginPage.loginAs(LoginPage.java:33)
+	at configuration.TargetingCriteria_TestCases.create_a_new_targeting_criteria_without_a_clientname(TargetingCriteria_TestCases.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>4</td>
+<td>configuration.TargetingCriteria_TestCases@610694f1</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.empty_code_field_in_segements_edit_page()'><b>empty_code_field_in_segements_edit_page</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segment/edit/10&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir21660_17178}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d9d752804329dd29728b5f217a16810b
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segment/edit/10&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentsPage.editSegment(SegmentsPage.java:60)
+	at configuration.SegmentsEdit_testcases.empty_code_field_in_segements_edit_page(SegmentsEdit_testcases.java:163)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace388872005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace388872005'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segment/edit/10&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir21660_17178}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d9d752804329dd29728b5f217a16810b
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segment/edit/10&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentsPage.editSegment(SegmentsPage.java:60)
+	at configuration.SegmentsEdit_testcases.empty_code_field_in_segements_edit_page(SegmentsEdit_testcases.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.empty_code_field_in_tagerting_criteria_edit_page()'><b>empty_code_field_in_tagerting_criteria_edit_page</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir21564_17590}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ae873cd48dd8107361a4be4696763d18
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.TargetingCriteriaPage.editTargetingCriteria(TargetingCriteriaPage.java:60)
+	at configuration.TargetingCriteriaEdit_testcases.empty_code_field_in_tagerting_criteria_edit_page(TargetingCriteriaEdit_testcases.java:147)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16332609", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16332609'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir21564_17590}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ae873cd48dd8107361a4be4696763d18
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.TargetingCriteriaPage.editTargetingCriteria(TargetingCriteriaPage.java:60)
+	at configuration.TargetingCriteriaEdit_testcases.empty_code_field_in_tagerting_criteria_edit_page(TargetingCriteriaEdit_testcases.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.empty_name_field_in_segements_edit_page()'><b>empty_name_field_in_segements_edit_page</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segment/edit/10&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir19960_2336}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4e108b11c8780ec5dbbe2f347cb37092
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segment/edit/10&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentsPage.editSegment(SegmentsPage.java:60)
+	at configuration.SegmentsEdit_testcases.empty_name_field_in_segements_edit_page(SegmentsEdit_testcases.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace918123618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace918123618'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segment/edit/10&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir19960_2336}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4e108b11c8780ec5dbbe2f347cb37092
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segment/edit/10&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentsPage.editSegment(SegmentsPage.java:60)
+	at configuration.SegmentsEdit_testcases.empty_name_field_in_segements_edit_page(SegmentsEdit_testcases.java:151)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.empty_name_field_in_segmentGroups_edit_page()'><b>empty_name_field_in_segmentGroups_edit_page</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segmentgroup/edit/4&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir21608_19132}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cd82804431e1a62b66ace17e3bbc4f06
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segmentgroup/edit/4&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentGroupsPage.editSegmentGroup(SegmentGroupsPage.java:61)
+	at configuration.SegmentGroupsEdit_testcases.empty_name_field_in_segmentGroups_edit_page(SegmentGroupsEdit_testcases.java:163)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1982946240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1982946240'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segmentgroup/edit/4&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir21608_19132}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: cd82804431e1a62b66ace17e3bbc4f06
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segmentgroup/edit/4&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentGroupsPage.editSegmentGroup(SegmentGroupsPage.java:61)
+	at configuration.SegmentGroupsEdit_testcases.empty_name_field_in_segmentGroups_edit_page(SegmentGroupsEdit_testcases.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.empty_name_field_in_tagerting_criteria_edit_page()'><b>empty_name_field_in_tagerting_criteria_edit_page</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir19868_30473}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0f7fe6740ce1f89273278b959df7a424
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.TargetingCriteriaPage.editTargetingCriteria(TargetingCriteriaPage.java:60)
+	at configuration.TargetingCriteriaEdit_testcases.empty_name_field_in_tagerting_criteria_edit_page(TargetingCriteriaEdit_testcases.java:135)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace458657374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace458657374'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.09 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir19868_30473}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0f7fe6740ce1f89273278b959df7a424
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.TargetingCriteriaPage.editTargetingCriteria(TargetingCriteriaPage.java:60)
+	at configuration.TargetingCriteriaEdit_testcases.empty_name_field_in_tagerting_criteria_edit_page(TargetingCriteriaEdit_testcases.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.inactivate_segment()'><b>inactivate_segment</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segment/edit/10&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir9932_22287}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0fb8e25b435473156e5fb2443dde5a72
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segment/edit/10&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentsPage.editSegment(SegmentsPage.java:60)
+	at configuration.SegmentsEdit_testcases.inactivate_segment(SegmentsEdit_testcases.java:94)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1169373190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1169373190'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segment/edit/10&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir9932_22287}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0fb8e25b435473156e5fb2443dde5a72
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segment/edit/10&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentsPage.editSegment(SegmentsPage.java:60)
+	at configuration.SegmentsEdit_testcases.inactivate_segment(SegmentsEdit_testcases.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.inactivate_segment_groups()'><b>inactivate_segment_groups</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segmentgroup/edit/4&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir3888_10537}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b7e8b95c9981a4351a938f3df9f591cf
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segmentgroup/edit/4&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentGroupsPage.editSegmentGroup(SegmentGroupsPage.java:61)
+	at configuration.SegmentGroupsEdit_testcases.inactivate_segment_groups(SegmentGroupsEdit_testcases.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace826117910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace826117910'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/segmentgroup/edit/4&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir3888_10537}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b7e8b95c9981a4351a938f3df9f591cf
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/segmentgroup/edit/4&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.SegmentGroupsPage.editSegmentGroup(SegmentGroupsPage.java:61)
+	at configuration.SegmentGroupsEdit_testcases.inactivate_segment_groups(SegmentGroupsEdit_testcases.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>28</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.inactivate_tageting_criteria()'><b>inactivate_tageting_criteria</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir22268_1264}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c2bb471712d87ee7d962a15acd065700
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.TargetingCriteriaPage.editTargetingCriteria(TargetingCriteriaPage.java:60)
+	at configuration.TargetingCriteriaEdit_testcases.inactivate_tageting_criteria(TargetingCriteriaEdit_testcases.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1905524370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1905524370'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]&quot;}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir22268_1264}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c2bb471712d87ee7d962a15acd065700
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/targetingcriteria/edit/125&apos;)]}
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at configuration.TargetingCriteriaPage.editTargetingCriteria(TargetingCriteriaPage.java:60)
+	at configuration.TargetingCriteriaEdit_testcases.inactivate_tageting_criteria(TargetingCriteriaEdit_testcases.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>29</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.update_segment_clientname()'><b>update_segment_clientname</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td><div><pre>java.lang.AssertionError: expected [test] but found [Select a Segment Group]
+	at configuration.SegmentsEditPage.updateSegmentGroupsTo(SegmentsEditPage.java:36)
+	at configuration.SegmentsEdit_testcases.update_segment_clientname(SegmentsEdit_testcases.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1021046334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1021046334'><pre>java.lang.AssertionError: expected [test] but found [Select a Segment Group]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at configuration.SegmentsEditPage.updateSegmentGroupsTo(SegmentsEditPage.java:36)
+	at configuration.SegmentsEdit_testcases.update_segment_clientname(SegmentsEdit_testcases.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>29</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_brand()'><b>update_targeting_criteria_brand</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1193, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 95 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir22084_26070}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0860f9b3ab3af952b1100bf741791d70
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at configuration.TargetingCriteriaEditPage.clickSubmitButton(TargetingCriteriaEditPage.java:100)
+	at configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_brand(TargetingCriteriaEdit_testcases.java:45)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace56908802", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace56908802'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1193, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 95 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir22084_26070}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0860f9b3ab3af952b1100bf741791d70
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at configuration.TargetingCriteriaEditPage.clickSubmitButton(TargetingCriteriaEditPage.java:100)
+	at configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_brand(TargetingCriteriaEdit_testcases.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>30</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_brand_to_previous()'><b>update_targeting_criteria_brand_to_previous</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1193, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 85 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir1200_21228}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b39c284bad5919800e98c70c0c4d9cb6
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at configuration.TargetingCriteriaEditPage.clickSubmitButton(TargetingCriteriaEditPage.java:100)
+	at configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_brand_to_previous(TargetingCriteriaEdit_testcases.java:60)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1982652102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1982652102'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (1193, 598). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 85 milliseconds
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;R90JDQN3&apos;, ip: &apos;10.16.22.131&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\PRINCE~1.KAB\AppData\Local\Temp\scoped_dir1200_21228}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b39c284bad5919800e98c70c0c4d9cb6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at configuration.TargetingCriteriaEditPage.clickSubmitButton(TargetingCriteriaEditPage.java:100)
+	at configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_brand_to_previous(TargetingCriteriaEdit_testcases.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>32</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.activate_segment()'><b>activate_segment</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>36</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.activate_segment_groups()'><b>activate_segment_groups</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>35</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.activate_tageting_criteria()'><b>activate_tageting_criteria</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>36</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.archive_segment()'><b>archive_segment</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>16</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.archive_segment_groups()'><b>archive_segment_groups</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>15</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.archive_tageting_criteria()'><b>archive_tageting_criteria</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>15</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.click_cancel_in_acf_add_page()'><b>click_cancel_in_acf_add_page</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>24</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.create_a_duplicate_segment_groups_type_single_select()'><b>create_a_duplicate_segment_groups_type_single_select</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>39</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_a_new_acf_without_field_instructions()'><b>create_a_new_acf_without_field_instructions</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>75</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_a_new_acf_without_field_label()'><b>create_a_new_acf_without_field_label</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>77</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_a_new_acf_without_field_name()'><b>create_a_new_acf_without_field_name</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>75</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_a_new_acf_without_group_name()'><b>create_a_new_acf_without_group_name</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>73</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_a_new_acf_without_screens()'><b>create_a_new_acf_without_screens</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>67</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.Segments_TestCases.create_a_new_segment()'><b>create_a_new_segment</b><br>Test class: configuration.Segments_TestCases</td>
+<td></td>
+<td>47</td>
+<td>configuration.Segments_TestCases@23e028a9</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.create_a_new_segment_groups_type_multi_select()'><b>create_a_new_segment_groups_type_multi_select</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>48</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.create_a_new_segment_groups_type_multi_select_without_a_client_name()'><b>create_a_new_segment_groups_type_multi_select_without_a_client_name</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>32</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.create_a_new_segment_groups_type_multi_select_without_a_name()'><b>create_a_new_segment_groups_type_multi_select_without_a_name</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>35</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.create_a_new_segment_groups_type_single_select()'><b>create_a_new_segment_groups_type_single_select</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>49</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.create_a_new_segment_groups_type_single_select_without_a_client_name()'><b>create_a_new_segment_groups_type_single_select_without_a_client_name</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>31</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.create_a_new_segment_groups_type_single_select_without_a_name()'><b>create_a_new_segment_groups_type_single_select_without_a_name</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>34</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.create_a_new_segment_groups_without_a_type()'><b>create_a_new_segment_groups_without_a_type</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>35</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.Segments_TestCases.create_a_new_segment_without_a_clienname()'><b>create_a_new_segment_without_a_clienname</b><br>Test class: configuration.Segments_TestCases</td>
+<td></td>
+<td>35</td>
+<td>configuration.Segments_TestCases@23e028a9</td></tr>
+<tr>
+<td title='configuration.Segments_TestCases.create_a_new_segment_without_a_code()'><b>create_a_new_segment_without_a_code</b><br>Test class: configuration.Segments_TestCases</td>
+<td></td>
+<td>35</td>
+<td>configuration.Segments_TestCases@23e028a9</td></tr>
+<tr>
+<td title='configuration.Segments_TestCases.create_a_new_segment_without_a_name()'><b>create_a_new_segment_without_a_name</b><br>Test class: configuration.Segments_TestCases</td>
+<td></td>
+<td>34</td>
+<td>configuration.Segments_TestCases@23e028a9</td></tr>
+<tr>
+<td title='configuration.Segments_TestCases.create_a_new_segment_without_a_non_numerical_code()'><b>create_a_new_segment_without_a_non_numerical_code</b><br>Test class: configuration.Segments_TestCases</td>
+<td></td>
+<td>36</td>
+<td>configuration.Segments_TestCases@23e028a9</td></tr>
+<tr>
+<td title='configuration.Segments_TestCases.create_a_new_segment_without_a_segment_group()'><b>create_a_new_segment_without_a_segment_group</b><br>Test class: configuration.Segments_TestCases</td>
+<td></td>
+<td>34</td>
+<td>configuration.Segments_TestCases@23e028a9</td></tr>
+<tr>
+<td title='configuration.TargetingCriteria_TestCases.create_a_new_targeting_criteria()'><b>create_a_new_targeting_criteria</b><br>Test class: configuration.TargetingCriteria_TestCases</td>
+<td></td>
+<td>50</td>
+<td>configuration.TargetingCriteria_TestCases@610694f1</td></tr>
+<tr>
+<td title='configuration.TargetingCriteria_TestCases.create_a_new_targeting_criteria_without_a_name()'><b>create_a_new_targeting_criteria_without_a_name</b><br>Test class: configuration.TargetingCriteria_TestCases</td>
+<td></td>
+<td>34</td>
+<td>configuration.TargetingCriteria_TestCases@610694f1</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_an_acf_data_type_decimal_field_type_select()'><b>create_an_acf_data_type_decimal_field_type_select</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>98</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_an_acf_data_type_decimal_field_type_text()'><b>create_an_acf_data_type_decimal_field_type_text</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>95</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_an_acf_data_type_int_field_type_select()'><b>create_an_acf_data_type_int_field_type_select</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>99</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_an_acf_data_type_int_field_type_text()'><b>create_an_acf_data_type_int_field_type_text</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>90</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_an_acf_data_type_varchar_field_type_Wysiwyg_editor()'><b>create_an_acf_data_type_varchar_field_type_Wysiwyg_editor</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>95</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_an_acf_data_type_varchar_field_type_select()'><b>create_an_acf_data_type_varchar_field_type_select</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>98</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_an_acf_data_type_varchar_field_type_text()'><b>create_an_acf_data_type_varchar_field_type_text</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>94</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.create_an_acf_data_type_varchar_field_type_text_area()'><b>create_an_acf_data_type_varchar_field_type_text_area</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>95</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.Segments_TestCases.database_delete_segment_groups()'><b>database_delete_segment_groups</b><br>Test class: configuration.Segments_TestCases</td>
+<td></td>
+<td>2</td>
+<td>configuration.Segments_TestCases@23e028a9</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.database_delete_segment_groups()'><b>database_delete_segment_groups</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>2</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.TargetingCriteria_TestCases.database_delete_targeting_criteria()'><b>database_delete_targeting_criteria</b><br>Test class: configuration.TargetingCriteria_TestCases</td>
+<td></td>
+<td>2</td>
+<td>configuration.TargetingCriteria_TestCases@610694f1</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.delete_acf_from_database()'><b>delete_acf_from_database</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>2</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.empty_field_label_in_acf_edit_page()'><b>empty_field_label_in_acf_edit_page</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>42</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.empty_field_name_in_acf_edit_page()'><b>empty_field_name_in_acf_edit_page</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>42</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.empty_group_name_in_acf_edit_page()'><b>empty_group_name_in_acf_edit_page</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>40</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.MessageTypes_TestCases.message_type_test_scripts_will_be_added_in_maintenace()'><b>message_type_test_scripts_will_be_added_in_maintenace</b><br>Test class: configuration.MessageTypes_TestCases</td>
+<td></td>
+<td>12</td>
+<td>configuration.MessageTypes_TestCases@5b87ed94</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsRestore_testcases.open_archive_page()'><b>open_archive_page</b><br>Test class: configuration.SegmentGroupsRestore_testcases</td>
+<td></td>
+<td>20</td>
+<td>configuration.SegmentGroupsRestore_testcases@47ef968d</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.restore_segment()'><b>restore_segment</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>28</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.restore_segment_groups()'><b>restore_segment_groups</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>26</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.restore_tageting_criteria()'><b>restore_tageting_criteria</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>27</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.ACF_testcases.return_to_acf_main_page_from_add_page()'><b>return_to_acf_main_page_from_add_page</b><br>Test class: configuration.ACF_testcases</td>
+<td></td>
+<td>24</td>
+<td>configuration.ACF_testcases@887af79</td></tr>
+<tr>
+<td title='configuration.SegmentGroups_TestCases.select_button_cancel_in_segment_groups_add_page()'><b>select_button_cancel_in_segment_groups_add_page</b><br>Test class: configuration.SegmentGroups_TestCases</td>
+<td></td>
+<td>23</td>
+<td>configuration.SegmentGroups_TestCases@6e0e048a</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.select_button_cancel_in_segmentgroups_edit_page()'><b>select_button_cancel_in_segmentgroups_edit_page</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>28</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.select_button_cancel_in_segments_edit_page()'><b>select_button_cancel_in_segments_edit_page</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>28</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.TargetingCriteria_TestCases.select_button_cancel_in_targeting_criteria_add_page()'><b>select_button_cancel_in_targeting_criteria_add_page</b><br>Test class: configuration.TargetingCriteria_TestCases</td>
+<td></td>
+<td>25</td>
+<td>configuration.TargetingCriteria_TestCases@610694f1</td></tr>
+<tr>
+<td title='configuration.Segments_TestCases.select_cancel_button_in_segements_add_page()'><b>select_cancel_button_in_segements_add_page</b><br>Test class: configuration.Segments_TestCases</td>
+<td></td>
+<td>22</td>
+<td>configuration.Segments_TestCases@23e028a9</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.select_cancel_button_in_targeting_criteria_edit_page()'><b>select_cancel_button_in_targeting_criteria_edit_page</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>32</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.update_acf_brand()'><b>update_acf_brand</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>33</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.update_acf_brand_to_previous()'><b>update_acf_brand_to_previous</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>60</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.update_acf_client()'><b>update_acf_client</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>26</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.update_acf_group_name()'><b>update_acf_group_name</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>49</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.update_acf_group_name_to_previous()'><b>update_acf_group_name_to_previous</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>51</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.update_acf_program()'><b>update_acf_program</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>29</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.ACFEdit_testcases.update_acf_program_to_prvious()'><b>update_acf_program_to_prvious</b><br>Test class: configuration.ACFEdit_testcases</td>
+<td></td>
+<td>54</td>
+<td>configuration.ACFEdit_testcases@7fac631b</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.update_segment_clientname_to_previous()'><b>update_segment_clientname_to_previous</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>41</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.update_segment_code()'><b>update_segment_code</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>35</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.update_segment_code_to_previous()'><b>update_segment_code_to_previous</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>36</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_brand()'><b>update_segment_groups_brand</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>35</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_brand_to_previous()'><b>update_segment_groups_brand_to_previous</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>41</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_clientname()'><b>update_segment_groups_clientname</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>35</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_clientname_to_previous()'><b>update_segment_groups_clientname_to_previous</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>43</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_description()'><b>update_segment_groups_description</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>34</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_name()'><b>update_segment_groups_name</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>36</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_name_to_previous()'><b>update_segment_groups_name_to_previous</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>35</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_type()'><b>update_segment_groups_type</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>37</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentGroupsEdit_testcases.update_segment_groups_type_to_previous()'><b>update_segment_groups_type_to_previous</b><br>Test class: configuration.SegmentGroupsEdit_testcases</td>
+<td></td>
+<td>36</td>
+<td>configuration.SegmentGroupsEdit_testcases@5bc79255</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.update_segment_name()'><b>update_segment_name</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>37</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.update_segment_name_to_previous()'><b>update_segment_name_to_previous</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>37</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.update_segment_segment_group()'><b>update_segment_segment_group</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.SegmentsEdit_testcases.update_segment_segment_group_to_previous()'><b>update_segment_segment_group_to_previous</b><br>Test class: configuration.SegmentsEdit_testcases</td>
+<td></td>
+<td>36</td>
+<td>configuration.SegmentsEdit_testcases@3dd4520b</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_client()'><b>update_targeting_criteria_client</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>38</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_client_to_previous()'><b>update_targeting_criteria_client_to_previous</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>35</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_description()'><b>update_targeting_criteria_description</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>32</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_name()'><b>update_targeting_criteria_name</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>35</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaEdit_testcases.update_targeting_criteria_name_to_previous()'><b>update_targeting_criteria_name_to_previous</b><br>Test class: configuration.TargetingCriteriaEdit_testcases</td>
+<td></td>
+<td>34</td>
+<td>configuration.TargetingCriteriaEdit_testcases@43814d18</td></tr>
+<tr>
+<td title='configuration.SegmentsRestore_testcases.validate_segments_page()'><b>validate_segments_page</b><br>Test class: configuration.SegmentsRestore_testcases</td>
+<td></td>
+<td>20</td>
+<td>configuration.SegmentsRestore_testcases@5ae63ade</td></tr>
+<tr>
+<td title='configuration.TargetingCriteriaRestore_testcases.verify_targeting_criteria_page()'><b>verify_targeting_criteria_page</b><br>Test class: configuration.TargetingCriteriaRestore_testcases</td>
+<td></td>
+<td>19</td>
+<td>configuration.TargetingCriteriaRestore_testcases@5c5a1b69</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PERMISSIONS TESTCASES"
+           tests="12"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="812.330">
+  <properties />
+  
+  
+            <testcase name="click_cancel_in_permissions_edit_page" time="36.730" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="inactivate_permissions" time="74.092" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_permission_category" time="75.360" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_permission_category_to_previous" time="73.810" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="restore_permissions" time="80.160" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_business_rule" time="71.432" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_business_rule_to_previous" time="71.379" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_name_to_previous" time="76.456" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="archive_permissions" time="70.403" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_name" time="72.716" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="returm_to_permissions_main_page_from_edit" time="35.347" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="activate_permissions" time="74.445" classname="access.PemissionsEdit_TestCases" />
+      
+</testsuite>

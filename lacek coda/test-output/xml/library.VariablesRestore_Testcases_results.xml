@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="VARIABLES TESTCASES"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="12.906">
+  <properties />
+  
+  
+            <testcase name="validate_region_page" time="12.906" classname="library.VariablesRestore_Testcases" />
+      
+</testsuite>

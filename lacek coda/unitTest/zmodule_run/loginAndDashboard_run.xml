@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" parallel="classes" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="LOGIN AND DASHBOARD REGRESSION RUN">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="login.Reset_your_password_testcases" />
+			<class name="login.Dashboard_TestCases" />
+			<class name="login.Login_testcases" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MEDIA GALLERY TESTCASES"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="216.914">
+  <properties />
+  
+  
+            <testcase name="publish_media_gallery_Carnival_AE" time="67.991" classname="assets.MediaGalleryPublish_testcases" />
+                <testcase name="cancel_publish_campaign_Carnival_AE" time="42.504" classname="assets.MediaGalleryPublish_testcases" />
+                <testcase name="publish_media_gallery" time="65.455" classname="assets.MediaGalleryPublish_testcases" />
+                <testcase name="cancel_publish_campaign" time="40.964" classname="assets.MediaGalleryPublish_testcases" />
+      
+</testsuite>

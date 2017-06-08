@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PERMISSION ACTIONS TESTCASES"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="314.148">
+  <properties />
+  
+  
+            <testcase name="create_a_new_permission_action_without_permission" time="44.856" classname="access.PermissionActions_TestCases" />
+                <testcase name="returm_to_permission_actions_main_page" time="26.907" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_duplicate_permission_action" time="44.187" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_new_permission_action" time="71.433" classname="access.PermissionActions_TestCases" />
+                <testcase name="click_cancel_in_permission_action_add_page" time="36.633" classname="access.PermissionActions_TestCases" />
+                <testcase name="delete_permission_action_from_database" time="2.082" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_new_permission_action_without_name" time="43.540" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_new_permission_action_without_controller_name" time="44.510" classname="access.PermissionActions_TestCases" />
+      
+</testsuite>

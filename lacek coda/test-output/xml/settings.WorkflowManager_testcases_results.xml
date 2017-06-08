@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WORKFLOW MANAGER TESTCASES"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="26.832">
+  <properties />
+  
+  
+            <testcase name="delete_workflow_manager_from_database" time="2.230" classname="settings.WorkflowManager_testcases" />
+                <testcase name="create_a_workflow_manager" time="24.602" classname="settings.WorkflowManager_testcases" />
+      
+</testsuite>

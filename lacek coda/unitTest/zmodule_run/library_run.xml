@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" parallel="classes" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="LIBRARY REGRESSION RUN">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="library.Campaigns_Testcases" />
+			<class name="library.CanpaignsEdit_TestCases" />
+			<class name="library.CampaignsPublish_Testcases" />
+			<class name="library.CampaignsRestore_Testcases" />
+			<class name="library.Communications_TestCases" />
+			<class name="library.CommunicationsEdit_Testcases" />
+			<class name="library.CommunicationsRestore_Testcases" />
+			<class name="library.CommunicationsPublish_Testcases" />
+			<class name="library.Messages_TestCases" />
+			<class name="library.MessagesEdit_Testcases" />
+			<class name="library.MessagesRestore_Testcases" />
+			<class name="library.MessagesPublish_Testcases" />
+			<class name="library.Series_Testcases" />
+			<class name="library.SeriesEdit_Testcases" />
+			<class name="library.SeriesRestore_Testcases" />
+			<class name="library.SeriesPublish_Testcases" />
+			<class name="library.Tracks_Testcases" />
+			<class name="library.TracksEdit_Testcases" />
+			<class name="library.TracksRestore_Testcases" />
+			<class name="library.TracksPublish_Testcases" />
+			<class name="library.Variables_TestCases" />
+			<class name="library.VariableEdit_Testcases" />
+			<class name="library.VariablesRestore_Testcases" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (5)]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="LOGIN AND DASHBOARD REGRESSION RUN(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="login.Login_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="login_with_valid_username_and_valid_password"/>
+        </methods>
+      </class> <!-- login.Login_testcases -->
+      <class name="login.Dashboard_TestCases">
+        <methods>
+          <include name="open_brands_page"/>
+          <include name="open_campaign_page"/>
+          <include name="open_locales_page"/>
+          <include name="open_channels_page"/>
+          <include name="open_workflow_manager_page"/>
+          <include name="beforeTest"/>
+          <include name="open_locales_export_page"/>
+          <include name="open_workflow_state_page"/>
+          <include name="open_targeting_criteria_page"/>
+          <include name="open_communications_page"/>
+          <include name="open_segments_groups_page"/>
+          <include name="open_locales_import_page"/>
+          <include name="select_dupont_in_client_dropdown"/>
+          <include name="open_messages_page"/>
+          <include name="open_programs_page"/>
+          <include name="open_segments_page"/>
+          <include name="open_connectors_page"/>
+          <include name="open_variables_page"/>
+          <include name="select_allclient_in_client_dropdown"/>
+          <include name="open_media_gallery_page"/>
+          <include name="open_messages_types_page"/>
+          <include name="open_clietns_page"/>
+          <include name="open_templates_page"/>
+          <include name="open_tracks_page"/>
+          <include name="AfterLogin"/>
+          <include name="open_regions_page"/>
+          <include name="BeforeSuite"/>
+          <include name="open_change_log_page"/>
+          <include name="open_permission_categories_page"/>
+          <include name="open_permission_action_page"/>
+          <include name="login_and_logout"/>
+          <include name="open_roles_page"/>
+          <include name="open_permission_group_page"/>
+          <include name="open_sessions_page"/>
+          <include name="open_users_page"/>
+        </methods>
+      </class> <!-- login.Dashboard_TestCases -->
+      <class name="login.Reset_your_password_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- login.Reset_your_password_testcases -->
+    </classes>
+  </test> <!-- LOGIN AND DASHBOARD REGRESSION RUN(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (5)] -->

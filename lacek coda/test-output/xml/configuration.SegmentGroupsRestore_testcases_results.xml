@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SEGMENT GROUPS TESTCASES"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="21.273">
+  <properties />
+  
+  
+            <testcase name="open_archive_page" time="21.273" classname="configuration.SegmentGroupsRestore_testcases" />
+      
+</testsuite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" parallel="classes" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="CONFIGURATION REGRESSION RUN">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="configuration.ACF_testcases" />
+			<class name="configuration.ACFEdit_testcases" />
+			<class name="configuration.MessageTypes_TestCases" />
+			<class name="configuration.SegmentGroups_TestCases" />
+			<class name="configuration.SegmentGroupsEdit_testcases" />
+			<class name="configuration.SegmentGroupsRestore_testcases" />
+			<class name="configuration.Segments_TestCases" />
+			<class name="configuration.SegmentsEdit_testcases" />
+			<class name="configuration.SegmentsRestore_testcases" />
+			<class name="configuration.TargetingCriteria_TestCases" />
+			<class name="configuration.TargetingCriteriaEdit_testcases" />
+			<class name="configuration.TargetingCriteriaRestore_testcases" />
+		</classes>
+	</test>
+</suite>

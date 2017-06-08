@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [CODA LACEK (1)]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="CONFIGURATION REGRESSION RUN(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="configuration.SegmentsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentsRestore_testcases -->
+      <class name="configuration.Segments_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.Segments_TestCases -->
+      <class name="configuration.TargetingCriteria_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="create_a_new_targeting_criteria_without_a_clientname"/>
+        </methods>
+      </class> <!-- configuration.TargetingCriteria_TestCases -->
+      <class name="configuration.MessageTypes_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.MessageTypes_TestCases -->
+      <class name="configuration.SegmentGroups_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentGroups_TestCases -->
+      <class name="configuration.TargetingCriteriaRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.TargetingCriteriaRestore_testcases -->
+      <class name="configuration.SegmentsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="empty_name_field_in_segements_edit_page"/>
+          <include name="update_segment_clientname"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="empty_code_field_in_segements_edit_page"/>
+          <include name="inactivate_segment"/>
+        </methods>
+      </class> <!-- configuration.SegmentsEdit_testcases -->
+      <class name="configuration.ACF_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="tearDown"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.ACF_testcases -->
+      <class name="configuration.SegmentGroupsEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="inactivate_segment_groups"/>
+          <include name="empty_name_field_in_segmentGroups_edit_page"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentGroupsEdit_testcases -->
+      <class name="configuration.SegmentGroupsRestore_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.SegmentGroupsRestore_testcases -->
+      <class name="configuration.TargetingCriteriaEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="update_targeting_criteria_brand_to_previous"/>
+          <include name="update_targeting_criteria_brand"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="empty_name_field_in_tagerting_criteria_edit_page"/>
+          <include name="inactivate_tageting_criteria"/>
+          <include name="empty_code_field_in_tagerting_criteria_edit_page"/>
+        </methods>
+      </class> <!-- configuration.TargetingCriteriaEdit_testcases -->
+      <class name="configuration.ACFEdit_testcases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.ACFEdit_testcases -->
+    </classes>
+  </test> <!-- CONFIGURATION REGRESSION RUN(failed) -->
+</suite> <!-- Failed suite [CODA LACEK (1)] -->

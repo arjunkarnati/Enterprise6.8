@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CODA LACEK" allow-return-values="true" verbose="1"
+	parallel="tests" thread-count="3">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="SEGMENT GROUPS ADD TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="configuration.SegmentGroups_TestCases" />
+		</classes>
+	</test>
+	<test name="SEGMENT GROUPS EDIT TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="configuration.SegmentGroupsEdit_testcases" />
+		</classes>
+	</test>
+	<test name="SEGMENT GROUPS RESTORE TESTCASES" group-by-instances="true">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="configuration.SegmentGroupsRestore_testcases" />
+		</classes>
+	</test>
+</suite>
+
+
+
+

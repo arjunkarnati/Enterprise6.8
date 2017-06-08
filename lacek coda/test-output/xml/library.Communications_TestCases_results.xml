@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="COMMUNICATIONS TESTCASES"
+           tests="6"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="225.971">
+  <properties />
+            <testcase name="create_a_new_communication" time="63.314" classname="library.Communications_TestCases">
+                <failure type="java.lang.AssertionError"
+                  message="expected [Carnival Corporation &amp; PLC] but found [Enterprise Holdings Inc.]"
+              >
+<![CDATA[java.lang.AssertionError: expected [Carnival Corporation & PLC] but found [Enterprise Holdings Inc.]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:513)
+  org.testng.Assert.assertEqualsImpl(Assert.java:135)
+  org.testng.Assert.assertEquals(Assert.java:116)
+  org.testng.Assert.assertEquals(Assert.java:190)
+  org.testng.Assert.assertEquals(Assert.java:200)
+  library.CommunicationsPage.validateUpdates(CommunicationsPage.java:259)
+  library.Communications_TestCases.create_a_new_communication(Communications_TestCases.java:28)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="create_a_new_communication_without_clientname" time="30.792" classname="library.Communications_TestCases" />
+                <testcase name="delete_communication_from_db" time="3.351" classname="library.Communications_TestCases" />
+                <testcase name="create_a_communication_without_communicationnname" time="50.155" classname="library.Communications_TestCases" />
+                <testcase name="create_a_new_communication_without_template" time="49.093" classname="library.Communications_TestCases" />
+                <testcase name="click_cancel_Button_in_communication_add_page" time="29.266" classname="library.Communications_TestCases" />
+      
+</testsuite>

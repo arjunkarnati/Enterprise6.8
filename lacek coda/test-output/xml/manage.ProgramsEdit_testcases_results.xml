@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PROGRAMS TESTCASES"
+           tests="15"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="530.459">
+  <properties />
+  
+  
+            <testcase name="empty_name_field_in_programs_edit_page" time="34.514" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_url" time="38.421" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_name_to_previous" time="39.723" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_clientname" time="27.374" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="inactivate_program" time="38.329" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_clientname_to_previous" time="26.819" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="select_cancel_button_in_program_edit_page" time="30.552" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="restore_program" time="29.288" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="archive_program" time="17.917" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_url_to_previous" time="38.864" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_description" time="38.638" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="activate_program" time="37.733" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_name" time="39.917" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_brands" time="49.250" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_brands_to_previous" time="43.120" classname="manage.ProgramsEdit_testcases" />
+      
+</testsuite>
