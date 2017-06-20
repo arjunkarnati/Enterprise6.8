@@ -8,7 +8,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void update_permission_action_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -21,7 +21,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void update_permission_action_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_010")
@@ -34,7 +34,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void update_permission_action_controller_action_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -47,7 +47,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void update_permission_action_controller_action_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -60,7 +60,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=4,enabled=true)
 	public void update_permission_action_permission()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -72,7 +72,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=5,enabled=true)
 	public void update_permission_action_permission_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -84,7 +84,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=6,enabled=true)
 	public void empty_name_field_in_permission_actions_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -96,7 +96,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=7,enabled=true)
 	public void empty_controller_action_field_in_permission_actions_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -108,7 +108,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=8,enabled=true)
 	public void empty_permission_field_in_permission_actions_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -120,7 +120,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=9,enabled=true)
 	public void click_cancel_in_permission_action_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -131,7 +131,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=10,enabled=true)
 	public void return_to_permission_actions_main_page_from_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -142,7 +142,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=11,enabled=true)
 	public void inactivate_permission_actions()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -155,7 +155,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=12,enabled=true)
 	public void activate_permission_actions()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -168,7 +168,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=13,enabled=true)
 	public void archive_permission_action()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.editPermissionActions("edit_permission_action_test_01")
@@ -180,7 +180,7 @@ public class PermissionActionsEdit_TestCases extends TestBase{
 	@Test(priority=14,enabled=true)
 	public void restore_permission_action()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickArchiveButton()

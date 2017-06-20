@@ -11,7 +11,7 @@ public class MediaGallery_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_media_gallery()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		//.clickAddMediaGalleryButton()
@@ -36,7 +36,7 @@ public class MediaGallery_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_media_gallery_without_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.clickAddMediaGalleryButton()
@@ -48,7 +48,7 @@ public class MediaGallery_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_media_gallery_without_uploadig_an_image()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.clickAddMediaGalleryButton()

@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="583.679">
+           time="661.025">
   <properties />
   
   
-            <testcase name="inactivate_permission_categories" time="65.546" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="update_permission_categories_name_to_previous" time="65.024" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="update_permission_categories_conttroller_name" time="65.060" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="archive_permission_categories" time="59.998" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="click_cancel_in_permission_categories_edit_page" time="30.879" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="update_permission_categories_name" time="65.117" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="update_permission_categories_conttroller_name_to_previous" time="63.934" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="activate_permission_categories" time="64.316" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="restore_permission_categories" time="72.061" classname="access.PermissionCategoriesEdit_TestCases" />
-                <testcase name="return_to_main_page_from_permission_categories_edit_page" time="31.744" classname="access.PermissionCategoriesEdit_TestCases" />
+            <testcase name="update_permission_categories_name_to_previous" time="74.544" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="update_permission_categories_conttroller_name_to_previous" time="74.309" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="update_permission_categories_name" time="74.055" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="update_permission_categories_conttroller_name" time="74.538" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="activate_permission_categories" time="74.908" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="archive_permission_categories" time="69.446" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="click_cancel_in_permission_categories_edit_page" time="31.758" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="restore_permission_categories" time="82.162" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="return_to_main_page_from_permission_categories_edit_page" time="31.052" classname="access.PermissionCategoriesEdit_TestCases" />
+                <testcase name="inactivate_permission_categories" time="74.253" classname="access.PermissionCategoriesEdit_TestCases" />
       
 </testsuite>

@@ -4,29 +4,29 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="430.369">
+           time="398.286">
   <properties />
   
   
-            <testcase name="test_is_empty_1" time="12.618" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="update_connector_name" time="26.115" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="test_is_empty_2" time="12.373" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="update_client" time="29.262" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="acativate_connector" time="26.390" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="test_is_empty_5" time="22.761" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="inacativate_connector" time="27.025" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="validate_program_add" time="12.485" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="test_is_empty_4" time="14.048" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="add_programs" time="27.526" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="validate_name_update_to_previous" time="18.774" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="update_client_to_previous" time="27.866" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="validate_name_update" time="19.675" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="test_is_empty_6" time="23.278" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="test_is_empty" time="12.692" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="test_is_empty_3" time="13.302" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="test_is_empty_7" time="21.195" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="delete_entry_in_brand_field" time="25.869" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="add_brands" time="31.469" classname="settings.ConnectorsEdit_testcases" />
-                <testcase name="update_connector_name_to_previous" time="25.646" classname="settings.ConnectorsEdit_testcases" />
+            <testcase name="delete_entry_in_brand_field" time="24.755" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="acativate_connector" time="27.833" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="test_is_empty_3" time="12.502" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="test_is_empty" time="12.773" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="update_connector_name" time="25.611" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="test_is_empty_5" time="12.286" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="add_brands" time="33.373" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="test_is_empty_7" time="12.119" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="update_client_to_previous" time="28.806" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="test_is_empty_1" time="12.565" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="validate_name_update" time="19.218" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="test_is_empty_4" time="12.162" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="update_client" time="28.249" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="add_programs" time="27.622" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="update_connector_name_to_previous" time="25.078" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="validate_name_update_to_previous" time="19.160" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="validate_program_add" time="12.401" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="test_is_empty_6" time="12.343" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="inacativate_connector" time="27.467" classname="settings.ConnectorsEdit_testcases" />
+                <testcase name="test_is_empty_2" time="11.963" classname="settings.ConnectorsEdit_testcases" />
       
 </testsuite>

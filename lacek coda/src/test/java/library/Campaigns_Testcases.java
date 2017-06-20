@@ -11,7 +11,7 @@ public class Campaigns_Testcases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void create_a_new_campaign()  
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()
@@ -37,7 +37,7 @@ public class Campaigns_Testcases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void create_a_new_campaign_without_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()
@@ -51,7 +51,7 @@ public class Campaigns_Testcases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void create_a_new_campaign_without_campaignname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()
@@ -67,7 +67,7 @@ public class Campaigns_Testcases extends TestBase{
 	@Test(priority=3,enabled=true,dependsOnMethods={"create_a_new_campaign"})
 	public void create_a_new_campaign_without_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()
@@ -86,7 +86,7 @@ public class Campaigns_Testcases extends TestBase{
 	@Test(priority=4,enabled=true,dependsOnMethods={"create_a_new_campaign_without_brand"})
 	public void create_a_new_campaign_without_program()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()
@@ -103,7 +103,7 @@ public class Campaigns_Testcases extends TestBase{
 	@Test(priority=5,enabled=true)
 	public void create_a_new_campaign_without_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()
@@ -119,7 +119,7 @@ public class Campaigns_Testcases extends TestBase{
 	@Test(priority=6,enabled=true)
 	public void click_cancel_button_in_campaign_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()
@@ -135,7 +135,7 @@ public class Campaigns_Testcases extends TestBase{
 	/*@Test(priority=30,enabled=true)
 	public void create_test_campaign()  
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()

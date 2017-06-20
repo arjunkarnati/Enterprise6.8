@@ -9,7 +9,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -23,7 +23,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_name_to_previous_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_010")
@@ -36,7 +36,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	@Test(priority=2,enabled=false)
 	public void update_message_client_field()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -49,7 +49,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	@Test(priority=3,enabled=false)
 	public void update_message_clientname_to_previous_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -63,7 +63,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_brands()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -78,7 +78,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_brands_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -94,7 +94,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_programs()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -110,7 +110,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_programs_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -125,7 +125,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_workflow_to_approved()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -138,7 +138,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -152,7 +152,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_template()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -169,7 +169,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_template_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -184,7 +184,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_message_workflow_to_draft()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -193,25 +193,25 @@ public class MessagesEdit_Testcases extends TestBase{
 		.getTitle()
 		.logout();	
 	}
-	/*@Test(priority=13)
+	@Test(priority=13)
 	//@Test(enabled=false)
 	public void inactivate_message()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
-		.editMessage("edit_message_test_01")
-		.isActive(false)
-		.clickSubmitButton()
-		.validateUpdates("edit_message_test_01","status","INACTIVE")
-		.getTitle()
+		//.editMessage("edit_message_test_01")
+		//.isActive(false)
+		//.clickSubmitButton()
+		//.validateUpdates("edit_message_test_01","status","INACTIVE")
+		//.getTitle()
 		.logout();	
-	}*/
+	}
 	@Test(priority=14)
 	//@Test(enabled=false)
 	public void activate_message()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -225,7 +225,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void archive_message()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.archiveMessage("QR")
@@ -235,7 +235,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	@Test(priority=16,enabled=true)
 	public void restore_message()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.restoreMessage("QR")
@@ -246,7 +246,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	@Test(priority=17,enabled=true)
 	public void preview_locale()
 	{
-	login.loginAs("automation.admin","Monday#2")
+	login.loginAs("automation.admin","Monday#223")
 	.isSuccessfulLogin("automation admin")
 	.clickMessagesLink()
 	.editMessage("edit_message_test_01")
@@ -257,7 +257,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	@Test(priority=18,enabled=true)
 	public void view_locale()
 	{
-	login.loginAs("automation.admin","Monday#2")
+	login.loginAs("automation.admin","Monday#223")
 	.isSuccessfulLogin("automation admin")
 	.clickMessagesLink()
 	.viewMessage("edit_message_test_01")
@@ -267,7 +267,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	}
 	@Test(priority=19,enabled=true)
 	public void VerifyBanner(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.previewMessage("1718")
@@ -278,7 +278,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	}
 	@Test(priority=20,enabled=true)
 	public void VerifyAddingTwoSameTemplates(){
-		 login.loginAs("automation.admin","Monday#2")
+		 login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")	
@@ -321,7 +321,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	
 	@Test(priority=23,enabled=true)
 	public void VerifyAddedLocalesInPreview(){
-		 login.loginAs("automation.admin","Monday#2")
+		 login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -364,7 +364,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	
 	@Test(priority=24,enabled=true)
 	public void ClickPreview(){
-		 login.loginAs("automation.admin","Monday#2")
+		 login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")
@@ -376,7 +376,7 @@ public class MessagesEdit_Testcases extends TestBase{
 	@Test(priority=25)
 	public void check_quicklook_for_meaasage()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.clickquicklook()

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="200.381">
+           time="200.295">
   <properties />
-            <testcase name="create_a_new_track_without_brand" time="40.711" classname="library.Tracks_Testcases">
+            <testcase name="create_a_new_track_without_brand" time="41.616" classname="library.Tracks_Testcases">
                 <failure type="java.lang.AssertionError"
                   message="expected [2] but found [1]"
               >
@@ -45,10 +45,10 @@
           </testcase>
   
   
-            <testcase name="create_a_new_track_without_clientname" time="34.519" classname="library.Tracks_Testcases" />
-                <testcase name="create_a_new_track" time="55.349" classname="library.Tracks_Testcases" />
-                <testcase name="delete_tracks_from_db" time="2.306" classname="library.Tracks_Testcases" />
-                <testcase name="click_cancel_track_button" time="24.360" classname="library.Tracks_Testcases" />
-                <testcase name="create_a_new_track_without_tracksnname" time="43.136" classname="library.Tracks_Testcases" />
+            <testcase name="create_a_new_track_without_tracksnname" time="41.411" classname="library.Tracks_Testcases" />
+                <testcase name="click_cancel_track_button" time="25.063" classname="library.Tracks_Testcases" />
+                <testcase name="create_a_new_track" time="57.036" classname="library.Tracks_Testcases" />
+                <testcase name="create_a_new_track_without_clientname" time="32.841" classname="library.Tracks_Testcases" />
+                <testcase name="delete_tracks_from_db" time="2.328" classname="library.Tracks_Testcases" />
       
 </testsuite>

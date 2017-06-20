@@ -10,7 +10,7 @@ public class Communications_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void create_a_new_communication()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.clickAddCommunicationsButton()
@@ -38,7 +38,7 @@ public class Communications_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void create_a_new_communication_without_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.clickAddCommunicationsButton()
@@ -51,7 +51,7 @@ public class Communications_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void create_a_communication_without_communicationnname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.clickAddCommunicationsButton()
@@ -70,7 +70,7 @@ public class Communications_TestCases extends TestBase{
 	//@Test(priority=3,enabled=true)
 	public void create_a_new_communication_without_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.clickAddCommunicationsButton()
@@ -94,7 +94,7 @@ public class Communications_TestCases extends TestBase{
 	@Test(priority=4,enabled=true)
 	public void create_a_new_communication_without_template()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.clickAddCommunicationsButton()
@@ -113,7 +113,7 @@ public class Communications_TestCases extends TestBase{
 	@Test(priority=5,enabled=true)
 	public void click_cancel_Button_in_communication_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.clickAddCommunicationsButton()
@@ -129,7 +129,7 @@ public class Communications_TestCases extends TestBase{
 	/*@Test(priority=30,enabled=true)
 	public void create_test_communication()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.clickAddCommunicationsButton()

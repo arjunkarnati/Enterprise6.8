@@ -10,7 +10,7 @@ public class rbac_testcases extends TestBase {
 	@Test(priority=0,enabled=true)
 	public void integration_create_a_permission_groups_1()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionGroups()
 		.clickAddpermissionGroupsButton()
@@ -22,7 +22,7 @@ public class rbac_testcases extends TestBase {
 //	@Test(priority=1,enabled=true)
 //	public void integration_create_a_role_1()
 //	{
-//		login.loginAs("automation.admin","Monday#2")
+//		login.loginAs("automation.admin","Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickRoles()
 //		.clickAddRoleButton()
@@ -37,7 +37,7 @@ public class rbac_testcases extends TestBase {
 //	@Test(priority=2,enabled=true)
 //	public void integration_edit_user_remove_permissions_and_roles_1()
 //	{
-//		login.loginAs("automation.admin","Monday#2")
+//		login.loginAs("automation.admin","Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickUsers()
 //		.editUser("set")
@@ -50,7 +50,7 @@ public class rbac_testcases extends TestBase {
 //	@Test(priority=3,enabled=true)
 //	public void integration_validate_user_permission_1()
 //	{
-//		login.loginAs("automation.set","Monday#2")
+//		login.loginAs("automation.set","Monday#223")
 //		.isSuccessfulLogin("automation set")
 //		.validatePermission("no clients", "no role")
 //		.getTitle()
@@ -71,7 +71,7 @@ public class rbac_testcases extends TestBase {
 //	@Test(priority=7,enabled=true)
 //	public void integration_create_a_role_2()
 //	{
-//		login.loginAs("automation.admin","Monday#2")
+//		login.loginAs("automation.admin","Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickRoles()
 //		.clickAddRoleButton()
@@ -85,7 +85,7 @@ public class rbac_testcases extends TestBase {
 //	@Test(priority=8,enabled=true)
 //	public void integration_edit_user_update_permissions_and_roles_1()
 //	{
-//		login.loginAs("automation.admin","Monday#2")
+//		login.loginAs("automation.admin","Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickUsers()
 //		.editUser("set")
@@ -99,7 +99,7 @@ public class rbac_testcases extends TestBase {
 //	@Test(priority=9,enabled=true)
 //	public void integration_validate_user_permission_2()
 //	{
-//		login.loginAs("automation.set","Monday#2")
+//		login.loginAs("automation.set","Monday#223")
 //		.isSuccessfulLogin("automation set")
 //		.validatePermission("","testrole1")
 //		.getTitle()

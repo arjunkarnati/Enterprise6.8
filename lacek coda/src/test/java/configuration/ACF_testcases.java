@@ -9,7 +9,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=0,enabled=true)
 	public void create_an_acf_data_type_int_field_type_text()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -41,7 +41,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=1,enabled=true)
 	public void create_an_acf_data_type_int_field_type_select()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -78,7 +78,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=2,enabled=true)
 	public void create_an_acf_data_type_varchar_field_type_text()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -113,7 +113,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=3,enabled=true)
 	public void create_an_acf_data_type_varchar_field_type_text_area()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -148,7 +148,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=4,enabled=true)
 	public void create_an_acf_data_type_varchar_field_type_Wysiwyg_editor()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -183,7 +183,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=5,enabled=true)
 	public void create_an_acf_data_type_varchar_field_type_select()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -220,7 +220,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=6,enabled=true)
 	public void create_an_acf_data_type_decimal_field_type_text()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -255,7 +255,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=7,enabled=true)
 	public void create_an_acf_data_type_decimal_field_type_select()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -292,7 +292,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=8,enabled=true)
 	public void create_a_new_acf_without_group_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -318,7 +318,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=9,enabled=true)
 	public void create_a_new_acf_without_screens()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -341,7 +341,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=10,enabled=true)
 	public void create_a_new_acf_without_field_label()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -368,7 +368,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=11,enabled=true)
 	public void create_a_new_acf_without_field_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -395,7 +395,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=12,enabled=true)
 	public void create_a_new_acf_without_field_instructions()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -421,7 +421,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=13,enabled=true)
 	public void click_cancel_in_acf_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -432,7 +432,7 @@ public class ACF_testcases extends TestBase {
 	@Test(priority=14,enabled=true)
 	public void return_to_acf_main_page_from_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()
@@ -449,7 +449,7 @@ public class ACF_testcases extends TestBase {
 	/*@Test(priority=51,enabled=true)
 	public void create_test_acf_data_type()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickAcf()
 		.clickAddAcfButton()

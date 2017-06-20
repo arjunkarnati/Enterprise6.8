@@ -10,7 +10,7 @@ public class Segments_TestCases extends TestBase{
 	@Test(priority=0)
 	public void create_a_new_segment()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickAddSegmentButton()
@@ -31,7 +31,7 @@ public class Segments_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void select_cancel_button_in_segements_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickAddSegmentButton()
@@ -43,7 +43,7 @@ public class Segments_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_without_a_clienname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickAddSegmentButton()
@@ -58,7 +58,7 @@ public class Segments_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_without_a_segment_group()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickAddSegmentButton()
@@ -74,7 +74,7 @@ public class Segments_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_without_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickAddSegmentButton()
@@ -90,7 +90,7 @@ public class Segments_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_without_a_code()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickAddSegmentButton()
@@ -106,7 +106,7 @@ public class Segments_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_without_a_non_numerical_code()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickAddSegmentButton()
@@ -127,7 +127,7 @@ public class Segments_TestCases extends TestBase{
 	/*@Test(priority=31)
 	public void create_test_segment()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickAddSegmentButton()

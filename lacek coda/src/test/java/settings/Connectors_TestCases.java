@@ -11,7 +11,7 @@ public class Connectors_TestCases extends TestBase{
 	@Test(priority=0)
 	public void open_connector_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()
@@ -20,7 +20,7 @@ public class Connectors_TestCases extends TestBase{
 	@Test(priority=1)
 	public void relaod_workflow_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.reloadPage()
@@ -30,7 +30,7 @@ public class Connectors_TestCases extends TestBase{
 	@Test(priority=2)
 	public void click_print_view_print()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.clickViewPrintView()
@@ -39,7 +39,7 @@ public class Connectors_TestCases extends TestBase{
 	@Test(priority=3)
 	public void add_connector_validate()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.addConnectors()

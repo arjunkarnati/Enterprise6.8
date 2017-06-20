@@ -11,7 +11,7 @@ public class SegmentsRestore_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void validate_segments_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.clickArchiveButton()

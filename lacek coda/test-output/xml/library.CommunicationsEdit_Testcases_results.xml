@@ -1,34 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="COMMUNICATIONS TESTCASES"
            tests="22"
-           failures="0"
+           failures="2"
            errors="0"
            skipped="0"
-           time="747.681">
+           time="710.860">
   <properties />
+            <testcase name="manage_workflow_ehi_qa" time="5.259" classname="library.CommunicationsEdit_Testcases">
+                <failure type="java.lang.AssertionError"
+                  message="expected [ehi qa] but found []"
+              >
+<![CDATA[java.lang.AssertionError: expected [ehi qa] but found []
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:513)
+  org.testng.Assert.assertEqualsImpl(Assert.java:135)
+  org.testng.Assert.assertEquals(Assert.java:116)
+  org.testng.Assert.assertEquals(Assert.java:190)
+  org.testng.Assert.assertEquals(Assert.java:200)
+  login.DashboardPage.isSuccessfulLogin(DashboardPage.java:71)
+  library.CommunicationsEdit_Testcases.manage_workflow_ehi_qa(CommunicationsEdit_Testcases.java:319)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Verify_access_EHIQA" time="4.963" classname="library.CommunicationsEdit_Testcases">
+                <failure type="java.lang.AssertionError"
+                  message="expected [ehi qa] but found []"
+              >
+<![CDATA[java.lang.AssertionError: expected [ehi qa] but found []
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:513)
+  org.testng.Assert.assertEqualsImpl(Assert.java:135)
+  org.testng.Assert.assertEquals(Assert.java:116)
+  org.testng.Assert.assertEquals(Assert.java:190)
+  org.testng.Assert.assertEquals(Assert.java:200)
+  login.DashboardPage.isSuccessfulLogin(DashboardPage.java:71)
+  library.CommunicationsEdit_Testcases.Verify_access_EHIQA(CommunicationsEdit_Testcases.java:264)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="update_communication_name_to_previous_name" time="38.279" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_track_clientname_to_previous_client" time="12.087" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communcation_brands_to_previous" time="42.626" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communication_name" time="37.368" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communication_workflow_to_approved" time="37.545" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communication_programs_to_previous" time="38.966" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="inactivate_communication" time="37.246" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_track_workflow_to_draft" time="36.832" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="activate_communication" time="35.525" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="Verify_access_EHIQA" time="32.014" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="uncheck_publishCommunications" time="59.551" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communication_client_field" time="27.367" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="archive_communication" time="21.290" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communication_tracks_to_previous" time="41.686" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="clienttesting_to_internaltesting" time="29.835" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="manage_workflow_ehi_qa" time="23.250" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communication_segment_groups" time="24.651" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="comm_massadvance_workflow" time="15.512" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communcation_brands" time="43.807" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communication_tracks" time="38.745" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="update_communication_programs" time="43.426" classname="library.CommunicationsEdit_Testcases" />
-                <testcase name="restore_communication" time="30.073" classname="library.CommunicationsEdit_Testcases" />
+            <testcase name="uncheck_publishCommunications" time="59.308" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_tracks_to_previous" time="47.599" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_segment_groups" time="24.387" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communcation_brands" time="57.668" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_track_clientname_to_previous_client" time="13.314" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="inactivate_communication" time="34.789" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_programs_to_previous" time="37.889" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_workflow_to_approved" time="33.718" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_client_field" time="25.705" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="activate_communication" time="33.495" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="archive_communication" time="21.503" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="restore_communication" time="30.788" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="clienttesting_to_internaltesting" time="28.781" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="comm_massadvance_workflow" time="15.764" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_name" time="37.487" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communcation_brands_to_previous" time="42.306" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_track_workflow_to_draft" time="34.075" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_programs" time="44.771" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_name_to_previous_name" time="37.934" classname="library.CommunicationsEdit_Testcases" />
+                <testcase name="update_communication_tracks" time="39.357" classname="library.CommunicationsEdit_Testcases" />
       
 </testsuite>

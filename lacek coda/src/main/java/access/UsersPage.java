@@ -203,26 +203,51 @@ public class UsersPage extends PageBase{
 		}
 		case"last name":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("user_last_name"))).getText(),expectedresult);
 			break;
 		}
 		case"email":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("user_email"))).getText(),expectedresult);
 			break;
 		}
 		case"admin":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("user_admin"))).getText(),expectedresult);
 			break;
 		}
 		case"user name":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("ueser_username"))).getText(),expectedresult);
 			break;
 		}
 		case"status":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("user_status"))).getText(),expectedresult);
 			break;
 		}

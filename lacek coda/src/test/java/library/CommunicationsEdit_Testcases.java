@@ -9,7 +9,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -23,7 +23,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_name_to_previous_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_010")
@@ -37,7 +37,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_client_field()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -48,7 +48,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_clientname_to_previous_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()		
 		.getTitle()
@@ -58,7 +58,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communcation_brands()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -75,7 +75,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communcation_brands_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -92,7 +92,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_tracks()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -107,7 +107,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_tracks_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -123,7 +123,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_programs()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -139,7 +139,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_programs_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -154,7 +154,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_segment_groups()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -165,7 +165,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_communication_workflow_to_approved()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -179,7 +179,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_workflow_to_draft()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()	
 		.editCommunications("edit_comm_test_01")
@@ -194,7 +194,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void inactivate_communication()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -208,7 +208,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void activate_communication()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -222,7 +222,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void archive_communication()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.archiveCommunication("edit_comm_test_01")
@@ -233,7 +233,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void restore_communication()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.retoreCommunication("edit_comm_test_01")
@@ -242,7 +242,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	}
 	@Test(priority=17)
 	public void uncheck_publishCommunications(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.publishCommunications("edit_comm_test_01")
@@ -251,7 +251,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	}
 	/*@Test(priority=18)
 	public void delete_targetcriteria(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_comm_test_01")
@@ -260,8 +260,8 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	}*/
 	@Test(priority=18)
 	public void Verify_access_EHIQA(){
-		login.loginAs("remanth.newtest","09ht1a0480")
-		.isSuccessfulLogin("remanth newtest")
+		login.loginAs("ehi_qa","09ht1a0480")
+		.isSuccessfulLogin("ehi qa")
 		.clickCommunicationsLink()
 		.previewCommunications("edit_ehi_comm_test_01")
 		.verifyaccess()
@@ -270,15 +270,15 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	}
 	@Test(priority=18)
 	public void clienttesting_to_internaltesting(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("140")
 		//.updateworkflow("CLIENT TSTING")
 		//.clientesingtointernaltesting()
-		//.openPublish("https://qa-b10.mms.lacek.net/dev/publish","automation.admin","Monday#2")
+		//.openPublish("https://qa-b10.mms.lacek.net/dev/publish","automation.admin","Monday#223")
 		//.RunPublish()
-		//.openPublish("https://qa-b10.mms.lacek.net/","automation.admin","Monday#2")
+		//.openPublish("https://qa-b10.mms.lacek.net/","automation.admin","Monday#223")
 		//.validateUpdates("140","workflow","INTERNAL TESTING")
 		.getTitle()
 		.logout();	
@@ -288,7 +288,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 //	@Test(priority=19)
 //	public void addlocales()
 	//{
-//		login.loginAs("automation.admin","Monday#2")
+//		login.loginAs("automation.admin","Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickCommunicationsLink()
 //		.edit140("140")
@@ -297,7 +297,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	
 	//@Test(priority=20)
 	//public void Checking_features(){
-	//	login.loginAs("automation.admin", "Monday#2")
+	//	login.loginAs("automation.admin", "Monday#223")
 	//	.isSuccessfulLogin("automation admin")
 	//	.clickCommunicationsLink()
 	//	.editCommunications("edit_comm_test_01")
@@ -315,8 +315,8 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=21)
 	public void manage_workflow_ehi_qa() 
 	{
-		login.loginAs("remanth.newtest","09ht1a0480")
-		.isSuccessfulLogin("remanth newtest")
+		login.loginAs("ehi.qa","09ht1a0480")
+		.isSuccessfulLogin("ehi qa")
 		.clickCommunicationsLink()
 		.slectManageworkflowbyehi_qa("edit_ehi_comm_test_01")
 		//.manageworkflow_ehi_qa()

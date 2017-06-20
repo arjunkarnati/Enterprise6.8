@@ -8,7 +8,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void update_workflow_state_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -21,7 +21,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void update_workflow_state_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_010")
@@ -34,7 +34,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void update_workflow_state_color()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -46,7 +46,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void update_workflow_state_color_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -58,7 +58,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=4,enabled=true)
 	public void update_workflow_state_description()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -71,7 +71,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=5,enabled=true)
 	public void update_workflow_state_description_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -84,7 +84,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=6,enabled=true)
 	public void empty_name_field_in_wf_state_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -96,7 +96,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=7,enabled=true)
 	public void empty_color_field_in_wf_state_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -109,7 +109,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	public void inactivate_workflow_state()
 	{
 	
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -122,7 +122,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=9,enabled=true)
 	public void activate_workflow_state()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -135,7 +135,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=10,enabled=true)
 	public void click_cancel_in_wf_state_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -146,7 +146,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=11,enabled=true)
 	public void return_to_wf_state_main_page_from_edit()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.editWorkflowState("edit_wfstate_test_01")
@@ -157,7 +157,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=12,enabled=true)
 	public void archive_wf_state()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.archiveWorkFlowState("edit_wfstate_test_01")
@@ -167,7 +167,7 @@ public class WorkflowStateEdit_testcases extends TestBase{
 	@Test(priority=13,enabled=true)
 	public void restore_wf_state()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowState()
 		.restoreWorkflowState("edit_wfstate_test_01")

@@ -221,4 +221,9 @@ public class PageBase {
 		configuration();
 		dashboard(); 
 	}
+	public PageBase clickPublishButton() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 }

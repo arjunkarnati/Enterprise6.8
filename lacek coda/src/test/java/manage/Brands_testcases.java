@@ -11,7 +11,7 @@ public class Brands_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.clickAddBrandButton()
@@ -31,7 +31,7 @@ public class Brands_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_brand_without_a_client_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.clickAddBrandButton()
@@ -46,7 +46,7 @@ public class Brands_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_brand_witout_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.clickAddBrandButton()
@@ -61,7 +61,7 @@ public class Brands_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_brand_without_a_color()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.clickAddBrandButton()
@@ -76,7 +76,7 @@ public class Brands_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_brand_without_a_url()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.clickAddBrandButton()
@@ -97,7 +97,7 @@ public class Brands_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.clickAddBrandButton()

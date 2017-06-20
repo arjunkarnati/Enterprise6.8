@@ -1,65 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="CAMPAIGN TESTCASES"
            tests="17"
-           failures="1"
+           failures="0"
            errors="0"
            skipped="0"
-           time="497.318">
+           time="534.190">
   <properties />
-            <testcase name="camp_mass_advance_workflow" time="5.414" classname="library.CanpaignsEdit_TestCases">
-                <failure type="java.lang.AssertionError"
-                  message="expected [automation admin] but found []"
-              >
-<![CDATA[java.lang.AssertionError: expected [automation admin] but found []
-  org.testng.Assert.fail(Assert.java:94)
-  org.testng.Assert.failNotEquals(Assert.java:513)
-  org.testng.Assert.assertEqualsImpl(Assert.java:135)
-  org.testng.Assert.assertEquals(Assert.java:116)
-  org.testng.Assert.assertEquals(Assert.java:190)
-  org.testng.Assert.assertEquals(Assert.java:200)
-  login.DashboardPage.isSuccessfulLogin(DashboardPage.java:71)
-  library.CanpaignsEdit_TestCases.camp_mass_advance_workflow(CanpaignsEdit_TestCases.java:224)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-  org.testng.TestRunner.privateRun(TestRunner.java:756)
-  org.testng.TestRunner.run(TestRunner.java:610)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
-]]>
-      </failure>
-
-          </testcase>
   
   
-            <testcase name="update_campaign_programs" time="31.624" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="restorte_campaign" time="30.035" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_name_to_previous_name" time="31.127" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_workflow_to_draft" time="22.971" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="activate_campaign" time="28.085" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_workflow_to_approved" time="23.866" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_brands" time="35.589" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_series_to_previous" time="32.432" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_programs_to_previous" time="33.453" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_series" time="39.114" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="inactivate_campaign" time="30.531" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_clientname_to_previous_client" time="38.402" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_brands_to_previous" time="33.724" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_name" time="31.409" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="archive_campaign" time="18.618" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_client" time="30.924" classname="library.CanpaignsEdit_TestCases" />
+            <testcase name="update_campaign_programs_to_previous" time="35.962" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_name_to_previous_name" time="34.477" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_series" time="39.684" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_clientname_to_previous_client" time="40.126" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_brands" time="38.296" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_series_to_previous" time="34.237" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_workflow_to_approved" time="25.324" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="archive_campaign" time="17.725" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_programs" time="34.658" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_workflow_to_draft" time="26.041" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="camp_mass_advance_workflow" time="12.045" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_brands_to_previous" time="35.964" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="activate_campaign" time="31.896" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_client" time="32.593" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="inactivate_campaign" time="31.744" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="restorte_campaign" time="29.725" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_name" time="33.693" classname="library.CanpaignsEdit_TestCases" />
       
 </testsuite>

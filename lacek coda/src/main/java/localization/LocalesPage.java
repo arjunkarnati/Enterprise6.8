@@ -157,6 +157,11 @@ public class LocalesPage extends PageBase {
 		driver.findElement(By.xpath("//input[@type='search']")).clear();
 		sleep();
 		driver.findElement(By.xpath("//input[@type='search']")).sendKeys(localesname);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		sleep();
 		driver.findElement(By.xpath("//a[contains(text(),'Restore')]")).click();
 		sleep();

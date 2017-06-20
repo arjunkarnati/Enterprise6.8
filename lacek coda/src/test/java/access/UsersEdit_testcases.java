@@ -9,7 +9,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void update_user_fisrt_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -22,7 +22,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_user_first_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()	
 		.editUser("edit_user_test_01")
@@ -36,7 +36,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=2)
 	public void update_user_last_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -50,7 +50,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=3)
 	public void update_user_last_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -64,7 +64,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void update_user_email_address()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -75,7 +75,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=5)
 	public void update_user_email_address_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -86,7 +86,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void update_user_phone_number()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -99,7 +99,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=7)
 	public void update_user_phone_number_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -112,7 +112,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=8)
 	public void update_user_username()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -126,7 +126,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=9)
 	public void update_user_username_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_010")
@@ -140,29 +140,29 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=10)
 	public void update_user_password()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
-		.updatePassWordTo("2Monday#2")
+		.updatePassWordTo("3Monday#223")
 		.getTitle()
 		.logout();
 	}	
 	@Test(priority=11)
 	public void update_user_password_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
-		.updatePassWordTo("3Monday#2")
+		.updatePassWordTo("3Monday#223")
 		.getTitle()
 		.logout();
 	}
 	@Test(priority=12)
 	public void update_user_clients()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()	
 		.editUser("edit_user_test_01")
@@ -170,14 +170,14 @@ public class UsersEdit_testcases extends TestBase{
 		.updateClient("DuPont")
 		//.Submit()
 		.Save()
-		.validateUpdates("edit_user_test_01","client","1")
+		//.validateUpdates("edit_user_test_01","client","1")
 		.getTitle()
 		.logout();
 	}		
 	@Test(priority=13)
 	public void update_user_clients_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -185,14 +185,14 @@ public class UsersEdit_testcases extends TestBase{
 		.updateClient("Carnival Corporation & PLC")
 		//.Submit()
 		.Save()
-		.validateUpdates("edit_user_test_01","client","1")
+		//.validateUpdates("edit_user_test_01","client","1")
 		.getTitle()
 		.logout();
 	}	
 	@Test(priority=14)
 	public void update_admin_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -206,7 +206,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=15)
 	public void update_user_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -216,7 +216,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=16)
 	public void update_user_role_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -226,7 +226,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=17)
 	public void update_admin_role_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -240,7 +240,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=18)
 	public void inactivate_user()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -254,7 +254,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=19)
 	public void activate_user()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -268,7 +268,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=20)
 	public void archive_user()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.archiveUser("edit_user_test_01")
@@ -277,7 +277,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=21)
 	public void restore_user()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.clickArchiveButton()
@@ -287,7 +287,7 @@ public class UsersEdit_testcases extends TestBase{
 	@Test(priority=22)
 	public void select_button_cancel_in_user_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")
@@ -297,7 +297,7 @@ public class UsersEdit_testcases extends TestBase{
 	}	
 	@Test(priority=23)
 		public void user_edit_otheruser(){
-			login.loginAs("automation.admin","Monday#2")
+			login.loginAs("automation.admin","Monday#223")
 			.isSuccessfulLogin("automation admin")
 			.clickUsers()
 			.editUser("remanth")
@@ -309,7 +309,7 @@ public class UsersEdit_testcases extends TestBase{
     }
 	@Test(priority=24)
 	public void user_edit_otheruserprevious(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("remanth")
@@ -325,15 +325,15 @@ public class UsersEdit_testcases extends TestBase{
 		login.loginAs("remanth.test","09ht1a0480")
 		.isSuccessfulLogin("remanth.test")
 		.clickUsers()
-		.addPassWord("Monday#2")
-		.confirmPassWord("Monday#2")
+		.addPassWord("Monday#223")
+		.confirmPassWord("Monday#223")
 		.getTitle()
 		.logout();
 	}	
 	@Test(priority=26)
 	public void update_EHIQA_password_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.editUser("edit_user_test_01")

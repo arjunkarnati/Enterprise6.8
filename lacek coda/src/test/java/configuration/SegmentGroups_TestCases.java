@@ -11,7 +11,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_groups_type_single_select()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -33,7 +33,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_duplicate_segment_groups_type_single_select()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -50,7 +50,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_groups_type_multi_select()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -71,7 +71,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void select_button_cancel_in_segment_groups_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -83,7 +83,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_groups_type_multi_select_without_a_client_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -98,7 +98,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_groups_type_multi_select_without_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -114,7 +114,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_groups_type_single_select_without_a_client_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -129,7 +129,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_groups_type_single_select_without_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -145,7 +145,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_segment_groups_without_a_type()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
@@ -166,7 +166,7 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_segment_groups()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()

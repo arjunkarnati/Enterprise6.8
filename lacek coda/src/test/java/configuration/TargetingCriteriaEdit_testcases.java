@@ -10,7 +10,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void update_targeting_criteria_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -23,7 +23,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_targeting_criteria_client_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -36,7 +36,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=2)
 	public void update_targeting_criteria_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -50,7 +50,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=3)
 	public void update_targeting_criteria_brand_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -65,7 +65,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void update_targeting_criteria_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -78,7 +78,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=5)
 	public void update_targeting_criteria_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_010")
@@ -91,7 +91,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void update_targeting_criteria_description()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -103,7 +103,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=7)
 	public void inactivate_tageting_criteria()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -116,7 +116,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=8)
 	public void activate_tageting_criteria()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -129,7 +129,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=9)
 	public void empty_name_field_in_tagerting_criteria_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -141,7 +141,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=10)
 	public void empty_code_field_in_tagerting_criteria_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -153,7 +153,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=11)
 	public void select_cancel_button_in_targeting_criteria_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.editTargetingCriteria("edit_tar_criteria_test_01")
@@ -164,7 +164,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=12)
 	public void archive_tageting_criteria()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.archiveTargetingcriteria("edit_tar_criteria_test_01")
@@ -173,7 +173,7 @@ public class TargetingCriteriaEdit_testcases extends TestBase{
 	@Test(priority=13)
 	public void restore_tageting_criteria()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.restoreTargetingCriteria("edit_tar_criteria_test_01")

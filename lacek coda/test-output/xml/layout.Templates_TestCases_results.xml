@@ -4,18 +4,18 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="424.273">
+           time="402.784">
   <properties />
   
   
-            <testcase name="create_a_new_template_without_a_clientname" time="37.315" classname="layout.Templates_TestCases" />
-                <testcase name="create_a_new_template_without_a_channel" time="40.880" classname="layout.Templates_TestCases" />
-                <testcase name="create_a_new_template_without_a_type" time="41.373" classname="layout.Templates_TestCases" />
-                <testcase name="create_a_new_template_channel_email_type_message" time="62.931" classname="layout.Templates_TestCases" />
-                <testcase name="create_a_new_template_channel_web_type_message" time="63.196" classname="layout.Templates_TestCases" />
-                <testcase name="delete_template_from_db" time="2.821" classname="layout.Templates_TestCases" />
-                <testcase name="create_a_new_template_channel_web_type_communication" time="71.874" classname="layout.Templates_TestCases" />
-                <testcase name="create_a_new_template_channel_email_type_communication" time="63.743" classname="layout.Templates_TestCases" />
-                <testcase name="create_a_new_template_without_a_name" time="40.140" classname="layout.Templates_TestCases" />
+            <testcase name="create_a_new_template_channel_web_type_communication" time="60.383" classname="layout.Templates_TestCases" />
+                <testcase name="create_a_new_template_without_a_clientname" time="36.805" classname="layout.Templates_TestCases" />
+                <testcase name="create_a_new_template_channel_email_type_communication" time="63.897" classname="layout.Templates_TestCases" />
+                <testcase name="delete_template_from_db" time="2.782" classname="layout.Templates_TestCases" />
+                <testcase name="create_a_new_template_without_a_name" time="36.615" classname="layout.Templates_TestCases" />
+                <testcase name="create_a_new_template_without_a_type" time="39.573" classname="layout.Templates_TestCases" />
+                <testcase name="create_a_new_template_without_a_channel" time="40.914" classname="layout.Templates_TestCases" />
+                <testcase name="create_a_new_template_channel_web_type_message" time="59.817" classname="layout.Templates_TestCases" />
+                <testcase name="create_a_new_template_channel_email_type_message" time="61.998" classname="layout.Templates_TestCases" />
       
 </testsuite>

@@ -9,7 +9,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void export_a_camapign_format_type_xlsx()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -21,7 +21,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void export_a_camapign_format_type_xliff()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -33,7 +33,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void export_a_series_format_type_xlsx()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -45,7 +45,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void export_a_series_format_type_xliff()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -57,7 +57,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=4,enabled=true)
 	public void export_a_track_format_type_xlsx()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -69,7 +69,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=5,enabled=true)
 	public void export_a_track_format_type_xliff()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -81,7 +81,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=6,enabled=true)
 	public void export_a_communication_format_type_xlsx()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -93,7 +93,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=7,enabled=true)
 	public void export_a_communication_format_type_xliff()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -105,7 +105,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=8,enabled=true)
 	public void export_a_message_format_type_xlsx()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -117,7 +117,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=9,enabled=true)
 	public void export_a_message_format_type_xliff()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -129,7 +129,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=10,enabled=true)
 	public void export_a_media_gallery_format_type_xlsx()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -141,7 +141,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=11,enabled=true)
 	public void export_a_media_gallery_format_type_xliff()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.addClient("Carnival Corporation & PLC")
@@ -153,7 +153,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=12,enabled=true)
 	public void campaign_field_is_greyed_out_when_client_is_not_selected()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.isDisabled("campaign")
@@ -163,7 +163,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=13,enabled=true)
 	public void series_field_is_greyed_out_when_client_is_not_selected()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.isDisabled("series")
@@ -173,7 +173,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=14,enabled=true)
 	public void track_field_is_greyed_out_when_client_is_not_selected()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.isDisabled("track")
@@ -183,7 +183,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=15,enabled=true)
 	public void communication_field_is_greyed_out_when_client_is_not_selected()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.isDisabled("communication")
@@ -193,7 +193,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=16,enabled=true)
 	public void message_field_is_greyed_out_when_client_is_not_selected()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.isDisabled("message")
@@ -203,7 +203,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=17,enabled=true)
 	public void media_gallery_field_is_greyed_out_when_client_is_not_selected()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.isDisabled("media gallery")
@@ -213,7 +213,7 @@ public class Export_TestCases extends TestBase{
 	@Test(priority=18,enabled=true)
 	public void click_export_with_empty_fields()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocalesExport()
 		.failToExport()

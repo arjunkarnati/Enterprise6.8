@@ -9,11 +9,13 @@ public class SeriesPublish_Testcases extends TestBase{
 	@Test(priority=1)
 	public void publish_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.publishSeries("publish_series_test_01")
 		.checkAll()
+	    //.deletelocales()
+		//.addlocale("en-us")
 		.clickPublishButton()   
 	    .getTitle()
 	    .logout();
@@ -21,7 +23,7 @@ public class SeriesPublish_Testcases extends TestBase{
 	@Test(priority=2)
 	public void cancel_publish_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.publishSeries("publish_series_test_01")

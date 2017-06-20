@@ -10,7 +10,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void update_template_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -25,7 +25,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_template_brand_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -39,7 +39,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=2)
 	public void update_template_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -52,7 +52,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=3)
 	public void update_template_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_010")
@@ -65,7 +65,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void update_template_channel()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -78,7 +78,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=5)
 	public void update_template_channel_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -91,7 +91,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=6,enabled=false)
 	public void update_template_type()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -104,7 +104,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=7,enabled=false)
 	public void update_template_type_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -117,7 +117,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=8)
 	public void update_template_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -130,7 +130,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=9)
 	public void update_template_clientname_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -144,7 +144,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=10)
 	public void select_button_save_in_template_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -155,7 +155,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=11)
 	public void select_button_cancel_in_template_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -166,7 +166,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=12)
 	public void inactivate_template()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -179,7 +179,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=13)
 	public void activate_template()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -192,7 +192,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=14)
 	public void set_template_workflow_to_draft()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -204,7 +204,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=15)
 	public void set_template_workflow_to_approved()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.editTemplate("edit_template_test_01")
@@ -216,7 +216,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=16)
 	public void archive_template()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.archiveTemplate("edit_template_test_01")
@@ -226,7 +226,7 @@ public class TemplatesEdit_testcases extends TestBase{
 	@Test(priority=17)
 	public void restore_template()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.restoreTemplate("edit_template_test_01")

@@ -10,7 +10,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void test_is_empty()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()
@@ -18,7 +18,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	}
 	/*@Test(priority=1)
 	public void update_connector(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("arjun_connector")
@@ -30,7 +30,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	}
 	@Test(priority=2)
 	public void update_prevconnector(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("arjun_connector_1")
@@ -42,7 +42,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 
 	}*/@Test(priority=3)
 	public void update_client(){
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
     	.clickConnectors()
 		.editConnector("edit_conn_test_1")
@@ -56,7 +56,7 @@ public class ConnectorsEdit_testcases extends TestBase{
     //this was commented by prince
 	@Test(priority=4)
 	public void update_client_to_previous(){
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
     	.clickConnectors()
 		.editConnector("edit_conn_test_1")
@@ -69,7 +69,7 @@ public class ConnectorsEdit_testcases extends TestBase{
     @Test(priority=5)
 	public void update_connector_name()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("edit_conn_test_1")
@@ -82,7 +82,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void validate_name_update()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.validateConnectorUpdate("name", "edit_conn_test_010", "edit_conn_test_010")
@@ -93,7 +93,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=7)
 	public void update_connector_name_to_previous()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("edit_conn_test_010")
@@ -106,7 +106,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=8)
 	public void validate_name_update_to_previous()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.validateConnectorUpdate("name", "edit_conn_test_1", "edit_conn_test_1")
@@ -117,7 +117,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=9)
 	public void add_brands()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("edit_conn_test_1")
@@ -131,7 +131,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=7)
 //	public void validate_brands_add()
 //	{
-//		login.loginAs("automation.admin", "Monday#2")
+//		login.loginAs("automation.admin", "Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickConnectors()
 //		.validateBrand("edit_conn_test_1",2)
@@ -142,7 +142,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=8)
 	public void delete_entry_in_brand_field()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("edit_conn_test_1")
@@ -155,7 +155,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=9)
 //	public void validate_brands_update()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.validateBrand("Exact Target (Dev) - Approved", 1)
@@ -166,7 +166,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=10)
 //	public void update_brand_to_previous()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.editConnector("Exact Target (Dev) - Approved")
@@ -179,7 +179,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=11)
 //	public void validate_brands_update_to_previous()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.validateBrand("Exact Target (Dev) - Approved", 1)
@@ -190,7 +190,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=12)
 //	public void update_to_previous_client()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.editConnector("Exact Target (Dev) - Approved")
@@ -203,7 +203,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=13)
 	public void add_programs()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("edit_conn_test_1")
@@ -216,7 +216,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=14)
 	public void validate_program_add()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		// 5.19 .validateProgram("edit_conn_test_1", 2)
@@ -227,7 +227,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=15)
 //	public void delete_entry_in_program_field()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.editConnector("Exact Target (Dev) - Approved")
@@ -240,7 +240,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=16)
 //	public void validate_program_update()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.validateProgram("Exact Target (Dev) - Approved", 1)
@@ -251,7 +251,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=17)
 //	public void update_brand_to_previous_client()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.editConnector("Exact Target (Dev) - Approved")
@@ -264,7 +264,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=18)
 	public void inacativate_connector()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("edit_conn_test_1")
@@ -278,7 +278,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=19)
 //	public void validate_that_the_connector_is_inactive()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.validateConnectorUpdate("status", "INACTIVE", "Exact Target (Dev) - Approved")
@@ -289,7 +289,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=20)
 	public void acativate_connector()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.editConnector("edit_conn_test_1")
@@ -303,7 +303,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=21)
 //	public void validate_that_the_connector_is_active()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.validateConnectorUpdate("status", "ACTIVE", "Exact Target (Dev) - Approved")
@@ -314,7 +314,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=22)
 //	public void set_workflow_to_draft()
 //	{
-//		login.loginAs("automation.admin", "Monday#2")
+//		login.loginAs("automation.admin", "Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickConnectors()
 //		.editConnector("edit_conn_test_1")
@@ -327,7 +327,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=23)
 //	public void validate_that_the_workflow_is_set_to_draft()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.validateConnectorUpdate("Workflow Association", "DRAFT", "Exact Target (Dev) - Approved")
@@ -338,7 +338,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=24)
 //	public void name_field_is_empty_and_click_submit()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.editConnector("Exact Target (Dev) - Approved")
@@ -351,7 +351,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=25)
 //	public void client_field_is_empty_and_click_submit()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.editConnector("Exact Target (Dev) - Approved")
@@ -364,7 +364,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	@Test(priority=26)
 //	public void click_cancel()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickConnectors()
 //		.editConnector("Exact Target (Dev) - Approved")
@@ -377,7 +377,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=21)
 	public void test_is_empty_1()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()
@@ -386,7 +386,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=22)
 	public void test_is_empty_2()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()
@@ -395,7 +395,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=23)
 	public void test_is_empty_3()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()
@@ -404,7 +404,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=24)
 	public void test_is_empty_4()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()
@@ -413,7 +413,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=25)
 	public void test_is_empty_5()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()
@@ -422,7 +422,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=26)
 	public void test_is_empty_6()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()
@@ -431,7 +431,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 	@Test(priority=27)
 	public void test_is_empty_7()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
 		.getTitle()

@@ -10,7 +10,7 @@ public class RegionsEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void update_region_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.editRegion("edit_region_test_01")
@@ -23,7 +23,7 @@ public class RegionsEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_region_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.editRegion("edit_region_test_010")
@@ -36,7 +36,7 @@ public class RegionsEdit_testcases extends TestBase{
 	@Test(priority=2)
 	public void update_region_description()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.editRegion("edit_region_test_01")
@@ -48,7 +48,7 @@ public class RegionsEdit_testcases extends TestBase{
 	@Test(priority=3)
 	public void inactivate_region()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.editRegion("edit_region_test_01")
@@ -61,7 +61,7 @@ public class RegionsEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void activate_region()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.editRegion("edit_region_test_01")
@@ -74,7 +74,7 @@ public class RegionsEdit_testcases extends TestBase{
 @Test(priority=5)
 	public void archive_region()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.archiveRegion("edit_region_test_01")
@@ -84,7 +84,7 @@ public class RegionsEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void restore_region()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.restoreRegion("edit_region_test_01")

@@ -9,7 +9,7 @@ public class Locales_TestCases extends TestBase {
 	@Test(priority=0,enabled=true)
 	public void create_a_new_locales()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.clickAddLocalesButton()
@@ -24,7 +24,7 @@ public class Locales_TestCases extends TestBase {
 	@Test(priority=1,enabled=true)
 	public void create_a_new_locales_without_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.clickAddLocalesButton()
@@ -35,7 +35,7 @@ public class Locales_TestCases extends TestBase {
 	@Test(priority=2,enabled=true)
 	public void create_a_new_locales_without_code()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.clickAddLocalesButton()
@@ -46,7 +46,7 @@ public class Locales_TestCases extends TestBase {
 	@Test(priority=3,enabled=true)
 	public void click_cancel_in_locales_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.clickAddLocalesButton()
@@ -57,7 +57,7 @@ public class Locales_TestCases extends TestBase {
 	@Test(priority=4,enabled=true)
 	public void return_to_locales_main_page_from_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.clickAddLocalesButton()

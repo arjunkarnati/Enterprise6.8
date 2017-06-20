@@ -9,7 +9,7 @@ public class PermissionGroups_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void create_a_new_permission_groups()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionGroups()
 		.clickAddpermissionGroupsButton()
@@ -27,7 +27,7 @@ public class PermissionGroups_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void create_a_new_permission_groups_without_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionGroups()
 		.clickAddpermissionGroupsButton()
@@ -43,7 +43,7 @@ public class PermissionGroups_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void click_cancel_in_permission_groups_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionGroups()
 		.clickAddpermissionGroupsButton()
@@ -53,7 +53,7 @@ public class PermissionGroups_TestCases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void returm_to_permission_groups_main_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionGroups()
 		.clickAddpermissionGroupsButton()
@@ -68,7 +68,7 @@ public class PermissionGroups_TestCases extends TestBase{
 	/*@Test(priority=10,enabled=true)
 	public void create_test_permission_groups()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionGroups()
 		.clickAddpermissionGroupsButton()

@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="357.585">
+           time="368.734">
   <properties />
   
   
-            <testcase name="database_delete_segment_groups" time="2.444" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="create_a_new_segment_groups_type_single_select" time="58.091" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="create_a_new_segment_groups_type_single_select_without_a_name" time="39.343" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="create_a_new_segment_groups_without_a_type" time="38.740" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="create_a_new_segment_groups_type_multi_select_without_a_name" time="36.622" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="create_a_duplicate_segment_groups_type_single_select" time="39.577" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="create_a_new_segment_groups_type_multi_select" time="50.480" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="select_button_cancel_in_segment_groups_add_page" time="23.747" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="create_a_new_segment_groups_type_multi_select_without_a_client_name" time="34.483" classname="configuration.SegmentGroups_TestCases" />
-                <testcase name="create_a_new_segment_groups_type_single_select_without_a_client_name" time="34.058" classname="configuration.SegmentGroups_TestCases" />
+            <testcase name="select_button_cancel_in_segment_groups_add_page" time="26.478" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="create_a_new_segment_groups_without_a_type" time="36.358" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="create_a_new_segment_groups_type_multi_select" time="59.529" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="create_a_new_segment_groups_type_single_select_without_a_name" time="37.071" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="database_delete_segment_groups" time="2.141" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="create_a_duplicate_segment_groups_type_single_select" time="39.142" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="create_a_new_segment_groups_type_multi_select_without_a_client_name" time="33.481" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="create_a_new_segment_groups_type_multi_select_without_a_name" time="36.449" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="create_a_new_segment_groups_type_single_select" time="64.966" classname="configuration.SegmentGroups_TestCases" />
+                <testcase name="create_a_new_segment_groups_type_single_select_without_a_client_name" time="33.119" classname="configuration.SegmentGroups_TestCases" />
       
 </testsuite>

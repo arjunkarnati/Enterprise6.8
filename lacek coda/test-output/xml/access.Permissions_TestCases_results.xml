@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="214.640">
+           time="221.414">
   <properties />
-            <testcase name="create_a_new_permissions" time="74.554" classname="access.Permissions_TestCases">
+            <testcase name="create_a_new_permissions" time="82.946" classname="access.Permissions_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [selenium_permission02] but found [edit_permission_test_01]"
               >
@@ -45,10 +45,10 @@
           </testcase>
   
   
-            <testcase name="delete_permissions_from_database" time="2.082" classname="access.Permissions_TestCases" />
-                <testcase name="create_a_new_permissions_without_permission_category" time="39.983" classname="access.Permissions_TestCases" />
-                <testcase name="click_cancel_in_permissions_add_page" time="29.277" classname="access.Permissions_TestCases" />
-                <testcase name="create_a_new_permissions_without_name" time="40.088" classname="access.Permissions_TestCases" />
-                <testcase name="return_to_permissions_main_page_from_add" time="28.656" classname="access.Permissions_TestCases" />
+            <testcase name="return_to_permissions_main_page_from_add" time="28.486" classname="access.Permissions_TestCases" />
+                <testcase name="delete_permissions_from_database" time="2.118" classname="access.Permissions_TestCases" />
+                <testcase name="create_a_new_permissions_without_name" time="39.514" classname="access.Permissions_TestCases" />
+                <testcase name="click_cancel_in_permissions_add_page" time="28.782" classname="access.Permissions_TestCases" />
+                <testcase name="create_a_new_permissions_without_permission_category" time="39.568" classname="access.Permissions_TestCases" />
       
 </testsuite>

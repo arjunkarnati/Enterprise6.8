@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="158.204">
+           time="155.845">
   <properties />
-            <testcase name="create_a_new_locales" time="40.616" classname="localization.Locales_TestCases">
+            <testcase name="create_a_new_locales" time="41.128" classname="localization.Locales_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [selenium_locale_01] but found [latin]"
               >
@@ -45,10 +45,10 @@
           </testcase>
   
   
-            <testcase name="click_cancel_in_locales_add_page" time="25.974" classname="localization.Locales_TestCases" />
-                <testcase name="delete_locale_from_database" time="2.095" classname="localization.Locales_TestCases" />
-                <testcase name="create_a_new_locales_without_code" time="31.486" classname="localization.Locales_TestCases" />
-                <testcase name="create_a_new_locales_without_name" time="30.627" classname="localization.Locales_TestCases" />
-                <testcase name="return_to_locales_main_page_from_add_page" time="27.406" classname="localization.Locales_TestCases" />
+            <testcase name="delete_locale_from_database" time="2.101" classname="localization.Locales_TestCases" />
+                <testcase name="create_a_new_locales_without_name" time="30.051" classname="localization.Locales_TestCases" />
+                <testcase name="click_cancel_in_locales_add_page" time="25.537" classname="localization.Locales_TestCases" />
+                <testcase name="create_a_new_locales_without_code" time="30.388" classname="localization.Locales_TestCases" />
+                <testcase name="return_to_locales_main_page_from_add_page" time="26.640" classname="localization.Locales_TestCases" />
       
 </testsuite>

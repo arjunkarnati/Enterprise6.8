@@ -10,7 +10,7 @@ public class UsersRestore_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void verify_user_archive_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.clickArchiveButton()

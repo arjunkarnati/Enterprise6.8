@@ -10,7 +10,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.editTracks("edit_tracks_test_01")
@@ -24,7 +24,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name_to_previous_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.editTracks("edit_tracks_test_010")
@@ -38,7 +38,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_client_field()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -52,7 +52,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_clientname_to_previous_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()		
 		.editTracks("edit_tracks_test_01")
@@ -71,7 +71,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_brands()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -86,7 +86,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_brands_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -102,7 +102,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -117,7 +117,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_series_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -133,7 +133,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_tracks_programs()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -148,7 +148,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_tracks_programs_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -164,7 +164,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_workflow_to_approved()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -177,7 +177,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_workflow_to_draft()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()		
 		.editTracks("edit_tracks_test_01")
@@ -190,7 +190,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void inactivate_track()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()		
 		.editTracks("edit_tracks_test_01")
@@ -204,7 +204,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void activate_track()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.editTracks("edit_tracks_test_01")
@@ -218,7 +218,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void archive_track()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()			
 		.archiveTracks("edit_tracks_test_01")
@@ -229,7 +229,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void restore_track()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()		
 		.restoreTracks("edit_tracks_test_01")
@@ -255,7 +255,7 @@ public class TracksEdit_Testcases extends TestBase{
 //	//@Test(enabled=false)
 //	public void add_a_communication_in_track()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickTracksLink()
 //		.editTracks("test_carnival_track_03")
@@ -269,7 +269,7 @@ public class TracksEdit_Testcases extends TestBase{
 //	//@Test(enabled=false)
 //	public void remove_a_communication_from_track()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickTracksLink()
 //		.editTracks("test_carnival_track_03")
@@ -283,7 +283,7 @@ public class TracksEdit_Testcases extends TestBase{
 //	//@Test(enabled=false)
 //	public void check_a_communication_to_include_it_in_the_track()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickTracksLink()
 //		.editTracks("test_carnival_track_03")
@@ -299,7 +299,7 @@ public class TracksEdit_Testcases extends TestBase{
 //	//@Test(enabled=false)
 //	public void uncheck_a_communication_to_exclude_it_from_the_track()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickTracksLink()
 //		.editTracks("test_carnival_track_03")
@@ -313,7 +313,7 @@ public class TracksEdit_Testcases extends TestBase{
 //	//@Test(enabled=false)
 //	public void change_the_communication_priority_in_the_track()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickTracksLink()
 //		.editTracks("test_carnival_track_03")
@@ -328,7 +328,7 @@ public class TracksEdit_Testcases extends TestBase{
 //	//@Test(enabled=false)
 //	public void select_cancel_button()
 //	{
-//		login.loginAs("prince.kabuika", "Monday#2")
+//		login.loginAs("prince.kabuika", "Monday#223")
 //		.isSuccessfulLogin("Prince Kabuika")
 //		.clickTracksLink()
 //		.editTracks("test_carnival_track_03")
@@ -341,7 +341,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name1()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		//.editTracks("edit_tracks_test_01")
@@ -355,7 +355,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name2()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		//.editTracks("edit_tracks_test_01")
@@ -369,7 +369,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name3()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		//.editTracks("edit_tracks_test_01")
@@ -383,7 +383,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name4()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.getTitle()
@@ -394,7 +394,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name5()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.getTitle()
@@ -404,7 +404,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name6()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.getTitle()
@@ -415,7 +415,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name7()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.getTitle()
@@ -425,7 +425,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name8()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.getTitle()
@@ -436,7 +436,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name9()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.getTitle()
@@ -447,7 +447,7 @@ public class TracksEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_track_name10()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.getTitle()

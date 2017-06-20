@@ -9,7 +9,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void update_brand_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.editBrand("edit_brand_test_01")
@@ -22,7 +22,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_brand_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.editBrand("edit_brand_test_010")
@@ -35,7 +35,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=2)
 	public void update_brand_color()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.editBrand("edit_brand_test_01")
@@ -47,7 +47,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=3)
 	public void update_brand_color_to_previous_color()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.editBrand("edit_brand_test_01")
@@ -59,7 +59,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void update_brand_url()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.editBrand("edit_brand_test_01")
@@ -72,7 +72,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=5)
 	public void update_brand_url_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.editBrand("edit_brand_test_01")
@@ -85,7 +85,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void inactivate_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.editBrand("edit_brand_test_01")
@@ -98,7 +98,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=7)
 	public void activate_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.editBrand("edit_brand_test_01")
@@ -111,7 +111,7 @@ public class BrandsEdit_testcases extends TestBase{
 //	@Test(priority=8)
 //	public void empty_name_field_in_brands_edit_page()
 //	{
-//		login.loginAs("automation.admin","Monday#2")
+//		login.loginAs("automation.admin","Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickBrands()
 //		.editBrand("edit_brand_test_01")
@@ -123,7 +123,7 @@ public class BrandsEdit_testcases extends TestBase{
 //	@Test(priority=9)
 //	public void empty_url_field_in_brands_edit_page()
 //	{
-//		login.loginAs("automation.admin","Monday#2")
+//		login.loginAs("automation.admin","Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickBrands()
 //		.editBrand("edit_brand_test_01")
@@ -135,7 +135,7 @@ public class BrandsEdit_testcases extends TestBase{
 //	@Test(priority=10)
 //	public void empty_color_field_in_brands_edit_page()
 //	{
-//		login.loginAs("automation.admin","Monday#2")
+//		login.loginAs("automation.admin","Monday#223")
 //		.isSuccessfulLogin("automation admin")
 //		.clickBrands()
 //		.editBrand("edit_brand_test_01")
@@ -147,7 +147,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=11)
 	public void archive_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.archiveBrand("edit_brand_test_01")
@@ -156,7 +156,7 @@ public class BrandsEdit_testcases extends TestBase{
 	@Test(priority=12)
 	public void restore_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickBrands()
 		.restoreBrand("edit_brand_test_01")

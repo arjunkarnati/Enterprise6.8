@@ -1,6 +1,7 @@
 package library;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -60,6 +61,22 @@ public class SeriesPublishPage extends PageBase{
 		//assert and verify
 		Assert.assertTrue(driver.getTitle().equalsIgnoreCase(library.getProperty("series_page_title")));
 		//return series paeg
+		return new SeriesPage(driver);
+	}
+	public PageBase deletelocales() {
+		// TODO Auto-generated method stub
+		
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("series_locale_delete"))).sendKeys(Keys.BACK_SPACE);
+		//driver.findElement(By.xpath(library.getProperty("series_edit_tracks"))).sendKeys(newlocalename);
+		//driver.findElement(By.xpath(library.getProperty("series_locale_delete"))).sendKeys(Keys.ENTER);
+		return new SeriesPage(driver);
+	}
+	public SeriesPage addlocaleTo(String newlocale)
+	{
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("series_locale_delete"))).sendKeys(newlocale);
+		driver.findElement(By.xpath(library.getProperty("series_locale_delete"))).sendKeys(Keys.ENTER);
 		return new SeriesPage(driver);
 	}
 }

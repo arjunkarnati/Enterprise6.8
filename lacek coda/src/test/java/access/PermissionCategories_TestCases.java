@@ -9,7 +9,7 @@ public class PermissionCategories_TestCases extends TestBase {
 	@Test(priority=0,enabled=true)
 	public void create_a_new_permission_categories()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.clickAddpermissionCategoriesButton()
@@ -25,7 +25,7 @@ public class PermissionCategories_TestCases extends TestBase {
 	@Test(priority=1,enabled=true)
 	public void create_a_new_permission_categories_without_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.clickAddpermissionCategoriesButton()
@@ -37,7 +37,7 @@ public class PermissionCategories_TestCases extends TestBase {
 	@Test(priority=2,enabled=true)
 	public void create_a_new_permission_categories_without_controller_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.clickAddpermissionCategoriesButton()
@@ -49,7 +49,7 @@ public class PermissionCategories_TestCases extends TestBase {
 	@Test(priority=3,enabled=true)
 	public void click_cancel_in_permission_categories_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.clickAddpermissionCategoriesButton()
@@ -60,7 +60,7 @@ public class PermissionCategories_TestCases extends TestBase {
 	@Test(priority=4,enabled=true)
 	public void return_to_permission_categories_main_page_from_add()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.clickAddpermissionCategoriesButton()
@@ -76,7 +76,7 @@ public class PermissionCategories_TestCases extends TestBase {
 	/*@Test(priority=10,enabled=true)
 	public void create_test_permission_categories()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.clickAddpermissionCategoriesButton()

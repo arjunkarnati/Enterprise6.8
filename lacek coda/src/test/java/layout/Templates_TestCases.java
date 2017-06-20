@@ -10,7 +10,7 @@ public class Templates_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void create_a_new_template_channel_email_type_communication()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()
@@ -34,7 +34,7 @@ public class Templates_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void create_a_new_template_channel_web_type_communication()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()
@@ -57,7 +57,7 @@ public class Templates_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void create_a_new_template_channel_email_type_message()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()
@@ -80,7 +80,7 @@ public class Templates_TestCases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void create_a_new_template_channel_web_type_message()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()
@@ -103,7 +103,7 @@ public class Templates_TestCases extends TestBase{
 	@Test(priority=4,enabled=true)
 	public void create_a_new_template_without_a_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()
@@ -117,7 +117,7 @@ public class Templates_TestCases extends TestBase{
 	@Test(priority=5,enabled=true)
 	public void create_a_new_template_without_a_channel()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()
@@ -132,7 +132,7 @@ public class Templates_TestCases extends TestBase{
 	@Test(priority=6,enabled=true)
 	public void create_a_new_template_without_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()
@@ -147,7 +147,7 @@ public class Templates_TestCases extends TestBase{
 	@Test(priority=7,enabled=true)
 	public void create_a_new_template_without_a_type()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()
@@ -167,7 +167,7 @@ public class Templates_TestCases extends TestBase{
 	/*@Test(priority=30,enabled=true)
 	public void create_test_template_channel()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTemplates()
 		.clickAddTemplateButton()

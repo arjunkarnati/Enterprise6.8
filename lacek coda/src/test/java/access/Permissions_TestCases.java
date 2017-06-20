@@ -9,7 +9,7 @@ public class Permissions_TestCases extends TestBase {
 	@Test(priority=0,enabled=true)
 	public void create_a_new_permissions()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissions()
 		.clickAddpermissionsButton()
@@ -26,7 +26,7 @@ public class Permissions_TestCases extends TestBase {
 	@Test(priority=1,enabled=true)
 	public void create_a_new_permissions_without_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissions()
 		.clickAddpermissionsButton()
@@ -39,7 +39,7 @@ public class Permissions_TestCases extends TestBase {
 	@Test(priority=2,enabled=true)
 	public void create_a_new_permissions_without_permission_category()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissions()
 		.clickAddpermissionsButton()
@@ -52,7 +52,7 @@ public class Permissions_TestCases extends TestBase {
 	@Test(priority=3,enabled=true)
 	public void click_cancel_in_permissions_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissions()
 		.clickAddpermissionsButton()
@@ -63,7 +63,7 @@ public class Permissions_TestCases extends TestBase {
 	@Test(priority=4,enabled=true)
 	public void return_to_permissions_main_page_from_add()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissions()
 		.clickAddpermissionsButton()
@@ -79,7 +79,7 @@ public class Permissions_TestCases extends TestBase {
 	/*@Test(priority=11,enabled=true)
 	public void create_testdata_permissions()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissions()
 		.clickAddpermissionsButton()

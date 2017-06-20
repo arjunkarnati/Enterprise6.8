@@ -3,8 +3,11 @@ package library;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
 import Utility.PageBase;
 
 public class CommunicationsPublishPage extends PageBase {
@@ -80,6 +83,49 @@ public class CommunicationsPublishPage extends PageBase {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		return new CommunicationsPublishPage(driver);
+	}
+	public CommunicationsPublishPage deletelocales() {
+		readconfig();
+		//counting the number of entry in the field
+		//int iCount = driver.findElements(By.xpath(library.getProperty("comm_delete_locales"))).size();
+		//System.out.println("**locales: "+iCount);
+		//for (int i=0; i<iCount;i++)
+		{
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			driver.findElement(By.xpath(library.getProperty("comm_delete_locales"))).sendKeys(Keys.BACK_SPACE);
+			
+			
+			
+			
+		}
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		// TODO Auto-generated method stub
+		return new CommunicationsPublishPage(driver);
+	}
+	public PageBase addlocales(String newlocale) 
+	{
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("comm_add_locale"))).sendKeys(newlocale);
+		driver.findElement(By.xpath(library.getProperty("comm_add_locale"))).sendKeys(Keys.ENTER);
+		//assert and verify
+		Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("comm_add_locale"))).isDisplayed());
+		//return communication edit page
 		return new CommunicationsPublishPage(driver);
 	}
 }

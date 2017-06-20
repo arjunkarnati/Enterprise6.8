@@ -10,7 +10,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=0)
 	public void update_variable_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.editVariables("edit_variable_test_01")
@@ -23,7 +23,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=1)
 	public void update_variable_name_to_previous_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.editVariables("edit_variable_test_010")
@@ -36,7 +36,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=2)
 	public void update_variable_brands()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.editVariables("edit_variable_test_01")
@@ -51,7 +51,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=3)
 	public void update_variable_brands_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.editVariables("edit_variable_test_01")
@@ -65,7 +65,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=4)
 	public void update_Variable_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.editVariables("edit_variable_test_01")
@@ -78,7 +78,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=5)
 	public void update_variable_clientname_to_previous_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.editVariables("edit_variable_test_01")
@@ -92,7 +92,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=6)
 	public void inactivate_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.editVariables("edit_variable_test_01")
@@ -105,7 +105,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=7)
 	public void activate_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.editVariables("edit_variable_test_01")
@@ -118,7 +118,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=8)
 	public void archive_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.archiveVariable("edit_variable_test_01")
@@ -128,7 +128,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=9)
 	public void restore_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.restoreVariable("edit_variable_test_01")
@@ -138,7 +138,7 @@ public class VariableEdit_Testcases extends TestBase{
 	@Test(priority=10)
 	public void check_idcolumn()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.verifyIdcolumn();
@@ -152,10 +152,10 @@ public class VariableEdit_Testcases extends TestBase{
 		.editVariables("edit_ehi_variable")
 		.deleteEntryInBrandField_ehi_ae()
 		.ehi_ae_updateBrandTo("carsales")
-		.ehi_ae_updateBrandTo("Alamo")
+		//.ehi_ae_updateBrandTo("Alamo")
 		.ehi_ae_updateBrandTo("Enterprise")
 		.clickSubmitButon()
-		.validateUpdates("edit_ehi_variable","brands","3")
+		.validateUpdates("edit_ehi_variable","brands","2")
 		.getTitle()
 		.logout();	
 	}

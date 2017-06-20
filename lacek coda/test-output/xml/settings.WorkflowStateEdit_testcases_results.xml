@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WORKFLOW STATE TESTCASES"
+<testsuite name="WORKFLOW STATES TESTCASES"
            tests="14"
            failures="0"
            errors="0"
            skipped="0"
-           time="511.388">
+           time="499.821">
   <properties />
   
   
-            <testcase name="update_workflow_state_color_to_previous" time="37.012" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_description" time="40.297" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="click_cancel_in_wf_state_edit_page" time="31.474" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_name" time="42.128" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="empty_color_field_in_wf_state_edit_page" time="36.549" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="inactivate_workflow_state" time="41.777" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_description_to_previous" time="39.342" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="activate_workflow_state" time="41.764" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_name_to_previous" time="47.719" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="empty_name_field_in_wf_state_edit_page" time="36.428" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="return_to_wf_state_main_page_from_edit" time="32.457" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="restore_wf_state" time="29.152" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="archive_wf_state" time="18.299" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_color" time="36.990" classname="settings.WorkflowStateEdit_testcases" />
+            <testcase name="activate_workflow_state" time="40.742" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_description" time="39.518" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_description_to_previous" time="38.917" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="inactivate_workflow_state" time="40.776" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_name_to_previous" time="41.835" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="return_to_wf_state_main_page_from_edit" time="31.552" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="click_cancel_in_wf_state_edit_page" time="29.744" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="archive_wf_state" time="17.945" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="empty_name_field_in_wf_state_edit_page" time="35.790" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_name" time="42.259" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_color" time="36.012" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="restore_wf_state" time="29.158" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="empty_color_field_in_wf_state_edit_page" time="35.945" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_color_to_previous" time="39.628" classname="settings.WorkflowStateEdit_testcases" />
       
 </testsuite>

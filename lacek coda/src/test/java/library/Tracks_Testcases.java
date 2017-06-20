@@ -11,7 +11,7 @@ public class Tracks_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_track()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.clickAddTrackButton()
@@ -39,7 +39,7 @@ public class Tracks_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_track_without_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.clickAddTrackButton()
@@ -53,7 +53,7 @@ public class Tracks_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_track_without_tracksnname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.clickAddTrackButton()
@@ -70,7 +70,7 @@ public class Tracks_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_track_without_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.clickAddTrackButton()
@@ -88,7 +88,7 @@ public class Tracks_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void click_cancel_track_button()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.clickAddTrackButton()
@@ -106,7 +106,7 @@ public class Tracks_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_track()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTracksLink()
 		.clickAddTrackButton()

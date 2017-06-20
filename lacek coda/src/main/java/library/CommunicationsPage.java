@@ -131,6 +131,18 @@ public class CommunicationsPage extends PageBase{
 			Assert.assertEquals(driver.getTitle(),library.getProperty("comm_publish_page_title"));
 			break;
 		}
+		case "Comm6.14":
+		{
+			driver.findElement(By.xpath(test_data_reader.getProperty("publish_comm_test_01"))).click();
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),library.getProperty("comm_publish_page_title"));
+			break;
+		}
+		
 		case "opt-publish_comm_test_010":
 		{
 			driver.findElement(By.xpath(test_data_reader.getProperty("publish_comm_test_01"))).click();

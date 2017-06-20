@@ -9,7 +9,7 @@ public class Login_testcases extends TestBase{
 	@Test(priority=0) 
 	public void login_with_valid_username_and_valid_password() 
 	{		
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.getTitle()
 		.logout();
@@ -24,8 +24,8 @@ public class Login_testcases extends TestBase{
 	@Test(priority=2)
 	public void login_with_empty_username()
 	{
-		login.loginAs("", "Monday#2")
-		.failLogin("", "Monday#2")
+		login.loginAs("", "Monday#223")
+		.failLogin("", "Monday#223")
 		.getTitle();
 	}
 	@Test(priority=3)
@@ -45,8 +45,8 @@ public class Login_testcases extends TestBase{
 	@Test(priority=5)
 	public void login_with_invalid_username()
 	{
-		login.loginAs("invalidusername", "Monday#2")
-		.failLogin("invalidusername", "Monday#2")
+		login.loginAs("invalidusername", "Monday#223")
+		.failLogin("invalidusername", "Monday#223")
 		.getTitle();
 	}	
 }

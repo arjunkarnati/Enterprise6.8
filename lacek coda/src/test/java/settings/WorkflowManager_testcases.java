@@ -9,7 +9,7 @@ public class WorkflowManager_testcases extends TestBase {
 	@Test(priority=8,enabled=true)
 	public void create_a_workflow_manager()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickWorkflowManager()
 		.clickAddWfMgrButton()

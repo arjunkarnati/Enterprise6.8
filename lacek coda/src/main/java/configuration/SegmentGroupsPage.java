@@ -142,11 +142,21 @@ public class SegmentGroupsPage extends PageBase{
 		{
 		case"client":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("seg_group_client"))).getText(),expectedresult);
 			break;
 		}
 		case"brand":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			//counting the number of entry in the field
 			int iCount = driver.findElements(By.xpath(configuration.getProperty("seg_group_brand"))).size();
 			//getting the entry value
@@ -164,6 +174,7 @@ public class SegmentGroupsPage extends PageBase{
 		}
 		case"name":
 		{
+			
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("seg_group_name"))).getText(),expectedresult);
 			break;
 		}

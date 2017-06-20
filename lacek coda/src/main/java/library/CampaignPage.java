@@ -160,11 +160,21 @@ public class CampaignPage extends PageBase{
 		{
 		case"client":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("campaign_client"))).getText(),expectedresult);
 			break;
 		}
 		case"brand":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			//counting the number of entry in the field
 			int iCount = driver.findElements(By.xpath(library.getProperty("campaign_brands"))).size();
 			//getting the entry value
@@ -182,6 +192,11 @@ public class CampaignPage extends PageBase{
 		}
 		case"program":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			//counting the number of entry in the field
 			int iCount = driver.findElements(By.xpath(library.getProperty("campaign_programs"))).size();
 			//getting the entry value
@@ -198,26 +213,51 @@ public class CampaignPage extends PageBase{
 		}
 		case"name":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("campaign_name"))).getText(),expectedresult);
 			break;
 		}
 		case"code":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("campaign_code"))).getText(),expectedresult);
 			break;
 		}
 		case"series":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("campaign_series"))).getText(),expectedresult);
 			break;
 		}
 		case"status":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("campaign_status"))).getText(),expectedresult);
 			break;
 		}
 		case"workflow":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("campaign_workflow"))).getText(),expectedresult);
 			break;
 		}

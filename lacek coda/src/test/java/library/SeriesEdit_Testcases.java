@@ -9,7 +9,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=0)
 	public void update_series_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.editSeries("edit_series_test_01")
@@ -22,7 +22,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=1)
 	public void update_series_name_to_previous_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.editSeries("edit_series_test_010")
@@ -35,7 +35,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=2)
 	public void update_series_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()		
 		.editSeries("edit_series_test_01")
@@ -48,7 +48,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=3)
 	public void update_series_clientname_to_previous_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()			
 		.editSeries("edit_series_test_01")
@@ -65,7 +65,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=4)
 	public void update_series_brands()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.editSeries("edit_series_test_01")
@@ -80,7 +80,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=5)
 	public void update_series_brands_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.editSeries("edit_series_test_01")
@@ -95,7 +95,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_series_programs()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()		
 		.editSeries("edit_series_test_01")
@@ -110,7 +110,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_series_programs_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()		
 		.editSeries("edit_series_test_01")
@@ -124,7 +124,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=8)
 	public void update_series_tracks()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()	
 		.editSeries("edit_series_test_01")
@@ -138,7 +138,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=9)
 	public void update_series_tracks_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()	
 		.editSeries("edit_series_test_01")
@@ -153,7 +153,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=10)
 	public void update_series_workflow_to_approved()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.editSeries("edit_series_test_01")
@@ -165,7 +165,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=11)
 	public void update_series_workflow_to_draft()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.editSeries("edit_series_test_01")
@@ -178,7 +178,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	//@Test(enabled=true)
 	public void inactivate_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.editSeries("edit_series_test_01")
@@ -192,7 +192,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	//@Test(enabled=true)
 	public void activate_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.editSeries("edit_series_test_01")
@@ -206,7 +206,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	//@Test(enabled=true)
 	public void archive_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.archiveSeries("edit_series_test_01")
@@ -217,7 +217,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	//@Test(enabled=true)
 	public void restore_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.retoreSeries("edit_series_test_01")
@@ -227,7 +227,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=16)
 	public void update_series_name1()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -237,7 +237,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=17)
 	public void update_series_name2()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -246,7 +246,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	/*@Test(priority=18)
 	public void update_series_name3()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -255,7 +255,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=19)
 	public void update_series_name4()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -264,7 +264,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=20)
 	public void update_series_name5()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -273,7 +273,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=21)
 	public void update_series_name6()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -282,7 +282,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=22)
 	public void update_series_name7()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -291,7 +291,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=23)
 	public void update_series_name8()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -300,7 +300,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=24)
 	public void update_series_name9()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -309,7 +309,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=25)
 	public void update_series_name10()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.getTitle()
@@ -318,7 +318,7 @@ public class SeriesEdit_Testcases extends TestBase{
 	@Test(priority=26)
 	public void Series_column_search()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickonprofilelink()
 		;

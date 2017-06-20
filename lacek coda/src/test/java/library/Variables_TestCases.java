@@ -11,7 +11,7 @@ public class Variables_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_locale_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.clickAddVariableButton()
@@ -36,7 +36,7 @@ public class Variables_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_global_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.clickAddVariableButton()
@@ -61,7 +61,7 @@ public class Variables_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_duplicate_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.clickAddVariableButton()
@@ -79,7 +79,7 @@ public class Variables_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_variablle_without_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.clickAddVariableButton()
@@ -93,7 +93,7 @@ public class Variables_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void click_cancel_variable_button()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.clickAddVariableButton()
@@ -105,7 +105,7 @@ public class Variables_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_variablle_without_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.clickAddVariableButton()
@@ -124,7 +124,7 @@ public class Variables_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_variable()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickVariablesLink()
 		.clickAddVariableButton()

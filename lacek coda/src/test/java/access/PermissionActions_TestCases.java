@@ -9,7 +9,7 @@ public class PermissionActions_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void create_a_new_permission_action()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()
@@ -26,7 +26,7 @@ public class PermissionActions_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void create_a_new_permission_action_without_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()
@@ -40,7 +40,7 @@ public class PermissionActions_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void create_a_new_permission_action_without_controller_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()
@@ -54,7 +54,7 @@ public class PermissionActions_TestCases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void create_a_new_permission_action_without_permission()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()
@@ -68,7 +68,7 @@ public class PermissionActions_TestCases extends TestBase{
 	@Test(priority=4,enabled=true)
 	public void click_cancel_in_permission_action_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()
@@ -79,7 +79,7 @@ public class PermissionActions_TestCases extends TestBase{
 	@Test(priority=5,enabled=true)
 	public void returm_to_permission_actions_main_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()
@@ -90,7 +90,7 @@ public class PermissionActions_TestCases extends TestBase{
 	@Test(priority=6,enabled=true)
 	public void create_a_duplicate_permission_action()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()
@@ -109,7 +109,7 @@ public class PermissionActions_TestCases extends TestBase{
 	/*@Test(priority=12,enabled=true)
 	public void create_test_permission_action()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()

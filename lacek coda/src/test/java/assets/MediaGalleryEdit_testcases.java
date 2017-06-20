@@ -10,7 +10,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void update_media_gallery_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -24,7 +24,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_media_gallery_brand_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -42,7 +42,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_media_gallery_program()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -57,7 +57,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void update_media_gallery_program_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -71,7 +71,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void update_media_gallery_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()	
 		.editMediaGallery("edit_image_test_01")
@@ -84,7 +84,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=5)
 	public void update_media_gallery_name_to_previous_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()	
 		.editMediaGallery("edit_image_test_010")
@@ -97,7 +97,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void update_media_gallery_description()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()	
 		.editMediaGallery("edit_image_test_01")
@@ -109,7 +109,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	//@Test(priority=7)
 	public void update_media_gallery_image()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -121,7 +121,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	//@Test(priority=8)
 	public void update_media_gallery_image_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -133,7 +133,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=9)
 	public void update_media_gallery_Alt_Tag()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -146,7 +146,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=10)
 	public void update_media_gallery_Alt_Tag_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -159,7 +159,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=11)
 	public void update_media_gallery_connectors()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -174,7 +174,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=12)
 	public void update_media_gallery_workflow_to_draft()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -186,7 +186,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=13)
 	public void update_media_gallery_workflow_to_approved()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -198,7 +198,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=14)
 	public void update_media_gallery_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()	
 		.editMediaGallery("edit_image_test_01")
@@ -211,7 +211,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=15)
 	public void update_media_gallery_clientname_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -232,7 +232,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=16)
 	public void inactivate_media_gallery()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -245,7 +245,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=17)
 	public void activate_media_gallery()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("edit_image_test_01")
@@ -258,7 +258,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=18)
 	public void archive_media_gallery()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.archiveMediagallery("edit_image_test_01")
@@ -268,7 +268,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=19)
 	public void restore_media_gallery()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.restoreMediaGallery("edit_image_test_01")
@@ -278,7 +278,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	/*@Test(priority=20)
 	public void check_imgaltTag()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("ERAC PRM SHU 307717151 FRFR R2.jpg")
@@ -291,7 +291,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=20)
 	public void delete_messagemedia_connectors()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("Primary - CTA FPO")
@@ -306,7 +306,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	@Test(priority=21)
 	public void update_messagemedia_connectors()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.editMediaGallery("Primary - CTA FPO")
@@ -368,7 +368,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 	/*@Test(priority=26)
 	public void manage_workflow_in_media()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.manageworkflow("APPROVED","edit_image_test_01")

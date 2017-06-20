@@ -10,7 +10,7 @@ public class Roles_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void create_a_new_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickAddRoleButton()
@@ -30,7 +30,7 @@ public class Roles_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_role_without_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickAddRoleButton()
@@ -47,7 +47,7 @@ public class Roles_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void select_cancel_button_in_roles_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickAddRoleButton()
@@ -59,7 +59,7 @@ public class Roles_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void fail_to_create_role_when_require_field_is_not_populated()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickAddRoleButton()
@@ -74,7 +74,7 @@ public class Roles_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_duplicate_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickAddRoleButton()
@@ -90,7 +90,7 @@ public class Roles_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void acces_level_field_is_empty_in_role_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickAddRoleButton()
@@ -112,7 +112,7 @@ public class Roles_TestCases extends TestBase{
 	/*@Test(priority=10,enabled=true)
 	public void create_test_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickAddRoleButton()

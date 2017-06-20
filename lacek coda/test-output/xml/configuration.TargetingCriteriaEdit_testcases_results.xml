@@ -4,23 +4,23 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="507.703">
+           time="497.995">
   <properties />
   
   
-            <testcase name="empty_code_field_in_tagerting_criteria_edit_page" time="35.107" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="select_cancel_button_in_targeting_criteria_edit_page" time="33.667" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="update_targeting_criteria_name" time="38.611" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="update_targeting_criteria_client" time="40.048" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="update_targeting_criteria_client_to_previous" time="39.022" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="update_targeting_criteria_brand_to_previous" time="43.760" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="restore_tageting_criteria" time="29.807" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="empty_name_field_in_tagerting_criteria_edit_page" time="35.043" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="archive_tageting_criteria" time="18.016" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="update_targeting_criteria_brand" time="40.809" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="activate_tageting_criteria" time="40.048" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="update_targeting_criteria_description" time="36.451" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="inactivate_tageting_criteria" time="38.395" classname="configuration.TargetingCriteriaEdit_testcases" />
-                <testcase name="update_targeting_criteria_name_to_previous" time="38.919" classname="configuration.TargetingCriteriaEdit_testcases" />
+            <testcase name="update_targeting_criteria_description" time="35.116" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="update_targeting_criteria_client_to_previous" time="37.653" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="inactivate_tageting_criteria" time="37.712" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="activate_tageting_criteria" time="38.238" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="restore_tageting_criteria" time="29.118" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="empty_code_field_in_tagerting_criteria_edit_page" time="34.804" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="archive_tageting_criteria" time="17.581" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="update_targeting_criteria_brand_to_previous" time="42.548" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="empty_name_field_in_tagerting_criteria_edit_page" time="34.988" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="update_targeting_criteria_client" time="39.171" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="update_targeting_criteria_name" time="38.231" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="select_cancel_button_in_targeting_criteria_edit_page" time="33.149" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="update_targeting_criteria_brand" time="40.715" classname="configuration.TargetingCriteriaEdit_testcases" />
+                <testcase name="update_targeting_criteria_name_to_previous" time="38.971" classname="configuration.TargetingCriteriaEdit_testcases" />
       
 </testsuite>

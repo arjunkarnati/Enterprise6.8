@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="165.991">
+           time="169.293">
   <properties />
   
   
-            <testcase name="create_a_new_wf_state_without_color" time="32.991" classname="settings.WorkflowState_TestCases" />
-                <testcase name="create_a_new_wf_state_without_name" time="32.754" classname="settings.WorkflowState_TestCases" />
-                <testcase name="create_a_new_wf_state" time="45.993" classname="settings.WorkflowState_TestCases" />
-                <testcase name="click_cancel_in_wf_state_add_page" time="25.232" classname="settings.WorkflowState_TestCases" />
-                <testcase name="return_to_wf_state_main_page_from_add" time="26.800" classname="settings.WorkflowState_TestCases" />
-                <testcase name="delete_workflow_state_from_database" time="2.221" classname="settings.WorkflowState_TestCases" />
+            <testcase name="click_cancel_in_wf_state_add_page" time="26.702" classname="settings.WorkflowState_TestCases" />
+                <testcase name="return_to_wf_state_main_page_from_add" time="28.322" classname="settings.WorkflowState_TestCases" />
+                <testcase name="delete_workflow_state_from_database" time="2.186" classname="settings.WorkflowState_TestCases" />
+                <testcase name="create_a_new_wf_state_without_color" time="32.661" classname="settings.WorkflowState_TestCases" />
+                <testcase name="create_a_new_wf_state_without_name" time="32.678" classname="settings.WorkflowState_TestCases" />
+                <testcase name="create_a_new_wf_state" time="46.744" classname="settings.WorkflowState_TestCases" />
       
 </testsuite>

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="225.971">
+           time="226.092">
   <properties />
-            <testcase name="create_a_new_communication" time="63.314" classname="library.Communications_TestCases">
+            <testcase name="create_a_new_communication" time="63.918" classname="library.Communications_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [Carnival Corporation &amp; PLC] but found [Enterprise Holdings Inc.]"
               >
@@ -17,7 +17,7 @@
   org.testng.Assert.assertEquals(Assert.java:116)
   org.testng.Assert.assertEquals(Assert.java:190)
   org.testng.Assert.assertEquals(Assert.java:200)
-  library.CommunicationsPage.validateUpdates(CommunicationsPage.java:259)
+  library.CommunicationsPage.validateUpdates(CommunicationsPage.java:271)
   library.Communications_TestCases.create_a_new_communication(Communications_TestCases.java:28)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -45,10 +45,10 @@
           </testcase>
   
   
-            <testcase name="create_a_new_communication_without_clientname" time="30.792" classname="library.Communications_TestCases" />
-                <testcase name="delete_communication_from_db" time="3.351" classname="library.Communications_TestCases" />
-                <testcase name="create_a_communication_without_communicationnname" time="50.155" classname="library.Communications_TestCases" />
-                <testcase name="create_a_new_communication_without_template" time="49.093" classname="library.Communications_TestCases" />
-                <testcase name="click_cancel_Button_in_communication_add_page" time="29.266" classname="library.Communications_TestCases" />
+            <testcase name="click_cancel_Button_in_communication_add_page" time="28.739" classname="library.Communications_TestCases" />
+                <testcase name="create_a_communication_without_communicationnname" time="49.641" classname="library.Communications_TestCases" />
+                <testcase name="create_a_new_communication_without_template" time="49.131" classname="library.Communications_TestCases" />
+                <testcase name="create_a_new_communication_without_clientname" time="31.790" classname="library.Communications_TestCases" />
+                <testcase name="delete_communication_from_db" time="2.873" classname="library.Communications_TestCases" />
       
 </testsuite>

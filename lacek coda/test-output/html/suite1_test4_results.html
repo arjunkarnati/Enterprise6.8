@@ -12,7 +12,7 @@
 <body>
 <h1>CAMPAIGN TESTCASES</h1>
 <p>
-  Test duration: 1543.466s
+  Test duration: 1082.646s
 </p>
 
 
@@ -20,22 +20,22 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">library.CanpaignsEdit_TestCases</td>
+        <td colspan="3" class="group">library.Campaigns_Testcases</td>
       </tr>
             
 <tr>
   <td class="method">
-                  camp_mass_advance_workflow
+                  create_a_new_campaign_without_series
       </td>
   <td class="duration">
-    5.414s
+    36.919s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [automation admin] but found []</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [1] but found [0]</b></a><br />
     <div class="stackTrace" id="exception-0">
               org.testng.Assert.fail(Assert.java:94)<br />
               org.testng.Assert.failNotEquals(Assert.java:513)<br />
@@ -43,8 +43,8 @@
               org.testng.Assert.assertEquals(Assert.java:116)<br />
               org.testng.Assert.assertEquals(Assert.java:190)<br />
               org.testng.Assert.assertEquals(Assert.java:200)<br />
-              login.DashboardPage.isSuccessfulLogin(DashboardPage.java:71)<br />
-              library.CanpaignsEdit_TestCases.camp_mass_advance_workflow(CanpaignsEdit_TestCases.java:224)<br />
+              library.CampaignPage.validateUpdates(CampaignPage.java:241)<br />
+              library.Campaigns_Testcases.create_a_new_campaign_without_series(Campaigns_Testcases.java:115)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -82,7 +82,7 @@
                   cancel_publish_campaign
       </td>
   <td class="duration">
-    33.462s
+    21.765s
   </td>
   <td class="result">
         
@@ -96,7 +96,7 @@
                   publish_campaign
       </td>
   <td class="duration">
-    547.078s
+    51.170s
   </td>
   <td class="result">
         
@@ -114,7 +114,7 @@
                   test_is_empty
       </td>
   <td class="duration">
-    7.692s
+    7.438s
   </td>
   <td class="result">
         
@@ -132,7 +132,7 @@
                   click_cancel_button_in_campaign_add_page
       </td>
   <td class="duration">
-    20.452s
+    19.257s
   </td>
   <td class="result">
         
@@ -146,7 +146,7 @@
                   create_a_new_campaign
       </td>
   <td class="duration">
-    57.359s
+    79.334s
   </td>
   <td class="result">
         
@@ -160,7 +160,7 @@
                   create_a_new_campaign_without_brand
       </td>
   <td class="duration">
-    42.784s
+    44.640s
   </td>
   <td class="result">
         
@@ -174,7 +174,7 @@
                   create_a_new_campaign_without_campaignname
       </td>
   <td class="duration">
-    32.450s
+    31.596s
   </td>
   <td class="result">
         
@@ -188,7 +188,7 @@
                   create_a_new_campaign_without_clientname
       </td>
   <td class="duration">
-    24.605s
+    23.725s
   </td>
   <td class="result">
         
@@ -202,21 +202,7 @@
                   create_a_new_campaign_without_program
       </td>
   <td class="duration">
-    37.392s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  create_a_new_campaign_without_series
-      </td>
-  <td class="duration">
-    34.973s
+    39.100s
   </td>
   <td class="result">
         
@@ -230,7 +216,7 @@
                   delete_campaign_from_db
       </td>
   <td class="duration">
-    3.480s
+    3.352s
   </td>
   <td class="result">
         
@@ -248,7 +234,7 @@
                   activate_campaign
       </td>
   <td class="duration">
-    28.085s
+    31.896s
   </td>
   <td class="result">
         
@@ -262,7 +248,21 @@
                   archive_campaign
       </td>
   <td class="duration">
-    18.618s
+    17.725s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  camp_mass_advance_workflow
+      </td>
+  <td class="duration">
+    12.045s
   </td>
   <td class="result">
         
@@ -276,7 +276,7 @@
                   inactivate_campaign
       </td>
   <td class="duration">
-    30.531s
+    31.744s
   </td>
   <td class="result">
         
@@ -290,7 +290,7 @@
                   restorte_campaign
       </td>
   <td class="duration">
-    30.035s
+    29.725s
   </td>
   <td class="result">
         
@@ -304,7 +304,7 @@
                   update_campaign_brands
       </td>
   <td class="duration">
-    35.589s
+    38.296s
   </td>
   <td class="result">
         
@@ -318,7 +318,7 @@
                   update_campaign_brands_to_previous
       </td>
   <td class="duration">
-    33.724s
+    35.964s
   </td>
   <td class="result">
         
@@ -332,7 +332,7 @@
                   update_campaign_client
       </td>
   <td class="duration">
-    30.924s
+    32.593s
   </td>
   <td class="result">
         
@@ -346,7 +346,7 @@
                   update_campaign_clientname_to_previous_client
       </td>
   <td class="duration">
-    38.402s
+    40.126s
   </td>
   <td class="result">
         
@@ -360,7 +360,7 @@
                   update_campaign_name
       </td>
   <td class="duration">
-    31.409s
+    33.693s
   </td>
   <td class="result">
         
@@ -374,7 +374,7 @@
                   update_campaign_name_to_previous_name
       </td>
   <td class="duration">
-    31.127s
+    34.477s
   </td>
   <td class="result">
         
@@ -388,7 +388,7 @@
                   update_campaign_programs
       </td>
   <td class="duration">
-    31.624s
+    34.658s
   </td>
   <td class="result">
         
@@ -402,7 +402,7 @@
                   update_campaign_programs_to_previous
       </td>
   <td class="duration">
-    33.453s
+    35.962s
   </td>
   <td class="result">
         
@@ -416,7 +416,7 @@
                   update_campaign_series
       </td>
   <td class="duration">
-    39.114s
+    39.684s
   </td>
   <td class="result">
         
@@ -430,7 +430,7 @@
                   update_campaign_series_to_previous
       </td>
   <td class="duration">
-    32.432s
+    34.237s
   </td>
   <td class="result">
         
@@ -444,7 +444,7 @@
                   update_campaign_workflow_to_approved
       </td>
   <td class="duration">
-    23.866s
+    25.324s
   </td>
   <td class="result">
         
@@ -458,7 +458,7 @@
                   update_campaign_workflow_to_draft
       </td>
   <td class="duration">
-    22.971s
+    26.041s
   </td>
   <td class="result">
         

@@ -10,7 +10,7 @@ public class TargetingCriteriaRestore_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void verify_targeting_criteria_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.clickArchiveButton()

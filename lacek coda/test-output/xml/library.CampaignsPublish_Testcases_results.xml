@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="580.540">
+           time="72.935">
   <properties />
   
   
-            <testcase name="cancel_publish_campaign" time="33.462" classname="library.CampaignsPublish_Testcases" />
-                <testcase name="publish_campaign" time="547.078" classname="library.CampaignsPublish_Testcases" />
+            <testcase name="publish_campaign" time="51.170" classname="library.CampaignsPublish_Testcases" />
+                <testcase name="cancel_publish_campaign" time="21.765" classname="library.CampaignsPublish_Testcases" />
       
 </testsuite>

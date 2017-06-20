@@ -10,7 +10,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void update_segment_segment_group()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -23,7 +23,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_segment_segment_group_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -36,7 +36,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=2)
 	public void update_segment_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -49,7 +49,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=3)
 	public void update_segment_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_010")
@@ -62,7 +62,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void update_segment_code()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -75,7 +75,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=5)
 	public void update_segment_code_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -88,7 +88,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void inactivate_segment()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -101,7 +101,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=7)
 	public void activate_segment()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -115,7 +115,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=8)
 	public void update_segment_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -130,7 +130,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=9)
 	public void update_segment_clientname_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -145,7 +145,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=10)
 	public void empty_name_field_in_segements_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -157,7 +157,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=11)
 	public void empty_code_field_in_segements_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -169,7 +169,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=12)
 	public void select_button_cancel_in_segments_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
@@ -180,7 +180,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=13)
 	public void archive_segment()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()	
 		.archiveSegements("edit_segments_test_01")
@@ -189,7 +189,7 @@ public class SegmentsEdit_testcases extends TestBase{
 	@Test(priority=14)
 	public void restore_segment()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		//.restoreSegment("edit_segments_test_01")

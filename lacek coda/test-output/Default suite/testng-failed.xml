@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="library.MessagesEdit_Testcases">
+      <class name="library.SeriesPublish_Testcases">
         <methods>
-          <include name="mass_advance_workflow"/>
+          <include name="publish_series"/>
           <include name="BeforeSuite"/>
           <include name="tearDown"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- library.MessagesEdit_Testcases -->
+      </class> <!-- library.SeriesPublish_Testcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

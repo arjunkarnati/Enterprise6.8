@@ -10,7 +10,7 @@ public class Messages_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void create_a_new_message()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.clickAddMessageButton()
@@ -40,7 +40,7 @@ public class Messages_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void create_a_new_message_without_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.clickAddMessageButton()
@@ -53,7 +53,7 @@ public class Messages_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void create_a_new_message_without_a_message_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.clickAddMessageButton()
@@ -72,7 +72,7 @@ public class Messages_TestCases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void create_a_new_message_without_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.clickAddMessageButton()
@@ -92,7 +92,7 @@ public class Messages_TestCases extends TestBase{
 	@Test(priority=9,enabled=true)
 	public void click_cancel_message_button()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.clickAddMessageButton()
@@ -102,7 +102,7 @@ public class Messages_TestCases extends TestBase{
 	}
 	@Test(priority=10,enabled=true)
 	public void clone_message(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		//.copyMessage("edit_message_test_01")
@@ -138,7 +138,7 @@ public class Messages_TestCases extends TestBase{
 	/*@Test(priority=0,enabled=true)
 	public void create_testdata_message()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.clickAddMessageButton()

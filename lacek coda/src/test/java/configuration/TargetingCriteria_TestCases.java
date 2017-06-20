@@ -12,7 +12,7 @@ public class TargetingCriteria_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_targeting_criteria()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.clickAddTargetingcriteriaButton()
@@ -33,7 +33,7 @@ public class TargetingCriteria_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_targeting_criteria_without_a_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.clickAddTargetingcriteriaButton()
@@ -47,7 +47,7 @@ public class TargetingCriteria_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_targeting_criteria_without_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.clickAddTargetingcriteriaButton()
@@ -62,7 +62,7 @@ public class TargetingCriteria_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void select_button_cancel_in_targeting_criteria_add_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.clickAddTargetingcriteriaButton()
@@ -79,7 +79,7 @@ public class TargetingCriteria_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_targeting_criteria()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickTargetingCriteria()
 		.clickAddTargetingcriteriaButton()

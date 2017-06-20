@@ -10,7 +10,7 @@ public class MediaGalleryPublish_testcases extends TestBase{
 	@Test(priority=0)
 	public void publish_media_gallery()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.publishMediaGallery("publish_image_test_01")
@@ -22,7 +22,7 @@ public class MediaGalleryPublish_testcases extends TestBase{
 	@Test(priority=1)
 	public void cancel_publish_campaign()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
 		.publishMediaGallery("publish_image_test_01")

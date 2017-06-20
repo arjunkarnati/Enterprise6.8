@@ -9,7 +9,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=0,enabled=true)
 	public void update_locale_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -22,7 +22,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=1,enabled=true)
 	public void update_locale_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("gaulois")
@@ -35,7 +35,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=2,enabled=true)
 	public void update_locale_code()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -48,7 +48,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=3,enabled=true)
 	public void update_locale_code_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -61,7 +61,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=4,enabled=true)
 	public void click_cancel_in_locales_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -72,7 +72,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=5,enabled=true)
 	public void return_to_locales_main_page_from_edit()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -83,7 +83,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=6,enabled=true)
 	public void empty_name_field_in_locales_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -94,7 +94,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=7,enabled=true)
 	public void empty_code_field_in_locales_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -105,7 +105,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=8,enabled=true)
 	public void inactivate_locales()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -118,7 +118,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=9,enabled=true)
 	public void activate_locales()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.editLocales("latin")
@@ -131,7 +131,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=10,enabled=true)
 	public void archive_locales()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.archiveLocales("latin")
@@ -141,7 +141,7 @@ public class LocalesEdit_TestCases extends TestBase {
 	@Test(priority=11,enabled=true)
 	public void restore_locales()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickLocales()
 		.restoreLocales("latin")

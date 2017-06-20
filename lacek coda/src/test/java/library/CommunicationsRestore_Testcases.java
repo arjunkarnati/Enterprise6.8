@@ -8,7 +8,7 @@ public class CommunicationsRestore_Testcases extends TestBase{
 	@Test
 	public void test_is_empty()
 	{
-		login.loginAs("automation.admin", "Monday#2")
+		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.getTitle();			
 	}

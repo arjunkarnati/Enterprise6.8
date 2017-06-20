@@ -10,7 +10,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void update_campaign_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")
@@ -23,7 +23,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void update_campaign_name_to_previous_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_010")
@@ -36,7 +36,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void update_campaign_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()	
 		.editCampaign("edit_campaign_test_01")
@@ -49,7 +49,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void update_campaign_clientname_to_previous_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")
@@ -65,7 +65,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=4,enabled=true)
 	public void update_campaign_brands()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()		
 		.editCampaign("edit_campaign_test_01")
@@ -80,7 +80,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=5,enabled=true)
 	public void update_campaign_brands_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()	
 		.editCampaign("edit_campaign_test_01")
@@ -94,7 +94,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=6,enabled=true)
 	public void update_campaign_programs()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()	
 		.editCampaign("edit_campaign_test_01")
@@ -108,7 +108,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=7,enabled=true)
 	public void update_campaign_programs_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")
@@ -122,7 +122,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=8,enabled=true)
 	public void update_campaign_series()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")
@@ -138,7 +138,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=9,enabled=true)
 	public void update_campaign_series_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")
@@ -152,7 +152,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=10,enabled=true)
 	public void update_campaign_workflow_to_approved()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")		
@@ -164,7 +164,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=11,enabled=true)
 	public void update_campaign_workflow_to_draft()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")
@@ -176,7 +176,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=12,enabled=true)
 	public void inactivate_campaign()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")
@@ -189,7 +189,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=13,enabled=true)
 	public void activate_campaign()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.editCampaign("edit_campaign_test_01")
@@ -202,7 +202,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=14,enabled=true)
 	public void archive_campaign()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.archiveCampaign("edit_campaign_test_01")
@@ -211,7 +211,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=15,enabled=true)
 	public void restorte_campaign()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		.restoreCampaign("edit_campaign_test_01")
@@ -220,7 +220,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 	@Test(priority=16,enabled=true)
 	public void camp_mass_advance_workflow()
 	{
-		login.loginAs("automation.admin","Monday#1")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
 		//.clickMassadvanceworkflow()

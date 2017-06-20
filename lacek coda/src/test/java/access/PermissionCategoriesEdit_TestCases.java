@@ -9,7 +9,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void update_permission_categories_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -22,7 +22,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void update_permission_categories_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_010")
@@ -35,7 +35,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void update_permission_categories_conttroller_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -48,7 +48,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=3,enabled=true)
 	public void update_permission_categories_conttroller_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -61,7 +61,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=4,enabled=false)
 	public void empty_name_field_in_permission_categories_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -73,7 +73,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=5,enabled=false)
 	public void empty_controller_name_field_in_permission_categories_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -85,7 +85,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=6,enabled=true)
 	public void click_cancel_in_permission_categories_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -96,7 +96,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=7,enabled=true)
 	public void return_to_main_page_from_permission_categories_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -107,7 +107,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=8,enabled=true)
 	public void inactivate_permission_categories()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -120,7 +120,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=9,enabled=true)
 	public void activate_permission_categories()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -133,7 +133,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=10,enabled=true)
 	public void archive_permission_categories()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.editPermissionCategories("edit_permission_category_test_01")
@@ -145,7 +145,7 @@ public class PermissionCategoriesEdit_TestCases extends TestBase{
 	@Test(priority=11,enabled=true)
 	public void restore_permission_categories()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPermissionCategories()
 		.clickArchiveButton()

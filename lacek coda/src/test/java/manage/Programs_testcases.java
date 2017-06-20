@@ -11,7 +11,7 @@ public class Programs_testcases extends TestBase{
 	@Test(priority=0,enabled=true)
 	public void create_a_new_program()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.clickAddProgramButton()
@@ -33,7 +33,7 @@ public class Programs_testcases extends TestBase{
 	@Test(priority=1,enabled=true)
 	public void create_a_new_program_without_a_client_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.clickAddProgramButton()
@@ -47,7 +47,7 @@ public class Programs_testcases extends TestBase{
 	@Test(priority=2,enabled=true)
 	public void create_a_new_program_without_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.clickAddProgramButton()
@@ -67,7 +67,7 @@ public class Programs_testcases extends TestBase{
 	/*@Test(priority=60,enabled=true)
 	public void create_test_program()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.clickAddProgramButton()

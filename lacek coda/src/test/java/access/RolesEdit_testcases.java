@@ -9,7 +9,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=0)
 	public void update_role_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()	
 		.editRole("edit_role_test_01")
@@ -22,7 +22,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_role_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.editRole("edit_role_test_010")
@@ -35,7 +35,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=2)
 	public void update_role_business_rule()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()	
 		.editRole("edit_role_test_01")
@@ -47,7 +47,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=3)
 	public void update_role_business_rule_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()	
 		.editRole("edit_role_test_01")
@@ -59,7 +59,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void update_role_parent_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()	
 		//.editRole("edit_role_test_01")
@@ -71,7 +71,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=5)
 	public void update_role_parent_role_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()	
 		.editRole("edit_role_test_01")
@@ -84,7 +84,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void update_role_name_permissions()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.editRole("edit_role_test_01")
@@ -104,7 +104,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=7)
 	public void update_role_name_permissions_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.editRole("edit_role_test_01")
@@ -120,7 +120,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=8)
 	public void inactivate_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.editRole("edit_role_test_01")
@@ -133,7 +133,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=9)
 	public void activate_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.editRole("edit_role_test_01")
@@ -146,7 +146,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=10)
 	public void archive_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.editRole("edit_role_test_01")
@@ -157,7 +157,7 @@ public class RolesEdit_testcases extends TestBase{
 	@Test(priority=11)
 	public void restore_role()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickArchiveButton()
@@ -171,7 +171,7 @@ public class RolesEdit_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void fail_to_update_role_when_name_field_is_not_populated()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.editRole("edit_role_test_01")
@@ -182,7 +182,7 @@ public class RolesEdit_testcases extends TestBase{
 	}
 	@Test(priority=13)
 	public void edit_archiverole(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickArchiveButton()
@@ -194,7 +194,7 @@ public class RolesEdit_testcases extends TestBase{
 	}
 	@Test(priority=14)
 	public void edit_archiveroleto_previous(){
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRoles()
 		.clickArchiveButton()

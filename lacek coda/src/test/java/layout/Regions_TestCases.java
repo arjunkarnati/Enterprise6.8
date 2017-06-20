@@ -11,7 +11,7 @@ public class Regions_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_region()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.clickAddRegionButton()
@@ -27,7 +27,7 @@ public class Regions_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_region_with_a_duplicate_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.clickAddRegionButton()
@@ -41,7 +41,7 @@ public class Regions_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_region_without_a_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.clickAddRegionButton()
@@ -59,7 +59,7 @@ public class Regions_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_region()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickRegions()
 		.clickAddRegionButton()

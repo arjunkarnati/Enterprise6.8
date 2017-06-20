@@ -11,7 +11,7 @@ public class Clients_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_client()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickClients()
 		.clickAddClientButton()
@@ -34,7 +34,7 @@ public class Clients_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_client_without_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickClients()
 		.clickAddClientButton()
@@ -52,7 +52,7 @@ public class Clients_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_client_without_color()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickClients()
 		.clickAddClientButton()
@@ -70,7 +70,7 @@ public class Clients_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_client_witout_a_url()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickClients()
 		.clickAddClientButton()
@@ -88,7 +88,7 @@ public class Clients_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_client_witout_locales()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickClients()
 		.clickAddClientButton()
@@ -104,7 +104,7 @@ public class Clients_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_client_witout_a_default_locales()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickClients()
 		.clickAddClientButton()
@@ -121,7 +121,7 @@ public class Clients_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void cancel_client_add_process()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickClients()
 		.clickAddClientButton()

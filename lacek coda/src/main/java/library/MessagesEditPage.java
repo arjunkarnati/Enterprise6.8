@@ -67,10 +67,10 @@ public class MessagesEditPage extends PageBase{
 		public MessagesEditPage updatecclbrand(String newbrandname) 
 		{
 			readconfig();
-			driver.findElement(By.xpath(library.getProperty("mes_addccl_brand"))).sendKeys(newbrandname);
-			driver.findElement(By.xpath(library.getProperty("mes_addccl_brand"))).sendKeys(Keys.ENTER);
+			driver.findElement(By.xpath(library.getProperty("mess_edit_ccl_AE"))).sendKeys(newbrandname);
+			driver.findElement(By.xpath(library.getProperty("mess_edit_ccl_AE"))).sendKeys(Keys.ENTER);
 			//assert and verify
-			Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("mes_addccl_brand"))).isEnabled());
+			Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("mess_edit_ccl_AE"))).isEnabled());
 			Assert.assertEquals(driver.getTitle(),library.getProperty("mess_edit_page_title"));
 			//return messages edit page
 			return new MessagesEditPage(driver);

@@ -9,7 +9,7 @@ public class ProgramsEdit_testcases extends TestBase{
     @Test(priority=0)
 	public void update_program_name()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -22,7 +22,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=1)
 	public void update_program_name_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_010")
@@ -35,7 +35,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=2)
 	public void update_program_brands()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -52,7 +52,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=3)
 	public void update_program_brands_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -67,7 +67,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=4)
 	public void update_program_url()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -80,7 +80,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=5)
 	public void update_program_url_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -93,7 +93,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=6)
 	public void update_program_description()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -105,7 +105,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=7)
 	public void select_cancel_button_in_program_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -117,7 +117,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=8)
 	public void update_program_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -131,7 +131,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=9)
 	public void update_program_clientname_to_previous()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -144,7 +144,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=10)
 	public void inactivate_program()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -157,7 +157,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=11)
 	public void activate_program()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -170,7 +170,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=12)
 	public void empty_name_field_in_programs_edit_page()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.editProgram("edit_program_test_01")
@@ -182,7 +182,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=13)
 	public void archive_program()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.archiveProgram("edit_program_test_01")
@@ -191,7 +191,7 @@ public class ProgramsEdit_testcases extends TestBase{
 	@Test(priority=14)
 	public void restore_program()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickPrograms()
 		.restoreProgram("edit_program_test_01")

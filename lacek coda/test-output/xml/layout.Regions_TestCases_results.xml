@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="97.124">
+           time="95.524">
   <properties />
-            <testcase name="create_a_new_region" time="34.720" classname="layout.Regions_TestCases">
+            <testcase name="create_a_new_region" time="33.551" classname="layout.Regions_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [selenium_test_001] but found [edit_region_test_01]"
               >
@@ -45,8 +45,8 @@
           </testcase>
   
   
-            <testcase name="create_a_new_region_without_a_name" time="28.683" classname="layout.Regions_TestCases" />
-                <testcase name="create_a_new_region_with_a_duplicate_name" time="31.320" classname="layout.Regions_TestCases" />
-                <testcase name="database_delete_region" time="2.401" classname="layout.Regions_TestCases" />
+            <testcase name="create_a_new_region_without_a_name" time="28.751" classname="layout.Regions_TestCases" />
+                <testcase name="database_delete_region" time="2.375" classname="layout.Regions_TestCases" />
+                <testcase name="create_a_new_region_with_a_duplicate_name" time="30.847" classname="layout.Regions_TestCases" />
       
 </testsuite>

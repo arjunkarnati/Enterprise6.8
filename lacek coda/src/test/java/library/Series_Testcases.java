@@ -14,7 +14,7 @@ public class Series_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_serie()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.clickAddSeriesButton()
@@ -40,7 +40,7 @@ public class Series_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_serie_without_clientname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.clickAddSeriesButton()
@@ -55,7 +55,7 @@ public class Series_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_series_without_seriesnname()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.clickAddSeriesButton()
@@ -70,7 +70,7 @@ public class Series_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_a_new_series_without_brand()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.clickAddSeriesButton()
@@ -88,7 +88,7 @@ public class Series_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void click_cancel_series_button()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.clickAddSeriesButton()
@@ -106,7 +106,7 @@ public class Series_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_testdata_serie()
 	{
-		login.loginAs("automation.admin","Monday#2")
+		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()
 		.clickAddSeriesButton()

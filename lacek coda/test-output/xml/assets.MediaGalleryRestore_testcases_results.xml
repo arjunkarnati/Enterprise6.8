@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="25.998">
+           time="25.557">
   <properties />
   
   
-            <testcase name="open_archive_page" time="25.998" classname="assets.MediaGalleryRestore_testcases" />
+            <testcase name="open_archive_page" time="25.557" classname="assets.MediaGalleryRestore_testcases" />
       
 </testsuite>

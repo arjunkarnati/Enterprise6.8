@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -33,13 +34,31 @@ public class BrowserHelperPage extends PageBase {
 		switch (runnig_environment){
 		case "local":
 			if (os_browser.equalsIgnoreCase("firefox"))
-			{	
-				System.setProperty        
-				("webdriver.gecko.driver","H:\\Drivers\\gekodriver\\geckodriver.exe"); 
-				caps=DesiredCapabilities.firefox();
+			{
+
+				DesiredCapabilities cap= new DesiredCapabilities();
 				caps.setCapability("marionette", true);
 				caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-				driver = new FirefoxDriver(caps);
+				
+                 //FirefoxOptions options = new FirefoxOptions();
+				//options.setBinary("C:\\Users\\arjun.karnati\\Downloads\\geckodriver-v0.17.0-win64");
+				//ProfilesIni profile = new ProfilesIni();    
+		        // FirefoxProfile myprofile = profile.getProfile("C:\\arjunfirefox");//location of your new firefox profile 
+				WebDriver driver1 = new FirefoxDriver(cap);
+				driver1.get("https://qa-b10.mms.lacek.net");
+				/*FirefoxOptions options = new FirefoxOptions();
+				options.setBinary("C:\\Users\\arjun.karnati\\Downloads\\geckodriver-v0.16.1-win32\\geckodriver.exe"); //This is the location where you have installed Firefox on your machine
+				//caps=DesiredCapabilities.firefox();
+				//caps.setCapability("marionette", true);
+				//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+				FirefoxDriver driver1 = new FirefoxDriver();*/
+				////FirefoxOptions options = new FirefoxOptions();
+				//options.setBinary("C:\\Users\\arjun.karnati\\Downloads\\geckodriver-v0.16.1-win32\\geckodriver.exe"); //This is the location where you have installed Firefox on your machine
+				//caps=DesiredCapabilities.firefox();
+				//caps.setCapability("marionette", true);
+				//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+				//FirefoxDriver driver1 = new FirefoxDriver();
+				//driver1.get("https://qa-b10.mms.lacek.net");
 			}
 			else if (os_browser.equalsIgnoreCase("chrome"))
 			{
