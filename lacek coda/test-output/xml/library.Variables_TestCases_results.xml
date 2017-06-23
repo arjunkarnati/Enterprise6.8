@@ -4,16 +4,16 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="270.143">
+           time="269.615">
   <properties />
   
   
-            <testcase name="create_a_new_variablle_without_clientname" time="33.106" classname="library.Variables_TestCases" />
-                <testcase name="create_a_new_variablle_without_name" time="36.411" classname="library.Variables_TestCases" />
-                <testcase name="create_a_new_global_variable" time="66.653" classname="library.Variables_TestCases" />
-                <testcase name="create_a_new_locale_variable" time="62.479" classname="library.Variables_TestCases" />
-                <testcase name="delete_variable_from_db" time="2.105" classname="library.Variables_TestCases" />
-                <testcase name="create_a_duplicate_variable" time="44.816" classname="library.Variables_TestCases" />
-                <testcase name="click_cancel_variable_button" time="24.573" classname="library.Variables_TestCases" />
+            <testcase name="create_a_new_variablle_without_clientname" time="34.274" classname="library.Variables_TestCases" />
+                <testcase name="create_a_new_locale_variable" time="63.932" classname="library.Variables_TestCases" />
+                <testcase name="create_a_duplicate_variable" time="45.470" classname="library.Variables_TestCases" />
+                <testcase name="delete_variable_from_db" time="2.081" classname="library.Variables_TestCases" />
+                <testcase name="create_a_new_variablle_without_name" time="36.847" classname="library.Variables_TestCases" />
+                <testcase name="click_cancel_variable_button" time="26.331" classname="library.Variables_TestCases" />
+                <testcase name="create_a_new_global_variable" time="60.680" classname="library.Variables_TestCases" />
       
 </testsuite>

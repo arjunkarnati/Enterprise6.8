@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="1017.265">
+           time="1032.888">
   <properties />
-            <testcase name="update_role_parent_role_to_previous" time="43.871" classname="access.RolesEdit_testcases">
+            <testcase name="update_role_parent_role_to_previous" time="44.328" classname="access.RolesEdit_testcases">
                 <failure type="org.openqa.selenium.NoSuchElementException"
                   message="Cannot locate element with text: selenium_role_6
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
@@ -48,19 +48,19 @@ Driver info: driver.version: unknown
           </testcase>
   
   
-            <testcase name="update_role_name" time="82.537" classname="access.RolesEdit_testcases" />
-                <testcase name="update_role_name_permissions" time="55.284" classname="access.RolesEdit_testcases" />
-                <testcase name="edit_archiverole" time="84.296" classname="access.RolesEdit_testcases" />
-                <testcase name="activate_role" time="80.956" classname="access.RolesEdit_testcases" />
-                <testcase name="update_role_name_to_previous" time="81.591" classname="access.RolesEdit_testcases" />
-                <testcase name="update_role_parent_role" time="11.697" classname="access.RolesEdit_testcases" />
-                <testcase name="inactivate_role" time="79.525" classname="access.RolesEdit_testcases" />
-                <testcase name="fail_to_update_role_when_name_field_is_not_populated" time="46.714" classname="access.RolesEdit_testcases" />
-                <testcase name="update_role_name_permissions_to_previous" time="44.111" classname="access.RolesEdit_testcases" />
-                <testcase name="edit_archiveroleto_previous" time="84.427" classname="access.RolesEdit_testcases" />
-                <testcase name="update_role_business_rule" time="78.803" classname="access.RolesEdit_testcases" />
-                <testcase name="archive_role" time="78.476" classname="access.RolesEdit_testcases" />
-                <testcase name="update_role_business_rule_to_previous" time="78.106" classname="access.RolesEdit_testcases" />
-                <testcase name="restore_role" time="86.871" classname="access.RolesEdit_testcases" />
+            <testcase name="fail_to_update_role_when_name_field_is_not_populated" time="47.711" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_name" time="80.751" classname="access.RolesEdit_testcases" />
+                <testcase name="edit_archiveroleto_previous" time="85.646" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_name_to_previous" time="81.278" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_name_permissions_to_previous" time="43.970" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_business_rule" time="79.496" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_business_rule_to_previous" time="78.781" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_parent_role" time="13.085" classname="access.RolesEdit_testcases" />
+                <testcase name="archive_role" time="78.219" classname="access.RolesEdit_testcases" />
+                <testcase name="edit_archiverole" time="87.687" classname="access.RolesEdit_testcases" />
+                <testcase name="update_role_name_permissions" time="56.788" classname="access.RolesEdit_testcases" />
+                <testcase name="restore_role" time="87.049" classname="access.RolesEdit_testcases" />
+                <testcase name="activate_role" time="82.699" classname="access.RolesEdit_testcases" />
+                <testcase name="inactivate_role" time="85.400" classname="access.RolesEdit_testcases" />
       
 </testsuite>

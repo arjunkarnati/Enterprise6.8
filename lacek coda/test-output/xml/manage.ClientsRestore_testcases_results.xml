@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="11.885">
+           time="11.968">
   <properties />
   
   
-            <testcase name="validate_client_archive_page" time="11.885" classname="manage.ClientsRestore_testcases" />
+            <testcase name="validate_client_archive_page" time="11.968" classname="manage.ClientsRestore_testcases" />
       
 </testsuite>

@@ -304,37 +304,59 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//	.clickPreviwButton();
 	//}
 	@Test(priority=20)
-	public void comm_massadvance_workflow()
+	public void comm_massadvance_workflow() throws Exception
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
-		.isSuccessfulLogin("ehi ae")
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
-		//.commMassadvanceworkflow()
-		;
-	}
+		.searchCommunications("edit_comm_test_01")
+		.commMassadvanceworkflow()
+		.changeAssignWorkflow("APPROVED", "edit_comm_test_01")
+		.commMessageWorkflow("APPROVED", "edit_comm_test_01")
+		.saveManageworkflow()
+		.validateUpdates("edit_comm_test_01","workflow","APPROVED")
+		.getTitle()
+		.logout();
+}
 	@Test(priority=21)
+	public void updatecomm_massadvance_workflow() throws Exception 
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickCommunicationsLink()
+		.searchCommunications("edit_comm_test_01")
+		.commMassadvanceworkflow()
+		.changeAssignWorkflow("DRAFT", "edit_comm_test_01")
+		.commMessageWorkflow("DRAFT", "edit_comm_test_01")
+		.saveManageworkflow()
+		.validateUpdates("edit_comm_test_01","workflow","DRAFT")
+		.getTitle()
+		.logout();
+}
+	@Test(priority=22)
 	public void manage_workflow_ehi_qa() 
 	{
-		login.loginAs("ehi.qa","09ht1a0480")
-		.isSuccessfulLogin("ehi qa")
+		login.loginAs("ehi_qa","09ht1a0480")
+		.isSuccessfulLogin("ehi QA")
 		.clickCommunicationsLink()
-		.slectManageworkflowbyehi_qa("edit_ehi_comm_test_01")
-		//.manageworkflow_ehi_qa()
-		
-		;
-		
-
+		.slectManageworkflowbyehi_qa("142")
+		.manageWorkflowehiqa("APPROVED","142")
+		.saveManageworkflow()
+		.validateUpdates("142","workflow","APPROVED")
+		.getTitle()
+		.logout();
+}
+	@Test(priority=23)
+	public void updatemanage_workflow_ehi_qa() 
+	{
+		login.loginAs("ehi_qa","09ht1a0480")
+		.isSuccessfulLogin("ehi QA")
+		.clickCommunicationsLink()
+		.slectManageworkflowbyehi_qa("142")
+		.manageWorkflowehiqa("DRAFT","142")
+		.saveManageworkflow()
+		.validateUpdates("142","workflow","DRAFT")
+		.getTitle()
+		.logout();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

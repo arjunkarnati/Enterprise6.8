@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="533.055">
+           time="549.216">
   <properties />
   
   
-            <testcase name="update_track_workflow_to_approved" time="28.886" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_name_to_previous_name" time="39.961" classname="library.TracksEdit_Testcases" />
-                <testcase name="activate_track" time="38.959" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_name_by_EHI_AE" time="14.717" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_workflow_to_draft" time="28.912" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_series_to_previous" time="43.455" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_tracks_programs_to_previous" time="44.244" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_brands_to_previous" time="45.128" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_tracks_programs" time="41.700" classname="library.TracksEdit_Testcases" />
-                <testcase name="restore_track" time="29.040" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_name" time="40.408" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_client_field" time="37.771" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_series" time="40.662" classname="library.TracksEdit_Testcases" />
-                <testcase name="update_track_brands" time="40.991" classname="library.TracksEdit_Testcases" />
-                <testcase name="archive_track" time="18.221" classname="library.TracksEdit_Testcases" />
+            <testcase name="update_tracks_programs_to_previous" time="44.239" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_workflow_to_approved" time="29.019" classname="library.TracksEdit_Testcases" />
+                <testcase name="activate_track" time="40.000" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_client_field" time="37.628" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_brands" time="41.978" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_tracks_programs" time="42.180" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_series" time="46.369" classname="library.TracksEdit_Testcases" />
+                <testcase name="archive_track" time="19.585" classname="library.TracksEdit_Testcases" />
+                <testcase name="restore_track" time="28.792" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_series_to_previous" time="47.101" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_name_to_previous_name" time="42.102" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_name_by_EHI_AE" time="16.093" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_brands_to_previous" time="43.898" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_workflow_to_draft" time="30.299" classname="library.TracksEdit_Testcases" />
+                <testcase name="update_track_name" time="39.933" classname="library.TracksEdit_Testcases" />
       
 </testsuite>

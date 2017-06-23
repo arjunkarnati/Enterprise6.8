@@ -2,6 +2,8 @@ package library;
 
 import java.security.InvalidParameterException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -336,6 +338,11 @@ public class CommunicationsPage extends PageBase{
 		}
 		case"workflow":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("comm_workflow"))).getText(),expectedresult);
 			break;
 		}
@@ -363,11 +370,11 @@ public class CommunicationsPage extends PageBase{
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		Assert.assertEquals(driver.getTitle(),library.getProperty("comm_page_title"));
+		Assert.assertEquals(driver.getTitle(),library.getProperty("comm_mass_title"));
 		//return series page
 		return new CommunicationsPage(driver);
 	}
-	public void slectManageworkflowbyehi_qa(String slectworkflowbyehi_qaname) {
+	public Communicationmanageworkflow slectManageworkflowbyehi_qa(String slectworkflowbyehi_qaname) {
 		// TODO Auto-generated method stub
 		readconfig();
 		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
@@ -375,13 +382,150 @@ public class CommunicationsPage extends PageBase{
 		
 	
 	try {
+		
 		Thread.sleep(2000);
 	} catch (InterruptedException e) {
 		e.printStackTrace();
 	}
 	driver.findElement(By.xpath(library.getProperty("ehi_qa_workflow"))).click();
 	
-}
+	return new Communicationmanageworkflow(driver);
+	}
+	/*public CommunicationsPage manageWorkflowehiqa(String workflowname, String communicationID)
+	{
+		readconfig();
+		switch(workflowname)
+		{
+		case "DRAFT":
+		{
+			driver.findElement(By.xpath(".//*[@id='Communication_WorkflowID']")).sendKeys("D");
+			break;
+		}
+		case "APPROVED":
+		{
+			driver.findElement(By.xpath(".//*[@id='Communication_WorkflowID']")).sendKeys("A");
+			
+			break;
+		}
+		default: 
+		{
+			throw new InvalidParameterException("Please verify the workflow name");
+		}
+		}
+
+		return new CommunicationsPage(driver);
+	
+		
+	}*/
+	/*public void changeAssignWorkflow() throws Exception{
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.xpath(".//*[@id='manage-workflow-form']/div/div[2]/div[1]/div[2]/div[2]/table/thead/tr/th[1]/div/span/input")).click();
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//select[@id='Communication_Workflow']")).click();
+		Thread.sleep(2000);
+		
+	}*/
 	
 	
+	public CommunicationsPage changeAssignWorkflow(String workflowname, String communicationname) throws InterruptedException {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(".//*[@id='manage-workflow-form']/div/div[2]/div[1]/div[2]/div[2]/table/thead/tr/th[1]/div/span/input")).click();
+		switch(workflowname)
+		{
+		case "DRAFT":
+		{
+			driver.findElement(By.xpath("//select[@id='Communication_Workflow']")).sendKeys("D");
+			break;
+		}
+		case "APPROVED":
+		{
+			driver.findElement(By.xpath("//select[@id='Communication_Workflow']")).sendKeys("A");
+			Thread.sleep(3000);
+			break;
+		}
+		case "Qatest1":
+		{
+			driver.findElement(By.id(library.getProperty("comm_edit_workflow"))).sendKeys("Q");
+			break;
+		}
+		default: 
+		{
+			throw new InvalidParameterException("Please verify the workflow name");
+		}
+		}
+
+		return new CommunicationsPage(driver);
+	}
+	
+	
+	
+	public CommunicationsPage searchCommunications(String name) {
+		
+		{
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("filter"))).clear();
+			driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(name);
+			}
+		return new CommunicationsPage(driver);
+	}
+	public CommunicationsPage saveManageworkflow()
+	{
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("save_manageworkflow"))).click();
+		Assert.assertTrue(driver.getTitle().equalsIgnoreCase(library.getProperty("comm_page_title")));
+		return new CommunicationsPage(driver);
+		
+		}
+	public void changeMessageWorkflow(String workflowname, String communicationname) throws InterruptedException {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("com_mes_click"))).click();
+		switch(workflowname)
+		{
+		case "DRAFT":
+		{
+			driver.findElement(By.xpath("//select[@id='Communication_Workflow']")).sendKeys("D");
+			break;
+		}
+		case "APPROVED":
+		{
+			driver.findElement(By.xpath("//select[@id='Communication_Workflow']")).sendKeys("A");
+			Thread.sleep(3000);
+			break;
+		}
+		case "Qatest1":
+		{
+			driver.findElement(By.id(library.getProperty("comm_edit_workflow"))).sendKeys("Q");
+			break;
+		}
+		default: 
+		{
+			throw new InvalidParameterException("Please verify the workflow name");
+		}
+		}
+
+	}
+	public CommunicationsPage commMessageWorkflow(String string, String string2) {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("comm_mess_workflow"))).click();
+		return new CommunicationsPage(driver);
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

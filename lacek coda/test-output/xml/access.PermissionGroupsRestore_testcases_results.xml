@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="12.979">
+           time="13.594">
   <properties />
   
   
-            <testcase name="verify_permission_archive_page" time="12.979" classname="access.PermissionGroupsRestore_testcases" />
+            <testcase name="verify_permission_archive_page" time="13.594" classname="access.PermissionGroupsRestore_testcases" />
       
 </testsuite>

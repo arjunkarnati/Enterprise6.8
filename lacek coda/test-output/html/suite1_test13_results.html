@@ -12,11 +12,63 @@
 <body>
 <h1>CLIENTS TESTCASES</h1>
 <p>
-  Test duration: 906.687s
+  Test duration: 956.006s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">manage.Clients_Testcases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  create_a_new_client
+      </td>
+  <td class="duration">
+    57.470s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [4] but found [2]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              manage.ClientsPage.validateUpdates(ClientsPage.java:162)<br />
+              manage.Clients_Testcases.create_a_new_client(Clients_Testcases.java:28)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
+              org.testng.TestRunner.run(TestRunner.java:610)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -30,7 +82,7 @@
                   activate_client
       </td>
   <td class="duration">
-    34.219s
+    36.633s
   </td>
   <td class="result">
         
@@ -44,7 +96,7 @@
                   archive_client
       </td>
   <td class="duration">
-    16.704s
+    18.387s
   </td>
   <td class="result">
         
@@ -58,7 +110,7 @@
                   empty_code_field_in_client_edit_page
       </td>
   <td class="duration">
-    33.035s
+    33.883s
   </td>
   <td class="result">
         
@@ -72,7 +124,7 @@
                   empty_color_field_in_client_edit_page
       </td>
   <td class="duration">
-    32.649s
+    33.333s
   </td>
   <td class="result">
         
@@ -86,7 +138,7 @@
                   empty_name_field_in_client_edit_page
       </td>
   <td class="duration">
-    33.168s
+    33.034s
   </td>
   <td class="result">
         
@@ -100,7 +152,7 @@
                   empty_url_field_in_client_edit_page
       </td>
   <td class="duration">
-    32.934s
+    34.970s
   </td>
   <td class="result">
         
@@ -114,7 +166,7 @@
                   inactivate_client
       </td>
   <td class="duration">
-    33.697s
+    33.749s
   </td>
   <td class="result">
         
@@ -128,7 +180,7 @@
                   restore_client
       </td>
   <td class="duration">
-    27.777s
+    28.988s
   </td>
   <td class="result">
         
@@ -142,7 +194,7 @@
                   update_client_color
       </td>
   <td class="duration">
-    31.563s
+    33.284s
   </td>
   <td class="result">
         
@@ -156,7 +208,7 @@
                   update_client_color_to_previous
       </td>
   <td class="duration">
-    31.901s
+    34.394s
   </td>
   <td class="result">
         
@@ -170,7 +222,7 @@
                   update_client_name
       </td>
   <td class="duration">
-    38.825s
+    40.650s
   </td>
   <td class="result">
         
@@ -184,7 +236,7 @@
                   update_client_name_to_previous
       </td>
   <td class="duration">
-    39.078s
+    40.197s
   </td>
   <td class="result">
         
@@ -198,7 +250,7 @@
                   update_client_url
       </td>
   <td class="duration">
-    35.686s
+    37.225s
   </td>
   <td class="result">
         
@@ -212,7 +264,7 @@
                   update_client_url_to_previous
       </td>
   <td class="duration">
-    36.327s
+    37.611s
   </td>
   <td class="result">
         
@@ -230,7 +282,7 @@
                   validate_client_archive_page
       </td>
   <td class="duration">
-    11.885s
+    11.968s
   </td>
   <td class="result">
         
@@ -248,21 +300,7 @@
                   cancel_client_add_process
       </td>
   <td class="duration">
-    23.732s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  create_a_new_client
-      </td>
-  <td class="duration">
-    58.406s
+    24.509s
   </td>
   <td class="result">
         
@@ -276,7 +314,7 @@
                   create_a_new_client_without_color
       </td>
   <td class="duration">
-    40.296s
+    40.198s
   </td>
   <td class="result">
         
@@ -290,7 +328,7 @@
                   create_a_new_client_without_name
       </td>
   <td class="duration">
-    40.149s
+    43.758s
   </td>
   <td class="result">
         
@@ -304,7 +342,7 @@
                   create_a_new_client_witout_a_default_locales
       </td>
   <td class="duration">
-    37.876s
+    38.872s
   </td>
   <td class="result">
         
@@ -318,7 +356,7 @@
                   create_a_new_client_witout_a_url
       </td>
   <td class="duration">
-    39.923s
+    40.817s
   </td>
   <td class="result">
         
@@ -332,7 +370,7 @@
                   create_a_new_client_witout_locales
       </td>
   <td class="duration">
-    35.318s
+    36.129s
   </td>
   <td class="result">
         
@@ -346,7 +384,7 @@
                   delete_client_from_db
       </td>
   <td class="duration">
-    2.202s
+    2.301s
   </td>
   <td class="result">
         

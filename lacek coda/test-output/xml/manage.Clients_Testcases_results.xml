@@ -1,20 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="CLIENTS TESTCASES"
            tests="8"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="277.902">
+           time="284.054">
   <properties />
+            <testcase name="create_a_new_client" time="57.470" classname="manage.Clients_Testcases">
+                <failure type="java.lang.AssertionError"
+                  message="expected [4] but found [2]"
+              >
+<![CDATA[java.lang.AssertionError: expected [4] but found [2]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:513)
+  org.testng.Assert.assertEqualsImpl(Assert.java:135)
+  org.testng.Assert.assertEquals(Assert.java:116)
+  org.testng.Assert.assertEquals(Assert.java:190)
+  org.testng.Assert.assertEquals(Assert.java:200)
+  manage.ClientsPage.validateUpdates(ClientsPage.java:162)
+  manage.Clients_Testcases.create_a_new_client(Clients_Testcases.java:28)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="create_a_new_client_without_color" time="40.296" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_witout_locales" time="35.318" classname="manage.Clients_Testcases" />
-                <testcase name="cancel_client_add_process" time="23.732" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_witout_a_default_locales" time="37.876" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client" time="58.406" classname="manage.Clients_Testcases" />
-                <testcase name="delete_client_from_db" time="2.202" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_without_name" time="40.149" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_witout_a_url" time="39.923" classname="manage.Clients_Testcases" />
+            <testcase name="create_a_new_client_witout_locales" time="36.129" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client_without_name" time="43.758" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client_witout_a_default_locales" time="38.872" classname="manage.Clients_Testcases" />
+                <testcase name="cancel_client_add_process" time="24.509" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client_without_color" time="40.198" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client_witout_a_url" time="40.817" classname="manage.Clients_Testcases" />
+                <testcase name="delete_client_from_db" time="2.301" classname="manage.Clients_Testcases" />
       
 </testsuite>

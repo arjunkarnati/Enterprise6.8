@@ -108,8 +108,8 @@ public class TestBase {
 			e.printStackTrace();
 		}
 		System.out.println("Base URl..."+testconfig.getProperty("baseUrl"));
-		//driver.get(testconfig.getProperty("baseUrl"));
-		driver.get("https://qa-b10.mms.lacek.net");
+		driver.get(testconfig.getProperty("baseUrl"));
+		//driver.get("https://qa-b10.mms.lacek.net");
 		if(testconfig.getProperty("os_browser").equalsIgnoreCase("ie")){
 			driver.navigate().to("javascript:document.getElementById('overridelink').click()");
 		}

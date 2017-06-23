@@ -4,21 +4,21 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="896.458">
+           time="907.502">
   <properties />
   
   
-            <testcase name="update_permissions_name" time="82.959" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="returm_to_permissions_main_page_from_edit" time="34.195" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="update_permissions_permission_category" time="83.929" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="update_permissions_business_rule_to_previous" time="80.938" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="restore_permissions" time="87.968" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="update_permissions_name_to_previous" time="83.342" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="click_cancel_in_permissions_edit_page" time="35.492" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="archive_permissions" time="80.084" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="update_permissions_permission_category_to_previous" time="82.825" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="inactivate_permissions" time="81.524" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="activate_permissions" time="82.669" classname="access.PemissionsEdit_TestCases" />
-                <testcase name="update_permissions_business_rule" time="80.533" classname="access.PemissionsEdit_TestCases" />
+            <testcase name="update_permissions_business_rule_to_previous" time="81.052" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="inactivate_permissions" time="84.046" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_name_to_previous" time="84.514" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="restore_permissions" time="89.568" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_business_rule" time="81.530" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="activate_permissions" time="83.246" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_permission_category_to_previous" time="83.270" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="archive_permissions" time="80.424" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="click_cancel_in_permissions_edit_page" time="35.956" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="returm_to_permissions_main_page_from_edit" time="33.944" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_permission_category" time="84.689" classname="access.PemissionsEdit_TestCases" />
+                <testcase name="update_permissions_name" time="85.263" classname="access.PemissionsEdit_TestCases" />
       
 </testsuite>

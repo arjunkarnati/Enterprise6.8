@@ -4,25 +4,25 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1273.323">
+           time="1288.251">
   <properties />
   
   
-            <testcase name="create_a_new_acf_without_field_instructions" time="77.682" classname="configuration.ACF_testcases" />
-                <testcase name="create_a_new_acf_without_screens" time="72.190" classname="configuration.ACF_testcases" />
-                <testcase name="return_to_acf_main_page_from_add_page" time="26.953" classname="configuration.ACF_testcases" />
-                <testcase name="create_a_new_acf_without_field_name" time="82.327" classname="configuration.ACF_testcases" />
-                <testcase name="create_a_new_acf_without_field_label" time="82.394" classname="configuration.ACF_testcases" />
-                <testcase name="click_cancel_in_acf_add_page" time="26.357" classname="configuration.ACF_testcases" />
-                <testcase name="create_a_new_acf_without_group_name" time="80.042" classname="configuration.ACF_testcases" />
-                <testcase name="delete_acf_from_database" time="2.521" classname="configuration.ACF_testcases" />
-                <testcase name="create_an_acf_data_type_varchar_field_type_Wysiwyg_editor" time="101.482" classname="configuration.ACF_testcases" />
-                <testcase name="create_an_acf_data_type_int_field_type_text" time="98.575" classname="configuration.ACF_testcases" />
-                <testcase name="create_an_acf_data_type_varchar_field_type_text" time="100.727" classname="configuration.ACF_testcases" />
-                <testcase name="create_an_acf_data_type_decimal_field_type_select" time="107.305" classname="configuration.ACF_testcases" />
-                <testcase name="create_an_acf_data_type_varchar_field_type_select" time="105.852" classname="configuration.ACF_testcases" />
-                <testcase name="create_an_acf_data_type_varchar_field_type_text_area" time="101.388" classname="configuration.ACF_testcases" />
-                <testcase name="create_an_acf_data_type_decimal_field_type_text" time="101.607" classname="configuration.ACF_testcases" />
-                <testcase name="create_an_acf_data_type_int_field_type_select" time="105.921" classname="configuration.ACF_testcases" />
+            <testcase name="create_a_new_acf_without_screens" time="74.786" classname="configuration.ACF_testcases" />
+                <testcase name="create_a_new_acf_without_field_label" time="82.137" classname="configuration.ACF_testcases" />
+                <testcase name="click_cancel_in_acf_add_page" time="25.519" classname="configuration.ACF_testcases" />
+                <testcase name="create_an_acf_data_type_varchar_field_type_text" time="102.396" classname="configuration.ACF_testcases" />
+                <testcase name="create_an_acf_data_type_int_field_type_select" time="106.197" classname="configuration.ACF_testcases" />
+                <testcase name="create_an_acf_data_type_int_field_type_text" time="97.652" classname="configuration.ACF_testcases" />
+                <testcase name="create_a_new_acf_without_group_name" time="79.386" classname="configuration.ACF_testcases" />
+                <testcase name="create_an_acf_data_type_varchar_field_type_select" time="109.365" classname="configuration.ACF_testcases" />
+                <testcase name="create_a_new_acf_without_field_instructions" time="78.237" classname="configuration.ACF_testcases" />
+                <testcase name="create_an_acf_data_type_varchar_field_type_Wysiwyg_editor" time="100.676" classname="configuration.ACF_testcases" />
+                <testcase name="create_an_acf_data_type_varchar_field_type_text_area" time="109.659" classname="configuration.ACF_testcases" />
+                <testcase name="create_an_acf_data_type_decimal_field_type_text" time="104.113" classname="configuration.ACF_testcases" />
+                <testcase name="create_a_new_acf_without_field_name" time="83.148" classname="configuration.ACF_testcases" />
+                <testcase name="create_an_acf_data_type_decimal_field_type_select" time="105.562" classname="configuration.ACF_testcases" />
+                <testcase name="return_to_acf_main_page_from_add_page" time="26.558" classname="configuration.ACF_testcases" />
+                <testcase name="delete_acf_from_database" time="2.860" classname="configuration.ACF_testcases" />
       
 </testsuite>

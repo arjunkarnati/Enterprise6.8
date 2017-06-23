@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -35,30 +36,14 @@ public class BrowserHelperPage extends PageBase {
 		case "local":
 			if (os_browser.equalsIgnoreCase("firefox"))
 			{
-
-				DesiredCapabilities cap= new DesiredCapabilities();
-				caps.setCapability("marionette", true);
-				caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+				//FirefoxOptions options = new FirefoxOptions();
+				//options.setBinary("C:\\Users\\arjun.karnati\\Downloads\\geckodriver-v0.14.0-win32\\geckodriver.exe"); 
+				caps=DesiredCapabilities.firefox();
+				//caps.setCapability("marionette", true);
+				//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+				//driver = new FirefoxDriver(caps);
+				driver = new FirefoxDriver();
 				
-                 //FirefoxOptions options = new FirefoxOptions();
-				//options.setBinary("C:\\Users\\arjun.karnati\\Downloads\\geckodriver-v0.17.0-win64");
-				//ProfilesIni profile = new ProfilesIni();    
-		        // FirefoxProfile myprofile = profile.getProfile("C:\\arjunfirefox");//location of your new firefox profile 
-				WebDriver driver1 = new FirefoxDriver(cap);
-				driver1.get("https://qa-b10.mms.lacek.net");
-				/*FirefoxOptions options = new FirefoxOptions();
-				options.setBinary("C:\\Users\\arjun.karnati\\Downloads\\geckodriver-v0.16.1-win32\\geckodriver.exe"); //This is the location where you have installed Firefox on your machine
-				//caps=DesiredCapabilities.firefox();
-				//caps.setCapability("marionette", true);
-				//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-				FirefoxDriver driver1 = new FirefoxDriver();*/
-				////FirefoxOptions options = new FirefoxOptions();
-				//options.setBinary("C:\\Users\\arjun.karnati\\Downloads\\geckodriver-v0.16.1-win32\\geckodriver.exe"); //This is the location where you have installed Firefox on your machine
-				//caps=DesiredCapabilities.firefox();
-				//caps.setCapability("marionette", true);
-				//caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-				//FirefoxDriver driver1 = new FirefoxDriver();
-				//driver1.get("https://qa-b10.mms.lacek.net");
 			}
 			else if (os_browser.equalsIgnoreCase("chrome"))
 			{
@@ -311,7 +296,7 @@ public class BrowserHelperPage extends PageBase {
 				caps.setCapability("os", "Windows");
 				caps.setCapability("os_version", "10");
 				caps.setCapability("resolution", "1024x768");
-				caps.setCapability("project", "LACEK MMS");
+				caps.setCapability("project", "CODA LACEK");
 				caps.setCapability("build", "1.0");
 			
 				caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);//accepting certificate

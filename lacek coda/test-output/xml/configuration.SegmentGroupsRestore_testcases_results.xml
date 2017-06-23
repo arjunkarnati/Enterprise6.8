@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="19.955">
+           time="21.554">
   <properties />
   
   
-            <testcase name="open_archive_page" time="19.955" classname="configuration.SegmentGroupsRestore_testcases" />
+            <testcase name="open_archive_page" time="21.554" classname="configuration.SegmentGroupsRestore_testcases" />
       
 </testsuite>

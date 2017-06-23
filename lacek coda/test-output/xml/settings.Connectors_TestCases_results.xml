@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="80.253">
+           time="81.386">
   <properties />
   
   
-            <testcase name="delete_connector_from_db" time="2.075" classname="settings.Connectors_TestCases" />
-                <testcase name="open_connector_page" time="11.707" classname="settings.Connectors_TestCases" />
-                <testcase name="click_print_view_print" time="13.524" classname="settings.Connectors_TestCases" />
-                <testcase name="add_connector_validate" time="40.275" classname="settings.Connectors_TestCases" />
-                <testcase name="relaod_workflow_page" time="12.672" classname="settings.Connectors_TestCases" />
+            <testcase name="open_connector_page" time="12.948" classname="settings.Connectors_TestCases" />
+                <testcase name="delete_connector_from_db" time="2.114" classname="settings.Connectors_TestCases" />
+                <testcase name="add_connector_validate" time="40.678" classname="settings.Connectors_TestCases" />
+                <testcase name="click_print_view_print" time="13.212" classname="settings.Connectors_TestCases" />
+                <testcase name="relaod_workflow_page" time="12.434" classname="settings.Connectors_TestCases" />
       
 </testsuite>

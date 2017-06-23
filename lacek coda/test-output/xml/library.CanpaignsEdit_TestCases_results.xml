@@ -4,26 +4,26 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="534.190">
+           time="544.487">
   <properties />
   
   
-            <testcase name="update_campaign_programs_to_previous" time="35.962" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_name_to_previous_name" time="34.477" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_series" time="39.684" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_clientname_to_previous_client" time="40.126" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_brands" time="38.296" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_series_to_previous" time="34.237" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_workflow_to_approved" time="25.324" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="archive_campaign" time="17.725" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_programs" time="34.658" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_workflow_to_draft" time="26.041" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="camp_mass_advance_workflow" time="12.045" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_brands_to_previous" time="35.964" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="activate_campaign" time="31.896" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_client" time="32.593" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="inactivate_campaign" time="31.744" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="restorte_campaign" time="29.725" classname="library.CanpaignsEdit_TestCases" />
-                <testcase name="update_campaign_name" time="33.693" classname="library.CanpaignsEdit_TestCases" />
+            <testcase name="restorte_campaign" time="31.687" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_programs_to_previous" time="34.640" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_name_to_previous_name" time="36.559" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_name" time="33.644" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_series_to_previous" time="34.678" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_workflow_to_approved" time="25.922" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_workflow_to_draft" time="25.957" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_brands_to_previous" time="36.032" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_series" time="39.289" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="camp_mass_advance_workflow" time="14.304" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="inactivate_campaign" time="32.375" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_brands" time="38.434" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="archive_campaign" time="17.788" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_programs" time="35.884" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="activate_campaign" time="32.993" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_clientname_to_previous_client" time="40.630" classname="library.CanpaignsEdit_TestCases" />
+                <testcase name="update_campaign_client" time="33.671" classname="library.CanpaignsEdit_TestCases" />
       
 </testsuite>

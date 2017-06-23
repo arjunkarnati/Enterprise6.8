@@ -4,21 +4,21 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="392.948">
+           time="367.482">
   <properties />
-            <testcase name="create_a_new_message" time="119.623" classname="library.Messages_TestCases">
+            <testcase name="create_a_new_message" time="91.709" classname="library.Messages_TestCases">
                 <failure type="java.lang.AssertionError"
-                  message="expected [2] but found [1]"
+                  message="expected [1] but found [3]"
               >
-<![CDATA[java.lang.AssertionError: expected [2] but found [1]
+<![CDATA[java.lang.AssertionError: expected [1] but found [3]
   org.testng.Assert.fail(Assert.java:94)
   org.testng.Assert.failNotEquals(Assert.java:513)
   org.testng.Assert.assertEqualsImpl(Assert.java:135)
   org.testng.Assert.assertEquals(Assert.java:116)
   org.testng.Assert.assertEquals(Assert.java:190)
   org.testng.Assert.assertEquals(Assert.java:200)
-  library.MessagesPage.validateUpdates(MessagesPage.java:416)
-  library.Messages_TestCases.create_a_new_message(Messages_TestCases.java:34)
+  library.MessagesPage.validateUpdates(MessagesPage.java:351)
+  library.Messages_TestCases.create_a_new_message(Messages_TestCases.java:31)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,12 +45,12 @@
           </testcase>
   
   
-            <testcase name="create_a_new_message_without_clientname" time="45.937" classname="library.Messages_TestCases" />
-                <testcase name="click_cancel_message_button" time="30.620" classname="library.Messages_TestCases" />
-                <testcase name="clone_message" time="18.392" classname="library.Messages_TestCases" />
-                <testcase name="CCL_AE_Failtocreate_message" time="48.623" classname="library.Messages_TestCases" />
-                <testcase name="create_a_new_message_without_a_message_name" time="63.999" classname="library.Messages_TestCases" />
-                <testcase name="delete_message_from_db" time="3.736" classname="library.Messages_TestCases" />
-                <testcase name="create_a_new_message_without_brand" time="62.018" classname="library.Messages_TestCases" />
+            <testcase name="create_a_new_message_without_a_message_name" time="65.431" classname="library.Messages_TestCases" />
+                <testcase name="clone_message" time="18.448" classname="library.Messages_TestCases" />
+                <testcase name="CCL_AE_Failtocreate_message" time="48.885" classname="library.Messages_TestCases" />
+                <testcase name="click_cancel_message_button" time="31.867" classname="library.Messages_TestCases" />
+                <testcase name="delete_message_from_db" time="4.230" classname="library.Messages_TestCases" />
+                <testcase name="create_a_new_message_without_brand" time="61.609" classname="library.Messages_TestCases" />
+                <testcase name="create_a_new_message_without_clientname" time="45.303" classname="library.Messages_TestCases" />
       
 </testsuite>

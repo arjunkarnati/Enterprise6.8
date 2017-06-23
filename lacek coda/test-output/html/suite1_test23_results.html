@@ -12,11 +12,108 @@
 <body>
 <h1>USERS TESTCASES</h1>
 <p>
-  Test duration: 2310.657s
+  Test duration: 2358.808s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">access.Users_TestCases</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  create_a_non_admin_user
+      </td>
+  <td class="duration">
+    57.624s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [CODA - Users] but found [CODA - Users - Add]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              access.UsersAddPage.Submit(UsersAddPage.java:143)<br />
+              access.Users_TestCases.create_a_non_admin_user(Users_TestCases.java:56)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
+              org.testng.TestRunner.run(TestRunner.java:610)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_an_admin_user
+      </td>
+  <td class="duration">
+    57.165s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [CODA - Users] but found [CODA - Users - Add]</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              access.UsersAddPage.Submit(UsersAddPage.java:143)<br />
+              access.Users_TestCases.create_an_admin_user(Users_TestCases.java:28)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
+              org.testng.TestRunner.run(TestRunner.java:610)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -30,7 +127,7 @@
                   activate_user
       </td>
   <td class="duration">
-    43.212s
+    48.831s
   </td>
   <td class="result">
         
@@ -44,7 +141,7 @@
                   archive_user
       </td>
   <td class="duration">
-    17.838s
+    18.420s
   </td>
   <td class="result">
         
@@ -58,7 +155,7 @@
                   inactivate_user
       </td>
   <td class="duration">
-    43.596s
+    44.211s
   </td>
   <td class="result">
         
@@ -72,7 +169,7 @@
                   restore_user
       </td>
   <td class="duration">
-    31.819s
+    32.390s
   </td>
   <td class="result">
         
@@ -86,7 +183,7 @@
                   select_button_cancel_in_user_edit_page
       </td>
   <td class="duration">
-    32.869s
+    34.445s
   </td>
   <td class="result">
         
@@ -100,7 +197,7 @@
                   update_admin_role
       </td>
   <td class="duration">
-    43.544s
+    43.842s
   </td>
   <td class="result">
         
@@ -114,7 +211,7 @@
                   update_admin_role_to_previous
       </td>
   <td class="duration">
-    43.162s
+    44.697s
   </td>
   <td class="result">
         
@@ -128,7 +225,7 @@
                   update_user_clients
       </td>
   <td class="duration">
-    40.247s
+    41.354s
   </td>
   <td class="result">
         
@@ -142,7 +239,7 @@
                   update_user_clients_to_previous
       </td>
   <td class="duration">
-    39.895s
+    41.909s
   </td>
   <td class="result">
         
@@ -156,7 +253,7 @@
                   update_user_email_address
       </td>
   <td class="duration">
-    28.796s
+    31.435s
   </td>
   <td class="result">
         
@@ -170,7 +267,7 @@
                   update_user_email_address_to_previous
       </td>
   <td class="duration">
-    28.728s
+    29.630s
   </td>
   <td class="result">
         
@@ -184,7 +281,7 @@
                   update_user_first_name_to_previous
       </td>
   <td class="duration">
-    43.453s
+    44.926s
   </td>
   <td class="result">
         
@@ -198,7 +295,7 @@
                   update_user_fisrt_name
       </td>
   <td class="duration">
-    43.261s
+    44.247s
   </td>
   <td class="result">
         
@@ -212,7 +309,7 @@
                   update_user_last_name
       </td>
   <td class="duration">
-    42.904s
+    43.993s
   </td>
   <td class="result">
         
@@ -226,7 +323,7 @@
                   update_user_last_name_to_previous
       </td>
   <td class="duration">
-    42.659s
+    43.464s
   </td>
   <td class="result">
         
@@ -240,7 +337,7 @@
                   update_user_password
       </td>
   <td class="duration">
-    28.325s
+    29.364s
   </td>
   <td class="result">
         
@@ -254,7 +351,7 @@
                   update_user_password_to_previous
       </td>
   <td class="duration">
-    29.019s
+    30.574s
   </td>
   <td class="result">
         
@@ -268,7 +365,7 @@
                   update_user_phone_number
       </td>
   <td class="duration">
-    37.539s
+    39.996s
   </td>
   <td class="result">
         
@@ -282,7 +379,7 @@
                   update_user_phone_number_to_previous
       </td>
   <td class="duration">
-    37.850s
+    39.402s
   </td>
   <td class="result">
         
@@ -296,7 +393,7 @@
                   update_user_role
       </td>
   <td class="duration">
-    26.934s
+    26.759s
   </td>
   <td class="result">
         
@@ -310,7 +407,7 @@
                   update_user_role_to_previous
       </td>
   <td class="duration">
-    26.608s
+    27.428s
   </td>
   <td class="result">
         
@@ -324,7 +421,7 @@
                   update_user_username
       </td>
   <td class="duration">
-    43.259s
+    45.701s
   </td>
   <td class="result">
         
@@ -338,7 +435,7 @@
                   update_user_username_to_previous
       </td>
   <td class="duration">
-    43.191s
+    44.405s
   </td>
   <td class="result">
         
@@ -352,7 +449,7 @@
                   user_edit_otheruser
       </td>
   <td class="duration">
-    42.934s
+    45.131s
   </td>
   <td class="result">
         
@@ -366,7 +463,7 @@
                   user_edit_otheruserprevious
       </td>
   <td class="duration">
-    43.316s
+    44.695s
   </td>
   <td class="result">
         
@@ -384,7 +481,7 @@
                   verify_user_archive_page
       </td>
   <td class="duration">
-    20.538s
+    21.577s
   </td>
   <td class="result">
         
@@ -402,21 +499,7 @@
                   create_a_duplicate_user
       </td>
   <td class="duration">
-    47.020s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  create_a_non_admin_user
-      </td>
-  <td class="duration">
-    89.321s
+    47.117s
   </td>
   <td class="result">
         
@@ -430,7 +513,7 @@
                   create_a_non_admin_user_without_a_first_name
       </td>
   <td class="duration">
-    43.269s
+    43.246s
   </td>
   <td class="result">
         
@@ -444,7 +527,7 @@
                   create_a_non_admin_user_without_a_last_name
       </td>
   <td class="duration">
-    42.558s
+    43.577s
   </td>
   <td class="result">
         
@@ -458,7 +541,7 @@
                   create_a_non_admin_user_without_a_password
       </td>
   <td class="duration">
-    43.428s
+    44.172s
   </td>
   <td class="result">
         
@@ -472,7 +555,7 @@
                   create_a_non_admin_user_without_a_username
       </td>
   <td class="duration">
-    43.233s
+    47.281s
   </td>
   <td class="result">
         
@@ -486,7 +569,7 @@
                   create_a_non_admin_user_without_an_email_address
       </td>
   <td class="duration">
-    42.845s
+    43.254s
   </td>
   <td class="result">
         
@@ -500,21 +583,7 @@
                   create_a_user_with_an_invalid_email_address_format
       </td>
   <td class="duration">
-    45.105s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  create_an_admin_user
-      </td>
-  <td class="duration">
-    91.040s
+    46.639s
   </td>
   <td class="result">
         
@@ -528,7 +597,7 @@
                   create_an_admin_user_without_a_first_name
       </td>
   <td class="duration">
-    43.842s
+    44.456s
   </td>
   <td class="result">
         
@@ -542,7 +611,7 @@
                   create_an_admin_user_without_a_last_name
       </td>
   <td class="duration">
-    43.121s
+    42.985s
   </td>
   <td class="result">
         
@@ -556,7 +625,7 @@
                   create_an_admin_user_without_a_password
       </td>
   <td class="duration">
-    42.546s
+    44.533s
   </td>
   <td class="result">
         
@@ -570,7 +639,7 @@
                   create_an_admin_user_without_a_username
       </td>
   <td class="duration">
-    42.579s
+    44.544s
   </td>
   <td class="result">
         
@@ -584,7 +653,7 @@
                   create_an_admin_user_without_an_email_address
       </td>
   <td class="duration">
-    42.209s
+    44.792s
   </td>
   <td class="result">
         
@@ -598,7 +667,7 @@
                   database_delete_user
       </td>
   <td class="duration">
-    4.534s
+    4.602s
   </td>
   <td class="result">
         
@@ -612,7 +681,7 @@
                   fail_to_create_user_when_confirm_password_field_does_not_match_the_password
       </td>
   <td class="duration">
-    45.878s
+    46.856s
   </td>
   <td class="result">
         
@@ -626,7 +695,7 @@
                   fail_to_create_user_when_confirm_password_field_is_empty
       </td>
   <td class="duration">
-    42.697s
+    44.898s
   </td>
   <td class="result">
         
@@ -640,7 +709,7 @@
                   fail_to_create_user_when_email_address_field_is_empty
       </td>
   <td class="duration">
-    42.395s
+    45.396s
   </td>
   <td class="result">
         
@@ -654,7 +723,7 @@
                   fail_to_create_user_when_first_name_field_is_empty
       </td>
   <td class="duration">
-    43.777s
+    44.262s
   </td>
   <td class="result">
         
@@ -668,7 +737,7 @@
                   fail_to_create_user_when_last_name_field_is_empty
       </td>
   <td class="duration">
-    42.989s
+    44.679s
   </td>
   <td class="result">
         
@@ -682,7 +751,7 @@
                   fail_to_create_user_when_password_field_is_empty
       </td>
   <td class="duration">
-    42.800s
+    43.577s
   </td>
   <td class="result">
         
@@ -696,7 +765,7 @@
                   fail_to_create_user_when_username_field_is_empty
       </td>
   <td class="duration">
-    43.090s
+    46.754s
   </td>
   <td class="result">
         
@@ -710,7 +779,7 @@
                   select_button_cancel_in_user_add_page
       </td>
   <td class="duration">
-    25.818s
+    27.745s
   </td>
   <td class="result">
         

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="20.977">
+           time="35.001">
   <properties />
   
   
-            <testcase name="validate_segments_page" time="20.977" classname="configuration.SegmentsRestore_testcases" />
+            <testcase name="validate_segments_page" time="35.001" classname="configuration.SegmentsRestore_testcases" />
       
 </testsuite>

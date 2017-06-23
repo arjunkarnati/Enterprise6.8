@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="514.314">
+           time="533.933">
   <properties />
   
   
-            <testcase name="update_program_brands" time="47.324" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="empty_name_field_in_programs_edit_page" time="33.652" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_clientname" time="27.118" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_description" time="35.431" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="archive_program" time="17.315" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_name_to_previous" time="37.699" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_name" time="37.031" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="restore_program" time="28.581" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_url" time="37.952" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="activate_program" time="38.000" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="select_cancel_button_in_program_edit_page" time="29.725" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_brands_to_previous" time="42.233" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_clientname_to_previous" time="27.201" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_url_to_previous" time="37.533" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="inactivate_program" time="37.519" classname="manage.ProgramsEdit_testcases" />
+            <testcase name="select_cancel_button_in_program_edit_page" time="29.566" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="restore_program" time="29.710" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_description" time="36.027" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_url_to_previous" time="38.590" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_name" time="40.957" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_brands" time="48.864" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_brands_to_previous" time="44.254" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="archive_program" time="17.785" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_url" time="39.393" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_name_to_previous" time="44.832" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="inactivate_program" time="37.238" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_clientname" time="26.877" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_clientname_to_previous" time="26.964" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="activate_program" time="38.916" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="empty_name_field_in_programs_edit_page" time="33.960" classname="manage.ProgramsEdit_testcases" />
       
 </testsuite>

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="277.923">
+           time="282.057">
   <properties />
-            <testcase name="create_a_new_campaign_without_series" time="36.919" classname="library.Campaigns_Testcases">
+            <testcase name="create_a_new_campaign_without_series" time="37.510" classname="library.Campaigns_Testcases">
                 <failure type="java.lang.AssertionError"
                   message="expected [1] but found [0]"
               >
@@ -45,12 +45,12 @@
           </testcase>
   
   
-            <testcase name="delete_campaign_from_db" time="3.352" classname="library.Campaigns_Testcases" />
-                <testcase name="create_a_new_campaign_without_brand" time="44.640" classname="library.Campaigns_Testcases" />
-                <testcase name="create_a_new_campaign_without_campaignname" time="31.596" classname="library.Campaigns_Testcases" />
-                <testcase name="create_a_new_campaign_without_program" time="39.100" classname="library.Campaigns_Testcases" />
-                <testcase name="create_a_new_campaign" time="79.334" classname="library.Campaigns_Testcases" />
-                <testcase name="click_cancel_button_in_campaign_add_page" time="19.257" classname="library.Campaigns_Testcases" />
-                <testcase name="create_a_new_campaign_without_clientname" time="23.725" classname="library.Campaigns_Testcases" />
+            <testcase name="create_a_new_campaign" time="78.785" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_campaignname" time="33.113" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_program" time="40.810" classname="library.Campaigns_Testcases" />
+                <testcase name="click_cancel_button_in_campaign_add_page" time="19.644" classname="library.Campaigns_Testcases" />
+                <testcase name="delete_campaign_from_db" time="3.572" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_brand" time="44.735" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_clientname" time="23.888" classname="library.Campaigns_Testcases" />
       
 </testsuite>

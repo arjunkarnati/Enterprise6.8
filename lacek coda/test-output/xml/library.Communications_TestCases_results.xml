@@ -4,21 +4,21 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="226.092">
+           time="231.427">
   <properties />
-            <testcase name="create_a_new_communication" time="63.918" classname="library.Communications_TestCases">
+            <testcase name="create_a_new_communication" time="67.115" classname="library.Communications_TestCases">
                 <failure type="java.lang.AssertionError"
-                  message="expected [Carnival Corporation &amp; PLC] but found [Enterprise Holdings Inc.]"
+                  message="expected [4] but found [1]"
               >
-<![CDATA[java.lang.AssertionError: expected [Carnival Corporation & PLC] but found [Enterprise Holdings Inc.]
+<![CDATA[java.lang.AssertionError: expected [4] but found [1]
   org.testng.Assert.fail(Assert.java:94)
   org.testng.Assert.failNotEquals(Assert.java:513)
   org.testng.Assert.assertEqualsImpl(Assert.java:135)
   org.testng.Assert.assertEquals(Assert.java:116)
   org.testng.Assert.assertEquals(Assert.java:190)
   org.testng.Assert.assertEquals(Assert.java:200)
-  library.CommunicationsPage.validateUpdates(CommunicationsPage.java:271)
-  library.Communications_TestCases.create_a_new_communication(Communications_TestCases.java:28)
+  library.CommunicationsPage.validateUpdates(CommunicationsPage.java:289)
+  library.Communications_TestCases.create_a_new_communication(Communications_TestCases.java:29)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -45,10 +45,10 @@
           </testcase>
   
   
-            <testcase name="click_cancel_Button_in_communication_add_page" time="28.739" classname="library.Communications_TestCases" />
-                <testcase name="create_a_communication_without_communicationnname" time="49.641" classname="library.Communications_TestCases" />
-                <testcase name="create_a_new_communication_without_template" time="49.131" classname="library.Communications_TestCases" />
-                <testcase name="create_a_new_communication_without_clientname" time="31.790" classname="library.Communications_TestCases" />
-                <testcase name="delete_communication_from_db" time="2.873" classname="library.Communications_TestCases" />
+            <testcase name="create_a_new_communication_without_clientname" time="32.476" classname="library.Communications_TestCases" />
+                <testcase name="create_a_communication_without_communicationnname" time="48.320" classname="library.Communications_TestCases" />
+                <testcase name="delete_communication_from_db" time="2.864" classname="library.Communications_TestCases" />
+                <testcase name="click_cancel_Button_in_communication_add_page" time="29.534" classname="library.Communications_TestCases" />
+                <testcase name="create_a_new_communication_without_template" time="51.118" classname="library.Communications_TestCases" />
       
 </testsuite>

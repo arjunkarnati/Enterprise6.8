@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="140.792">
+           time="152.374">
   <properties />
   
   
-            <testcase name="cancel_publish_tracks" time="33.625" classname="library.TracksPublish_Testcases" />
-                <testcase name="publish_tracks" time="107.167" classname="library.TracksPublish_Testcases" />
+            <testcase name="publish_tracks" time="115.182" classname="library.TracksPublish_Testcases" />
+                <testcase name="cancel_publish_tracks" time="37.192" classname="library.TracksPublish_Testcases" />
       
 </testsuite>

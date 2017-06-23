@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="341.613">
+           time="348.251">
   <properties />
   
   
-            <testcase name="activate_brand" time="37.535" classname="manage.BrandsEdit_testcases" />
-                <testcase name="inactivate_brand" time="37.347" classname="manage.BrandsEdit_testcases" />
-                <testcase name="update_brand_name" time="37.067" classname="manage.BrandsEdit_testcases" />
-                <testcase name="restore_brand" time="28.381" classname="manage.BrandsEdit_testcases" />
-                <testcase name="archive_brand" time="17.659" classname="manage.BrandsEdit_testcases" />
-                <testcase name="update_brand_name_to_previous" time="37.759" classname="manage.BrandsEdit_testcases" />
-                <testcase name="update_brand_url" time="38.359" classname="manage.BrandsEdit_testcases" />
-                <testcase name="update_brand_url_to_previous" time="37.763" classname="manage.BrandsEdit_testcases" />
-                <testcase name="update_brand_color" time="35.081" classname="manage.BrandsEdit_testcases" />
-                <testcase name="update_brand_color_to_previous_color" time="34.662" classname="manage.BrandsEdit_testcases" />
+            <testcase name="update_brand_url_to_previous" time="39.354" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_url" time="37.757" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_color" time="35.420" classname="manage.BrandsEdit_testcases" />
+                <testcase name="activate_brand" time="37.448" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_name_to_previous" time="38.101" classname="manage.BrandsEdit_testcases" />
+                <testcase name="inactivate_brand" time="38.767" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_color_to_previous_color" time="36.453" classname="manage.BrandsEdit_testcases" />
+                <testcase name="update_brand_name" time="38.383" classname="manage.BrandsEdit_testcases" />
+                <testcase name="archive_brand" time="18.134" classname="manage.BrandsEdit_testcases" />
+                <testcase name="restore_brand" time="28.434" classname="manage.BrandsEdit_testcases" />
       
 </testsuite>

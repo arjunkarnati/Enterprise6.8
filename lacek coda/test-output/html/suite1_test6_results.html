@@ -12,7 +12,7 @@
 <body>
 <h1>TRACKS TESTCASES</h1>
 <p>
-  Test duration: 1045.845s
+  Test duration: 1104.855s
 </p>
 
 
@@ -25,10 +25,10 @@
             
 <tr>
   <td class="method">
-                  create_a_new_track_without_brand
+                  create_a_new_track
       </td>
   <td class="duration">
-    41.616s
+    49.188s
   </td>
   <td class="result">
         
@@ -37,6 +37,51 @@
 
         <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [2] but found [1]</b></a><br />
     <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              library.TracksPage.validateUpdates(TracksPage.java:207)<br />
+              library.Tracks_Testcases.create_a_new_track(Tracks_Testcases.java:29)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
+              org.testng.TestRunner.run(TestRunner.java:610)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_track_without_brand
+      </td>
+  <td class="duration">
+    42.330s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [2] but found [1]</b></a><br />
+    <div class="stackTrace" id="exception-1">
               org.testng.Assert.fail(Assert.java:94)<br />
               org.testng.Assert.failNotEquals(Assert.java:513)<br />
               org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
@@ -82,7 +127,7 @@
                   activate_track
       </td>
   <td class="duration">
-    38.959s
+    40.000s
   </td>
   <td class="result">
         
@@ -96,7 +141,7 @@
                   archive_track
       </td>
   <td class="duration">
-    18.221s
+    19.585s
   </td>
   <td class="result">
         
@@ -110,7 +155,7 @@
                   restore_track
       </td>
   <td class="duration">
-    29.040s
+    28.792s
   </td>
   <td class="result">
         
@@ -124,7 +169,7 @@
                   update_track_brands
       </td>
   <td class="duration">
-    40.991s
+    41.978s
   </td>
   <td class="result">
         
@@ -138,7 +183,7 @@
                   update_track_brands_to_previous
       </td>
   <td class="duration">
-    45.128s
+    43.898s
   </td>
   <td class="result">
         
@@ -152,7 +197,7 @@
                   update_track_client_field
       </td>
   <td class="duration">
-    37.771s
+    37.628s
   </td>
   <td class="result">
         
@@ -166,7 +211,7 @@
                   update_track_name
       </td>
   <td class="duration">
-    40.408s
+    39.933s
   </td>
   <td class="result">
         
@@ -180,7 +225,7 @@
                   update_track_name_by_EHI_AE
       </td>
   <td class="duration">
-    14.717s
+    16.093s
   </td>
   <td class="result">
         
@@ -194,7 +239,7 @@
                   update_track_name_to_previous_name
       </td>
   <td class="duration">
-    39.961s
+    42.102s
   </td>
   <td class="result">
         
@@ -208,7 +253,7 @@
                   update_track_series
       </td>
   <td class="duration">
-    40.662s
+    46.369s
   </td>
   <td class="result">
         
@@ -222,7 +267,7 @@
                   update_track_series_to_previous
       </td>
   <td class="duration">
-    43.455s
+    47.101s
   </td>
   <td class="result">
         
@@ -236,7 +281,7 @@
                   update_track_workflow_to_approved
       </td>
   <td class="duration">
-    28.886s
+    29.019s
   </td>
   <td class="result">
         
@@ -250,7 +295,7 @@
                   update_track_workflow_to_draft
       </td>
   <td class="duration">
-    28.912s
+    30.299s
   </td>
   <td class="result">
         
@@ -264,7 +309,7 @@
                   update_tracks_programs
       </td>
   <td class="duration">
-    41.700s
+    42.180s
   </td>
   <td class="result">
         
@@ -278,7 +323,7 @@
                   update_tracks_programs_to_previous
       </td>
   <td class="duration">
-    44.244s
+    44.239s
   </td>
   <td class="result">
         
@@ -296,7 +341,7 @@
                   cancel_publish_tracks
       </td>
   <td class="duration">
-    33.625s
+    37.192s
   </td>
   <td class="result">
         
@@ -310,7 +355,7 @@
                   publish_tracks
       </td>
   <td class="duration">
-    107.167s
+    115.182s
   </td>
   <td class="result">
         
@@ -328,7 +373,7 @@
                   test_is_empty
       </td>
   <td class="duration">
-    7.865s
+    7.683s
   </td>
   <td class="result">
         
@@ -346,21 +391,7 @@
                   click_cancel_track_button
       </td>
   <td class="duration">
-    25.063s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  create_a_new_track
-      </td>
-  <td class="duration">
-    57.036s
+    25.549s
   </td>
   <td class="result">
         
@@ -374,7 +405,7 @@
                   create_a_new_track_without_clientname
       </td>
   <td class="duration">
-    32.841s
+    34.536s
   </td>
   <td class="result">
         
@@ -388,7 +419,7 @@
                   create_a_new_track_without_tracksnname
       </td>
   <td class="duration">
-    41.411s
+    42.242s
   </td>
   <td class="result">
         
@@ -402,7 +433,7 @@
                   delete_tracks_from_db
       </td>
   <td class="duration">
-    2.328s
+    2.370s
   </td>
   <td class="result">
         

@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="28.784">
+           time="25.669">
   <properties />
   
   
-            <testcase name="create_a_workflow_manager" time="26.506" classname="settings.WorkflowManager_testcases" />
-                <testcase name="delete_workflow_manager_from_database" time="2.278" classname="settings.WorkflowManager_testcases" />
+            <testcase name="delete_workflow_manager_from_database" time="2.283" classname="settings.WorkflowManager_testcases" />
+                <testcase name="create_a_workflow_manager" time="23.386" classname="settings.WorkflowManager_testcases" />
       
 </testsuite>

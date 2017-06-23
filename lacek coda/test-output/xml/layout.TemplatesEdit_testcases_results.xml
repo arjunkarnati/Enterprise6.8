@@ -4,25 +4,25 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="627.593">
+           time="630.563">
   <properties />
   
   
-            <testcase name="update_template_channel_to_previous" time="41.602" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="archive_template" time="17.491" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="select_button_save_in_template_page" time="39.180" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="inactivate_template" time="42.056" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="restore_template" time="29.029" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="select_button_cancel_in_template_page" time="32.233" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="update_template_brand_to_previous" time="44.090" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="update_template_name" time="49.598" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="update_template_name_to_previous" time="42.989" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="update_template_channel" time="42.339" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="update_template_clientname_to_previous" time="44.047" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="activate_template" time="42.117" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="update_template_brand" time="47.228" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="set_template_workflow_to_draft" time="36.174" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="set_template_workflow_to_approved" time="35.634" classname="layout.TemplatesEdit_testcases" />
-                <testcase name="update_template_clientname" time="41.786" classname="layout.TemplatesEdit_testcases" />
+            <testcase name="update_template_brand_to_previous" time="43.663" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="set_template_workflow_to_draft" time="36.239" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_name" time="44.310" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_channel_to_previous" time="41.727" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_clientname" time="43.083" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_channel" time="42.612" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="select_button_save_in_template_page" time="39.624" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_name_to_previous" time="43.845" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="set_template_workflow_to_approved" time="37.128" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="activate_template" time="41.731" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="select_button_cancel_in_template_page" time="33.547" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_brand" time="47.846" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="inactivate_template" time="42.614" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="update_template_clientname_to_previous" time="44.335" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="restore_template" time="29.929" classname="layout.TemplatesEdit_testcases" />
+                <testcase name="archive_template" time="18.330" classname="layout.TemplatesEdit_testcases" />
       
 </testsuite>

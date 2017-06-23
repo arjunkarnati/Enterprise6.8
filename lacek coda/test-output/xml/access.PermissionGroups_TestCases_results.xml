@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="160.200">
+           time="157.184">
   <properties />
-            <testcase name="create_a_new_permission_groups" time="68.385" classname="access.PermissionGroups_TestCases">
+            <testcase name="create_a_new_permission_groups" time="68.298" classname="access.PermissionGroups_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [selenium033] but found [edit_permission_group_test_01]"
               >
@@ -45,9 +45,9 @@
           </testcase>
   
   
-            <testcase name="delete_permission_groups_in_database" time="2.159" classname="access.PermissionGroups_TestCases" />
-                <testcase name="returm_to_permission_groups_main_page" time="25.974" classname="access.PermissionGroups_TestCases" />
-                <testcase name="click_cancel_in_permission_groups_add_page" time="21.500" classname="access.PermissionGroups_TestCases" />
-                <testcase name="create_a_new_permission_groups_without_name" time="42.182" classname="access.PermissionGroups_TestCases" />
+            <testcase name="delete_permission_groups_in_database" time="2.446" classname="access.PermissionGroups_TestCases" />
+                <testcase name="click_cancel_in_permission_groups_add_page" time="21.789" classname="access.PermissionGroups_TestCases" />
+                <testcase name="create_a_new_permission_groups_without_name" time="42.638" classname="access.PermissionGroups_TestCases" />
+                <testcase name="returm_to_permission_groups_main_page" time="22.013" classname="access.PermissionGroups_TestCases" />
       
 </testsuite>

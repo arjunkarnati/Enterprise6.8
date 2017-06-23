@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.676">
+           time="21.158">
   <properties />
   
   
-            <testcase name="verify_targeting_criteria_page" time="21.676" classname="configuration.TargetingCriteriaRestore_testcases" />
+            <testcase name="verify_targeting_criteria_page" time="21.158" classname="configuration.TargetingCriteriaRestore_testcases" />
       
 </testsuite>

@@ -4,14 +4,14 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="146.304">
+           time="148.029">
   <properties />
   
   
-            <testcase name="database_delete_targeting_criteria" time="2.111" classname="configuration.TargetingCriteria_TestCases" />
-                <testcase name="create_a_new_targeting_criteria_without_a_name" time="34.649" classname="configuration.TargetingCriteria_TestCases" />
-                <testcase name="select_button_cancel_in_targeting_criteria_add_page" time="27.301" classname="configuration.TargetingCriteria_TestCases" />
-                <testcase name="create_a_new_targeting_criteria" time="50.529" classname="configuration.TargetingCriteria_TestCases" />
-                <testcase name="create_a_new_targeting_criteria_without_a_clientname" time="31.714" classname="configuration.TargetingCriteria_TestCases" />
+            <testcase name="select_button_cancel_in_targeting_criteria_add_page" time="26.917" classname="configuration.TargetingCriteria_TestCases" />
+                <testcase name="create_a_new_targeting_criteria_without_a_clientname" time="32.504" classname="configuration.TargetingCriteria_TestCases" />
+                <testcase name="create_a_new_targeting_criteria_without_a_name" time="35.263" classname="configuration.TargetingCriteria_TestCases" />
+                <testcase name="create_a_new_targeting_criteria" time="51.229" classname="configuration.TargetingCriteria_TestCases" />
+                <testcase name="database_delete_targeting_criteria" time="2.116" classname="configuration.TargetingCriteria_TestCases" />
       
 </testsuite>
