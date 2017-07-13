@@ -121,21 +121,41 @@ public class PermissionActionsPage extends PageBase{
 		{
 		case"action name":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permission_actions_action_name"))).getText(),expectedresult);
 			break;
 		}
 		case"permission name":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permission_actions_permission_name"))).getText(),expectedresult);
 			break;
 		}
 		case"controller action":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permission_actions_controller_action"))).getText(),expectedresult);
 			break;
 		}
 		case"status":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permission_actions_status"))).getText(),expectedresult);
 			break;
 		}

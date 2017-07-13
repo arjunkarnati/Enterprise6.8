@@ -53,8 +53,8 @@ public class ComunicationsEditPage extends PageBase{
 	public ComunicationsEditPage updateDescription(String description)
 	{
 		readconfig();
-		driver.findElement(By.id(library.getProperty("Communication_Description"))).clear();
-		driver.findElement(By.id(library.getProperty("Communication_Description"))).sendKeys(description);
+		driver.findElement(By.xpath(library.getProperty("comm_edit_description"))).clear();
+		driver.findElement(By.xpath(library.getProperty("comm_edit_description"))).sendKeys(description);
 		//return communications edit page
 		return new ComunicationsEditPage(driver);				
 	}
@@ -419,4 +419,74 @@ public class ComunicationsEditPage extends PageBase{
 		}
 		return new ComunicationsEditPage(driver);
 	}
+	public ComunicationsEditPage addmessage(String newmessage)
+	{		
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("click_message_library"))).click();
+		//driver.findElement(By.xpath(library.getProperty("comm_add_message"))).clear();
+		driver.findElement(By.xpath(library.getProperty("comm_add_message"))).sendKeys(newmessage);
+		driver.findElement(By.xpath(library.getProperty("click_+_button"))).sendKeys(Keys.ENTER);
+		//assert and verify
+		//Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("comm_edit_program"))).isEnabled());
+		//return communications edit page
+		return new ComunicationsEditPage(driver);
+	}
+	public  ComunicationsEditPage deleteMessage(String msgname) {
+	
+		readconfig();
+			driver.findElement(By.xpath(library.getProperty("click_select_messages"))).click();
+		    driver.findElement(By.xpath(library.getProperty("filter_slect_messages"))).sendKeys(msgname);
+		    try{
+		    	Thread.sleep(3000);
+		    }catch(Exception e){
+		    		e.printStackTrace();
+		    	}
+		    
+		    driver.findElement(By.xpath(library.getProperty("click_delte_button"))).click();
+		    
+	return new ComunicationsEditPage(driver);
 }
+	public ComunicationsEditPage selectRemovemessage() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("select_yes"))).click();
+		return new ComunicationsEditPage(driver);
+	}
+	
+	public ComunicationsEditPage clearallMessagesfrom() {
+		
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("comm_all_clear"))).click();
+		driver.findElement(By.xpath(library.getProperty("comm_all_clear_yes"))).click();
+		
+		
+		return new ComunicationsEditPage(driver);
+		// TODO Auto-generated method stub
+		
+	}
+	public ComunicationsEditPage addallmessagestocomm() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("comm_add_allmessages"))).click();
+		driver.findElement(By.xpath(library.getProperty("comm_add_allclick_yes"))).click();
+		return new ComunicationsEditPage(driver);
+	}
+	public CommunicationsPage validateUpdates(String comunnicationname,String column,String expectedresult) {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
+		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(comunnicationname);
+		
+		switch(column)
+		{
+		case"Description":
+		{
+			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("comm_get_description"))).getText(),expectedresult);
+			break;
+		}
+		}
+		return new CommunicationsPage(driver);
+	}
+	
+	
+	}

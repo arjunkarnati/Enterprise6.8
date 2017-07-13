@@ -97,8 +97,8 @@ public class Brands_testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_brand()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickBrands()
 		.clickAddBrandButton()
 		.addClientName("Carnival Corporation & PLC")

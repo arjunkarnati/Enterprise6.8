@@ -148,7 +148,11 @@ public class RolesPage extends PageBase{
 		switch(column)
 		{
 		case"name":
-		{
+		{	try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("role_name"))).getText(),expectedresult);
 			break;
 		}		

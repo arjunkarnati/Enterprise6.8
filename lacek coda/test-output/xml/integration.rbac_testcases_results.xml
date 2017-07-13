@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="63.883">
+           time="60.945">
   <properties />
   
   
-            <testcase name="delete_role_from_database_2" time="2.098" classname="integration.rbac_testcases" />
-                <testcase name="integration_create_a_permission_groups_1" time="51.165" classname="integration.rbac_testcases" />
-                <testcase name="validate_user_wit_testrole2" time="10.620" classname="integration.rbac_testcases" />
+            <testcase name="integration_create_a_permission_groups_1" time="51.330" classname="integration.rbac_testcases" />
+                <testcase name="validate_user_wit_testrole2" time="7.527" classname="integration.rbac_testcases" />
+                <testcase name="delete_role_from_database_2" time="2.088" classname="integration.rbac_testcases" />
       
 </testsuite>

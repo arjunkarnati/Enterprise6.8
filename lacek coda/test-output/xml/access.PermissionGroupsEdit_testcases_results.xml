@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="739.415">
+           time="740.987">
   <properties />
   
   
-            <testcase name="archive_permission_groups" time="52.837" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="update_permission_groups_business_rule_to_previous" time="52.522" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="inactivate_permission_groups" time="56.079" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="update_permission_groups_name_to_previous" time="54.849" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="update_permission_groups_permissions_to_previous" time="61.207" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="update_permission_groups_parent_permission_to_previous" time="52.360" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="update_permission_groups_permissions" time="67.004" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="update_permission_groups_business_groups" time="52.723" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="empty_a_required_field_and_click_save_in_permission_edit_page" time="24.732" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="update_permission_groups_name" time="55.354" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="update_permission_groups_parent_permission" time="51.873" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="return_to_permission_groups_main_page" time="23.036" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="restore_permission_groups" time="56.211" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="activate_permission_groups" time="55.239" classname="access.PermissionGroupsEdit_testcases" />
-                <testcase name="click_cancel_in_permission_groups_edit_page" time="23.389" classname="access.PermissionGroupsEdit_testcases" />
+            <testcase name="click_cancel_in_permission_groups_edit_page" time="22.567" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="update_permission_groups_parent_permission" time="52.300" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="restore_permission_groups" time="56.591" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="update_permission_groups_permissions_to_previous" time="61.845" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="return_to_permission_groups_main_page" time="22.396" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="update_permission_groups_business_rule_to_previous" time="51.576" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="inactivate_permission_groups" time="55.430" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="update_permission_groups_name" time="54.949" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="update_permission_groups_business_groups" time="52.931" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="empty_a_required_field_and_click_save_in_permission_edit_page" time="25.577" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="activate_permission_groups" time="54.754" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="update_permission_groups_permissions" time="67.014" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="update_permission_groups_name_to_previous" time="57.281" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="update_permission_groups_parent_permission_to_previous" time="53.245" classname="access.PermissionGroupsEdit_testcases" />
+                <testcase name="archive_permission_groups" time="52.531" classname="access.PermissionGroupsEdit_testcases" />
       
 </testsuite>

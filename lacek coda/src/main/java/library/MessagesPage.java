@@ -375,7 +375,7 @@ public class MessagesPage extends PageBase{
 		case"name":
 		{
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -393,7 +393,7 @@ public class MessagesPage extends PageBase{
 		case"code":
 		{
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -419,7 +419,7 @@ public class MessagesPage extends PageBase{
 		case"status":
 		{
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -429,7 +429,7 @@ public class MessagesPage extends PageBase{
 		case"workflow":
 		{
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

@@ -137,26 +137,51 @@ public class BrandsPage extends PageBase{
 		{
 		case"client":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(manage.getProperty("brand_client"))).getText(),expectedresult);
 			break;
 		}
 		case"name":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(manage.getProperty("brand_name"))).getText(),expectedresult);
 			break;
 		}
 		case"code":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(manage.getProperty("brand_code"))).getText(),expectedresult);
 			break;
 		}
 		case"url":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(manage.getProperty("brand_url"))).getText(),expectedresult);
 			break;
 		}
 		case"status":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(manage.getProperty("brand_status"))).getText(),expectedresult);
 			break;
 		}

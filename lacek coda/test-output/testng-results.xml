@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="23" total="24" passed="1">
+<testng-results skipped="0" failed="0" ignored="30" total="31" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55963" started-at="2017-06-23T14:50:47Z" finished-at="2017-06-23T14:51:43Z">
+  <suite name="Default suite" duration-ms="38054" started-at="2017-07-13T19:54:42Z" finished-at="2017-07-13T19:55:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55963" started-at="2017-06-23T14:50:47Z" finished-at="2017-06-23T14:51:43Z">
+    <test name="Default test" duration-ms="38054" started-at="2017-07-13T19:54:42Z" finished-at="2017-07-13T19:55:20Z">
       <class name="library.CommunicationsEdit_Testcases">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="BeforeSuite" is-config="true" duration-ms="120" started-at="2017-06-23T09:50:47Z" finished-at="2017-06-23T09:50:47Z">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="BeforeSuite" is-config="true" duration-ms="112" started-at="2017-07-13T14:54:42Z" finished-at="2017-07-13T14:54:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="beforeTest" is-config="true" duration-ms="18127" started-at="2017-06-23T09:50:47Z" finished-at="2017-06-23T09:51:06Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="beforeTest" is-config="true" duration-ms="14157" started-at="2017-07-13T14:54:42Z" finished-at="2017-07-13T14:54:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="manage_workflow_ehi_qa()[pri:22, instance:library.CommunicationsEdit_Testcases@a7e666]" name="manage_workflow_ehi_qa" duration-ms="37477" started-at="2017-06-23T09:51:06Z" finished-at="2017-06-23T09:51:43Z">
+        <test-method status="PASS" signature="archive_clone_communication()[pri:15, instance:library.CommunicationsEdit_Testcases@a7e666]" name="archive_clone_communication" duration-ms="21334" started-at="2017-07-13T14:54:56Z" finished-at="2017-07-13T14:55:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- manage_workflow_ehi_qa -->
-        <test-method status="PASS" signature="AfterLogin(org.testng.ITestResult)[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="AfterLogin" is-config="true" duration-ms="25" started-at="2017-06-23T09:51:43Z" finished-at="2017-06-23T09:51:43Z">
+        </test-method> <!-- archive_clone_communication -->
+        <test-method status="PASS" signature="AfterLogin(org.testng.ITestResult)[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="AfterLogin" is-config="true" duration-ms="2317" started-at="2017-07-13T14:55:17Z" finished-at="2017-07-13T14:55:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=manage_workflow_ehi_qa status=SUCCESS method=CommunicationsEdit_Testcases.manage_workflow_ehi_qa()[pri:22, instance:library.CommunicationsEdit_Testcases@a7e666] output={null}]]]>
+                <![CDATA[[TestResult name=archive_clone_communication status=SUCCESS method=CommunicationsEdit_Testcases.archive_clone_communication()[pri:15, instance:library.CommunicationsEdit_Testcases@a7e666] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="tearDown" is-config="true" duration-ms="4346" started-at="2017-06-23T09:51:43Z" finished-at="2017-06-23T09:51:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="tearDown" is-config="true" duration-ms="8428" started-at="2017-07-13T14:55:20Z" finished-at="2017-07-13T14:55:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="134.675">
+           time="128.834">
   <properties />
   
   
-            <testcase name="create_a_new_program_without_a_client_name" time="35.441" classname="manage.Programs_testcases" />
-                <testcase name="create_a_new_program" time="56.956" classname="manage.Programs_testcases" />
-                <testcase name="create_a_new_program_without_a_name" time="40.158" classname="manage.Programs_testcases" />
-                <testcase name="delete_program_from_db" time="2.120" classname="manage.Programs_testcases" />
+            <testcase name="create_a_new_program_without_a_name" time="37.262" classname="manage.Programs_testcases" />
+                <testcase name="create_a_new_program_without_a_client_name" time="33.859" classname="manage.Programs_testcases" />
+                <testcase name="delete_program_from_db" time="2.114" classname="manage.Programs_testcases" />
+                <testcase name="create_a_new_program" time="55.599" classname="manage.Programs_testcases" />
       
 </testsuite>

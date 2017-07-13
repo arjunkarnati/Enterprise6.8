@@ -129,8 +129,8 @@ public class Communications_TestCases extends TestBase{
 	/*@Test(priority=30,enabled=true)
 	public void create_test_communication()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickCommunicationsLink()
 		.clickAddCommunicationsButton()
 		.addClientName("Carnival Corporation & PLC")
@@ -150,5 +150,30 @@ public class Communications_TestCases extends TestBase{
 		.validateUpdates("edit_comm_test_01","template","Booked Guest")
 		.getTitle()
 		.logout();
+}
+    @Test(priority=30,enabled=true)
+	public void create_publish_communication()
+	{
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
+		.clickCommunicationsLink()
+		.clickAddCommunicationsButton()
+		.addClientName("Carnival Corporation & PLC")
+		.addBrand("cunard")
+		.addProgram("VIFP")
+		.addTrack("TrackA1")
+		.addCommunicationName("publish_comm_test_01")
+		.addDescription("Hit hard to publish")
+		.addSegmentGroups("casino")
+		.addTemplate("Booked Guest")
+		.addConnector("Exact Target (Carnival NA) | Draft")
+		.clickSubmit()
+		.validateUpdates("publish_comm_test_01","client","Carnival Corporation & PLC")
+		.validateUpdates("edit_comm_test_01","name","publish_comm_test_01")
+		.validateUpdates("publish_comm_test_01","template","Booked Guest")
+		.getTitle()
+		.logout();
 }*/
+
+
 }

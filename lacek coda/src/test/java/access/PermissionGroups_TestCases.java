@@ -79,7 +79,6 @@ public class PermissionGroups_TestCases extends TestBase{
 		.addPermission("edit")
 		.clickSave()
 		.validateUpdates("edit_permission_group_test_01","name","edit_permission_group_test_01")
-		.validateUpdates("selenium033","permissions","3")
 		.getTitle()
 		.logout();
 	}*/

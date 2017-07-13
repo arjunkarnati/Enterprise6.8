@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="13.955">
+           time="13.895">
   <properties />
   
   
-            <testcase name="message_type_test_scripts_will_be_added_in_maintenace" time="13.955" classname="configuration.MessageTypes_TestCases" />
+            <testcase name="message_type_test_scripts_will_be_added_in_maintenace" time="13.895" classname="configuration.MessageTypes_TestCases" />
       
 </testsuite>

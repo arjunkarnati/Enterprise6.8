@@ -277,7 +277,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.logout();
 	}
 	@Test(priority=20,enabled=true)
-	public void VerifyAddingTwoSameTemplates(){
+	public void verifyadding_twosame_Templates(){
 		 login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
@@ -286,7 +286,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.updatetemplatesTo("selenium_test_004")
 		.updatetemplatesTo("selenium_test_004")
 		.clickSubmitButton()
-		.validateerrormessage()
+		//.validateerrormessage()
 		.logout();
 	}
 	@Test(priority=21,enabled=true)

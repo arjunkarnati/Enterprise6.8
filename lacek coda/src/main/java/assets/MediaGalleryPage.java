@@ -256,7 +256,7 @@ public class MediaGalleryPage extends PageBase{
 		case"name":
 		{
 			try {
-				Thread.sleep(50000);
+				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -267,7 +267,7 @@ public class MediaGalleryPage extends PageBase{
 		case"alt-tag":
 		{
 			try {
-				Thread.sleep(50000);
+				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -278,7 +278,7 @@ public class MediaGalleryPage extends PageBase{
 		case"status":
 		{
 			try {
-				Thread.sleep(50000);
+				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -289,7 +289,7 @@ public class MediaGalleryPage extends PageBase{
 		case"workflow":
 		{
 			try {
-				Thread.sleep(10000);
+				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -299,7 +299,7 @@ public class MediaGalleryPage extends PageBase{
 		case"manage":
 		{
 			try {
-				Thread.sleep(50000);
+				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -332,7 +332,7 @@ public class MediaGalleryPage extends PageBase{
 		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
 		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(messagename);
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -380,18 +380,18 @@ public class MediaGalleryPage extends PageBase{
 		{
 			driver.findElement(By.xpath(assets.getProperty("med_gallery_manage_workflow"))).click();
 			try {
-				Thread.sleep(10000);
+				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 			driver.findElement(By.xpath(assets.getProperty("med_gallery_workflow_edit_manage_workflow"))).sendKeys("D");
-			driver.findElement(By.id(assets.getProperty("med_gallery_edit_submit"))).click();
+			driver.findElement(By.xpath(assets.getProperty("med_gallery_edit_submit"))).click();
 			Assert.assertEquals(driver.getTitle(),assets.getProperty("med_gallery_page_title"));
 			break;
 		}
 		case "APPROVED":
 		{
-			driver.findElement(By.id(assets.getProperty("med_gallery_edit_workflow"))).sendKeys("A");
+			driver.findElement(By.id(assets.getProperty("med_gallery_workflow_edit_manage_workflow"))).sendKeys("A");
 			driver.findElement(By.id(assets.getProperty("med_gallery_edit_submit"))).click();
 			Assert.assertEquals(driver.getTitle(),assets.getProperty("med_gallery_page_title"));
 			break;

@@ -365,7 +365,7 @@ public class MediaGalleryEdit_testcases extends TestBase{
 		.logout();
 	}
 	
-	/*@Test(priority=26)
+	@Test(priority=26)
 	public void manage_workflow_in_media()
 	{
 		login.loginAs("automation.admin","Monday#223")
@@ -376,7 +376,19 @@ public class MediaGalleryEdit_testcases extends TestBase{
 		.getTitle()
 		.logout();
 		
-	}*/
+	}
+	@Test(priority=27)
+	public void update_manage_workflow_in_media()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMediaGallery()
+		.manageworkflow("DRAFT","edit_image_test_01")
+		.validateUpdates("edit_image_test_01","manage","DRAFT")
+		.getTitle()
+		.logout();
+		
+	}
 	
 	
 	

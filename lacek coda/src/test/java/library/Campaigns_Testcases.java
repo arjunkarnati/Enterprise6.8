@@ -135,8 +135,8 @@ public class Campaigns_Testcases extends TestBase{
 	/*@Test(priority=30,enabled=true)
 	public void create_test_campaign()  
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickCampaignsLink()
 		.clickAddCampaignButton()
 		.addClient("Carnival Corporation & PLC")
@@ -155,5 +155,30 @@ public class Campaigns_Testcases extends TestBase{
 		.validateUpdates("edit_campaign_test_01","workflow","DRAFT")
 		.getTitle()
 		.logout();	
+	}
+	@Test(priority=31,enabled=true)
+	public void create_publish_campaign()  
+	{
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
+		.clickCampaignsLink()
+		.clickAddCampaignButton()
+		.addClient("Carnival Corporation & PLC")
+		.addBrand("Costa Cruises")
+		.addProgram("VIFP")
+		.addSeries("Opt_in")
+		.addCampaignName("publish_campaign_test_01")
+		.addDescription("camp publish testing")
+		.clickSubmitCampaign()
+		.validateUpdates("publish_campaign_test_01","client","Carnival Corporation & PLC")
+		.validateUpdates("publish_campaign_test_01","brand","1")
+		.validateUpdates("publish_campaign_test_01","program","1")
+		.validateUpdates("publish_campaign_test_01","name","publish_campaign_test_01")
+		.validateUpdates("publish_campaign_test_01","series","1")
+		.validateUpdates("publish_campaign_test_01","status","ACTIVE")
+		.validateUpdates("publish_campaign_test_01","workflow","DRAFT")
+		.getTitle()
+		.logout();	
 	}*/
+	
 }

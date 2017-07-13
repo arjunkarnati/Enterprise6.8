@@ -5,7 +5,7 @@
     <classes>
       <class name="library.CommunicationsEdit_Testcases">
         <methods>
-          <include name="updatemanage_workflow_ehi_qa"/>
+          <include name="archive_clone_communication"/>
           <include name="BeforeSuite"/>
           <include name="tearDown"/>
           <include name="AfterLogin"/>

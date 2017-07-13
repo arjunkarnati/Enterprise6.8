@@ -57,6 +57,21 @@ public class Connectors_TestCases extends TestBase{
 	{
 		DataBaseLibrary.connector();
 	}
+	/*@Test(priority=20)
+	public void test_connector()
+	{
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
+		.clickConnectors()
+		.addConnectors()
+		.addClientName("Carnival Corporation & PLC")
+		.addBrand("cunard")
+		.addProgram("VIFP")
+		.addConnectorName("edit_conn_test_01")
+		.addAttributeNameValue("PublishKeySuffix", ".qa")
+		.saveConnector()
+		.logout();
+	}*/
 	
 }
 

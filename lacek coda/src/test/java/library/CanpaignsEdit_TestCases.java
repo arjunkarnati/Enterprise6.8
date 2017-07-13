@@ -218,13 +218,27 @@ public class CanpaignsEdit_TestCases extends TestBase{
 		.getTitle();	
 	}
 	@Test(priority=16,enabled=true)
-	public void camp_mass_advance_workflow()
+	public void camp_mass_advance_workflow() throws InterruptedException
 	{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()
-		//.clickMassadvanceworkflow()
-		.getTitle()
+		.searchcampaign("edit_campaign_test_01")
+		.clickMassadvanceworkflow()
+		.selectWorkflow("Approved","edit_campaign_test_01")
+		.saveCampmassadvance()
+		.logout();
+	}
+	@Test(priority=17,enabled=true)
+	public void update_camp_mass_advance_workflow() throws InterruptedException
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickCampaignsLink()
+		.searchcampaign("edit_campaign_test_01")
+		.clickMassadvanceworkflow()
+		.selectWorkflow("DRAFT","edit_campaign_test_01")
+		.saveCampmassadvance()
 		.logout();
 	}
 	

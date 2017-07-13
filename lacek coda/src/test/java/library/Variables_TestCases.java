@@ -124,8 +124,8 @@ public class Variables_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_variable()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickVariablesLink()
 		.clickAddVariableButton()
 		.addClientName("Carnival Corporation & PLC")
@@ -139,7 +139,7 @@ public class Variables_TestCases extends TestBase{
 		.validateUpdates("edit_variable_test_01","brands","1")
 		.validateUpdates("edit_variable_test_01","name","edit_variable_test_01")
 		.validateUpdates("edit_variable_test_01","is global","NO")
-		.validateUpdates("edit_variable_test_01","default","still testing")
+		.validateUpdates("edit_variable_test_01","default","edit_variable_test_01")
 		.validateUpdates("edit_variable_test_01","status","ACTIVE")
 		.getTitle()
 		.logout();	

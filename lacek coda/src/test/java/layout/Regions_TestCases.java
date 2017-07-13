@@ -59,14 +59,14 @@ public class Regions_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_region()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+	     login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickRegions()
 		.clickAddRegionButton()
 		.addRegionName("edit_region_test_01")
 		.addDescription("still using selenium to test")
 		.clickSubmitButton()
-		.validateUpdates("edit_region_test_01","name","selenium_test_001")
+		.validateUpdates("edit_region_test_01","name","edit_region_test_01")
 		.validateUpdates("edit_region_test_01","status","ACTIVE")
 		.getTitle()
 		.logout();

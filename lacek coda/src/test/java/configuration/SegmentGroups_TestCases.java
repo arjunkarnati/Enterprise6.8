@@ -166,8 +166,8 @@ public class SegmentGroups_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_segment_groups()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+	login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickSegmentGroups()
 		.clickAddSegementGroupButton()
 		.addClientName("Carnival Corporation & PLC")
@@ -179,7 +179,7 @@ public class SegmentGroups_TestCases extends TestBase{
 		.clickSubmitButton()
 		.validateUpdates("edit_seg_group_test_01","client","Carnival Corporation & PLC")
 		.validateUpdates("edit_seg_group_test_01","brand","2")
-		.validateUpdates("edit_seg_group_test_01","name","selenium_segmentgroups_001")
+		.validateUpdates("edit_seg_group_test_01","name","edit_seg_group_test_01")
 		.validateUpdates("edit_seg_group_test_01","type","Single Select")
 		.getTitle()
 		.logout();

@@ -70,4 +70,19 @@ public class Locales_TestCases extends TestBase {
 	{
 		DataBaseLocalization.deleteLocale();
 	}
+	/*@Test(priority=30,enabled=true)
+	public void create_a_test_locales()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickLocales()
+		.clickAddLocalesButton()
+		.addName("latin")
+		.addCode("la")
+		.clickSave()
+		.validateUpdates("latin","name","latin")
+		.validateUpdates("latin","code","la")
+		.getTitle()
+		.logout();
+	}*/
 }

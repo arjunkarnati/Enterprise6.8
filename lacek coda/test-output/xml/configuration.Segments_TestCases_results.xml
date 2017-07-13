@@ -4,17 +4,17 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="268.579">
+           time="267.941">
   <properties />
   
   
-            <testcase name="database_delete_segment_groups" time="2.085" classname="configuration.Segments_TestCases" />
-                <testcase name="create_a_new_segment" time="49.928" classname="configuration.Segments_TestCases" />
-                <testcase name="create_a_new_segment_without_a_name" time="38.339" classname="configuration.Segments_TestCases" />
-                <testcase name="create_a_new_segment_without_a_clienname" time="34.931" classname="configuration.Segments_TestCases" />
-                <testcase name="create_a_new_segment_without_a_segment_group" time="38.750" classname="configuration.Segments_TestCases" />
-                <testcase name="create_a_new_segment_without_a_non_numerical_code" time="39.376" classname="configuration.Segments_TestCases" />
-                <testcase name="select_cancel_button_in_segements_add_page" time="26.343" classname="configuration.Segments_TestCases" />
-                <testcase name="create_a_new_segment_without_a_code" time="38.827" classname="configuration.Segments_TestCases" />
+            <testcase name="create_a_new_segment_without_a_name" time="37.792" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment_without_a_segment_group" time="37.645" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment_without_a_non_numerical_code" time="39.746" classname="configuration.Segments_TestCases" />
+                <testcase name="select_cancel_button_in_segements_add_page" time="24.703" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment" time="51.166" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment_without_a_code" time="39.217" classname="configuration.Segments_TestCases" />
+                <testcase name="database_delete_segment_groups" time="2.047" classname="configuration.Segments_TestCases" />
+                <testcase name="create_a_new_segment_without_a_clienname" time="35.625" classname="configuration.Segments_TestCases" />
       
 </testsuite>

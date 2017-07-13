@@ -4,16 +4,16 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="326.618">
+           time="329.380">
   <properties />
   
   
-            <testcase name="create_a_new_role_without_a_name" time="48.484" classname="access.Roles_TestCases" />
-                <testcase name="acces_level_field_is_empty_in_role_add_page" time="47.878" classname="access.Roles_TestCases" />
-                <testcase name="delete_role_from_database" time="2.180" classname="access.Roles_TestCases" />
-                <testcase name="select_cancel_button_in_roles_add_page" time="34.545" classname="access.Roles_TestCases" />
-                <testcase name="create_a_duplicate_role" time="46.926" classname="access.Roles_TestCases" />
-                <testcase name="fail_to_create_role_when_require_field_is_not_populated" time="42.725" classname="access.Roles_TestCases" />
-                <testcase name="create_a_new_role" time="103.880" classname="access.Roles_TestCases" />
+            <testcase name="create_a_new_role_without_a_name" time="48.515" classname="access.Roles_TestCases" />
+                <testcase name="select_cancel_button_in_roles_add_page" time="34.834" classname="access.Roles_TestCases" />
+                <testcase name="create_a_duplicate_role" time="46.204" classname="access.Roles_TestCases" />
+                <testcase name="fail_to_create_role_when_require_field_is_not_populated" time="42.902" classname="access.Roles_TestCases" />
+                <testcase name="create_a_new_role" time="106.405" classname="access.Roles_TestCases" />
+                <testcase name="acces_level_field_is_empty_in_role_add_page" time="48.399" classname="access.Roles_TestCases" />
+                <testcase name="delete_role_from_database" time="2.121" classname="access.Roles_TestCases" />
       
 </testsuite>

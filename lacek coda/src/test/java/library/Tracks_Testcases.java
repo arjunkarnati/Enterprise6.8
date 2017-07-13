@@ -106,8 +106,8 @@ public class Tracks_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_track()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickTracksLink()
 		.clickAddTrackButton()
 		.addClientName("Carnival Corporation & PLC")
@@ -123,6 +123,30 @@ public class Tracks_Testcases extends TestBase{
 		.validateUpdates("edit_tracks_test_01","name","edit_tracks_test_01")
 		.validateUpdates("edit_tracks_test_01","series","1")
 		.validateUpdates("edit_tracks_test_01","series","1")
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=30)
+	//@Test(enabled=false)
+	public void create_publish_track()
+	{
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
+		.clickTracksLink()
+		.clickAddTrackButton()
+		.addClientName("Carnival Corporation & PLC")
+		.addBrand("cunard")
+		.addProgram("VIFP")
+		.addSeries("opt_in")
+		.addTracksName("publish_tracks_test_01")
+		.addDescription("Happens all the time hit publish ")	
+		.clickSubmitButton()
+		.validateUpdates("publish_tracks_test_01","client","Carnival Corporation & PLC")
+		.validateUpdates("publish_tracks_test_01","brand","1")
+		.validateUpdates("publish_tracks_test_01","program","1")
+		.validateUpdates("publish_tracks_test_01","name","publish_tracks_test_01")
+		.validateUpdates("publish_tracks_test_01","series","1")
+		.validateUpdates("publish_tracks_test_01","series","1")
 		.getTitle()
 		.logout();
 	}*/

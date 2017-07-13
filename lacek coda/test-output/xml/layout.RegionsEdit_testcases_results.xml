@@ -4,16 +4,16 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="254.426">
+           time="255.873">
   <properties />
   
   
-            <testcase name="inactivate_region" time="38.380" classname="layout.RegionsEdit_testcases" />
-                <testcase name="update_region_name_to_previous" time="42.216" classname="layout.RegionsEdit_testcases" />
-                <testcase name="restore_region" time="32.509" classname="layout.RegionsEdit_testcases" />
-                <testcase name="activate_region" time="38.098" classname="layout.RegionsEdit_testcases" />
-                <testcase name="update_region_name" time="44.264" classname="layout.RegionsEdit_testcases" />
-                <testcase name="update_region_description" time="38.979" classname="layout.RegionsEdit_testcases" />
-                <testcase name="archive_region" time="19.980" classname="layout.RegionsEdit_testcases" />
+            <testcase name="update_region_name" time="41.746" classname="layout.RegionsEdit_testcases" />
+                <testcase name="inactivate_region" time="42.699" classname="layout.RegionsEdit_testcases" />
+                <testcase name="update_region_name_to_previous" time="41.640" classname="layout.RegionsEdit_testcases" />
+                <testcase name="archive_region" time="19.113" classname="layout.RegionsEdit_testcases" />
+                <testcase name="update_region_description" time="36.197" classname="layout.RegionsEdit_testcases" />
+                <testcase name="activate_region" time="44.675" classname="layout.RegionsEdit_testcases" />
+                <testcase name="restore_region" time="29.803" classname="layout.RegionsEdit_testcases" />
       
 </testsuite>

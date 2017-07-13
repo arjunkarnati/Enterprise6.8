@@ -135,11 +135,11 @@ public class Messages_TestCases extends TestBase{
 		DataBaseLibrary.deleteMessage();
 	}
 	
-	/*@Test(priority=0,enabled=true)
+	/*@Test(priority=30,enabled=true)
 	public void create_testdata_message()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickMessagesLink()
 		.clickAddMessageButton()
 		.addClientName("Carnival Corporation & PLC")
@@ -156,15 +156,39 @@ public class Messages_TestCases extends TestBase{
 		.addConnector("Exact Target (Carnival NA) | Approved")
 		.clickSubmitButton()
 		.validateUpdates("edit_message_test_01","client","Carnival Corporation & PLC")
-		.validateUpdates("edit_message_test_01","brand","3")
 		.validateUpdates("edit_message_test_01","program","1")
 		.validateUpdates("edit_message_test_01","name","edit_message_test_01")
-		.validateUpdates("edit_message_test_01","template","2")
 		.validateUpdates("edit_message_test_01","status","ACTIVE")
 		.validateUpdates("edit_message_test_01","workflow","DRAFT")
 		.getTitle()
 		.logout();	
-	}*/
+	}
 	
+	@Test(priority=31,enabled=true)
+	public void create_publish_message()
+	{
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
+		.clickMessagesLink()
+		.clickAddMessageButton()
+		.addClientName("Carnival Corporation & PLC")
+		.addBrand("cunard")
+		.addBrand("Costa Cruises")
+		.addBrand("Fathom")
+		.addProgram("VIFP")
+		.addMessageName("publish_message_test_01")	
+		.addDescription("publish_regression_message_selenium1")	
+		.addVariables("First Name")
+		.addtemplates("Booked Guest - Primary")	
+		.addtemplates("Booked Guest - Footer2")	
+		.addConnector("Exact Target (Carnival NA) | Draft")
+		.addConnector("Exact Target (Carnival NA) | Approved")
+		.clickSubmitButton()
+		.validateUpdates("publish_message_test_01","client","Carnival Corporation & PLC")
+		.validateUpdates("publish_message_test_01","program","1")
+		.validateUpdates("publish_message_test_01","name","publish_message_test_01")
+		.getTitle()
+		.logout();	
+	}*/
 	
 }

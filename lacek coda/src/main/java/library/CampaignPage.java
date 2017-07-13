@@ -2,6 +2,9 @@ package library;
 
 import java.security.InvalidParameterException;
 import java.util.List;
+
+import javax.imageio.IIOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -273,4 +276,82 @@ public class CampaignPage extends PageBase{
 	{
 
 	}
+	public CampaignPage clickMassadvanceworkflow() {
+		
+			// TODO Auto-generated method stub
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("camp_mass_advance"))).click();
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),library.getProperty("camp_mass_title"));
+			//return series page
+			return new CampaignPage(driver);
+		
+	}
+	public CampaignPage selectWorkflow(String workflowname , String campaignname) throws InterruptedException {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("select_Comm_checkbox"))).click();
+		switch(workflowname)
+		{
+		case"DRAFT":
+		{
+			driver.findElement(By.xpath(library.getProperty("camp_mass_workflow"))).sendKeys("D");
+			Thread.sleep(3000);
+			break;
+		}
+		case"APPROVED":
+		{
+			driver.findElement(By.xpath(library.getProperty("camp_mass_workflow"))).sendKeys("A");
+			Thread.sleep(3000);
+			break;
+		}
+		}
+		
+		return new CampaignPage(driver);
+	}
+	public CampaignPage saveCampmassadvance() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("camp_save_mass"))).click();	
+			try {
+				
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		return new CampaignPage(driver);
+	}
+	public CampaignPage searchcampaign(String name) {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("search_campaign"))).clear();
+		driver.findElement(By.xpath(library.getProperty("search_campaign"))).sendKeys(name);
+		
+		return new CampaignPage(driver);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

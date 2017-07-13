@@ -20,7 +20,7 @@ public class PermissionActions_TestCases extends TestBase{
 		//.validateUpdates("selenium_action_033","action name","selenium_action_033")
 		//.validateUpdates("Brands Add","permission name","Brands Add")
 		//.validateUpdates("selenium_action_033","controller action","control_selenium213")
-		.getTitle()
+		//.getTitle()
 		.logout();
 	}
 	@Test(priority=1,enabled=true)
@@ -109,17 +109,17 @@ public class PermissionActions_TestCases extends TestBase{
 	/*@Test(priority=12,enabled=true)
 	public void create_test_permission_action()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickPermissionActions()
 		.clickAddpermissionActionsButton()
 		.addName("edit_permission_action_test_01")
-		.addControllerName("test_selenium")
+		.addControllerName("edit_permission play with it")
 		.addPermissions("Brands Add")
 		.clickSave()
 		//.validateUpdates("edit_permission_action_test_01","action name","edit_permission_action_test_01")
 		//.validateUpdates("Brands Add","permission name","Brands Add")
-		//.validateUpdates("edit_permission_action_test_01","controller action","test_selenium")
+		.validateUpdates("edit_permission_action_test_01","controller action","edit_permission play with it")
 		.getTitle()
 		.logout();
 	}*/

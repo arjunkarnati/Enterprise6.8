@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="200.315">
+           time="200.733">
   <properties />
-            <testcase name="create_a_new_series_without_brand" time="42.506" classname="library.Series_Testcases">
+            <testcase name="create_a_new_series_without_brand" time="41.115" classname="library.Series_Testcases">
                 <failure type="java.lang.AssertionError"
                   message="expected [] but found [carsales]"
               >
@@ -45,10 +45,10 @@
           </testcase>
   
   
-            <testcase name="create_a_new_serie_without_clientname" time="33.411" classname="library.Series_Testcases" />
-                <testcase name="delete_series_from_db" time="2.452" classname="library.Series_Testcases" />
-                <testcase name="click_cancel_series_button" time="24.411" classname="library.Series_Testcases" />
-                <testcase name="create_a_new_series_without_seriesnname" time="34.168" classname="library.Series_Testcases" />
-                <testcase name="create_a_new_serie" time="63.367" classname="library.Series_Testcases" />
+            <testcase name="create_a_new_serie" time="61.452" classname="library.Series_Testcases" />
+                <testcase name="delete_series_from_db" time="3.784" classname="library.Series_Testcases" />
+                <testcase name="create_a_new_serie_without_clientname" time="33.806" classname="library.Series_Testcases" />
+                <testcase name="click_cancel_series_button" time="26.483" classname="library.Series_Testcases" />
+                <testcase name="create_a_new_series_without_seriesnname" time="34.093" classname="library.Series_Testcases" />
       
 </testsuite>

@@ -112,8 +112,8 @@ public class Roles_TestCases extends TestBase{
 	/*@Test(priority=10,enabled=true)
 	public void create_test_role()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickRoles()
 		.clickAddRoleButton()
 		.addRoleName("edit_role_test_01")
@@ -123,8 +123,7 @@ public class Roles_TestCases extends TestBase{
 		.addPermissionGroup("Brands View")
 		.addClient("Carnival Corporation & PLC")
 		.Submit()
-		.validateUpdates("edit_role_test_01","name","selenium_role_3.27")
-		.validateUpdates("edit_role_test_01","permission groups","2")
+		.validateUpdates("edit_role_test_01","name","edit_role_test_01")
 		.getTitle()
 		.logout();
 	}*/

@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="184.195">
+           time="196.115">
   <properties />
   
   
-            <testcase name="delete_brand_from_db" time="2.103" classname="manage.Brands_testcases" />
-                <testcase name="create_a_new_brand_without_a_color" time="34.737" classname="manage.Brands_testcases" />
-                <testcase name="create_a_new_brand_witout_a_name" time="33.576" classname="manage.Brands_testcases" />
-                <testcase name="create_a_new_brand_without_a_client_name" time="33.284" classname="manage.Brands_testcases" />
-                <testcase name="create_a_new_brand" time="46.379" classname="manage.Brands_testcases" />
-                <testcase name="create_a_new_brand_without_a_url" time="34.116" classname="manage.Brands_testcases" />
+            <testcase name="create_a_new_brand_witout_a_name" time="34.455" classname="manage.Brands_testcases" />
+                <testcase name="create_a_new_brand_without_a_url" time="34.124" classname="manage.Brands_testcases" />
+                <testcase name="create_a_new_brand_without_a_color" time="33.892" classname="manage.Brands_testcases" />
+                <testcase name="delete_brand_from_db" time="2.145" classname="manage.Brands_testcases" />
+                <testcase name="create_a_new_brand_without_a_client_name" time="33.378" classname="manage.Brands_testcases" />
+                <testcase name="create_a_new_brand" time="58.121" classname="manage.Brands_testcases" />
       
 </testsuite>

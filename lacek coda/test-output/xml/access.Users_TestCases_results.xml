@@ -1,107 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="USERS TESTCASES"
            tests="23"
-           failures="2"
+           failures="0"
            errors="0"
            skipped="0"
-           time="1000.154">
+           time="1062.208">
   <properties />
-            <testcase name="create_a_non_admin_user" time="57.624" classname="access.Users_TestCases">
-                <failure type="java.lang.AssertionError"
-                  message="expected [CODA - Users] but found [CODA - Users - Add]"
-              >
-<![CDATA[java.lang.AssertionError: expected [CODA - Users] but found [CODA - Users - Add]
-  org.testng.Assert.fail(Assert.java:94)
-  org.testng.Assert.failNotEquals(Assert.java:513)
-  org.testng.Assert.assertEqualsImpl(Assert.java:135)
-  org.testng.Assert.assertEquals(Assert.java:116)
-  org.testng.Assert.assertEquals(Assert.java:190)
-  org.testng.Assert.assertEquals(Assert.java:200)
-  access.UsersAddPage.Submit(UsersAddPage.java:143)
-  access.Users_TestCases.create_a_non_admin_user(Users_TestCases.java:56)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-  org.testng.TestRunner.privateRun(TestRunner.java:756)
-  org.testng.TestRunner.run(TestRunner.java:610)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="create_an_admin_user" time="57.165" classname="access.Users_TestCases">
-                <failure type="java.lang.AssertionError"
-                  message="expected [CODA - Users] but found [CODA - Users - Add]"
-              >
-<![CDATA[java.lang.AssertionError: expected [CODA - Users] but found [CODA - Users - Add]
-  org.testng.Assert.fail(Assert.java:94)
-  org.testng.Assert.failNotEquals(Assert.java:513)
-  org.testng.Assert.assertEqualsImpl(Assert.java:135)
-  org.testng.Assert.assertEquals(Assert.java:116)
-  org.testng.Assert.assertEquals(Assert.java:190)
-  org.testng.Assert.assertEquals(Assert.java:200)
-  access.UsersAddPage.Submit(UsersAddPage.java:143)
-  access.Users_TestCases.create_an_admin_user(Users_TestCases.java:28)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-  org.testng.TestRunner.privateRun(TestRunner.java:756)
-  org.testng.TestRunner.run(TestRunner.java:610)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
-]]>
-      </failure>
-
-          </testcase>
   
   
-            <testcase name="fail_to_create_user_when_email_address_field_is_empty" time="45.396" classname="access.Users_TestCases" />
-                <testcase name="create_an_admin_user_without_a_last_name" time="42.985" classname="access.Users_TestCases" />
-                <testcase name="create_an_admin_user_without_an_email_address" time="44.792" classname="access.Users_TestCases" />
-                <testcase name="create_a_non_admin_user_without_a_password" time="44.172" classname="access.Users_TestCases" />
-                <testcase name="create_a_non_admin_user_without_a_last_name" time="43.577" classname="access.Users_TestCases" />
-                <testcase name="fail_to_create_user_when_username_field_is_empty" time="46.754" classname="access.Users_TestCases" />
-                <testcase name="create_an_admin_user_without_a_first_name" time="44.456" classname="access.Users_TestCases" />
-                <testcase name="create_a_non_admin_user_without_a_first_name" time="43.246" classname="access.Users_TestCases" />
-                <testcase name="create_a_non_admin_user_without_an_email_address" time="43.254" classname="access.Users_TestCases" />
-                <testcase name="create_an_admin_user_without_a_username" time="44.544" classname="access.Users_TestCases" />
-                <testcase name="fail_to_create_user_when_confirm_password_field_is_empty" time="44.898" classname="access.Users_TestCases" />
-                <testcase name="fail_to_create_user_when_password_field_is_empty" time="43.577" classname="access.Users_TestCases" />
-                <testcase name="create_a_user_with_an_invalid_email_address_format" time="46.639" classname="access.Users_TestCases" />
-                <testcase name="select_button_cancel_in_user_add_page" time="27.745" classname="access.Users_TestCases" />
-                <testcase name="fail_to_create_user_when_first_name_field_is_empty" time="44.262" classname="access.Users_TestCases" />
-                <testcase name="create_an_admin_user_without_a_password" time="44.533" classname="access.Users_TestCases" />
-                <testcase name="create_a_duplicate_user" time="47.117" classname="access.Users_TestCases" />
-                <testcase name="fail_to_create_user_when_confirm_password_field_does_not_match_the_password" time="46.856" classname="access.Users_TestCases" />
-                <testcase name="database_delete_user" time="4.602" classname="access.Users_TestCases" />
-                <testcase name="fail_to_create_user_when_last_name_field_is_empty" time="44.679" classname="access.Users_TestCases" />
-                <testcase name="create_a_non_admin_user_without_a_username" time="47.281" classname="access.Users_TestCases" />
+            <testcase name="create_a_non_admin_user_without_a_first_name" time="43.263" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user" time="90.454" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_confirm_password_field_is_empty" time="43.675" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_a_password" time="43.990" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_a_last_name" time="44.610" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_last_name_field_is_empty" time="43.734" classname="access.Users_TestCases" />
+                <testcase name="create_a_user_with_an_invalid_email_address_format" time="46.609" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_a_username" time="46.788" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_first_name_field_is_empty" time="43.696" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_a_password" time="43.598" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_password_field_is_empty" time="49.359" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_a_last_name" time="44.239" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_email_address_field_is_empty" time="43.057" classname="access.Users_TestCases" />
+                <testcase name="create_a_duplicate_user" time="47.333" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_a_username" time="44.639" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_a_first_name" time="43.941" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user" time="90.236" classname="access.Users_TestCases" />
+                <testcase name="database_delete_user" time="4.646" classname="access.Users_TestCases" />
+                <testcase name="select_button_cancel_in_user_add_page" time="27.248" classname="access.Users_TestCases" />
+                <testcase name="create_an_admin_user_without_an_email_address" time="43.246" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_confirm_password_field_does_not_match_the_password" time="47.104" classname="access.Users_TestCases" />
+                <testcase name="fail_to_create_user_when_username_field_is_empty" time="42.922" classname="access.Users_TestCases" />
+                <testcase name="create_a_non_admin_user_without_an_email_address" time="43.821" classname="access.Users_TestCases" />
       
 </testsuite>

@@ -107,6 +107,28 @@ public class CommunicationsPage extends PageBase{
 			Assert.assertEquals(driver.getTitle(),library.getProperty("comm_edit_page_title"));
 			break;
 		}
+		case"edit_ehi_comm_test_01":
+		{
+			driver.findElement(By.xpath(library.getProperty("edit_ehi_comm_data"))).click();
+			try {
+				Thread.sleep(3000);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),library.getProperty("comm_edit_page_title"));
+			break;
+		}
+		case"cloned_comm_ehi_ae":
+		{
+			driver.findElement(By.xpath(library.getProperty("edit_ehi_comm_data"))).click();
+			try {
+				Thread.sleep(3000);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),library.getProperty("comm_edit_page_title"));
+			break;
+		}
 		default: 
 		{
 			throw new InvalidParameterException("series "+name +" cannot be edited, ref automation doc series page.");
@@ -237,7 +259,15 @@ public class CommunicationsPage extends PageBase{
 		readconfig();
 		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
 		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(archiveCommunicationname);
-		//select all check boxes
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath(library.getProperty("archive-comm"))).click();
+		driver.findElement(By.xpath(library.getProperty("archive-select_yes"))).click();
+		
+		/*//select all check boxes
 		java.util.List<WebElement> els = driver.findElements(By.xpath("//input[@type='checkbox']"));
 		for ( WebElement el : els ) 
 		{
@@ -256,7 +286,7 @@ public class CommunicationsPage extends PageBase{
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-		}
+		}*/
 		return new CommunicationsPage(driver);			
 	}
 	//test validation
@@ -319,6 +349,16 @@ public class CommunicationsPage extends PageBase{
 		case"channel":
 		{
 			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("comm_channel"))).getText(),expectedresult);
+			break;
+		}
+		case"Description":
+		{
+			try {
+				Thread.sleep(2000);
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("comm_get_description"))).getText(),expectedresult);
 			break;
 		}
 		case"template":
@@ -471,10 +511,10 @@ public class CommunicationsPage extends PageBase{
 			}
 		return new CommunicationsPage(driver);
 	}
-	public CommunicationsPage saveManageworkflow()
+	public CommunicationsPage saveMassadvanceworkflow()
 	{
 		readconfig();
-		driver.findElement(By.xpath(library.getProperty("save_manageworkflow"))).click();
+		driver.findElement(By.xpath(library.getProperty("save_massadvanceworkflow"))).click();
 		Assert.assertTrue(driver.getTitle().equalsIgnoreCase(library.getProperty("comm_page_title")));
 		return new CommunicationsPage(driver);
 		
@@ -514,6 +554,30 @@ public class CommunicationsPage extends PageBase{
 		driver.findElement(By.xpath(library.getProperty("comm_mess_workflow"))).click();
 		return new CommunicationsPage(driver);
 	}
+	public CommunicationsPage clonecommunication(String name) {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
+		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(name);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		driver.findElement(By.xpath(library.getProperty("comm_clone"))).click();
+		
+		return new CommunicationsPage(driver);
+	}
+	public CommunicationsPage editNameinsaveas(String updatecommname) {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("saveas_name"))).clear();
+		driver.findElement(By.xpath(library.getProperty("saveas_name"))).sendKeys(updatecommname);
+		driver.findElement(By.xpath(library.getProperty("select_saveas"))).click();
+		
+		return new CommunicationsPage(driver);
+	}
+	
 	
 }
 

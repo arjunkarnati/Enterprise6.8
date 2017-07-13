@@ -4,19 +4,19 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="526.424">
+           time="520.118">
   <properties />
   
   
-            <testcase name="empty_field_label_in_acf_edit_page" time="41.981" classname="configuration.ACFEdit_testcases" />
-                <testcase name="update_acf_brand_to_previous" time="64.494" classname="configuration.ACFEdit_testcases" />
-                <testcase name="update_acf_client" time="47.317" classname="configuration.ACFEdit_testcases" />
-                <testcase name="update_acf_group_name_to_previous" time="54.015" classname="configuration.ACFEdit_testcases" />
-                <testcase name="update_acf_brand" time="60.588" classname="configuration.ACFEdit_testcases" />
-                <testcase name="empty_field_name_in_acf_edit_page" time="52.993" classname="configuration.ACFEdit_testcases" />
-                <testcase name="empty_group_name_in_acf_edit_page" time="44.535" classname="configuration.ACFEdit_testcases" />
-                <testcase name="update_acf_group_name" time="51.665" classname="configuration.ACFEdit_testcases" />
-                <testcase name="update_acf_program_to_prvious" time="55.721" classname="configuration.ACFEdit_testcases" />
-                <testcase name="update_acf_program" time="53.115" classname="configuration.ACFEdit_testcases" />
+            <testcase name="update_acf_group_name" time="52.553" classname="configuration.ACFEdit_testcases" />
+                <testcase name="empty_field_name_in_acf_edit_page" time="42.826" classname="configuration.ACFEdit_testcases" />
+                <testcase name="update_acf_brand_to_previous" time="64.741" classname="configuration.ACFEdit_testcases" />
+                <testcase name="empty_group_name_in_acf_edit_page" time="43.197" classname="configuration.ACFEdit_testcases" />
+                <testcase name="update_acf_client" time="46.706" classname="configuration.ACFEdit_testcases" />
+                <testcase name="update_acf_group_name_to_previous" time="51.939" classname="configuration.ACFEdit_testcases" />
+                <testcase name="update_acf_program" time="53.416" classname="configuration.ACFEdit_testcases" />
+                <testcase name="update_acf_program_to_prvious" time="56.495" classname="configuration.ACFEdit_testcases" />
+                <testcase name="empty_field_label_in_acf_edit_page" time="48.347" classname="configuration.ACFEdit_testcases" />
+                <testcase name="update_acf_brand" time="59.898" classname="configuration.ACFEdit_testcases" />
       
 </testsuite>

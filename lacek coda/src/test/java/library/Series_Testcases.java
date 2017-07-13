@@ -102,12 +102,12 @@ public class Series_Testcases extends TestBase{
 	{
 		DataBaseLibrary.deleteSeries();
 	}
-   /* @Test(priority=21)
+  /*  @Test(priority=21)
 	//@Test(enabled=false)
 	public void create_testdata_serie()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickSertiesLink()
 		.clickAddSeriesButton()
 		.addClientName("Carnival Corporation & PLC")
@@ -127,9 +127,34 @@ public class Series_Testcases extends TestBase{
 		.validateUpdates("edit_series_test_01","workflow","DRAFT")
 		.getTitle()
 		.logout();	
-	}*/
+	}
     
-    
+    @Test(priority=22)
+  	//@Test(enabled=false)
+  	public void create_publish_serie()
+  	{
+  		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
+  		.clickSertiesLink()
+  		.clickAddSeriesButton()
+  		.addClientName("Carnival Corporation & PLC")
+  		.addBrand("cunard")
+  		.addProgram("VIFP")
+  		.addCampaign("publish_campaign_test_01")
+  		.addSeriesName("publish_series_test_01")	
+  		.addDescription("Thankyou for publishing ME !!!")	
+  		.addTracks("TrackI5")
+  		.clickSubmitButton()
+  		.validateUpdates("publish_series_test_01","client","Carnival Corporation & PLC")
+  		.validateUpdates("publish_series_test_01","brand","cunard")
+  		.validateUpdates("publish_series_test_01","program","vifp")
+  		.validateUpdates("publish_series_test_01","track","1")
+  		.validateUpdates("publish_series_test_01","campaign","1")
+  		.validateUpdates("publish_series_test_01","status","ACTIVE")
+  		.validateUpdates("publish_series_test_01","workflow","DRAFT")
+  		.getTitle()
+  		.logout();	
+  	}*/
     
     
     

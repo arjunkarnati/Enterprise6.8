@@ -73,11 +73,12 @@ public class PermissionCategories_TestCases extends TestBase {
 	{
 		DataBaseAccess.deletePermissionCategory();
 	}
-	/*@Test(priority=10,enabled=true)
+	/* No need to run
+	 @Test(priority=10,enabled=true)
 	public void create_test_permission_categories()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickPermissionCategories()
 		.clickAddpermissionCategoriesButton()
 		.addName("edit_permission_category_test_01")

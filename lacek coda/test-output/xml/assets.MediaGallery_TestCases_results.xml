@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="97.252">
+           time="97.202">
   <properties />
   
   
-            <testcase name="database_delete_media_gallery" time="2.850" classname="assets.MediaGallery_TestCases" />
-                <testcase name="create_a_new_media_gallery_without_uploadig_an_image" time="47.255" classname="assets.MediaGallery_TestCases" />
-                <testcase name="create_a_new_media_gallery_without_clientname" time="30.098" classname="assets.MediaGallery_TestCases" />
-                <testcase name="create_a_new_media_gallery" time="17.049" classname="assets.MediaGallery_TestCases" />
+            <testcase name="database_delete_media_gallery" time="2.921" classname="assets.MediaGallery_TestCases" />
+                <testcase name="create_a_new_media_gallery" time="16.244" classname="assets.MediaGallery_TestCases" />
+                <testcase name="create_a_new_media_gallery_without_uploadig_an_image" time="47.355" classname="assets.MediaGallery_TestCases" />
+                <testcase name="create_a_new_media_gallery_without_clientname" time="30.682" classname="assets.MediaGallery_TestCases" />
       
 </testsuite>

@@ -515,6 +515,24 @@ public class BrowserHelperPage extends PageBase {
 
 				break;
 			}
+			case "iOS iPad Air 2" :
+			{
+				caps.setCapability("Tablet","iPad Air 2");
+				caps.setCapability("project", "LACEK MMS");
+				caps.setCapability("build", "1.0");
+				caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);//accepting certificate
+				//caps.setCapability("browserstack.localIdentifier", "lacektest01");
+				caps.setCapability("browserstack.local" , true);
+				caps.setCapability("browserstack.javascriptEnabled", true);
+				caps.setCapability("browserstack.debug", "true");
+				caps.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
+
+				driver = new RemoteWebDriver(new URL(URL), caps);
+
+				break;
+			
+			}	
+		
 			default :
 			{
 				throw new InvalidParameterException(os_browser +" is not a valid web browser or operating system for web driver. ref automation doc os_browsers page");

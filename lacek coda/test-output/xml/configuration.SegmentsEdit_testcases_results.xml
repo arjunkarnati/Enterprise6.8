@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="509.786">
+           time="519.016">
   <properties />
   
   
-            <testcase name="update_segment_name" time="37.634" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="restore_segment" time="13.354" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="empty_name_field_in_segements_edit_page" time="34.884" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_clientname" time="28.878" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_name_to_previous" time="39.766" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="activate_segment" time="39.467" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="select_button_cancel_in_segments_edit_page" time="30.689" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_code" time="38.099" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_code_to_previous" time="37.865" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="archive_segment" time="17.983" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_clientname_to_previous" time="43.614" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="inactivate_segment" time="34.564" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_segment_group_to_previous" time="37.797" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_segment_group" time="40.528" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="empty_code_field_in_segements_edit_page" time="34.664" classname="configuration.SegmentsEdit_testcases" />
+            <testcase name="archive_segment" time="18.523" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_code" time="39.398" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_segment_group_to_previous" time="38.332" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_name" time="39.783" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="select_button_cancel_in_segments_edit_page" time="30.923" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_clientname" time="29.766" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="restore_segment" time="12.362" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="empty_name_field_in_segements_edit_page" time="37.111" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_name_to_previous" time="40.046" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="empty_code_field_in_segements_edit_page" time="36.084" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_code_to_previous" time="39.033" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_segment_group" time="40.258" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_clientname_to_previous" time="44.063" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="activate_segment" time="37.812" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="inactivate_segment" time="35.522" classname="configuration.SegmentsEdit_testcases" />
       
 </testsuite>

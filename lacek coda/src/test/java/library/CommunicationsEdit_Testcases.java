@@ -261,7 +261,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=18)
 	public void Verify_access_EHIQA(){
 		login.loginAs("ehi_qa","09ht1a0480")
-		.isSuccessfulLogin("ehi qa")
+		.isSuccessfulLogin("ehi QA")
 		.clickCommunicationsLink()
 		.previewCommunications("edit_ehi_comm_test_01")
 		.verifyaccess()
@@ -313,7 +313,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.commMassadvanceworkflow()
 		.changeAssignWorkflow("APPROVED", "edit_comm_test_01")
 		.commMessageWorkflow("APPROVED", "edit_comm_test_01")
-		.saveManageworkflow()
+		.saveMassadvanceworkflow()
 		.validateUpdates("edit_comm_test_01","workflow","APPROVED")
 		.getTitle()
 		.logout();
@@ -328,12 +328,12 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.commMassadvanceworkflow()
 		.changeAssignWorkflow("DRAFT", "edit_comm_test_01")
 		.commMessageWorkflow("DRAFT", "edit_comm_test_01")
-		.saveManageworkflow()
+		.saveMassadvanceworkflow()
 		.validateUpdates("edit_comm_test_01","workflow","DRAFT")
 		.getTitle()
 		.logout();
 }
-	@Test(priority=22)
+	/*@Test(priority=22)
 	public void manage_workflow_ehi_qa() 
 	{
 		login.loginAs("ehi_qa","09ht1a0480")
@@ -358,5 +358,146 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.validateUpdates("142","workflow","DRAFT")
 		.getTitle()
 		.logout();
+	}*/
+	@Test(priority=24)
+	public void add_messagefrom_communication()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickCommunicationsLink()
+		.editCommunications("edit_ehi_comm_test_01")
+		.addmessage("Karnati_test")
+		.clickSubmitButton()
+		.validateUpdates("karnati_test","name" ," expectedresult")
+		.getTitle()
+		.logout();
 	}
+	@Test(priority=25)
+	public void delete_messagefrom_communication()
+	{
+		login.loginAs("automation.admin", "Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickCommunicationsLink()
+		.editCommunications("edit_ehi_comm_test_01")
+		.deleteMessage("karnati_test")
+		.selectRemovemessage()
+		.clickSaveButton();
+		}
+	
+	@Test(priority=26)
+	public void clear_all_messagaes_from_comm()
+	{
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()
+		.editCommunications("edit_ehi_comm_test_01")
+		.clearallMessagesfrom()
+		.clickSubmitButton()
+		.getTitle()
+		.logout();
+	   
+	}
+	@Test(priority=27)
+	public void all_messages_to_all_regions()
+	{
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()
+		.editCommunications("edit_ehi_comm_test_01")
+		.addallmessagestocomm()
+		.clickSubmitButton()
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=28)
+	public void update_description()
+	{
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()
+		.editCommunications("edit_ehi_comm_test_01")
+		.updateDescription("Test Automation haha!!!")
+		.clickSubmitButton()
+		.validateUpdates("edit_ehi_comm_test_01","Description","Test Automation haha!!!")
+		.getTitle()
+		.logout();
+		
+		
+	}
+	@Test(priority=29)
+	public void update_description_to_previous()
+	{
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()
+		.editCommunications("edit_ehi_comm_test_01")
+		.updateDescription("Test Automation for EHI")
+		.clickSubmitButton()
+		.validateUpdates("edit_ehi_comm_test_01","Description","Test Automation for EHI")
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=30)
+	public void clone_communication()
+	{
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()
+		.clonecommunication("edit_ehi_comm_test_01")
+		.editNameinsaveas("cloned_comm_ehi_ae")
+		.validateUpdates("cloned_comm_ehi_ae","Description","Test Automation for EHI")
+		.getTitle()
+		.logout();
+		
+	}
+	
+	//depends on test=30
+	@Test(priority=31)
+	public void edit_clone_message()
+	{
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()	
+		.editCommunications("cloned_comm_ehi_ae")
+		.updateDescription("cloned_comm_edited")
+		.clickSubmitButton()
+		.validateUpdates("cloned_comm_ehi_ae","Description","cloned_comm_edited")
+		.getTitle()
+		.logout();	
+	}
+	@Test(priority=15)
+	//@Test(enabled=false)
+	public void archive_clone_communication()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickCommunicationsLink()
+		.archiveCommunication("cloned_comm_ehi_ae")
+		.getTitle()
+		.logout();	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

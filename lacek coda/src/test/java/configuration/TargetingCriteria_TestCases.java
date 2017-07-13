@@ -79,8 +79,8 @@ public class TargetingCriteria_TestCases extends TestBase{
 	//@Test(enabled=false)
 	public void create_test_targeting_criteria()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickTargetingCriteria()
 		.clickAddTargetingcriteriaButton()
 		.addClientName("Carnival Corporation & PLC")

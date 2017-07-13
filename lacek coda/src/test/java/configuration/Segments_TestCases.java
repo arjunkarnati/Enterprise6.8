@@ -127,8 +127,8 @@ public class Segments_TestCases extends TestBase{
 	/*@Test(priority=31)
 	public void create_test_segment()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickSegments()
 		.clickAddSegmentButton()
 		.addClientName("Carnival Corporation & PLC")
@@ -139,7 +139,7 @@ public class Segments_TestCases extends TestBase{
 		.clickSubmitButton()	
 		.validateUpdates("edit_segments_test_01","client","Carnival Corporation & PLC")
 		.validateUpdates("edit_segments_test_01","group","Casino")
-		.validateUpdates("edit_segments_test_01","code","000087")
+		.validateUpdates("edit_segments_test_01","code","0014")
 		.validateUpdates("edit_segments_test_01","status","ACTIVE")
 		.getTitle()
 		.logout();

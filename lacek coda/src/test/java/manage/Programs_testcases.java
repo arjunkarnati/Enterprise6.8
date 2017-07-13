@@ -67,8 +67,8 @@ public class Programs_testcases extends TestBase{
 	/*@Test(priority=60,enabled=true)
 	public void create_test_program()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickPrograms()
 		.clickAddProgramButton()
 		.addClientName("Carnival Corporation & PLC")

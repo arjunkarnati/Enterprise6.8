@@ -4,23 +4,23 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="476.338">
+           time="481.206">
   <properties />
   
   
-            <testcase name="update_client_color" time="33.284" classname="manage.ClientsEdit_testcases" />
-                <testcase name="inactivate_client" time="33.749" classname="manage.ClientsEdit_testcases" />
-                <testcase name="empty_code_field_in_client_edit_page" time="33.883" classname="manage.ClientsEdit_testcases" />
-                <testcase name="empty_name_field_in_client_edit_page" time="33.034" classname="manage.ClientsEdit_testcases" />
-                <testcase name="empty_color_field_in_client_edit_page" time="33.333" classname="manage.ClientsEdit_testcases" />
-                <testcase name="archive_client" time="18.387" classname="manage.ClientsEdit_testcases" />
-                <testcase name="update_client_name" time="40.650" classname="manage.ClientsEdit_testcases" />
-                <testcase name="update_client_url_to_previous" time="37.611" classname="manage.ClientsEdit_testcases" />
-                <testcase name="update_client_color_to_previous" time="34.394" classname="manage.ClientsEdit_testcases" />
-                <testcase name="update_client_name_to_previous" time="40.197" classname="manage.ClientsEdit_testcases" />
-                <testcase name="empty_url_field_in_client_edit_page" time="34.970" classname="manage.ClientsEdit_testcases" />
-                <testcase name="update_client_url" time="37.225" classname="manage.ClientsEdit_testcases" />
-                <testcase name="activate_client" time="36.633" classname="manage.ClientsEdit_testcases" />
-                <testcase name="restore_client" time="28.988" classname="manage.ClientsEdit_testcases" />
+            <testcase name="empty_name_field_in_client_edit_page" time="34.582" classname="manage.ClientsEdit_testcases" />
+                <testcase name="archive_client" time="18.529" classname="manage.ClientsEdit_testcases" />
+                <testcase name="update_client_url" time="43.466" classname="manage.ClientsEdit_testcases" />
+                <testcase name="inactivate_client" time="34.318" classname="manage.ClientsEdit_testcases" />
+                <testcase name="update_client_color_to_previous" time="33.003" classname="manage.ClientsEdit_testcases" />
+                <testcase name="activate_client" time="37.037" classname="manage.ClientsEdit_testcases" />
+                <testcase name="update_client_color" time="32.842" classname="manage.ClientsEdit_testcases" />
+                <testcase name="update_client_name" time="39.885" classname="manage.ClientsEdit_testcases" />
+                <testcase name="restore_client" time="29.024" classname="manage.ClientsEdit_testcases" />
+                <testcase name="update_client_url_to_previous" time="36.326" classname="manage.ClientsEdit_testcases" />
+                <testcase name="update_client_name_to_previous" time="39.101" classname="manage.ClientsEdit_testcases" />
+                <testcase name="empty_url_field_in_client_edit_page" time="34.997" classname="manage.ClientsEdit_testcases" />
+                <testcase name="empty_code_field_in_client_edit_page" time="33.925" classname="manage.ClientsEdit_testcases" />
+                <testcase name="empty_color_field_in_client_edit_page" time="34.171" classname="manage.ClientsEdit_testcases" />
       
 </testsuite>

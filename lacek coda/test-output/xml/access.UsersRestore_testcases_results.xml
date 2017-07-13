@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.577">
+           time="21.733">
   <properties />
   
   
-            <testcase name="verify_user_archive_page" time="21.577" classname="access.UsersRestore_testcases" />
+            <testcase name="verify_user_archive_page" time="21.733" classname="access.UsersRestore_testcases" />
       
 </testsuite>

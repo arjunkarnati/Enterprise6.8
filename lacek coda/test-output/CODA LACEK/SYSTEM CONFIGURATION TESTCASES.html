@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SYSTEM CONFIGURATION TESTCASES</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 20 22:16:40 CDT 2017</td>
+<td>Started on:</td><td>Mon Jul 10 23:20:03 CDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>204 seconds (204028 ms)</td>
+<tr><td>Total time:</td><td>190 seconds (190583 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,140 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='login.System_configuration_testcases.disable_automatic_publishing()'><b>disable_automatic_publishing</b><br>Test class: login.System_configuration_testcases</td>
-<td><div><pre>java.lang.AssertionError: expected [CODA - Dashboard] but found [CODA - Error]
-	at login.SystemConfigurationPage.clickSave(SystemConfigurationPage.java:66)
-	at login.System_configuration_testcases.disable_automatic_publishing(System_configuration_testcases.java:37)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace542326286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace542326286'><pre>java.lang.AssertionError: expected [CODA - Dashboard] but found [CODA - Error]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at login.SystemConfigurationPage.clickSave(SystemConfigurationPage.java:66)
-	at login.System_configuration_testcases.disable_automatic_publishing(System_configuration_testcases.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>17</td>
-<td>login.System_configuration_testcases@75881071</td></tr>
-<tr>
-<td title='login.System_configuration_testcases.disable_live_and_automatic_publishing_()'><b>disable_live_and_automatic_publishing_</b><br>Test class: login.System_configuration_testcases</td>
-<td><div><pre>java.lang.AssertionError: expected [CODA - Dashboard] but found [CODA - Error]
-	at login.SystemConfigurationPage.clickSave(SystemConfigurationPage.java:66)
-	at login.System_configuration_testcases.disable_live_and_automatic_publishing_(System_configuration_testcases.java:60)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1957612237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1957612237'><pre>java.lang.AssertionError: expected [CODA - Dashboard] but found [CODA - Error]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at login.SystemConfigurationPage.clickSave(SystemConfigurationPage.java:66)
-	at login.System_configuration_testcases.disable_live_and_automatic_publishing_(System_configuration_testcases.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>23</td>
-<td>login.System_configuration_testcases@75881071</td></tr>
-<tr>
-<td title='login.System_configuration_testcases.disable_live_publishing()'><b>disable_live_publishing</b><br>Test class: login.System_configuration_testcases</td>
-<td><div><pre>java.lang.AssertionError: expected [CODA - Dashboard] but found [CODA - Error]
-	at login.SystemConfigurationPage.clickSave(SystemConfigurationPage.java:66)
-	at login.System_configuration_testcases.disable_live_publishing(System_configuration_testcases.java:15)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1273207086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1273207086'><pre>java.lang.AssertionError: expected [CODA - Dashboard] but found [CODA - Error]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at login.SystemConfigurationPage.clickSave(SystemConfigurationPage.java:66)
-	at login.System_configuration_testcases.disable_live_publishing(System_configuration_testcases.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>19</td>
-<td>login.System_configuration_testcases@75881071</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -211,23 +77,38 @@ function toggleAllBoxes() {
 <tr>
 <td title='login.System_configuration_testcases.click_cancel_in_sys_configuration_page()'><b>click_cancel_in_sys_configuration_page</b><br>Test class: login.System_configuration_testcases</td>
 <td></td>
+<td>15</td>
+<td>login.System_configuration_testcases@22eeefeb</td></tr>
+<tr>
+<td title='login.System_configuration_testcases.disable_automatic_publishing()'><b>disable_automatic_publishing</b><br>Test class: login.System_configuration_testcases</td>
+<td></td>
 <td>16</td>
-<td>login.System_configuration_testcases@75881071</td></tr>
+<td>login.System_configuration_testcases@22eeefeb</td></tr>
+<tr>
+<td title='login.System_configuration_testcases.disable_live_and_automatic_publishing_()'><b>disable_live_and_automatic_publishing_</b><br>Test class: login.System_configuration_testcases</td>
+<td></td>
+<td>20</td>
+<td>login.System_configuration_testcases@22eeefeb</td></tr>
+<tr>
+<td title='login.System_configuration_testcases.disable_live_publishing()'><b>disable_live_publishing</b><br>Test class: login.System_configuration_testcases</td>
+<td></td>
+<td>18</td>
+<td>login.System_configuration_testcases@22eeefeb</td></tr>
 <tr>
 <td title='login.System_configuration_testcases.enable_automatic_publishing()'><b>enable_automatic_publishing</b><br>Test class: login.System_configuration_testcases</td>
 <td></td>
-<td>20</td>
-<td>login.System_configuration_testcases@75881071</td></tr>
+<td>16</td>
+<td>login.System_configuration_testcases@22eeefeb</td></tr>
 <tr>
 <td title='login.System_configuration_testcases.enable_live_and_automatic_publishing_()'><b>enable_live_and_automatic_publishing_</b><br>Test class: login.System_configuration_testcases</td>
 <td></td>
 <td>20</td>
-<td>login.System_configuration_testcases@75881071</td></tr>
+<td>login.System_configuration_testcases@22eeefeb</td></tr>
 <tr>
 <td title='login.System_configuration_testcases.enable_live_publishing()'><b>enable_live_publishing</b><br>Test class: login.System_configuration_testcases</td>
 <td></td>
-<td>20</td>
-<td>login.System_configuration_testcases@75881071</td></tr>
+<td>18</td>
+<td>login.System_configuration_testcases@22eeefeb</td></tr>
 </table><p>
 </body>
 </html>

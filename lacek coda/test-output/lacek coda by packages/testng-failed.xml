@@ -1,129 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [lacek coda by packages]">
-  <test name="access(failed)">
+  <test name="configuration(failed)">
     <classes>
-      <class name="access.PermissionGroupsEdit_testcases">
+      <class name="configuration.SegmentGroups_TestCases">
+        <methods>
+          <include name="select_button_cancel_in_segment_groups_add_page"/>
+          <include name="BeforeSuite"/>
+          <include name="create_a_new_segment_groups_type_multi_select_without_a_name"/>
+          <include name="create_a_new_segment_groups_type_single_select_without_a_client_name"/>
+          <include name="create_a_new_segment_groups_without_a_type"/>
+          <include name="AfterLogin"/>
+          <include name="create_a_new_segment_groups_type_single_select_without_a_name"/>
+          <include name="beforeTest"/>
+          <include name="create_a_new_segment_groups_type_multi_select_without_a_client_name"/>
+        </methods>
+      </class> <!-- configuration.SegmentGroups_TestCases -->
+      <class name="configuration.SegmentGroupsEdit_testcases">
+        <methods>
+          <include name="activate_segment_groups"/>
+          <include name="inactivate_segment_groups"/>
+          <include name="update_segment_groups_description"/>
+          <include name="empty_name_field_in_segmentGroups_edit_page"/>
+          <include name="update_segment_groups_type_to_previous"/>
+          <include name="AfterLogin"/>
+          <include name="update_segment_groups_name_to_previous"/>
+          <include name="beforeTest"/>
+          <include name="BeforeSuite"/>
+          <include name="update_segment_groups_type"/>
+          <include name="restore_segment_groups"/>
+          <include name="select_button_cancel_in_segmentgroups_edit_page"/>
+          <include name="update_segment_groups_brand"/>
+          <include name="update_segment_groups_clientname_to_previous"/>
+          <include name="update_segment_groups_clientname"/>
+          <include name="archive_segment_groups"/>
+        </methods>
+      </class> <!-- configuration.SegmentGroupsEdit_testcases -->
+      <class name="configuration.TargetingCriteriaRestore_testcases">
         <methods>
           <include name="BeforeSuite"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- access.PermissionGroupsEdit_testcases -->
-      <class name="access.Permissions_TestCases">
+      </class> <!-- configuration.TargetingCriteriaRestore_testcases -->
+      <class name="configuration.SegmentsRestore_testcases">
         <methods>
           <include name="BeforeSuite"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- access.Permissions_TestCases -->
-      <class name="access.PermissionGroupsRestore_testcases">
+      </class> <!-- configuration.SegmentsRestore_testcases -->
+      <class name="configuration.ACF_testcases">
+        <methods>
+          <include name="create_a_new_acf_without_field_instructions"/>
+          <include name="create_an_acf_data_type_decimal_field_type_text"/>
+          <include name="return_to_acf_main_page_from_add_page"/>
+          <include name="create_an_acf_data_type_decimal_field_type_select"/>
+          <include name="create_a_new_acf_without_field_label"/>
+          <include name="create_a_new_acf_without_screens"/>
+          <include name="create_an_acf_data_type_varchar_field_type_Wysiwyg_editor"/>
+          <include name="create_an_acf_data_type_varchar_field_type_select"/>
+          <include name="create_an_acf_data_type_varchar_field_type_text_area"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="create_a_new_acf_without_field_name"/>
+          <include name="BeforeSuite"/>
+          <include name="create_a_new_acf_without_group_name"/>
+          <include name="click_cancel_in_acf_add_page"/>
+        </methods>
+      </class> <!-- configuration.ACF_testcases -->
+      <class name="configuration.MessageTypes_TestCases">
         <methods>
           <include name="BeforeSuite"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- access.PermissionGroupsRestore_testcases -->
-      <class name="access.PermissionCategories_TestCases">
+      </class> <!-- configuration.MessageTypes_TestCases -->
+      <class name="configuration.ACFEdit_testcases">
         <methods>
+          <include name="empty_field_name_in_acf_edit_page"/>
           <include name="BeforeSuite"/>
+          <include name="update_acf_brand_to_previous"/>
+          <include name="update_acf_brand"/>
+          <include name="update_acf_group_name_to_previous"/>
+          <include name="update_acf_program_to_prvious"/>
+          <include name="update_acf_group_name"/>
+          <include name="empty_group_name_in_acf_edit_page"/>
           <include name="AfterLogin"/>
+          <include name="empty_field_label_in_acf_edit_page"/>
           <include name="beforeTest"/>
+          <include name="update_acf_program"/>
         </methods>
-      </class> <!-- access.PermissionCategories_TestCases -->
-      <class name="access.PermissionGroups_TestCases">
+      </class> <!-- configuration.ACFEdit_testcases -->
+      <class name="configuration.SegmentsEdit_testcases">
         <methods>
-          <include name="BeforeSuite"/>
+          <include name="select_button_cancel_in_segments_edit_page"/>
+          <include name="activate_segment"/>
+          <include name="restore_segment"/>
+          <include name="archive_segment"/>
+          <include name="empty_name_field_in_segements_edit_page"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
-        </methods>
-      </class> <!-- access.PermissionGroups_TestCases -->
-      <class name="access.UsersEdit_testcases">
-        <methods>
+          <include name="update_segment_clientname_to_previous"/>
+          <include name="update_segment_code_to_previous"/>
           <include name="BeforeSuite"/>
-          <include name="AfterLogin"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- access.UsersEdit_testcases -->
-      <class name="access.PermissionActions_TestCases">
-        <methods>
-          <include name="BeforeSuite"/>
-          <include name="AfterLogin"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- access.PermissionActions_TestCases -->
-      <class name="access.UsersRestore_testcases">
-        <methods>
-          <include name="BeforeSuite"/>
-          <include name="AfterLogin"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- access.UsersRestore_testcases -->
-      <class name="access.PermissionActionsEdit_TestCases">
-        <methods>
-          <include name="BeforeSuite"/>
-          <include name="AfterLogin"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- access.PermissionActionsEdit_TestCases -->
-      <class name="access.RolesRestore_testcases">
-        <methods>
-          <include name="BeforeSuite"/>
-          <include name="AfterLogin"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- access.RolesRestore_testcases -->
-      <class name="access.RolesEdit_testcases">
-        <methods>
-          <include name="BeforeSuite"/>
-          <include name="inactivate_role"/>
-          <include name="update_role_name_to_previous"/>
-          <include name="update_role_name"/>
-          <include name="AfterLogin"/>
-          <include name="update_role_parent_role_to_previous"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- access.RolesEdit_testcases -->
-      <class name="access.PemissionsEdit_TestCases">
-        <methods>
-          <include name="BeforeSuite"/>
-          <include name="AfterLogin"/>
-          <include name="beforeTest"/>
-          <include name="inactivate_permissions"/>
-        </methods>
-      </class> <!-- access.PemissionsEdit_TestCases -->
-      <class name="access.PermissionCategoriesEdit_TestCases">
-        <methods>
-          <include name="inactivate_permission_categories"/>
-          <include name="update_permission_categories_name"/>
-          <include name="update_permission_categories_name_to_previous"/>
-          <include name="AfterLogin"/>
-          <include name="beforeTest"/>
-          <include name="update_permission_categories_conttroller_name"/>
-          <include name="BeforeSuite"/>
-          <include name="restore_permission_categories"/>
-          <include name="archive_permission_categories"/>
-          <include name="activate_permission_categories"/>
-          <include name="click_cancel_in_permission_categories_edit_page"/>
-          <include name="return_to_main_page_from_permission_categories_edit_page"/>
-          <include name="update_permission_categories_conttroller_name_to_previous"/>
+          <include name="update_segment_clientname"/>
           <include name="tearDown"/>
+          <include name="update_segment_code"/>
+          <include name="empty_code_field_in_segements_edit_page"/>
+          <include name="inactivate_segment"/>
+          <include name="update_segment_name_to_previous"/>
         </methods>
-      </class> <!-- access.PermissionCategoriesEdit_TestCases -->
-      <class name="access.Users_TestCases">
+      </class> <!-- configuration.SegmentsEdit_testcases -->
+      <class name="configuration.TargetingCriteriaEdit_testcases">
+        <methods>
+          <include name="update_targeting_criteria_description"/>
+          <include name="update_targeting_criteria_name"/>
+          <include name="activate_tageting_criteria"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="empty_code_field_in_tagerting_criteria_edit_page"/>
+          <include name="BeforeSuite"/>
+          <include name="update_targeting_criteria_brand_to_previous"/>
+          <include name="update_targeting_criteria_name_to_previous"/>
+          <include name="select_cancel_button_in_targeting_criteria_edit_page"/>
+          <include name="archive_tageting_criteria"/>
+          <include name="restore_tageting_criteria"/>
+          <include name="empty_name_field_in_tagerting_criteria_edit_page"/>
+          <include name="inactivate_tageting_criteria"/>
+        </methods>
+      </class> <!-- configuration.TargetingCriteriaEdit_testcases -->
+      <class name="configuration.Segments_TestCases">
+        <methods>
+          <include name="create_a_new_segment_without_a_name"/>
+          <include name="BeforeSuite"/>
+          <include name="create_a_new_segment_without_a_code"/>
+          <include name="create_a_new_segment_without_a_non_numerical_code"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+          <include name="create_a_new_segment_without_a_segment_group"/>
+        </methods>
+      </class> <!-- configuration.Segments_TestCases -->
+      <class name="configuration.TargetingCriteria_TestCases">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="create_a_new_targeting_criteria"/>
+          <include name="select_button_cancel_in_targeting_criteria_add_page"/>
+          <include name="AfterLogin"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- configuration.TargetingCriteria_TestCases -->
+      <class name="configuration.SegmentGroupsRestore_testcases">
         <methods>
           <include name="BeforeSuite"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- access.Users_TestCases -->
-      <class name="access.Roles_TestCases">
-        <methods>
-          <include name="BeforeSuite"/>
-          <include name="AfterLogin"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- access.Roles_TestCases -->
+      </class> <!-- configuration.SegmentGroupsRestore_testcases -->
     </classes>
-  </test> <!-- access(failed) -->
+  </test> <!-- configuration(failed) -->
 </suite> <!-- Failed suite [lacek coda by packages] -->

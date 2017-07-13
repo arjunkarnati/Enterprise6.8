@@ -79,8 +79,8 @@ public class Permissions_TestCases extends TestBase {
 	/*@Test(priority=11,enabled=true)
 	public void create_testdata_permissions()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickPermissions()
 		.clickAddpermissionsButton()
 		.addName("edit_permission_test_01")
