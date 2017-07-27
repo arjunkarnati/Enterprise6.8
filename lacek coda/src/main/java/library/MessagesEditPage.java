@@ -14,6 +14,7 @@ import login.DashboardPage;
 
 public class MessagesEditPage extends PageBase{
 
+	
 	public MessagesEditPage(WebDriver driver) 
 	{
 		super(driver);	
@@ -274,17 +275,19 @@ public class MessagesEditPage extends PageBase{
 	{
 		readconfig();	
 		//counting the number of entry in the field
-		int iCount = driver.findElements(By.xpath(library.getProperty("mes_edit_brand_number"))).size();
-		System.out.println("**brands: "+iCount);
-		for (int i=0; i<iCount;i++)
+		//int iCount = 
+	//	driver.findElements(By.xpath(library.getProperty("mes_edit_brand_number"))).size();
+		//System.out.println("**brands: "+iCount);
+		//for (int i=0; i<iCount;i++)
 		{
+			driver.findElement(By.xpath(library.getProperty("mes_edit_brand"))).sendKeys(Keys.BACK_SPACE);
 			driver.findElement(By.xpath(library.getProperty("mes_edit_brand"))).sendKeys(Keys.BACK_SPACE);
 			driver.findElement(By.xpath(library.getProperty("mes_edit_brand"))).sendKeys(Keys.BACK_SPACE);
 			driver.findElement(By.xpath(library.getProperty("mes_edit_brand"))).sendKeys(Keys.BACK_SPACE);
 		}
 		//assert and verify
-		Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("mes_edit_brand"))).isEnabled());
-		Assert.assertEquals(driver.getTitle(),library.getProperty("mess_edit_page_title"));
+		///Assert.assertTrue(driver.findElement(By.id(library.getProperty("mes_edit_brand"))).isEnabled());
+		//Assert.assertEquals(driver.getTitle(),library.getProperty("mess_edit_page_title"));
 		//return messages edit page
 		return new MessagesEditPage(driver);
 	}
@@ -482,20 +485,21 @@ public class MessagesEditPage extends PageBase{
 
 		}	
 		
-		public MessagesEditPage addLocales() {
+		public MessagesPage addLocales() {
 			// TODO Auto-generated method stub
 			readconfig();
-			//Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("Message_add_locale"))).getClass());
-			Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("Message_add_locale"))).isDisplayed());
-			//driver.findElement(By.xpath(library.getProperty("Message_locale_french"))).click();
+			
+			driver.findElement(By.xpath(library.getProperty("Message_add_locale"))).click();
+			driver.findElement(By.xpath(library.getProperty("ehi_ae_select_locale"))).click();
+			
 			
 			try {
-				Thread.sleep(5000);
+				Thread.sleep(2000);
 			} catch (InterruptedException e){
 				e.printStackTrace();
 			}
 			
-			return new MessagesEditPage(driver);
+			return new MessagesPage(driver);
 			
 		}
 	
@@ -515,4 +519,166 @@ public class MessagesEditPage extends PageBase{
 			return new MessagesPage(driver);
 			
 		}
+		public MessagesEditPage addMediato_message() {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("message_media_add"))).click();
+			return new MessagesEditPage (driver);
+			// TODO Auto-generated method stub
+			
+		}
+		public MessagesEditPage selectMedia_fromgallery(String newmedia) {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("media_filter"))).clear();
+			driver.findElement(By.xpath(library.getProperty("media_filter"))).sendKeys(newmedia);
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e){
+				e.printStackTrace();
+			}
+			driver.findElement(By.xpath(library.getProperty("select_add_button"))).click();
+			driver.findElement(By.xpath(library.getProperty("close_media"))).click();
+			
+			
+			
+			return new MessagesEditPage(driver);
+			// TODO Auto-generated method stub
+			
+		}
+		public MessagesEditPage selectwidth_Code(String newwidth) {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("Select_width_message"))).click();
+			driver.findElement(By.xpath(library.getProperty("Select_width_code"))).sendKeys(newwidth);
+			driver.findElement(By.xpath(library.getProperty("Select_width_code"))).sendKeys(Keys.ENTER);
+			
+			return new MessagesEditPage(driver);
+			// TODO Auto-generated method stub
+			
+		}
+		public MessagesEditPage selectALT_tag_code(String newalt) {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("Select_ALT_message"))).click();
+			driver.findElement(By.xpath(library.getProperty("Select_ALT_code"))).sendKeys(newalt);
+			driver.findElement(By.xpath(library.getProperty("Select_ALT_code"))).sendKeys(Keys.ENTER);
+			
+			return new MessagesEditPage (driver);
+			// TODO Auto-generated method stub
+			
+		}
+		public MessagesEditPage  selectHeight_code(String newheight) {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("Select_height_message"))).click();
+			driver.findElement(By.xpath(library.getProperty("Select_height_code"))).sendKeys(newheight);
+			driver.findElement(By.xpath(library.getProperty("Select_height_code"))).sendKeys(Keys.ENTER);
+			
+			return new MessagesEditPage (driver);
+		}
+		public MessagesEditPage selectURL_code(String newURL) {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("Select_URL_message"))).click();
+			driver.findElement(By.xpath(library.getProperty("Select_URL_code"))).sendKeys(newURL);
+			driver.findElement(By.xpath(library.getProperty("Select_URL_code"))).sendKeys(Keys.ENTER);
+			
+			return new MessagesEditPage (driver);
+		}
+		public MessagesEditPage  deleteMessage_media() {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("delete_media_mess"))).click();
+			driver.findElement(By.xpath(library.getProperty("select_yes_remove"))).click();
+			
+		
+			return new MessagesEditPage (driver);	
+		}
+		public MessagesEditPage  select_html_add() {
+		
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("mess_add_html"))).click();
+			return new MessagesEditPage (driver);
+		}
+		public MessagesEditPage  addhtml_content_name(String newhtmlname) {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("add_html_name"))).clear();
+			driver.findElement(By.xpath(library.getProperty("add_html_name"))).sendKeys(newhtmlname);
+			
+			return new MessagesEditPage (driver);
+		}
+		public MessagesEditPage addhtml_code(String newcodehtml) {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("add_html_code"))).click();
+			driver.findElement(By.xpath(library.getProperty("enter_html_code"))).sendKeys(newcodehtml);
+			driver.findElement(By.xpath(library.getProperty("enter_html_code"))).sendKeys(Keys.ENTER);
+			// TODO Auto-generated method stub
+			return new MessagesEditPage (driver);
+		}
+		public MessagesEditPage addhtml_source(String newsource) {
+			
+			readconfig();
+			//driver.findElement(By.xpath(library.getProperty("add_html_source"))).clear();
+			driver.findElement(By.xpath(library.getProperty("add_source_name"))).sendKeys(newsource);
+			
+			return new MessagesEditPage (driver);
+		}
+		public MessagesEditPage addHyperlink_to_message() {
+			// TODO Auto-generated method stub
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("mess_add_hyperlink"))).click();
+			return new MessagesEditPage (driver);	
+		}
+		public MessagesEditPage addName_to_Hyperlink(String newhyperlink)
+		{
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("add_hyperlink_name"))).clear();
+			driver.findElement(By.xpath(library.getProperty("add_hyperlink_name"))).sendKeys(newhyperlink);
+			// TODO Auto-generated method stub
+			return new MessagesEditPage (driver);	
+		}
+		public MessagesEditPage addURL_to_hyperlink(String newhURL) {
+			// TODO Auto-generated method stub
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("add_hyperlink_URL"))).clear();
+			driver.findElement(By.xpath(library.getProperty("add_hyperlink_URL"))).sendKeys(newhURL);
+			return new MessagesEditPage (driver);	
+		}
+		public MessagesEditPage addName_code_hyperlink(String newnamecode) {
+			// TODO Auto-generated method stub
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("add_hyperlink_namecode"))).click();
+			driver.findElement(By.xpath(library.getProperty("enter_hyperlink_namecode"))).sendKeys(newnamecode);
+			driver.findElement(By.xpath(library.getProperty("enter_hyperlink_namecode"))).sendKeys(Keys.ENTER);
+			return new MessagesEditPage (driver);	
+		}
+		public MessagesEditPage addURL_code_hyperlink(String newURLcode) {
+			
+			readconfig();
+			driver.findElement(By.xpath(library.getProperty("add_hyperlink_URLcode"))).click();
+			driver.findElement(By.xpath(library.getProperty("enter_hyperlink_URLcode"))).sendKeys(newURLcode);
+			driver.findElement(By.xpath(library.getProperty("enter_hyperlink_URLcode"))).sendKeys(Keys.ENTER);
+			return new MessagesEditPage (driver);	
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 }

@@ -133,9 +133,9 @@ public class SegmentGroupsEdit_testcases extends TestBase{
 		.isSuccessfulLogin("automation admin")
 		.clickSegmentGroups()
 		.editSegmentGroup("edit_seg_group_test_01")
-		.updateClientNameTo("DuPont")
+		//.updateClientNameTo("DuPont")
 		.clickSubmitButton()
-		.validateUpdates("edit_seg_group_test_01","client","DuPont")
+		//.validateUpdates("edit_seg_group_test_01","client","DuPont")
 		.getTitle()
 		.logout();
 	}	

@@ -117,7 +117,7 @@ public class CommunicationsPublishPage extends PageBase {
 		// TODO Auto-generated method stub
 		return new CommunicationsPublishPage(driver);
 	}
-	public PageBase addlocales(String newlocale) 
+	public CommunicationsPublishPage addlocales(String newlocale) 
 	{
 		// TODO Auto-generated method stub
 		readconfig();
@@ -126,6 +126,12 @@ public class CommunicationsPublishPage extends PageBase {
 		//assert and verify
 		Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("comm_add_locale"))).isDisplayed());
 		//return communication edit page
+		return new CommunicationsPublishPage(driver);
+	}
+	public CommunicationsPublishPage clickPublishButton1() {
+		// TODO Auto-generated method stub
+		elementLocators();
+		driver.findElement(By.xpath(library.getProperty("click_publish_button"))).click();
 		return new CommunicationsPublishPage(driver);
 	}
 }

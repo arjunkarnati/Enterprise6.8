@@ -42,7 +42,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.editMessage("edit_message_test_01")
 		.updateClientNameTo("DuPont")
 		.clickSubmitButton()
-		//.validateUpdates("edit_message_test_01","client","DuPont")
+		.validateUpdates("edit_message_test_01","client","DuPont")
 		.getTitle()
 		.logout();	
 	}
@@ -100,7 +100,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.editMessage("edit_message_test_01")
 		.deleteEntryInProgramField()
 		.updateProgramTo("VIFP")
-		.updateProgramTo("smm1")
+		.updateProgramTo("edit_program_test_01")
 		.clickSubmitButton()
 		.validateUpdates("edit_message_test_01","program","2")
 		.getTitle()
@@ -200,11 +200,11 @@ public class MessagesEdit_Testcases extends TestBase{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
-		//.editMessage("edit_message_test_01")
-		//.isActive(false)
-		//.clickSubmitButton()
-		//.validateUpdates("edit_message_test_01","status","INACTIVE")
-		//.getTitle()
+		.editMessage("10000003")
+		.isActive(false)
+		.clickSubmitButton()
+		.validateUpdates("10000003","status","INACTIVE")
+		.getTitle()
 		.logout();	
 	}
 	@Test(priority=14)
@@ -214,10 +214,10 @@ public class MessagesEdit_Testcases extends TestBase{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
-		.editMessage("edit_message_test_01")
+		.editMessage("10000003")
 		.isActive(true)
 		.clickSubmitButton()
-		//.validateUpdates("edit_message_test_01","status","ACTIVE")
+		.validateUpdates("10000003","status","ACTIVE")
 		.getTitle()
 		.logout();	
 	}
@@ -228,7 +228,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
-		.archiveMessage("QR")
+		.archiveMessage("10000003")
 		.getTitle()
 		.logout();	
 	}
@@ -238,8 +238,8 @@ public class MessagesEdit_Testcases extends TestBase{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
-		.restoreMessage("QR")
-		//.validateUpdates("QR","status","ACTIVE")
+		.restoreMessage("3346ZZ003")
+		//.validateUpdates("3346ZZ003","status","ACTIVE")
 		.getTitle()
 		.logout();	
 	}
@@ -283,8 +283,8 @@ public class MessagesEdit_Testcases extends TestBase{
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")	
 		.deleteEntryIntemplatesField()
-		.updatetemplatesTo("selenium_test_004")
-		.updatetemplatesTo("selenium_test_004")
+		.updatetemplatesTo("CPC16003-CTA")
+		.updatetemplatesTo("CPC16003-CTA")
 		.clickSubmitButton()
 		//.validateerrormessage()
 		.logout();
@@ -299,7 +299,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.deleteEntryInCCLBrandfield()
 		.updatecclbrand("CUNARD")
 		.clickSubmitButton()
-		//.validateUpdates("edit_message_test_01","brand","1")
+		.validateUpdates("edit_message_test_01","brand","1")
 		.getTitle()
 		.logout();
 	}
@@ -314,7 +314,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.updatecclbrand("CUNARD")
 		.updatecclbrand("COSTA CRUISES")
 		.clickSubmitButton()
-		//.validateUpdates("edit_message_test_01","brand","2")
+		.validateUpdates("edit_message_test_01","brand","2")
 		.getTitle()
 		.logout();
 	}
@@ -324,8 +324,10 @@ public class MessagesEdit_Testcases extends TestBase{
 		 login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
-		.editMessage("edit_message_test_01")
+		.editMessage("10000003")
 		.addLocales()
+		.clickSubmitButton()
+		.validateUpdatesinpreview("10000003","ZH-CN")
 		.logout();
 		
 	}
@@ -342,7 +344,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.updatetemplatesbyCarnival("CPC16003-Hero")
 		.updatetemplatesbyCarnival("CPC16003-CTA")
 		.clickSubmitButton()
-		//.validateUpdates("CPC16003-Header","template","3")
+		.validateUpdates("CPC16003-Header","template","3")
 		.getTitle()
 		.logout();	
 	}
@@ -357,7 +359,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.deleteEntryIntemplatesFieldbyCarnival()
 		.updatetemplatesbyCarnival("Booked Guest - Primary")
 		.clickSubmitButton()
-		//.validateUpdates("edit_message_test_01","template","1")
+		.validateUpdates("edit_message_test_01","template","1")
 		.getTitle()
 		.logout();	
 	}
@@ -390,7 +392,8 @@ public class MessagesEdit_Testcases extends TestBase{
 		.isSuccessfulLogin("ehi ae")
 		.clickMessagesLink()
 		.clickMassadvanceworkflow()
-		//.validateUpdates("edit_ehi_message_01","workflow","APPROVED")
+		.selectfileMAW()
+		//.selectworkflowinMAW()
 		.logout();
 	}
 	/*@Test(priority=27)
@@ -428,7 +431,127 @@ public class MessagesEdit_Testcases extends TestBase{
 	
 	
 	}*/
+	@Test(priority=29)
+	public void clone_message()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.copyMessage("publish_message_test_01")
+		.editcopymessagename("cloned_message")
+		.validateUpdates("cloned_message","workflow","DRAFT")
+		.getTitle()
+		.logout();
+		
+	}
+	@Test(priority=30)
+	//@Test(enabled=false)
+	public void update_cloned_message_programs()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.editMessage("cloned_message")
+		.deleteEntryInProgramField()
+		.updateProgramTo("VIFP")
+		.clickSubmitButton()
+		.validateUpdates("cloned_message","program","1")
+		.getTitle()
+		.logout();	
+	}
+	@Test(priority=31)
+	//@Test(enabled=false)
+	public void update_cloned_message_template()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.editMessage("cloned_message")
+		.deleteEntryIntemplatesField()
+		.updatetemplatesTo("CPC16003-Header")
+		.updatetemplatesTo("CPC16003-CTA")
+		.clickSubmitButton()
+		.validateUpdates("cloned_message","template","2")
+		.getTitle()
+		.logout();	
+	}
+	@Test(priority=32)
+	//@Test(enabled=false)
+	public void cloned_message_add_media()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.editMessage("cloned_message")
+		.addMediato_message()
+		.selectMedia_fromgallery("CPC16003 logo vifp gold")
+		.selectwidth_Code("BTN_2_WIDTH")
+		.selectALT_tag_code("CTA_ALT")
+		.selectHeight_code("CTA_HEIGHT")
+		.selectURL_code("CTA_SRC")
+		.clickSubmitButton()
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=33)
+	//@Test(enabled=false)
+	public void cloned_message_delete_media()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.editMessage("cloned_message")
+		.deleteMessage_media()
+		.clickSubmitButton()
+		.getTitle()
+		.logout();
+		}
 	
+	@Test(priority=34)
+	//@Test(enabled=false)
+	public void cloned_message_add_html()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.editMessage("cloned_message")
+		.select_html_add()
+		.addhtml_content_name("test_html_automation")
+		.addhtml_code("BODY")
+		//.addhtml_source("##test&html**<body>www.lacek.com")
+		.clickSaveButton()
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=35)
+	//@Test(enabled=false)
+	public void cloned_message_add_hyperlink()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.editMessage("cloned_message")
+		.addHyperlink_to_message()
+		.addName_to_Hyperlink("test-hyperlink")
+		.addURL_to_hyperlink("www.msp.com")
+		.addName_code_hyperlink("CTA_NAME_10")
+		.addURL_code_hyperlink("CTA_URL")
+		.clickSaveButton()
+		.getTitle()
+		.logout();
+	}
+	
+	@Test(priority=36)
+	//@Test(enabled=false)
+	public void cloned_message_archive()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.archiveMessage("cloned_message")
+		.getTitle()
+		.logout();	
+	}
 }
 	
 	

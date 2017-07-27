@@ -148,7 +148,7 @@ public class MessagesPage extends PageBase{
 		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
 		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(messagename);
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -182,9 +182,31 @@ public class MessagesPage extends PageBase{
 			Assert.assertEquals(driver.getTitle(),library.getProperty("mess_edit_page_title"));
 			break;
 		}
+		case "10000003":
+		{
+			driver.findElement(By.xpath(library.getProperty("edit_ehi_test"))).click();
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),library.getProperty("mess_edit_page_title"));
+			break;
+		}
 		case "edit_message_test_010":
 		{
 			driver.findElement(By.xpath(test_data_reader.getProperty("edit_message_test_010"))).click();
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),library.getProperty("mess_edit_page_title"));
+			break;
+		}
+		case "cloned_message":
+		{
+			driver.findElement(By.xpath(library.getProperty("cloned_message"))).click();
 			try {
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {
@@ -419,7 +441,7 @@ public class MessagesPage extends PageBase{
 		case"status":
 		{
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(5000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -449,7 +471,7 @@ public class MessagesPage extends PageBase{
 		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
 		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(messagename);
 		try{
-			driver.findElement(By.xpath(".//*[@id='datatable']/tbody/tr[1]/td[18]/div/div/a[7]/i")).click();
+			//driver.findElement(By.xpath(".//*[@id='datatable']/tbody/tr[1]/td[18]/div/div/a[7]/i")).click();
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -458,13 +480,15 @@ public class MessagesPage extends PageBase{
 	public MessagesPage editcopymessagename(String newname) {
 		// TODO Auto-generated method stub
 		readconfig();
-		driver.findElement(By.xpath("//h4[contains(text(),'Save copy as...')]"));
-		driver.findElement(By.xpath("//input[@id='saveAsName']")).clear();
-		driver.findElement(By.xpath("//input[@id='saveAsName']")).sendKeys(newname);
+		driver.findElement(By.xpath(library.getProperty("message_clone"))).click();
+		driver.findElement(By.xpath(library.getProperty("save_as_name"))).clear();
+		driver.findElement(By.xpath(library.getProperty("save_as_name"))).sendKeys(newname);
 		try{
-			driver.findElement(By.xpath("//button[contains(text(),'Save Copy')]")).click();
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("html/body/div[7]/div/div/div[3]/button[1]")).click();
 			
-		}catch(Exception e){
+		}
+		catch(Exception e){
 			e.printStackTrace();
 		}
 		return new MessagesPage(driver);
@@ -515,7 +539,7 @@ public class MessagesPage extends PageBase{
 		// TODO Auto-generated method stub
 		readconfig();
 		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
-		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys("edit_ehi_message_01");
+		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys("10000013");
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
@@ -534,6 +558,71 @@ public class MessagesPage extends PageBase{
 		newworkflow.selectByVisibleText("Approved - Keep current state");
 		System.out.println("test.approved");*/
 				
+		
+		return new MessagesPage(driver);
+	}
+	public MessagesPage clickSubmitButton()
+	{
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("mes_edit_submit"))).click();
+		try {
+			Thread.sleep(15000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		//assert and verify
+		//Assert.assertEquals(driver.getTitle(),library.getProperty("mess_page_title"));
+		return new MessagesPage(driver);
+	}
+	public PageBase validateUpdatesinpreview(String filename,String prevalidate) {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("filter"))).clear();
+		driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(filename);
+	
+		driver.findElement(By.xpath(library.getProperty("EHI_preview_locale"))).click();
+		try{
+		Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("pre_locale_mess"))).getText(),prevalidate);
+		Thread.sleep(15000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	public MessagesPage selectfileMAW() {
+		// TODO Auto-generated method stub
+		driver.findElement(By.xpath(library.getProperty("select_file_in_MAW"))).click();
+		return new MessagesPage(driver);
+	}
+	public MessagesPage selectworkflowinMAW() {
+		// TODO Auto-generated method stub
+		driver.findElement(By.xpath(library.getProperty("select_workflow"))).click();
+		driver.findElement(By.xpath(library.getProperty("select_wprkflow_approved"))).click();
+		return new MessagesPage(driver);
+	}
+	public MessagesPage clickPublishButton() {
+		// TODO Auto-generated method stub
+		
+		elementLocators();
+		driver.findElement(By.xpath(library.getProperty("click_publish_button"))).click();
+		return new MessagesPage(driver);
+	}
+	public MessagesPage validated_selected_files(String expectedfile) {
+		// TODO Auto-generated method stub
+
+			
+			
+			
+			elementLocators();
+			Assert.assertEquals(driver.findElement(By.xpath(library.getProperty("publish_conn_details"))).getText(),expectedfile);
+			List<WebElement> iname = driver.findElements(By.xpath(library.getProperty("publish_conn_details")));
+			java.util.Iterator<WebElement> name = iname.iterator();
+			while(name.hasNext()) 
+			{
+				WebElement row = name.next();
+				System.out.println("**program: "+row.getText());
+			}
+			
 		
 		return new MessagesPage(driver);
 	}

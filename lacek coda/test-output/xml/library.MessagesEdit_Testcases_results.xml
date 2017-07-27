@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="MESSAGES TESTCASES"
-           tests="27"
-           failures="2"
+           tests="35"
+           failures="5"
            errors="0"
            skipped="0"
-           time="1555.142">
+           time="2252.062">
   <properties />
-            <testcase name="check_quicklook_for_meaasage" time="32.210" classname="library.MessagesEdit_Testcases">
+            <testcase name="restore_message" time="47.909" classname="library.MessagesEdit_Testcases">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;datatable&apos;]/tbody/tr[1]/td[18]/div/div/a[1]/i&quot;}
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Restore&apos;)]&quot;}
   (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.00 seconds
+Command duration or timeout: 10.04 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir29880_19898}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: aa1af57da1d486659a7a63c09adcec8b
-*** Element info: {Using=xpath, value=.//*[@id=&apos;datatable&apos;]/tbody/tr[1]/td[18]/div/div/a[1]/i}"
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir1028_23699}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 239217cbe740b65ed02cae54a848379c
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Restore&apos;)]}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='datatable']/tbody/tr[1]/td[18]/div/div/a[1]/i"}
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Restore')]"}
   (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.00 seconds
+Command duration or timeout: 10.04 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir29880_19898}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: aa1af57da1d486659a7a63c09adcec8b
-*** Element info: {Using=xpath, value=.//*[@id='datatable']/tbody/tr[1]/td[18]/div/div/a[1]/i}
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir1028_23699}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 239217cbe740b65ed02cae54a848379c
+*** Element info: {Using=xpath, value=//a[contains(text(),'Restore')]}
+  sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
   java.lang.reflect.Constructor.newInstance(Constructor.java:423)
   org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
@@ -42,8 +41,8 @@ Session ID: aa1af57da1d486659a7a63c09adcec8b
   org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
   org.openqa.selenium.By$ByXPath.findElement(By.java:361)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-  library.MessagesPage.clickquicklook(MessagesPage.java:500)
-  library.MessagesEdit_Testcases.check_quicklook_for_meaasage(MessagesEdit_Testcases.java:382)
+  library.MessagesPage.restoreMessage(MessagesPage.java:281)
+  library.MessagesEdit_Testcases.restore_message(MessagesEdit_Testcases.java:241)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -68,27 +67,27 @@ Session ID: aa1af57da1d486659a7a63c09adcec8b
       </failure>
 
           </testcase>
-            <testcase name="verifyadding_twosame_Templates" time="51.873" classname="library.MessagesEdit_Testcases">
+            <testcase name="verifyadding_twosame_Templates" time="55.458" classname="library.MessagesEdit_Testcases">
                 <failure type="org.openqa.selenium.WebDriverException"
                   message="unknown error: Element &lt;button id=&quot;btnSubmit&quot; name=&quot;btnSubmit&quot; type=&quot;submit&quot; class=&quot;btn blue&quot;&gt;...&lt;/button&gt; is not clickable at point (1812, 918). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
   (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 103 milliseconds
+Command duration or timeout: 111 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir39992_14787}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 287c85c206d98c0c11b72b2f57354dfb"
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir34580_18446}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 173503fdb781374687709f5b8f71e030"
               >
 <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button id="btnSubmit" name="btnSubmit" type="submit" class="btn blue">...</button> is not clickable at point (1812, 918). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style="display: block;"></div>
   (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 103 milliseconds
+Command duration or timeout: 111 milliseconds
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir39992_14787}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 287c85c206d98c0c11b72b2f57354dfb
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir34580_18446}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 173503fdb781374687709f5b8f71e030
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,7 +97,7 @@ Session ID: 287c85c206d98c0c11b72b2f57354dfb
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
   org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
   org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-  library.MessagesEditPage.clickSubmitButton(MessagesEditPage.java:260)
+  library.MessagesEditPage.clickSubmitButton(MessagesEditPage.java:261)
   library.MessagesEdit_Testcases.verifyadding_twosame_Templates(MessagesEdit_Testcases.java:288)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -124,32 +123,191 @@ Session ID: 287c85c206d98c0c11b72b2f57354dfb
       </failure>
 
           </testcase>
+            <testcase name="VerifyAddedLocalesInPreview" time="42.772" classname="library.MessagesEdit_Testcases">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;datatable&apos;]/tbody/tr/td[19]/div/div/a[3]/i&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir43592_6003}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: fc781a7082bb567438270bbac1b89388
+*** Element info: {Using=xpath, value=.//*[@id=&apos;datatable&apos;]/tbody/tr/td[19]/div/div/a[3]/i}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='datatable']/tbody/tr/td[19]/div/div/a[3]/i"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir43592_6003}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: fc781a7082bb567438270bbac1b89388
+*** Element info: {Using=xpath, value=.//*[@id='datatable']/tbody/tr/td[19]/div/div/a[3]/i}
+  sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+  library.MessagesPage.editMessage(MessagesPage.java:187)
+  library.MessagesEdit_Testcases.VerifyAddedLocalesInPreview(MessagesEdit_Testcases.java:327)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="clone_message" time="29.897" classname="library.MessagesEdit_Testcases">
+                <failure type="org.openqa.selenium.InvalidElementStateException"
+                  message="invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir77760_27407}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 8d8148133e6f3d11355e927d34144068"
+              >
+<![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir77760_27407}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 8d8148133e6f3d11355e927d34144068
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+  org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:140)
+  library.MessagesPage.editcopymessagename(MessagesPage.java:484)
+  library.MessagesEdit_Testcases.clone_message(MessagesEdit_Testcases.java:441)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="update_message_template_by_Carnival_AE" time="85.543" classname="library.MessagesEdit_Testcases">
+                <failure type="java.lang.AssertionError"
+                  message="expected [11] but found [3]"
+              >
+<![CDATA[java.lang.AssertionError: expected [11] but found [3]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:513)
+  org.testng.Assert.assertEqualsImpl(Assert.java:135)
+  org.testng.Assert.assertEquals(Assert.java:116)
+  org.testng.Assert.assertEquals(Assert.java:190)
+  org.testng.Assert.assertEquals(Assert.java:200)
+  library.MessagesPage.validateUpdates(MessagesPage.java:438)
+  library.MessagesEdit_Testcases.update_message_template_by_Carnival_AE(MessagesEdit_Testcases.java:347)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="ClickPreview" time="50.001" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_workflow_to_approved" time="57.759" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_template_to_previous" time="76.068" classname="library.MessagesEdit_Testcases" />
-                <testcase name="activate_message" time="66.377" classname="library.MessagesEdit_Testcases" />
-                <testcase name="VerifyBanner" time="34.385" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_programs" time="79.847" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_template_to_previous_Carnival_AE" time="70.182" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_brands" time="76.310" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_workflow_to_draft" time="56.954" classname="library.MessagesEdit_Testcases" />
-                <testcase name="restore_message" time="39.802" classname="library.MessagesEdit_Testcases" />
-                <testcase name="VerifyAddedLocalesInPreview" time="53.778" classname="library.MessagesEdit_Testcases" />
-                <testcase name="inactivate_message" time="17.463" classname="library.MessagesEdit_Testcases" />
-                <testcase name="CCL_AE_updatebrand" time="67.611" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_variable" time="66.604" classname="library.MessagesEdit_Testcases" />
-                <testcase name="CCL_AE_updatebrandtoprevious" time="74.395" classname="library.MessagesEdit_Testcases" />
-                <testcase name="view_locale" time="27.458" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_template" time="81.973" classname="library.MessagesEdit_Testcases" />
-                <testcase name="mass_advance_workflow" time="25.676" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_name_to_previous_name" time="73.339" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_name" time="74.566" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_brands_to_previous" time="71.039" classname="library.MessagesEdit_Testcases" />
-                <testcase name="archive_message" time="31.565" classname="library.MessagesEdit_Testcases" />
-                <testcase name="preview_locale" time="44.874" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_template_by_Carnival_AE" time="76.675" classname="library.MessagesEdit_Testcases" />
-                <testcase name="update_message_programs_to_previous" time="76.358" classname="library.MessagesEdit_Testcases" />
+            <testcase name="check_quicklook_for_meaasage" time="33.495" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_brands" time="78.155" classname="library.MessagesEdit_Testcases" />
+                <testcase name="cloned_message_add_media" time="88.969" classname="library.MessagesEdit_Testcases" />
+                <testcase name="VerifyBanner" time="58.656" classname="library.MessagesEdit_Testcases" />
+                <testcase name="mass_advance_workflow" time="34.097" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_programs" time="81.382" classname="library.MessagesEdit_Testcases" />
+                <testcase name="CCL_AE_updatebrandtoprevious" time="77.147" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_cloned_message_template" time="80.612" classname="library.MessagesEdit_Testcases" />
+                <testcase name="preview_locale" time="46.199" classname="library.MessagesEdit_Testcases" />
+                <testcase name="cloned_message_archive" time="40.581" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_workflow_to_approved" time="59.476" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_template_to_previous_Carnival_AE" time="75.182" classname="library.MessagesEdit_Testcases" />
+                <testcase name="cloned_message_add_html" time="68.245" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_workflow_to_draft" time="59.851" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_name" time="74.853" classname="library.MessagesEdit_Testcases" />
+                <testcase name="activate_message" time="83.213" classname="library.MessagesEdit_Testcases" />
+                <testcase name="cloned_message_add_hyperlink" time="72.474" classname="library.MessagesEdit_Testcases" />
+                <testcase name="archive_message" time="39.384" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_template" time="85.615" classname="library.MessagesEdit_Testcases" />
+                <testcase name="view_locale" time="35.973" classname="library.MessagesEdit_Testcases" />
+                <testcase name="inactivate_message" time="80.765" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_variable" time="68.003" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_brands_to_previous" time="69.966" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_cloned_message_programs" time="77.964" classname="library.MessagesEdit_Testcases" />
+                <testcase name="cloned_message_delete_media" time="66.548" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_template_to_previous" time="75.709" classname="library.MessagesEdit_Testcases" />
+                <testcase name="ClickPreview" time="52.766" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_name_to_previous_name" time="74.404" classname="library.MessagesEdit_Testcases" />
+                <testcase name="update_message_programs_to_previous" time="77.333" classname="library.MessagesEdit_Testcases" />
+                <testcase name="CCL_AE_updatebrand" time="73.466" classname="library.MessagesEdit_Testcases" />
       
 </testsuite>

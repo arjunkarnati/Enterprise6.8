@@ -112,7 +112,7 @@ public class CommunicationsPage extends PageBase{
 			driver.findElement(By.xpath(library.getProperty("edit_ehi_comm_data"))).click();
 			try {
 				Thread.sleep(3000);
-			} catch (Exception e) {
+			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 			Assert.assertEquals(driver.getTitle(),library.getProperty("comm_edit_page_title"));
@@ -123,7 +123,7 @@ public class CommunicationsPage extends PageBase{
 			driver.findElement(By.xpath(library.getProperty("edit_ehi_comm_data"))).click();
 			try {
 				Thread.sleep(3000);
-			} catch (Exception e) {
+			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 			Assert.assertEquals(driver.getTitle(),library.getProperty("comm_edit_page_title"));

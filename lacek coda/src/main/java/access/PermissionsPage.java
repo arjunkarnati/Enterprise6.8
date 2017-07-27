@@ -119,16 +119,31 @@ public class PermissionsPage extends PageBase{
 		{
 		case"permission":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permissions_permission"))).getText(),expectedresult);
 			break;
 		}
 		case"category":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permissions_category"))).getText(),expectedresult);
 			break;
 		}
 		case"status":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permissions_status"))).getText(),expectedresult);
 			break;
 		}

@@ -1,40 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="30" total="31" passed="1">
+<testng-results skipped="0" failed="1" ignored="36" total="37" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38054" started-at="2017-07-13T19:54:42Z" finished-at="2017-07-13T19:55:20Z">
+  <suite name="Default suite" duration-ms="85542" started-at="2017-07-27T15:32:34Z" finished-at="2017-07-27T15:33:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38054" started-at="2017-07-13T19:54:42Z" finished-at="2017-07-13T19:55:20Z">
-      <class name="library.CommunicationsEdit_Testcases">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="BeforeSuite" is-config="true" duration-ms="112" started-at="2017-07-13T14:54:42Z" finished-at="2017-07-13T14:54:42Z">
+    <test name="Default test" duration-ms="85542" started-at="2017-07-27T15:32:34Z" finished-at="2017-07-27T15:33:59Z">
+      <class name="library.MessagesEdit_Testcases">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:library.MessagesEdit_Testcases@a7e666]" name="BeforeSuite" is-config="true" duration-ms="140" started-at="2017-07-27T10:32:34Z" finished-at="2017-07-27T10:32:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="beforeTest" is-config="true" duration-ms="14157" started-at="2017-07-13T14:54:42Z" finished-at="2017-07-13T14:54:56Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:library.MessagesEdit_Testcases@a7e666]" name="beforeTest" is-config="true" duration-ms="13036" started-at="2017-07-27T10:32:34Z" finished-at="2017-07-27T10:32:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="archive_clone_communication()[pri:15, instance:library.CommunicationsEdit_Testcases@a7e666]" name="archive_clone_communication" duration-ms="21334" started-at="2017-07-13T14:54:56Z" finished-at="2017-07-13T14:55:17Z">
+        <test-method status="FAIL" signature="cloned_message_add_media()[pri:32, instance:library.MessagesEdit_Testcases@a7e666]" name="cloned_message_add_media" duration-ms="69332" started-at="2017-07-27T10:32:47Z" finished-at="2017-07-27T10:33:56Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[element not visible
+  (Session info: chrome=60.0.3112.78)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.12 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir71684_19016}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.78, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: ce85a183d03bce7883e57f5f5c41e245]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=60.0.3112.78)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.12 seconds
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir71684_19016}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.78, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: ce85a183d03bce7883e57f5f5c41e245
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
+	at library.MessagesEditPage.selectwidth_Code(MessagesEditPage.java:553)
+	at library.MessagesEdit_Testcases.cloned_message_add_media(MessagesEdit_Testcases.java:488)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- archive_clone_communication -->
-        <test-method status="PASS" signature="AfterLogin(org.testng.ITestResult)[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="AfterLogin" is-config="true" duration-ms="2317" started-at="2017-07-13T14:55:17Z" finished-at="2017-07-13T14:55:20Z">
+        </test-method> <!-- cloned_message_add_media -->
+        <test-method status="PASS" signature="AfterLogin(org.testng.ITestResult)[pri:0, instance:library.MessagesEdit_Testcases@a7e666]" name="AfterLogin" is-config="true" duration-ms="2883" started-at="2017-07-27T10:33:56Z" finished-at="2017-07-27T10:33:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=archive_clone_communication status=SUCCESS method=CommunicationsEdit_Testcases.archive_clone_communication()[pri:15, instance:library.CommunicationsEdit_Testcases@a7e666] output={null}]]]>
+                <![CDATA[[TestResult name=cloned_message_add_media status=FAILURE method=MessagesEdit_Testcases.cloned_message_add_media()[pri:32, instance:library.MessagesEdit_Testcases@a7e666] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:library.CommunicationsEdit_Testcases@a7e666]" name="tearDown" is-config="true" duration-ms="8428" started-at="2017-07-13T14:55:20Z" finished-at="2017-07-13T14:55:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:library.MessagesEdit_Testcases@a7e666]" name="tearDown" is-config="true" duration-ms="3479" started-at="2017-07-27T10:34:00Z" finished-at="2017-07-27T10:34:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- library.CommunicationsEdit_Testcases -->
+      </class> <!-- library.MessagesEdit_Testcases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1069.120">
+           time="1162.029">
   <properties />
   
   
-            <testcase name="click_cancel_in_permission_action_edit_page" time="37.239" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="restore_permission_action" time="89.065" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_controller_action_name_to_previous" time="86.758" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="return_to_permission_actions_main_page_from_edit_page" time="33.857" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_permission_to_previous" time="80.463" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_controller_action_name" time="84.842" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="empty_controller_action_field_in_permission_actions_edit_page" time="51.724" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="empty_permission_field_in_permission_actions_edit_page" time="54.503" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="inactivate_permission_actions" time="83.283" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_name_to_previous" time="84.762" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="activate_permission_actions" time="84.067" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_name" time="84.757" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="empty_name_field_in_permission_actions_edit_page" time="52.823" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="archive_permission_action" time="80.124" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_permission" time="80.853" classname="access.PermissionActionsEdit_TestCases" />
+            <testcase name="archive_permission_action" time="87.101" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="activate_permission_actions" time="95.081" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="click_cancel_in_permission_action_edit_page" time="38.050" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="empty_permission_field_in_permission_actions_edit_page" time="55.628" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_controller_action_name" time="91.649" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="empty_name_field_in_permission_actions_edit_page" time="53.079" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="inactivate_permission_actions" time="92.751" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_controller_action_name_to_previous" time="92.516" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="restore_permission_action" time="99.562" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="return_to_permission_actions_main_page_from_edit_page" time="34.844" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="empty_controller_action_field_in_permission_actions_edit_page" time="56.131" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_name" time="93.110" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_permission" time="89.474" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_name_to_previous" time="93.732" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_permission_to_previous" time="89.321" classname="access.PermissionActionsEdit_TestCases" />
       
 </testsuite>

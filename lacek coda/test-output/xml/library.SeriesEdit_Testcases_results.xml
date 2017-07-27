@@ -1,31 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="SERIES TESTCASES"
-           tests="19"
-           failures="0"
+           tests="16"
+           failures="1"
            errors="0"
            skipped="0"
-           time="635.974">
+           time="545.714">
   <properties />
+            <testcase name="update_series_clientname_to_previous_client" time="40.106" classname="library.SeriesEdit_Testcases">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;btnSubmit&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir5300_21044}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 62736dcb4ab429904d65f4fd1b2efa28
+*** Element info: {Using=xpath, value=btnSubmit}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"btnSubmit"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir5300_21044}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 62736dcb4ab429904d65f4fd1b2efa28
+*** Element info: {Using=xpath, value=btnSubmit}
+  sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+  library.SeriesEditPage.updateClientNameTo(SeriesEditPage.java:24)
+  library.SeriesEdit_Testcases.update_series_clientname_to_previous_client(SeriesEdit_Testcases.java:55)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="update_series_programs" time="36.565" classname="library.SeriesEdit_Testcases" />
-                <testcase name="activate_series" time="34.828" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_programs_to_previous" time="37.509" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_client" time="35.382" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_workflow_to_approved" time="29.915" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_brands_to_previous" time="37.197" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_name_to_previous_name" time="35.667" classname="library.SeriesEdit_Testcases" />
-                <testcase name="archive_series" time="21.195" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_tracks_to_previous" time="40.683" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_workflow_to_draft" time="28.781" classname="library.SeriesEdit_Testcases" />
-                <testcase name="restore_series" time="40.630" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_name1" time="13.505" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_name" time="58.196" classname="library.SeriesEdit_Testcases" />
-                <testcase name="inactivate_series" time="34.812" classname="library.SeriesEdit_Testcases" />
-                <testcase name="Series_column_search" time="13.884" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_clientname_to_previous_client" time="46.283" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_tracks" time="36.130" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_brands" time="39.246" classname="library.SeriesEdit_Testcases" />
-                <testcase name="update_series_name2" time="15.566" classname="library.SeriesEdit_Testcases" />
+            <testcase name="restore_series" time="29.521" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_programs" time="37.124" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_name" time="35.659" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_tracks_to_previous" time="38.641" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_workflow_to_approved" time="28.694" classname="library.SeriesEdit_Testcases" />
+                <testcase name="activate_series" time="34.973" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_tracks" time="37.236" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_workflow_to_draft" time="29.251" classname="library.SeriesEdit_Testcases" />
+                <testcase name="inactivate_series" time="35.460" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_brands" time="38.304" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_programs_to_previous" time="36.677" classname="library.SeriesEdit_Testcases" />
+                <testcase name="archive_series" time="19.690" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_client" time="30.469" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_name_to_previous_name" time="36.209" classname="library.SeriesEdit_Testcases" />
+                <testcase name="update_series_brands_to_previous" time="37.700" classname="library.SeriesEdit_Testcases" />
       
 </testsuite>

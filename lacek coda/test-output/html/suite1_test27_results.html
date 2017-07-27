@@ -12,7 +12,7 @@
 <body>
 <h1>PERMISSION GROUPS TESTCASES</h1>
 <p>
-  Test duration: 1099.483s
+  Test duration: 1246.299s
 </p>
 
 
@@ -28,23 +28,35 @@
                   create_a_new_permission_groups
       </td>
   <td class="duration">
-    69.628s
+    86.705s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [selenium033] but found [edit_permission_group_test_01]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document<br/>
+&nbsp; (Session info: chrome=59.0.3071.115)<br/>
+&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 39 milliseconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir5772_32296}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
+Session ID: 36bb879e2eee02b2768884bec29898b2</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:94)<br />
-              org.testng.Assert.failNotEquals(Assert.java:513)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
-              org.testng.Assert.assertEquals(Assert.java:116)<br />
-              org.testng.Assert.assertEquals(Assert.java:190)<br />
-              org.testng.Assert.assertEquals(Assert.java:200)<br />
-              access.PermissionGroupsPage.validateUpdates(PermissionGroupsPage.java:100)<br />
-              access.PermissionGroups_TestCases.create_a_new_permission_groups(PermissionGroups_TestCases.java:22)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)<br />
+              org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:179)<br />
+              access.PermissionGroupsPage.validateUpdates(PermissionGroupsPage.java:139)<br />
+              access.PermissionGroups_TestCases.create_a_new_permission_groups(PermissionGroups_TestCases.java:23)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -82,7 +94,7 @@
                   activate_permission_groups
       </td>
   <td class="duration">
-    54.754s
+    67.975s
   </td>
   <td class="result">
         
@@ -96,7 +108,7 @@
                   archive_permission_groups
       </td>
   <td class="duration">
-    52.531s
+    60.146s
   </td>
   <td class="result">
         
@@ -110,7 +122,7 @@
                   click_cancel_in_permission_groups_edit_page
       </td>
   <td class="duration">
-    22.567s
+    23.205s
   </td>
   <td class="result">
         
@@ -124,7 +136,7 @@
                   empty_a_required_field_and_click_save_in_permission_edit_page
       </td>
   <td class="duration">
-    25.577s
+    24.954s
   </td>
   <td class="result">
         
@@ -138,7 +150,7 @@
                   inactivate_permission_groups
       </td>
   <td class="duration">
-    55.430s
+    68.570s
   </td>
   <td class="result">
         
@@ -152,7 +164,7 @@
                   restore_permission_groups
       </td>
   <td class="duration">
-    56.591s
+    66.288s
   </td>
   <td class="result">
         
@@ -166,7 +178,7 @@
                   return_to_permission_groups_main_page
       </td>
   <td class="duration">
-    22.396s
+    26.564s
   </td>
   <td class="result">
         
@@ -180,7 +192,7 @@
                   update_permission_groups_business_groups
       </td>
   <td class="duration">
-    52.931s
+    61.761s
   </td>
   <td class="result">
         
@@ -194,7 +206,7 @@
                   update_permission_groups_business_rule_to_previous
       </td>
   <td class="duration">
-    51.576s
+    61.195s
   </td>
   <td class="result">
         
@@ -208,7 +220,7 @@
                   update_permission_groups_name
       </td>
   <td class="duration">
-    54.949s
+    70.545s
   </td>
   <td class="result">
         
@@ -222,7 +234,7 @@
                   update_permission_groups_name_to_previous
       </td>
   <td class="duration">
-    57.281s
+    67.136s
   </td>
   <td class="result">
         
@@ -236,7 +248,7 @@
                   update_permission_groups_parent_permission
       </td>
   <td class="duration">
-    52.300s
+    61.420s
   </td>
   <td class="result">
         
@@ -250,7 +262,7 @@
                   update_permission_groups_parent_permission_to_previous
       </td>
   <td class="duration">
-    53.245s
+    61.922s
   </td>
   <td class="result">
         
@@ -264,7 +276,7 @@
                   update_permission_groups_permissions
       </td>
   <td class="duration">
-    67.014s
+    74.726s
   </td>
   <td class="result">
         
@@ -278,7 +290,7 @@
                   update_permission_groups_permissions_to_previous
       </td>
   <td class="duration">
-    61.845s
+    70.098s
   </td>
   <td class="result">
         
@@ -296,7 +308,7 @@
                   verify_permission_archive_page
       </td>
   <td class="duration">
-    14.495s
+    14.258s
   </td>
   <td class="result">
         
@@ -314,7 +326,7 @@
                   click_cancel_in_permission_groups_add_page
       </td>
   <td class="duration">
-    22.859s
+    22.460s
   </td>
   <td class="result">
         
@@ -328,7 +340,7 @@
                   create_a_new_permission_groups_without_name
       </td>
   <td class="duration">
-    42.372s
+    44.535s
   </td>
   <td class="result">
         
@@ -342,7 +354,7 @@
                   delete_permission_groups_in_database
       </td>
   <td class="duration">
-    2.141s
+    2.259s
   </td>
   <td class="result">
         
@@ -356,7 +368,7 @@
                   returm_to_permission_groups_main_page
       </td>
   <td class="duration">
-    23.026s
+    21.780s
   </td>
   <td class="result">
         

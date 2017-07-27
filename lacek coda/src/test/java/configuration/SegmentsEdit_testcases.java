@@ -119,7 +119,7 @@ public class SegmentsEdit_testcases extends TestBase{
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
 		.editSegment("edit_segments_test_01")
-		.updateClientNameTo("DuPont")
+		//.updateClientNameTo("DuPont")
 		//.updateSegmentGroupsTo("test") need to check for data
 //		.clickSubmitButton()
 //		.validateUpdates("edit_segments_test_01","client","DuPont")
@@ -192,8 +192,22 @@ public class SegmentsEdit_testcases extends TestBase{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickSegments()
-		//.restoreSegment("edit_segments_test_01")
+		.restoreSegment("edit_segments_test_01")
 		.getTitle()
 		.logout();
 	}
+	@Test(priority=3)
+	public void validate_restore_file()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickSegments()
+		.editSegment("edit_segments_test_01")
+		.updateSegementNameTo("edit_segments_test_01")
+		.clickSubmitButton()
+		.validateUpdates("edit_segments_test_01","name","edit_segments_test_01")
+		.getTitle()
+		.logout();
+	}
+	
 }

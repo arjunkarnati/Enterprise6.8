@@ -61,4 +61,12 @@ public class MessagesPublishPage extends PageBase {
 		Assert.assertTrue(driver.getTitle().equalsIgnoreCase(library.getProperty("mess_page_title")));
 		return new MessagesPage(driver);
 	}
+	public  MessagesPage select_all_messages() {
+		// TODO Auto-generated method stub
+		
+		elementLocators();
+		driver.findElement(By.xpath(library.getProperty("mes_slelct_option"))).click();
+		driver.findElement(By.xpath(library.getProperty("mes_check_all_option"))).click();
+		return new MessagesPage(driver);
+	}
 }

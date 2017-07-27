@@ -4,35 +4,34 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="943.834">
+           time="958.118">
   <properties />
-            <testcase name="select_button_cancel_in_user_edit_page" time="30.454" classname="access.UsersEdit_testcases">
+            <testcase name="select_button_cancel_in_user_edit_page" time="30.725" classname="access.UsersEdit_testcases">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/user/edit/62&apos;)]&quot;}
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/user/edit/10000009&apos;)]&quot;}
   (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.04 seconds
+Command duration or timeout: 10.06 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir43728_8275}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 107a167757329664270bef7cfd38e773
-*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/user/edit/62&apos;)]}"
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir30836_18159}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 32d36fd0ded25570e048a484daeb3673
+*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/user/edit/10000009&apos;)]}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, '/user/edit/62')]"}
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(@href, '/user/edit/10000009')]"}
   (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.04 seconds
+Command duration or timeout: 10.06 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir43728_8275}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 107a167757329664270bef7cfd38e773
-*** Element info: {Using=xpath, value=//a[contains(@href, '/user/edit/62')]}
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir30836_18159}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 32d36fd0ded25570e048a484daeb3673
+*** Element info: {Using=xpath, value=//a[contains(@href, '/user/edit/10000009')]}
+  sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
   java.lang.reflect.Constructor.newInstance(Constructor.java:423)
   org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
@@ -70,29 +69,29 @@ Session ID: 107a167757329664270bef7cfd38e773
           </testcase>
   
   
-            <testcase name="update_admin_role" time="43.157" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_phone_number_to_previous" time="38.627" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_clients_to_previous" time="40.789" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_role_to_previous" time="26.644" classname="access.UsersEdit_testcases" />
-                <testcase name="activate_user" time="44.378" classname="access.UsersEdit_testcases" />
-                <testcase name="inactivate_user" time="43.272" classname="access.UsersEdit_testcases" />
-                <testcase name="archive_user" time="20.797" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_email_address_to_previous" time="30.499" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_password" time="30.502" classname="access.UsersEdit_testcases" />
-                <testcase name="user_edit_otheruserprevious" time="43.607" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_fisrt_name" time="43.677" classname="access.UsersEdit_testcases" />
-                <testcase name="restore_user" time="33.142" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_phone_number" time="39.371" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_role" time="27.129" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_email_address" time="29.367" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_username_to_previous" time="43.526" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_first_name_to_previous" time="43.975" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_username" time="44.506" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_clients" time="40.926" classname="access.UsersEdit_testcases" />
-                <testcase name="update_admin_role_to_previous" time="43.108" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_password_to_previous" time="30.099" classname="access.UsersEdit_testcases" />
-                <testcase name="user_edit_otheruser" time="44.333" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_last_name_to_previous" time="44.474" classname="access.UsersEdit_testcases" />
-                <testcase name="update_user_last_name" time="43.475" classname="access.UsersEdit_testcases" />
+            <testcase name="update_user_email_address" time="31.086" classname="access.UsersEdit_testcases" />
+                <testcase name="user_edit_otheruserprevious" time="43.558" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_phone_number_to_previous" time="39.807" classname="access.UsersEdit_testcases" />
+                <testcase name="archive_user" time="17.732" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_last_name_to_previous" time="44.942" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_password" time="29.370" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_username_to_previous" time="45.756" classname="access.UsersEdit_testcases" />
+                <testcase name="update_admin_role" time="43.616" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_phone_number" time="40.168" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_clients_to_previous" time="41.573" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_fisrt_name" time="46.521" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_password_to_previous" time="29.684" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_role_to_previous" time="26.903" classname="access.UsersEdit_testcases" />
+                <testcase name="update_admin_role_to_previous" time="49.779" classname="access.UsersEdit_testcases" />
+                <testcase name="user_edit_otheruser" time="44.638" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_first_name_to_previous" time="44.035" classname="access.UsersEdit_testcases" />
+                <testcase name="activate_user" time="44.711" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_role" time="26.633" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_clients" time="40.486" classname="access.UsersEdit_testcases" />
+                <testcase name="restore_user" time="32.264" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_last_name" time="45.460" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_email_address_to_previous" time="30.712" classname="access.UsersEdit_testcases" />
+                <testcase name="inactivate_user" time="44.432" classname="access.UsersEdit_testcases" />
+                <testcase name="update_user_username" time="43.527" classname="access.UsersEdit_testcases" />
       
 </testsuite>

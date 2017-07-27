@@ -384,14 +384,22 @@ public class MediaGalleryPage extends PageBase{
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			driver.findElement(By.xpath(assets.getProperty("med_gallery_workflow_edit_manage_workflow"))).sendKeys("D");
+			driver.findElement(By.xpath(assets.getProperty("med_gallery_select_workflow"))).click();
+			
+			driver.findElement(By.xpath(assets.getProperty("med_gallery_manage_workflow_Draft"))).sendKeys("D");
 			driver.findElement(By.xpath(assets.getProperty("med_gallery_edit_submit"))).click();
 			Assert.assertEquals(driver.getTitle(),assets.getProperty("med_gallery_page_title"));
 			break;
 		}
 		case "APPROVED":
 		{
-			driver.findElement(By.id(assets.getProperty("med_gallery_workflow_edit_manage_workflow"))).sendKeys("A");
+			driver.findElement(By.xpath(assets.getProperty("med_gallery_select_workflow"))).click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			driver.findElement(By.id(assets.getProperty("med_gallery_manage_workflow_Approved"))).sendKeys("A");
 			driver.findElement(By.id(assets.getProperty("med_gallery_edit_submit"))).click();
 			Assert.assertEquals(driver.getTitle(),assets.getProperty("med_gallery_page_title"));
 			break;

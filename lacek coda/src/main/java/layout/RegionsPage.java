@@ -143,11 +143,21 @@ public class RegionsPage extends PageBase{
 		{
 		case"name":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(layout.getProperty("region_name"))).getText(),expectedresult);
 			break;
 		}		
 		case"status":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(layout.getProperty("region_status"))).getText(),expectedresult);
 			break;
 		}

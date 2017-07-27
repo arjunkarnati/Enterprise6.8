@@ -138,7 +138,7 @@ public class Communications_TestCases extends TestBase{
 		.addProgram("VIFP")
 		.addTrack("TrackA1")
 		.addCommunicationName("edit_comm_test_01")
-		.addDescription("for automation")
+		//.addDescription("for automation")
 		.addSegmentGroups("casino")
 		.addTemplate("Booked Guest")
 		.addConnector("Exact Target (Carnival NA) | Draft")
@@ -151,7 +151,7 @@ public class Communications_TestCases extends TestBase{
 		.getTitle()
 		.logout();
 }
-    @Test(priority=30,enabled=true)
+    @Test(priority=31,enabled=true)
 	public void create_publish_communication()
 	{
 		login.loginAs("test.data","Monday#223")
@@ -163,17 +163,40 @@ public class Communications_TestCases extends TestBase{
 		.addProgram("VIFP")
 		.addTrack("TrackA1")
 		.addCommunicationName("publish_comm_test_01")
-		.addDescription("Hit hard to publish")
+		//.addDescription("Hit hard to publish")
 		.addSegmentGroups("casino")
 		.addTemplate("Booked Guest")
 		.addConnector("Exact Target (Carnival NA) | Draft")
 		.clickSubmit()
 		.validateUpdates("publish_comm_test_01","client","Carnival Corporation & PLC")
-		.validateUpdates("edit_comm_test_01","name","publish_comm_test_01")
+		.validateUpdates("publish_comm_test_01","name","publish_comm_test_01")
 		.validateUpdates("publish_comm_test_01","template","Booked Guest")
 		.getTitle()
 		.logout();
-}*/
-
+	}
+    @Test(priority=32,enabled=true)
+	public void create_EHI_test_communication()
+	{
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
+		.clickCommunicationsLink()
+		.clickAddCommunicationsButton()
+		.addClientName("Enterprise Holdings Inc")
+		.addBrand("CarSales")
+		.addProgram("Alamo Rent A Car")
+		.addCommunicationName("edit_ehi_comm_test_01")
+		.addDescription("for automation")
+		.addSegmentGroups("Subject Line Testting")
+		.addTemplate("Alamo_Loyalty")
+		.addConnector("EHI EC Content Exact Target - TEST")
+		.clickSubmit()
+		.validateUpdates("edit_ehi_comm_test_01","client","Enterprise Holdings Inc")
+		.validateUpdates("edit_ehi_comm_test_01","brand","1")
+		.validateUpdates("edit_ehi_comm_test_01","program","1")
+		.validateUpdates("edit_ehi_comm_test_01","name","edit_ehi_comm_test_01")
+		.getTitle()
+		.logout();
+}
+*/
 
 }

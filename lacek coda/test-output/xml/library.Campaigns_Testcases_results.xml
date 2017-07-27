@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="CAMPAIGN TESTCASES"
-           tests="10"
-           failures="2"
+           tests="8"
+           failures="3"
            errors="0"
-           skipped="6"
-           time="103.265">
+           skipped="2"
+           time="145.216">
   <properties />
-            <testcase name="beforeTest" time="0.000" classname="library.Campaigns_Testcases">
-                <failure type="org.openqa.selenium.remote.SessionNotFoundException"
-                  message="no such session
+            <testcase name="create_a_new_campaign_without_campaignname" time="31.830" classname="library.Campaigns_Testcases">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;s2id_autogen81&quot;}
+  (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir78072_12061}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 4f7c9a0f37b5ee069bc0d88d9e6e7fec"
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir28656_17959}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: edcbf2b4b489a745194a6d0f46fa7f1a
+*** Element info: {Using=id, value=s2id_autogen81}"
               >
-<![CDATA[org.openqa.selenium.remote.SessionNotFoundException: no such session
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"s2id_autogen81"}
+  (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir78072_12061}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 4f7c9a0f37b5ee069bc0d88d9e6e7fec
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir28656_17959}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: edcbf2b4b489a745194a6d0f46fa7f1a
+*** Element info: {Using=id, value=s2id_autogen81}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -32,15 +38,18 @@ Session ID: 4f7c9a0f37b5ee069bc0d88d9e6e7fec
   org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
   org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-  Utility.TestBase.beforeTest(TestBase.java:111)
-  sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+  org.openqa.selenium.By$ById.findElement(By.java:218)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+  library.CampaignAddPage.addBrand(CampaignAddPage.java:22)
+  library.Campaigns_Testcases.create_a_new_campaign_without_campaignname(Campaigns_Testcases.java:59)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
   java.lang.reflect.Method.invoke(Method.java:498)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
   org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
   org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -59,25 +68,31 @@ Session ID: 4f7c9a0f37b5ee069bc0d88d9e6e7fec
       </failure>
 
           </testcase>
-            <testcase name="AfterLogin" time="0.000" classname="library.Campaigns_Testcases">
-                <failure type="org.openqa.selenium.remote.SessionNotFoundException"
-                  message="no such session
+            <testcase name="create_a_new_campaign_without_series" time="30.851" classname="library.Campaigns_Testcases">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;s2id_autogen81&quot;}
+  (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir78072_12061}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 4f7c9a0f37b5ee069bc0d88d9e6e7fec"
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir59092_13687}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 945bc24cabb576263fab097ee113174a
+*** Element info: {Using=id, value=s2id_autogen81}"
               >
-<![CDATA[org.openqa.selenium.remote.SessionNotFoundException: no such session
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"s2id_autogen81"}
+  (Session info: chrome=59.0.3071.115)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5 milliseconds
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir78072_12061}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 4f7c9a0f37b5ee069bc0d88d9e6e7fec
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir59092_13687}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 945bc24cabb576263fab097ee113174a
+*** Element info: {Using=id, value=s2id_autogen81}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -85,16 +100,80 @@ Session ID: 4f7c9a0f37b5ee069bc0d88d9e6e7fec
   org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
   org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
-  org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
-  Utility.TestBase.AfterLogin(TestBase.java:130)
-  sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+  org.openqa.selenium.By$ById.findElement(By.java:218)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+  library.CampaignAddPage.addBrand(CampaignAddPage.java:22)
+  library.Campaigns_Testcases.create_a_new_campaign_without_series(Campaigns_Testcases.java:111)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
   java.lang.reflect.Method.invoke(Method.java:498)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="create_a_new_campaign" time="32.114" classname="library.Campaigns_Testcases">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;s2id_autogen81&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir25484_30358}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: f75c6e9c12105a5eb299c08249e14ae3
+*** Element info: {Using=id, value=s2id_autogen81}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"s2id_autogen81"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir25484_30358}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: f75c6e9c12105a5eb299c08249e14ae3
+*** Element info: {Using=id, value=s2id_autogen81}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+  org.openqa.selenium.By$ById.findElement(By.java:218)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+  library.CampaignAddPage.addBrand(CampaignAddPage.java:22)
+  library.Campaigns_Testcases.create_a_new_campaign(Campaigns_Testcases.java:19)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
   org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
   org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -114,26 +193,15 @@ Session ID: 4f7c9a0f37b5ee069bc0d88d9e6e7fec
 
           </testcase>
   
-            <testcase name="delete_campaign_from_db" time="0.0" classname="library.Campaigns_Testcases">
+            <testcase name="create_a_new_campaign_without_program" time="0.0" classname="library.Campaigns_Testcases">
           <skipped />
     </testcase>
             <testcase name="create_a_new_campaign_without_brand" time="0.0" classname="library.Campaigns_Testcases">
           <skipped />
     </testcase>
-            <testcase name="create_a_new_campaign_without_campaignname" time="0.0" classname="library.Campaigns_Testcases">
-          <skipped />
-    </testcase>
-            <testcase name="click_cancel_button_in_campaign_add_page" time="0.0" classname="library.Campaigns_Testcases">
-          <skipped />
-    </testcase>
-            <testcase name="create_a_new_campaign_without_series" time="0.0" classname="library.Campaigns_Testcases">
-          <skipped />
-    </testcase>
-            <testcase name="create_a_new_campaign_without_program" time="0.0" classname="library.Campaigns_Testcases">
-          <skipped />
-    </testcase>
   
-            <testcase name="create_a_new_campaign_without_clientname" time="24.444" classname="library.Campaigns_Testcases" />
-                <testcase name="create_a_new_campaign" time="78.818" classname="library.Campaigns_Testcases" />
+            <testcase name="click_cancel_button_in_campaign_add_page" time="21.223" classname="library.Campaigns_Testcases" />
+                <testcase name="create_a_new_campaign_without_clientname" time="26.005" classname="library.Campaigns_Testcases" />
+                <testcase name="delete_campaign_from_db" time="3.193" classname="library.Campaigns_Testcases" />
       
 </testsuite>

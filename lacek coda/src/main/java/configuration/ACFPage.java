@@ -157,6 +157,11 @@ public class ACFPage extends PageBase {
 		{
 		case"client":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_client"))).getText(),expectedresult);
 			break;
 		}
@@ -165,6 +170,11 @@ public class ACFPage extends PageBase {
 			//counting the number of entry in the field
 			int iCount = driver.findElements(By.xpath(configuration.getProperty("acf_brand"))).size();
 			//getting the entry value
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			List<WebElement> iname = driver.findElements(By.xpath(configuration.getProperty("acf_brand")));
 			java.util.Iterator<WebElement> name = iname.iterator();
 			while(name.hasNext()) 
@@ -182,6 +192,11 @@ public class ACFPage extends PageBase {
 			//counting the number of entry in the field
 			int iCount = driver.findElements(By.xpath(configuration.getProperty("acf_program"))).size();
 			//getting the entry value
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			List<WebElement> iname = driver.findElements(By.xpath(configuration.getProperty("acf_program")));
 			java.util.Iterator<WebElement> name = iname.iterator();
 			while(name.hasNext()) 
@@ -198,6 +213,11 @@ public class ACFPage extends PageBase {
 			//counting the number of entry in the field
 			int iCount = driver.findElements(By.xpath(configuration.getProperty("acf_object"))).size();
 			//getting the entry value
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			List<WebElement> iname = driver.findElements(By.xpath(configuration.getProperty("acf_object")));
 			java.util.Iterator<WebElement> name = iname.iterator();
 			while(name.hasNext()) 
@@ -211,21 +231,41 @@ public class ACFPage extends PageBase {
 		}
 		case"name":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_name"))).getText(),expectedresult);
 			break;
 		}
 		case"field":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_field"))).getText(),expectedresult);
 			break;
 		}
 		case"in use":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_in_use"))).getText(),expectedresult);
 			break;
 		}
 		case"status":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_status"))).getText(),expectedresult);
 			break;
 		}
@@ -233,7 +273,7 @@ public class ACFPage extends PageBase {
 		{
 			driver.findElement(By.xpath(configuration.getProperty("acf_id"))).click();
 			try {
-				Thread.sleep(4000);
+				Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -253,26 +293,51 @@ public class ACFPage extends PageBase {
 		}
 		case"type":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_type"))).getText(),expectedresult);
 			break;
 		}
 		case"data type":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_data_type"))).getText(),expectedresult);
 			break;
 		}
 		case"default value":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_default_value"))).getText(),expectedresult);
 			break;
 		}
 		case"instructions":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_instruction"))).getText(),expectedresult);
 			break;
 		}
 		case"required":
 		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(configuration.getProperty("acf_required"))).getText(),expectedresult);
 			break;
 		}

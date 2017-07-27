@@ -129,6 +129,12 @@ public class ConnectorsPage extends PageBase{
 		driver.findElement(By.xpath("//input[@type='search']")).clear();
 		sleep();
 		driver.findElement(By.xpath("//input[@type='search']")).sendKeys(connectorname);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 
 		switch(connectorname)
 		{
@@ -392,8 +398,8 @@ public class ConnectorsPage extends PageBase{
 		public ConnectorsPage saveConnector() {
 			// TODO Auto-generated method stub
 			try{
-			driver.findElement(By.xpath(".//*[@id='text_105']/div/div[1]/input")).clear();
-			driver.findElement(By.xpath(".//*[@id='text_105']/div/div[1]/input")).sendKeys("0");
+			//driver.findElement(By.xpath(".//*[@id='text_105']/div/div[1]/input")).clear();
+			//driver.findElement(By.xpath(".//*[@id='text_105']/div/div[1]/input")).sendKeys("0");
 			driver.findElement(By.xpath(".//*[@id='btnSubmit']")).click();
 			}catch(Exception e){
 				e.printStackTrace();

@@ -160,31 +160,60 @@ public class TemplatesPage extends PageBase{
 		}
 		case"name":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("template_name"))).getText(),expectedresult);
 			break;
 		}
 		case"code":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("template_code"))).getText(),expectedresult);
 			break;
 		}
 		case"type":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("template_type"))).getText(),expectedresult);
 			break;
 		}
 		case"channel":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("template_channel"))).getText(),expectedresult);
 			break;
 		}
 		case"status":
-		{
+		{try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("template_status"))).getText(),expectedresult);
 			break;
 		}
 		case"workflow":
 		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("template_workflow"))).getText(),expectedresult);
 			break;
 		}

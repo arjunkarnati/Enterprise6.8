@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="library.CommunicationsEdit_Testcases">
+      <class name="library.MessagesEdit_Testcases">
         <methods>
-          <include name="archive_clone_communication"/>
           <include name="BeforeSuite"/>
           <include name="tearDown"/>
+          <include name="cloned_message_add_media"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- library.CommunicationsEdit_Testcases -->
+      </class> <!-- library.MessagesEdit_Testcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

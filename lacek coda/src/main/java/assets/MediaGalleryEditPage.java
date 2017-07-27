@@ -103,21 +103,21 @@ public class MediaGalleryEditPage extends PageBase {
 		case "DRAFT":
 		{
 			driver.findElement(By.id(assets.getProperty("med_gallery_edit_workflow"))).sendKeys("D");
-			driver.findElement(By.id(assets.getProperty("med_gallery_edit_submit"))).click();
+			driver.findElement(By.xpath(assets.getProperty("med_gallery_edit_submit"))).click();
 			Assert.assertEquals(driver.getTitle(),assets.getProperty("med_gallery_page_title"));
 			break;
 		}
 		case "APPROVED":
 		{
 			driver.findElement(By.id(assets.getProperty("med_gallery_edit_workflow"))).sendKeys("A");
-			driver.findElement(By.id(assets.getProperty("med_gallery_edit_submit"))).click();
+			driver.findElement(By.xpath(assets.getProperty("med_gallery_edit_submit"))).click();
 			Assert.assertEquals(driver.getTitle(),assets.getProperty("med_gallery_page_title"));
 			break;
 		}
 		case "Qatest1":
 		{
 			driver.findElement(By.id(assets.getProperty("med_gallery_edit_workflow"))).sendKeys("Q");
-			driver.findElement(By.id(assets.getProperty("med_gallery_edit_submit"))).click();
+			driver.findElement(By.xpath(assets.getProperty("med_gallery_edit_submit"))).click();
 			Assert.assertEquals(driver.getTitle(),assets.getProperty("med_gallery_page_title"));
 			break;
 		}

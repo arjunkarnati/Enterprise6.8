@@ -4,16 +4,16 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="127.834">
+           time="129.997">
   <properties />
   
   
-            <testcase name="enable_automatic_publishing" time="16.977" classname="login.System_configuration_testcases" />
-                <testcase name="enable_live_and_automatic_publishing_" time="20.571" classname="login.System_configuration_testcases" />
-                <testcase name="disable_live_and_automatic_publishing_" time="20.522" classname="login.System_configuration_testcases" />
-                <testcase name="click_cancel_in_sys_configuration_page" time="15.478" classname="login.System_configuration_testcases" />
-                <testcase name="enable_live_publishing" time="18.532" classname="login.System_configuration_testcases" />
-                <testcase name="disable_live_publishing" time="18.822" classname="login.System_configuration_testcases" />
-                <testcase name="disable_automatic_publishing" time="16.932" classname="login.System_configuration_testcases" />
+            <testcase name="enable_live_publishing" time="17.407" classname="login.System_configuration_testcases" />
+                <testcase name="disable_automatic_publishing" time="18.218" classname="login.System_configuration_testcases" />
+                <testcase name="enable_automatic_publishing" time="17.747" classname="login.System_configuration_testcases" />
+                <testcase name="click_cancel_in_sys_configuration_page" time="16.262" classname="login.System_configuration_testcases" />
+                <testcase name="disable_live_publishing" time="18.067" classname="login.System_configuration_testcases" />
+                <testcase name="disable_live_and_automatic_publishing_" time="20.343" classname="login.System_configuration_testcases" />
+                <testcase name="enable_live_and_automatic_publishing_" time="21.953" classname="login.System_configuration_testcases" />
       
 </testsuite>

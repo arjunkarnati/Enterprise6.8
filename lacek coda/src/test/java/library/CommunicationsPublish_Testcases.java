@@ -16,7 +16,7 @@ public class CommunicationsPublish_Testcases extends TestBase{
 		.checkAll()
 		.deletelocales()
 		.addlocales("en-us")
-		.clickPublishButton()
+		.clickPublishButton()	
 		.getTitle()
 		.logout();	
 	}

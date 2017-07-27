@@ -39,9 +39,9 @@ public class SeriesEdit_Testcases extends TestBase{
 		.isSuccessfulLogin("automation admin")
 		.clickSertiesLink()		
 		.editSeries("edit_series_test_01")
-		.updateClientNameTo("DuPont")			
+		//.updateClientNameTo("DuPont")			
 		.clickSubmitButton()
-		.validateUpdates("edit_series_test_01","client","DuPont")
+		//.validateUpdates("edit_series_test_01","client","DuPont")
 		.getTitle()
 		.logout();
 	}
@@ -223,105 +223,6 @@ public class SeriesEdit_Testcases extends TestBase{
 		.retoreSeries("edit_series_test_01")
 		.getTitle()
 		.logout();
-	}
-	@Test(priority=16)
-	public void update_series_name1()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	
-	@Test(priority=17)
-	public void update_series_name2()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	/*@Test(priority=18)
-	public void update_series_name3()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=19)
-	public void update_series_name4()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=20)
-	public void update_series_name5()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=21)
-	public void update_series_name6()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=22)
-	public void update_series_name7()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=23)
-	public void update_series_name8()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=24)
-	public void update_series_name9()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=25)
-	public void update_series_name10()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickSertiesLink()
-		.getTitle()
-		.logout();
-	}*/
-	@Test(priority=26)
-	public void Series_column_search()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickonprofilelink()
-		;
 	}
 	
 	

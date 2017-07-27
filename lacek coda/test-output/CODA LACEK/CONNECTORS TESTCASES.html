@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CONNECTORS TESTCASES</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 11 04:14:48 CDT 2017</td>
+<td>Started on:</td><td>Tue Jul 25 23:26:45 CDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>747 seconds (747833 ms)</td>
+<tr><td>Total time:</td><td>306 seconds (306577 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,268 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='settings.ConnectorsEdit_testcases.acativate_connector()'><b>acativate_connector</b><br>Test class: settings.ConnectorsEdit_testcases</td>
+<td><div><pre>java.security.InvalidParameterException: connector edit_conn_test_01 cannot be edited, ref automation doc connector page.
+	at settings.ConnectorsPage.editConnector(ConnectorsPage.java:169)
+	at settings.ConnectorsEdit_testcases.acativate_connector(ConnectorsEdit_testcases.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1543504915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1543504915'><pre>java.security.InvalidParameterException: connector edit_conn_test_01 cannot be edited, ref automation doc connector page.
+	at settings.ConnectorsPage.editConnector(ConnectorsPage.java:169)
+	at settings.ConnectorsEdit_testcases.acativate_connector(ConnectorsEdit_testcases.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>18</td>
+<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
+<tr>
+<td title='settings.Connectors_TestCases.add_connector_validate()'><b>add_connector_validate</b><br>Test class: settings.Connectors_TestCases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen7&apos;]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir63872_14209}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 9d77b953bb77c0cc58a63d188612be78
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen7&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at settings.ConnectorsPage.addBrand(ConnectorsPage.java:345)
+	at settings.Connectors_TestCases.add_connector_validate(Connectors_TestCases.java:47)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace888401493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace888401493'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen7&apos;]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir63872_14209}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 9d77b953bb77c0cc58a63d188612be78
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen7&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at settings.ConnectorsPage.addBrand(ConnectorsPage.java:345)
+	at settings.Connectors_TestCases.add_connector_validate(Connectors_TestCases.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>34</td>
+<td>settings.Connectors_TestCases@7fad8c79</td></tr>
+<tr>
+<td title='settings.ConnectorsEdit_testcases.add_programs()'><b>add_programs</b><br>Test class: settings.ConnectorsEdit_testcases</td>
+<td><div><pre>java.security.InvalidParameterException: connector edit_conn_test_01 cannot be edited, ref automation doc connector page.
+	at settings.ConnectorsPage.editConnector(ConnectorsPage.java:169)
+	at settings.ConnectorsEdit_testcases.add_programs(ConnectorsEdit_testcases.java:209)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4868052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4868052'><pre>java.security.InvalidParameterException: connector edit_conn_test_01 cannot be edited, ref automation doc connector page.
+	at settings.ConnectorsPage.editConnector(ConnectorsPage.java:169)
+	at settings.ConnectorsEdit_testcases.add_programs(ConnectorsEdit_testcases.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>18</td>
+<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
+<tr>
+<td title='settings.ConnectorsEdit_testcases.delete_entry_in_brand_field()'><b>delete_entry_in_brand_field</b><br>Test class: settings.ConnectorsEdit_testcases</td>
+<td><div><pre>java.security.InvalidParameterException: connector edit_conn_test_01 cannot be edited, ref automation doc connector page.
+	at settings.ConnectorsPage.editConnector(ConnectorsPage.java:169)
+	at settings.ConnectorsEdit_testcases.delete_entry_in_brand_field(ConnectorsEdit_testcases.java:148)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace847960561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace847960561'><pre>java.security.InvalidParameterException: connector edit_conn_test_01 cannot be edited, ref automation doc connector page.
+	at settings.ConnectorsPage.editConnector(ConnectorsPage.java:169)
+	at settings.ConnectorsEdit_testcases.delete_entry_in_brand_field(ConnectorsEdit_testcases.java:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>18</td>
+<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
+<tr>
+<td title='settings.ConnectorsEdit_testcases.inacativate_connector()'><b>inacativate_connector</b><br>Test class: settings.ConnectorsEdit_testcases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;fa fa-pencil-square-o&apos;]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir35860_31232}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 57a9ba15435d4543b284758590f3c2fa
+*** Element info: {Using=xpath, value=//i[@class=&apos;fa fa-pencil-square-o&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at settings.ConnectorsPage.editConnector(ConnectorsPage.java:148)
+	at settings.ConnectorsEdit_testcases.inacativate_connector(ConnectorsEdit_testcases.java:270)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173998279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173998279'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//i[@class=&apos;fa fa-pencil-square-o&apos;]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir35860_31232}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 57a9ba15435d4543b284758590f3c2fa
+*** Element info: {Using=xpath, value=//i[@class=&apos;fa fa-pencil-square-o&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at settings.ConnectorsPage.editConnector(ConnectorsPage.java:148)
+	at settings.ConnectorsEdit_testcases.inacativate_connector(ConnectorsEdit_testcases.java:270)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>28</td>
+<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,29 +337,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='settings.ConnectorsEdit_testcases.acativate_connector()'><b>acativate_connector</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>28</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.add_brands()'><b>add_brands</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>34</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.Connectors_TestCases.add_connector_validate()'><b>add_connector_validate</b><br>Test class: settings.Connectors_TestCases</td>
-<td></td>
-<td>41</td>
-<td>settings.Connectors_TestCases@7fad8c79</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.add_programs()'><b>add_programs</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>28</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
 <td title='settings.Connectors_TestCases.click_print_view_print()'><b>click_print_view_print</b><br>Test class: settings.Connectors_TestCases</td>
 <td></td>
-<td>13</td>
+<td>14</td>
 <td>settings.Connectors_TestCases@7fad8c79</td></tr>
 <tr>
 <td title='settings.Connectors_TestCases.delete_connector_from_db()'><b>delete_connector_from_db</b><br>Test class: settings.Connectors_TestCases</td>
@@ -105,19 +347,9 @@ function toggleAllBoxes() {
 <td>2</td>
 <td>settings.Connectors_TestCases@7fad8c79</td></tr>
 <tr>
-<td title='settings.ConnectorsEdit_testcases.delete_entry_in_brand_field()'><b>delete_entry_in_brand_field</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>24</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.inacativate_connector()'><b>inacativate_connector</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>28</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
 <td title='settings.Connectors_TestCases.open_connector_page()'><b>open_connector_page</b><br>Test class: settings.Connectors_TestCases</td>
 <td></td>
-<td>12</td>
+<td>13</td>
 <td>settings.Connectors_TestCases@7fad8c79</td></tr>
 <tr>
 <td title='settings.Connectors_TestCases.relaod_workflow_page()'><b>relaod_workflow_page</b><br>Test class: settings.Connectors_TestCases</td>
@@ -135,74 +367,9 @@ function toggleAllBoxes() {
 <td>8</td>
 <td>settings.ConnectorsRestore_testcases@76329302</td></tr>
 <tr>
-<td title='settings.ConnectorsEdit_testcases.test_is_empty_1()'><b>test_is_empty_1</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>13</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.test_is_empty_2()'><b>test_is_empty_2</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>12</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.test_is_empty_3()'><b>test_is_empty_3</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>14</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.test_is_empty_4()'><b>test_is_empty_4</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>13</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.test_is_empty_5()'><b>test_is_empty_5</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>14</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.test_is_empty_6()'><b>test_is_empty_6</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>12</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.test_is_empty_7()'><b>test_is_empty_7</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>13</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.update_client()'><b>update_client</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>33</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.update_client_to_previous()'><b>update_client_to_previous</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>35</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.update_connector_name()'><b>update_connector_name</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>26</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.update_connector_name_to_previous()'><b>update_connector_name_to_previous</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>24</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.validate_name_update()'><b>validate_name_update</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>19</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
-<td title='settings.ConnectorsEdit_testcases.validate_name_update_to_previous()'><b>validate_name_update_to_previous</b><br>Test class: settings.ConnectorsEdit_testcases</td>
-<td></td>
-<td>20</td>
-<td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
-<tr>
 <td title='settings.ConnectorsEdit_testcases.validate_program_add()'><b>validate_program_add</b><br>Test class: settings.ConnectorsEdit_testcases</td>
 <td></td>
-<td>13</td>
+<td>14</td>
 <td>settings.ConnectorsEdit_testcases@71a794e5</td></tr>
 </table><p>
 </body>

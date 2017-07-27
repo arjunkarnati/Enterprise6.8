@@ -129,7 +129,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.editCommunications("edit_comm_test_01")
 		.deleteEntryInProgramField()
 		.updateProgramTo("VIFP")
-		.updateProgramTo("smm1")
+		//.updateProgramTo("smm1")
 		.clickSubmitButton()
 		.validateUpdates("edit_comm_test_01","program","2")
 		.getTitle()
@@ -259,9 +259,9 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.clickSubmit();
 	}*/
 	@Test(priority=18)
-	public void Verify_access_EHIQA(){
-		login.loginAs("ehi_qa","09ht1a0480")
-		.isSuccessfulLogin("ehi QA")
+	public void Verify_access_EHIAE(){
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.previewCommunications("edit_ehi_comm_test_01")
 		.verifyaccess()
@@ -362,13 +362,13 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=24)
 	public void add_messagefrom_communication()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.editCommunications("edit_ehi_comm_test_01")
-		.addmessage("Karnati_test")
+		.addmessage("H000-000-01")
 		.clickSubmitButton()
-		.validateUpdates("karnati_test","name" ," expectedresult")
+		.validateUpdates("H000-000-01","name" ," expectedresult")
 		.getTitle()
 		.logout();
 	}
@@ -379,7 +379,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
 		.editCommunications("edit_ehi_comm_test_01")
-		.deleteMessage("karnati_test")
+		.deleteMessage("H000-000-01")
 		.selectRemovemessage()
 		.clickSaveButton();
 		}
@@ -465,7 +465,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.getTitle()
 		.logout();	
 	}
-	@Test(priority=15)
+	@Test(priority=31)
 	//@Test(enabled=false)
 	public void archive_clone_communication()
 	{

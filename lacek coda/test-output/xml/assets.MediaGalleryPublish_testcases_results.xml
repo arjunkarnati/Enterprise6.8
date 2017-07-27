@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="218.649">
+           time="234.953">
   <properties />
   
   
-            <testcase name="cancel_publish_campaign" time="40.453" classname="assets.MediaGalleryPublish_testcases" />
-                <testcase name="cancel_publish_campaign_Carnival_AE" time="42.029" classname="assets.MediaGalleryPublish_testcases" />
-                <testcase name="publish_media_gallery_Carnival_AE" time="69.409" classname="assets.MediaGalleryPublish_testcases" />
-                <testcase name="publish_media_gallery" time="66.758" classname="assets.MediaGalleryPublish_testcases" />
+            <testcase name="cancel_publish_campaign_Carnival_AE" time="43.827" classname="assets.MediaGalleryPublish_testcases" />
+                <testcase name="cancel_publish_campaign" time="48.078" classname="assets.MediaGalleryPublish_testcases" />
+                <testcase name="publish_media_gallery" time="74.078" classname="assets.MediaGalleryPublish_testcases" />
+                <testcase name="publish_media_gallery_Carnival_AE" time="68.970" classname="assets.MediaGalleryPublish_testcases" />
       
 </testsuite>

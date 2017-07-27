@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="98.078">
+           time="903.866">
   <properties />
   
   
-            <testcase name="cancel_publish_series" time="26.890" classname="library.SeriesPublish_Testcases" />
-                <testcase name="publish_series" time="71.188" classname="library.SeriesPublish_Testcases" />
+            <testcase name="cancel_publish_series" time="46.054" classname="library.SeriesPublish_Testcases" />
+                <testcase name="publish_series" time="857.812" classname="library.SeriesPublish_Testcases" />
       
 </testsuite>

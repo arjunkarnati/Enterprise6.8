@@ -68,8 +68,8 @@ public class PermissionGroups_TestCases extends TestBase{
 	/*@Test(priority=10,enabled=true)
 	public void create_test_permission_groups()
 	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
+		login.loginAs("test.data","Monday#223")
+		.isSuccessfulLogin("test data")
 		.clickPermissionGroups()
 		.clickAddpermissionGroupsButton()
 		.addName("edit_permission_group_test_01")

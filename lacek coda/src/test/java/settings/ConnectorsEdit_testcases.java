@@ -21,11 +21,11 @@ public class ConnectorsEdit_testcases extends TestBase{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
-		.editConnector("arjun_connector")
-		.updateNameTo("arjun_connector_1")
+		.editConnector("edit_conn_test_1")
+		.updateNameTo("edit_conn_test_01")
 		//.addacfvalue("0")
 		.submit()
-		.validateConnectorUpdate("name", "arjun_connector_1", "arjun_connector_1")
+		.validateConnectorUpdate("name", "edit_conn_test_1", "arjun_connector_01")
 		.logout();
 	}
 	@Test(priority=2)
@@ -39,8 +39,8 @@ public class ConnectorsEdit_testcases extends TestBase{
 		.submit()
 		.validateConnectorUpdate("name", "arjun_connector", "arjun_connector")
 		.logout();
-
-	}*/@Test(priority=3)
+	}
+	@Test(priority=3)
 	public void update_client(){
 		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
@@ -128,24 +128,24 @@ public class ConnectorsEdit_testcases extends TestBase{
 		.logout();
 	}
 
-//	@Test(priority=7)
-//	public void validate_brands_add()
-//	{
-//		login.loginAs("automation.admin", "Monday#223")
-//		.isSuccessfulLogin("automation admin")
-//		.clickConnectors()
-//		.validateBrand("edit_conn_test_1",2)
-//		.getTitle()
-//		.logout();
-//	}
-//
+/*	@Test(priority=7)
+	public void validate_brands_add()
+	{
+		login.loginAs("automation.admin", "Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickConnectors()
+		.validateBrand("edit_conn_test_1",2)
+		.getTitle()
+		.logout();
+	}*/
+
 	@Test(priority=8)
 	public void delete_entry_in_brand_field()
 	{
 		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
-		.editConnector("edit_conn_test_1")
+		.editConnector("edit_conn_test_01")
 		.deleteBrand()
 		.submit()
 		.getTitle()
@@ -206,7 +206,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
-		.editConnector("edit_conn_test_1")
+		.editConnector("edit_conn_test_01")
 		.addProgram("VIFP")
 		.submit()
 		.getTitle()
@@ -270,7 +270,7 @@ public class ConnectorsEdit_testcases extends TestBase{
 		.editConnector("edit_conn_test_1")
 		.isActive(false)
 		.submit()
-		.validateConnectorUpdate("status", "edit_conn_test_1", "INACTIVE")
+		.validateConnectorUpdate("status", "edit_conn_test_01", "INACTIVE")
 		.getTitle()
 		.logout();
 	}
@@ -292,10 +292,10 @@ public class ConnectorsEdit_testcases extends TestBase{
 		login.loginAs("automation.admin", "Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickConnectors()
-		.editConnector("edit_conn_test_1")
+		.editConnector("edit_conn_test_01")
 		.isActive(true)
 		.submit()
-		.validateConnectorUpdate("status", "edit_conn_test_1", "ACTIVE")
+		.validateConnectorUpdate("status", "edit_conn_test_01", "ACTIVE")
 		.getTitle()
 		.logout();
 	}
@@ -374,68 +374,6 @@ public class ConnectorsEdit_testcases extends TestBase{
 //	}
 //
 //
-	@Test(priority=21)
-	public void test_is_empty_1()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickConnectors()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=22)
-	public void test_is_empty_2()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickConnectors()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=23)
-	public void test_is_empty_3()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickConnectors()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=24)
-	public void test_is_empty_4()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickConnectors()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=25)
-	public void test_is_empty_5()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickConnectors()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=26)
-	public void test_is_empty_6()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickConnectors()
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=27)
-	public void test_is_empty_7()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickConnectors()
-		.getTitle()
-		.logout();
-	}
+
 	
 }

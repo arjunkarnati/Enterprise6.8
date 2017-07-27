@@ -97,16 +97,31 @@ public class PermissionGroupsPage extends PageBase{
 		{
 		case"name":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permission_groups_name"))).getText(),expectedresult);
 			break;
 		}
 		case"parent name":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permission_groups_parent_name"))).getText(),expectedresult);
 			break;
 		}
 		case"status":
 		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("permission_groups_status"))).getText(),expectedresult);
 			break;
 		}

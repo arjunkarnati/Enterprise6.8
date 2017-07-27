@@ -23,7 +23,6 @@ public class Messages_TestCases extends TestBase{
 		.addDescription("Test_regression_message_selenium1")	
 		.addVariables("First Name")
 		.addtemplates("Booked Guest - Primary")	
-		.addtemplates("Booked Guest - Tertiary Rows")	
 		.addConnector("Exact Target (Carnival NA) | Draft")
 		.addConnector("Exact Target (Carnival NA) | Approved")
 		.clickSubmitButton()
@@ -135,7 +134,7 @@ public class Messages_TestCases extends TestBase{
 		DataBaseLibrary.deleteMessage();
 	}
 	
-	/*@Test(priority=30,enabled=true)
+	@Test(priority=30,enabled=true)
 	public void create_testdata_message()
 	{
 		login.loginAs("test.data","Monday#223")
@@ -189,6 +188,6 @@ public class Messages_TestCases extends TestBase{
 		.validateUpdates("publish_message_test_01","name","publish_message_test_01")
 		.getTitle()
 		.logout();	
-	}*/
+	}
 	
 }
