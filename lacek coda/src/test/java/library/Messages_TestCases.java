@@ -134,7 +134,7 @@ public class Messages_TestCases extends TestBase{
 		DataBaseLibrary.deleteMessage();
 	}
 	
-	@Test(priority=30,enabled=true)
+	/*@Test(priority=30,enabled=true)
 	public void create_testdata_message()
 	{
 		login.loginAs("test.data","Monday#223")
@@ -188,6 +188,6 @@ public class Messages_TestCases extends TestBase{
 		.validateUpdates("publish_message_test_01","name","publish_message_test_01")
 		.getTitle()
 		.logout();	
-	}
+	}*/
 	
 }

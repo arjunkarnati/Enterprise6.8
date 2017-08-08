@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Properties;
@@ -42,6 +43,7 @@ public class PageBase {
 	protected static Connection con = null;  
 	protected static Statement stmt = null;  
 	protected static ResultSet rs = null;  
+	protected static PreparedStatement ps = null;
 	/// Create a variable for the db connection string.  
 	protected static String connectionUrl ="jdbc:sqlserver://10.16.1.171 ;" 
 			+"databaseName= tlg_cmp_b5;"  

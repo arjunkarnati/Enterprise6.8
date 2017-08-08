@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="9.116">
+           time="7.743">
   <properties />
   
   
-            <testcase name="test_is_empty" time="9.116" classname="settings.WorkflowRestore_testcases" />
+            <testcase name="test_is_empty" time="7.743" classname="settings.WorkflowRestore_testcases" />
       
 </testsuite>

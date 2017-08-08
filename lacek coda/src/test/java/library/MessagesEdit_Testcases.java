@@ -324,10 +324,10 @@ public class MessagesEdit_Testcases extends TestBase{
 		 login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
-		.editMessage("10000003")
+		.editMessage("10000004")
 		.addLocales()
 		.clickSubmitButton()
-		.validateUpdatesinpreview("10000003","ZH-CN")
+		.validateUpdatesinpreview("10000004","ZH-CN")
 		.logout();
 		
 	}
@@ -420,16 +420,6 @@ public class MessagesEdit_Testcases extends TestBase{
 		.isSuccessfulLogin("ehi ae")
 		.clickMessagesLink()
 		.editMessage("edit_message_test_01")	
-	
-	
-	
-		
-		
-	
-	
-	
-	
-	
 	}*/
 	@Test(priority=29)
 	public void clone_message()
@@ -493,19 +483,6 @@ public class MessagesEdit_Testcases extends TestBase{
 		.getTitle()
 		.logout();
 	}
-	@Test(priority=33)
-	//@Test(enabled=false)
-	public void cloned_message_delete_media()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickMessagesLink()
-		.editMessage("cloned_message")
-		.deleteMessage_media()
-		.clickSubmitButton()
-		.getTitle()
-		.logout();
-		}
 	
 	@Test(priority=34)
 	//@Test(enabled=false)
@@ -540,8 +517,21 @@ public class MessagesEdit_Testcases extends TestBase{
 		.getTitle()
 		.logout();
 	}
-	
 	@Test(priority=36)
+	//@Test(enabled=false)
+	public void cloned_message_delete_media()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickMessagesLink()
+		.editMessage("cloned_message")
+		.deleteMessage_media()
+		.clickSubmitButton()
+		.getTitle()
+		.logout();
+		}
+	
+	@Test(priority=37)
 	//@Test(enabled=false)
 	public void cloned_message_archive()
 	{

@@ -4,17 +4,17 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="291.059">
+           time="280.529">
   <properties />
   
   
-            <testcase name="cancel_client_add_process" time="25.202" classname="manage.Clients_Testcases" />
-                <testcase name="delete_client_from_db" time="2.266" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_witout_locales" time="36.775" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client" time="59.266" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_witout_a_default_locales" time="39.406" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_without_color" time="41.752" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_without_name" time="42.979" classname="manage.Clients_Testcases" />
-                <testcase name="create_a_new_client_witout_a_url" time="43.413" classname="manage.Clients_Testcases" />
+            <testcase name="create_a_new_client_witout_a_url" time="41.386" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client" time="58.396" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client_witout_a_default_locales" time="37.329" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client_without_name" time="39.926" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client_witout_locales" time="35.720" classname="manage.Clients_Testcases" />
+                <testcase name="cancel_client_add_process" time="24.135" classname="manage.Clients_Testcases" />
+                <testcase name="create_a_new_client_without_color" time="41.426" classname="manage.Clients_Testcases" />
+                <testcase name="delete_client_from_db" time="2.211" classname="manage.Clients_Testcases" />
       
 </testsuite>

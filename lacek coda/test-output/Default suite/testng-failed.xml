@@ -6,8 +6,8 @@
       <class name="library.MessagesEdit_Testcases">
         <methods>
           <include name="BeforeSuite"/>
+          <include name="VerifyAddedLocalesInPreview"/>
           <include name="tearDown"/>
-          <include name="cloned_message_add_media"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>

@@ -77,6 +77,39 @@ public class TemplatesPage extends PageBase{
 			Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("template_edit_page_title"));
 			break;
 		}
+		case "edit_ehi_temp-01":
+		{
+			driver.findElement(By.xpath(test_data_reader.getProperty("edit_ehi_temp-01"))).click();
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("template_edit_page_title"));
+			break;
+		}
+		case "edit_ehi_temp-010":
+		{
+			driver.findElement(By.xpath(test_data_reader.getProperty("edit_ehi_temp-010"))).click();
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("template_edit_page_title"));
+			break;
+		}
+		case "ACMSGTMP":
+		{
+			driver.findElement(By.xpath(test_data_reader.getProperty("ACMSGTMP"))).click();
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("template_edit_page_title"));
+			break;
+		}
 		default: 
 		{
 			throw new InvalidParameterException("template "+templatename +" cannot be edited, ref automation doc template page.");

@@ -190,18 +190,6 @@ public class TemplatesEdit_testcases extends TestBase{
 		.logout();
 	}
 	@Test(priority=14)
-	public void set_template_workflow_to_draft()
-	{
-		login.loginAs("automation.admin","Monday#223")
-		.isSuccessfulLogin("automation admin")
-		.clickTemplates()
-		.editTemplate("edit_template_test_01")
-		.setWorkFlowTo("DRAFT","edit_template_test_01")
-		.validateUpdates("edit_template_test_01","workflow","DRAFT")
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=15)
 	public void set_template_workflow_to_approved()
 	{
 		login.loginAs("automation.admin","Monday#223")
@@ -213,6 +201,19 @@ public class TemplatesEdit_testcases extends TestBase{
 		.getTitle()
 		.logout();
 	}
+	@Test(priority=15)
+	public void set_template_workflow_to_draft()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickTemplates()
+		.editTemplate("edit_template_test_01")
+		.setWorkFlowTo("DRAFT","edit_template_test_01")
+		.validateUpdates("edit_template_test_01","workflow","DRAFT")
+		.getTitle()
+		.logout();
+	}
+	
 	@Test(priority=16)
 	public void archive_template()
 	{
@@ -233,4 +234,131 @@ public class TemplatesEdit_testcases extends TestBase{
 		.getTitle()
 		.logout();
 	}
+	@Test(priority=18)
+	public void rollback_template_updates()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickTemplates()
+		.editTemplate("edit_template_test_01")
+		.updateChannel("web")
+		.setWorkFlowTo("APPROVED","edit_template_test_01")
+		.validateUpdates("edit_template_test_01","channel","Web")
+		.validateUpdates("edit_template_test_01","workflow","APPROVED")
+		.editTemplate("edit_template_test_01")
+		.selectTemplatehistory()
+		.latestTemplatehistory()
+		.rollbackTemplate()
+		.clickSubmitButton()
+		.validateUpdates("edit_template_test_01","channel","Email")
+		.validateUpdates("edit_template_test_01","workflow","DRAFT")
+		.getTitle()
+		.logout();
+		}
+	@Test(priority=18)
+	public void rollback_template_previous()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickTemplates()
+		.editTemplate("edit_template_test_01")
+		.updateChannel("web")
+		.setWorkFlowTo("APPROVED","edit_template_test_01")
+		.validateUpdates("edit_template_test_01","channel","Web")
+		.validateUpdates("edit_template_test_01","workflow","APPROVED")
+		.editTemplate("edit_template_test_01")
+		.selectTemplatehistory()
+		.latestTemplatehistory()
+		.rollbackTemplate()
+		.clickSubmitButton()
+		.validateUpdates("edit_template_test_01","channel","Email")
+		.validateUpdates("edit_template_test_01","workflow","DRAFT")
+		.getTitle()
+		.logout();
+		}
+	@Test(priority=1)
+	public void compare_template_updates()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickTemplates()
+		.editTemplate("edit_template_test_01")
+		.updateBrandTo("Carnival Cruise Line")
+		.clickSubmitButton()
+		.editTemplate("edit_template_test_01")
+		.selectTemplatehistory()
+		.latestTemplatehistory()
+		.compareTemplate()
+		.validateTemp_count();
+	}
+	@Test(priority=19)
+	public void add_media_to_template()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickTemplates()
+		.editTemplate("edit_template_test_01")
+		.selectTemp_media_add()
+		.add_media_to_temp("2223")
+		.clickSubmitButton()
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=20)
+	public void delete_media_to_template()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickTemplates()
+		.editTemplate("edit_template_test_01")
+		.deleteTemp_media()
+		.clickSubmitButton()
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=21)
+	public void add_markup_to_template()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickTemplates()
+		.editTemplate("edit_ehi_temp-01")
+		.selectTemp_region_header()
+		.addmarkup_to_Template("template");
+		
+        
+		
+	}
+	@Test(priority=22)
+	public void add_comm_to_template()
+	{
+		login.loginAs("automation.admin","Monday#223")
+		.isSuccessfulLogin("automation admin")
+		.clickTemplates()
+		.editTemplate("ACMSGTMP")
+		//.click_comm_temp()
+		.logout();
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
 }

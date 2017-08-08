@@ -4,17 +4,17 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="336.766">
+           time="341.274">
   <properties />
   
   
-            <testcase name="delete_permission_action_from_database" time="2.069" classname="access.PermissionActions_TestCases" />
-                <testcase name="returm_to_permission_actions_main_page" time="26.517" classname="access.PermissionActions_TestCases" />
-                <testcase name="create_a_new_permission_action_without_name" time="45.818" classname="access.PermissionActions_TestCases" />
-                <testcase name="create_a_new_permission_action_without_permission" time="45.639" classname="access.PermissionActions_TestCases" />
-                <testcase name="create_a_duplicate_permission_action" time="44.525" classname="access.PermissionActions_TestCases" />
-                <testcase name="create_a_new_permission_action_without_controller_name" time="44.713" classname="access.PermissionActions_TestCases" />
-                <testcase name="create_a_new_permission_action" time="90.693" classname="access.PermissionActions_TestCases" />
-                <testcase name="click_cancel_in_permission_action_add_page" time="36.792" classname="access.PermissionActions_TestCases" />
+            <testcase name="returm_to_permission_actions_main_page" time="27.931" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_duplicate_permission_action" time="45.434" classname="access.PermissionActions_TestCases" />
+                <testcase name="delete_permission_action_from_database" time="2.066" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_new_permission_action_without_controller_name" time="45.530" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_new_permission_action_without_permission" time="45.052" classname="access.PermissionActions_TestCases" />
+                <testcase name="click_cancel_in_permission_action_add_page" time="36.568" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_new_permission_action" time="91.332" classname="access.PermissionActions_TestCases" />
+                <testcase name="create_a_new_permission_action_without_name" time="47.361" classname="access.PermissionActions_TestCases" />
       
 </testsuite>

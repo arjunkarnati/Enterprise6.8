@@ -39,10 +39,10 @@ public class CanpaignsEdit_TestCases extends TestBase{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCampaignsLink()	
-		//.editCampaign("edit_campaign_test_01")
-		//.updateClientNameTo("DuPont")			
-		//.clickSubmit()
-		//.validateUpdates("edit_campaign_test_01","client","DuPont")
+		.editCampaign("edit_campaign_test_01")
+		.updateClientNameTo("DuPont")			
+		.clickSubmit()
+		.validateUpdates("edit_campaign_test_01","client","DuPont")
 		.getTitle()
 		.logout();	
 	}
@@ -99,7 +99,7 @@ public class CanpaignsEdit_TestCases extends TestBase{
 		.clickCampaignsLink()	
 		.editCampaign("edit_campaign_test_01")
 		.deleteEntryInProgramField()
-		.updateProgram("smm1")
+		.updateProgram("edit_program_test_01")
 		.clickSubmit()
 		.validateUpdates("edit_campaign_test_01","program","1")
 		.getTitle()

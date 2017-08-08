@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SERIES TESTCASES</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>22/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 26 15:34:58 CDT 2017</td>
+<td>Started on:</td><td>Mon Aug 07 15:37:30 CDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>1101 seconds (1101676 ms)</td>
+<tr><td>Total time:</td><td>1816 seconds (1816650 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,55 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='library.Series_Testcases.create_a_new_serie()'><b>create_a_new_serie</b><br>Test class: library.Series_Testcases</td>
-<td><div><pre>java.lang.AssertionError: expected [cunard] but found []
-	at library.SeriesPage.validateUpdates(SeriesPage.java:229)
-	at library.Series_Testcases.create_a_new_serie(Series_Testcases.java:30)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen83&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir74856_12190}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 35f3d4b2f39348e9f76fe03cf7c2bf13
+*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen83&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at library.SeriesAddPage.addProgram(SeriesAddPage.java:65)
+	at library.Series_Testcases.create_a_new_serie(Series_Testcases.java:23)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1303593408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1303593408'><pre>java.lang.AssertionError: expected [cunard] but found []
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at library.SeriesPage.validateUpdates(SeriesPage.java:229)
-	at library.Series_Testcases.create_a_new_serie(Series_Testcases.java:30)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1348782947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1348782947'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen83&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir74856_12190}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 35f3d4b2f39348e9f76fe03cf7c2bf13
+*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen83&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at library.SeriesAddPage.addProgram(SeriesAddPage.java:65)
+	at library.Series_Testcases.create_a_new_serie(Series_Testcases.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,27 +146,59 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>53</td>
+<td>41</td>
 <td>library.Series_Testcases@704d6e83</td></tr>
 <tr>
 <td title='library.Series_Testcases.create_a_new_series_without_brand()'><b>create_a_new_series_without_brand</b><br>Test class: library.Series_Testcases</td>
-<td><div><pre>java.lang.AssertionError: expected [] but found [cunard]
-	at library.SeriesPage.validateUpdates(SeriesPage.java:229)
-	at library.Series_Testcases.create_a_new_series_without_brand(Series_Testcases.java:83)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen83&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir28912_31200}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 7a069b58aae8b927612436079e05d781
+*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen83&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at library.SeriesAddPage.addProgram(SeriesAddPage.java:65)
+	at library.Series_Testcases.create_a_new_series_without_brand(Series_Testcases.java:78)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1446557910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1446557910'><pre>java.lang.AssertionError: expected [] but found [cunard]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at library.SeriesPage.validateUpdates(SeriesPage.java:229)
-	at library.Series_Testcases.create_a_new_series_without_brand(Series_Testcases.java:83)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1839011522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1839011522'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen83&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir28912_31200}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 7a069b58aae8b927612436079e05d781
+*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen83&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at library.SeriesAddPage.addProgram(SeriesAddPage.java:65)
+	at library.Series_Testcases.create_a_new_series_without_brand(Series_Testcases.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -156,80 +220,20 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>44</td>
+<td>36</td>
 <td>library.Series_Testcases@704d6e83</td></tr>
 <tr>
-<td title='library.SeriesPublish_Testcases.publish_series()'><b>publish_series</b><br>Test class: library.SeriesPublish_Testcases</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (290, 6.4333343505859375). Other element would receive the click: &lt;div class=&quot;page-header md-shadow-z-1-i navbar navbar-fixed-top&quot;&gt;&lt;/div&gt;
-Command duration or timeout: 478 milliseconds
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 22f9e6cf-5d55-4de7-94c7-954f06652367
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at library.SeriesPublishPage.checkAll(SeriesPublishPage.java:26)
-	at library.SeriesPublish_Testcases.publish_series(SeriesPublish_Testcases.java:16)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997659628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1997659628'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (290, 6.4333343505859375). Other element would receive the click: &lt;div class=&quot;page-header md-shadow-z-1-i navbar navbar-fixed-top&quot;&gt;&lt;/div&gt;
-Command duration or timeout: 478 milliseconds
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 22f9e6cf-5d55-4de7-94c7-954f06652367
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at library.SeriesPublishPage.checkAll(SeriesPublishPage.java:26)
-	at library.SeriesPublish_Testcases.publish_series(SeriesPublish_Testcases.java:16)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>48</td>
-<td>library.SeriesPublish_Testcases@2eda0940</td></tr>
-<tr>
 <td title='library.SeriesEdit_Testcases.update_series_clientname_to_previous_client()'><b>update_series_clientname_to_previous_client</b><br>Test class: library.SeriesEdit_Testcases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;btnSubmit&quot;}
-Command duration or timeout: 10.11 seconds
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;btnSubmit&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 70fc6743-ea47-485c-bc8c-16d813dc52de
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir73620_32133}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 0c653460bc9e39d146bb607199f7e045
 *** Element info: {Using=xpath, value=btnSubmit}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
@@ -244,22 +248,17 @@ Session ID: 70fc6743-ea47-485c-bc8c-16d813dc52de
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;btnSubmit&quot;}
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace361788160", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace361788160'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;btnSubmit&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous1913322291239365470webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous1913322291239365470webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace884689147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace884689147'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;btnSubmit&quot;}
-Command duration or timeout: 10.11 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 70fc6743-ea47-485c-bc8c-16d813dc52de
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir73620_32133}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 0c653460bc9e39d146bb607199f7e045
 *** Element info: {Using=xpath, value=btnSubmit}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -294,57 +293,8 @@ Session ID: 70fc6743-ea47-485c-bc8c-16d813dc52de
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;btnSubmit&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous1913322291239365470webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous1913322291239365470webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
-<td>34</td>
-<td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
-<tr>
-<td title='library.SeriesEdit_Testcases.update_series_workflow_to_draft()'><b>update_series_workflow_to_draft</b><br>Test class: library.SeriesEdit_Testcases</td>
-<td><div><pre>java.lang.AssertionError: expected [CODA - Series] but found [CODA - Series - Edit]
-	at library.SeriesEditPage.setWorkFlowTo(SeriesEditPage.java:117)
-	at library.SeriesEdit_Testcases.update_series_workflow_to_draft(SeriesEdit_Testcases.java:172)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1601588757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1601588757'><pre>java.lang.AssertionError: expected [CODA - Series] but found [CODA - Series - Edit]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at library.SeriesEditPage.setWorkFlowTo(SeriesEditPage.java:117)
-	at library.SeriesEdit_Testcases.update_series_workflow_to_draft(SeriesEdit_Testcases.java:172)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-</pre></div></td>
-<td>24</td>
+<td>39</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -357,12 +307,12 @@ Driver info: driver.version: unknown
 <tr>
 <td title='library.SeriesEdit_Testcases.activate_series()'><b>activate_series</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>36</td>
+<td>35</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesEdit_Testcases.archive_series()'><b>archive_series</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>22</td>
+<td>20</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesPublish_Testcases.cancel_publish_series()'><b>cancel_publish_series</b><br>Test class: library.SeriesPublish_Testcases</td>
@@ -372,17 +322,17 @@ Driver info: driver.version: unknown
 <tr>
 <td title='library.Series_Testcases.click_cancel_series_button()'><b>click_cancel_series_button</b><br>Test class: library.Series_Testcases</td>
 <td></td>
-<td>27</td>
+<td>25</td>
 <td>library.Series_Testcases@704d6e83</td></tr>
 <tr>
 <td title='library.Series_Testcases.create_a_new_serie_without_clientname()'><b>create_a_new_serie_without_clientname</b><br>Test class: library.Series_Testcases</td>
 <td></td>
-<td>35</td>
+<td>33</td>
 <td>library.Series_Testcases@704d6e83</td></tr>
 <tr>
 <td title='library.Series_Testcases.create_a_new_series_without_seriesnname()'><b>create_a_new_series_without_seriesnname</b><br>Test class: library.Series_Testcases</td>
 <td></td>
-<td>38</td>
+<td>35</td>
 <td>library.Series_Testcases@704d6e83</td></tr>
 <tr>
 <td title='library.Series_Testcases.delete_series_from_db()'><b>delete_series_from_db</b><br>Test class: library.Series_Testcases</td>
@@ -392,12 +342,17 @@ Driver info: driver.version: unknown
 <tr>
 <td title='library.SeriesEdit_Testcases.inactivate_series()'><b>inactivate_series</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>36</td>
+<td>33</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
+<tr>
+<td title='library.SeriesPublish_Testcases.publish_series()'><b>publish_series</b><br>Test class: library.SeriesPublish_Testcases</td>
+<td></td>
+<td>790</td>
+<td>library.SeriesPublish_Testcases@2eda0940</td></tr>
 <tr>
 <td title='library.SeriesEdit_Testcases.restore_series()'><b>restore_series</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>30</td>
+<td>29</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesRestore_Testcases.test_is_empty()'><b>test_is_empty</b><br>Test class: library.SeriesRestore_Testcases</td>
@@ -407,7 +362,7 @@ Driver info: driver.version: unknown
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_brands()'><b>update_series_brands</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>40</td>
+<td>42</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_brands_to_previous()'><b>update_series_brands_to_previous</b><br>Test class: library.SeriesEdit_Testcases</td>
@@ -417,12 +372,12 @@ Driver info: driver.version: unknown
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_client()'><b>update_series_client</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>31</td>
+<td>36</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_name()'><b>update_series_name</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>37</td>
+<td>35</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_name_to_previous_name()'><b>update_series_name_to_previous_name</b><br>Test class: library.SeriesEdit_Testcases</td>
@@ -432,7 +387,7 @@ Driver info: driver.version: unknown
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_programs()'><b>update_series_programs</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>39</td>
+<td>36</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_programs_to_previous()'><b>update_series_programs_to_previous</b><br>Test class: library.SeriesEdit_Testcases</td>
@@ -442,17 +397,22 @@ Driver info: driver.version: unknown
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_tracks()'><b>update_series_tracks</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>40</td>
+<td>38</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_tracks_to_previous()'><b>update_series_tracks_to_previous</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>42</td>
+<td>41</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 <tr>
 <td title='library.SeriesEdit_Testcases.update_series_workflow_to_approved()'><b>update_series_workflow_to_approved</b><br>Test class: library.SeriesEdit_Testcases</td>
 <td></td>
-<td>31</td>
+<td>29</td>
+<td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
+<tr>
+<td title='library.SeriesEdit_Testcases.update_series_workflow_to_draft()'><b>update_series_workflow_to_draft</b><br>Test class: library.SeriesEdit_Testcases</td>
+<td></td>
+<td>28</td>
 <td>library.SeriesEdit_Testcases@43a0cee9</td></tr>
 </table><p>
 </body>

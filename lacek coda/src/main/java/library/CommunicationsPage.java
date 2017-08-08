@@ -477,18 +477,23 @@ public class CommunicationsPage extends PageBase{
 		{
 		case "DRAFT":
 		{
-			driver.findElement(By.xpath("//select[@id='Communication_Workflow']")).sendKeys("D");
+			driver.findElement(By.xpath(library.getProperty("comm_mass_workflow"))).sendKeys("D");
 			break;
 		}
 		case "APPROVED":
 		{
-			driver.findElement(By.xpath("//select[@id='Communication_Workflow']")).sendKeys("A");
+			driver.findElement(By.xpath(library.getProperty("comm_mass_workflow"))).sendKeys("A");
 			Thread.sleep(3000);
 			break;
 		}
-		case "Qatest1":
+		case "Internal Testing":
 		{
-			driver.findElement(By.id(library.getProperty("comm_edit_workflow"))).sendKeys("Q");
+			driver.findElement(By.xpath(library.getProperty("comm_mass_workflow"))).sendKeys("I");
+			break;
+		}
+		case "Client Testing":
+		{
+			driver.findElement(By.xpath(library.getProperty("comm_mass_workflow"))).sendKeys("C");
 			break;
 		}
 		default: 
@@ -519,11 +524,49 @@ public class CommunicationsPage extends PageBase{
 		return new CommunicationsPage(driver);
 		
 		}
-	public void changeMessageWorkflow(String workflowname, String communicationname) throws InterruptedException {
+	public CommunicationsPage commMessageWorkflow(String msgworkflowname, String communicationname) throws InterruptedException {
 		// TODO Auto-generated method stub
 		readconfig();
 		driver.findElement(By.xpath(library.getProperty("com_mes_click"))).click();
-		switch(workflowname)
+		switch(msgworkflowname)
+		{
+		case "DRAFT":
+		{
+			driver.findElement(By.xpath(library.getProperty("comm_mass_msg_workflow"))).sendKeys("D");
+			break;
+		}
+		case "APPROVED":
+		{
+			driver.findElement(By.xpath(library.getProperty("comm_mass_msg_workflow"))).sendKeys("A");
+			Thread.sleep(3000);
+			break;
+		}
+		case "Internal Testing":
+		{
+			driver.findElement(By.xpath(library.getProperty("comm_mass_msg_workflow"))).sendKeys("I");
+			break;
+		}
+		case "Client Testing":
+		{
+			driver.findElement(By.xpath(library.getProperty("comm_mass_msg_workflow"))).sendKeys("C");
+			break;
+		}
+		default: 
+		{
+			throw new InvalidParameterException("Please verify the Comm_msg_workflow name");
+		}
+		}
+
+		return new CommunicationsPage(driver);
+
+	}
+	/*public CommunicationsPage commMessageWorkflow(String string,String  msgworkflowname ) throws InterruptedException {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("comm_mess_workflow"))).click();
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("com_mes_click"))).click();
+		switch(msgworkflowname)
 		{
 		case "DRAFT":
 		{
@@ -538,7 +581,7 @@ public class CommunicationsPage extends PageBase{
 		}
 		case "Qatest1":
 		{
-			driver.findElement(By.id(library.getProperty("comm_edit_workflow"))).sendKeys("Q");
+			driver.findElement(By.id(library.getProperty("comm_edit_msg_workflow"))).sendKeys("Q");
 			break;
 		}
 		default: 
@@ -547,13 +590,9 @@ public class CommunicationsPage extends PageBase{
 		}
 		}
 
-	}
-	public CommunicationsPage commMessageWorkflow(String string, String string2) {
-		// TODO Auto-generated method stub
-		readconfig();
-		driver.findElement(By.xpath(library.getProperty("comm_mess_workflow"))).click();
+	
 		return new CommunicationsPage(driver);
-	}
+	}*/
 	public CommunicationsPage clonecommunication(String name) {
 		// TODO Auto-generated method stub
 		readconfig();

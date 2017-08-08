@@ -1,10 +1,14 @@
 package settings;
 
 import java.security.InvalidParameterException;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import Utility.PageBase;
+import library.MessagesPage;
 
 public class WorkflowStateEditPage extends PageBase {
 
@@ -135,6 +139,106 @@ public class WorkflowStateEditPage extends PageBase {
 			}catch(Exception e){
 				e.printStackTrace();
 			}
+			
+		return new WorkflowStateEditPage(driver);
+	}
+	public WorkflowStateEditPage validateUpdates(String searchconnector,String column,String expectedresult)
+	{
+		readconfig();
+		driver.findElement(By.xpath("//input[@type='search']")).clear();
+		sleep();
+		driver.findElement(By.xpath("//input[@type='search']")).sendKeys(searchconnector);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e){
+			e.printStackTrace();
+		}
+		switch(column)
+		{
+		case"client":
+		{
+			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("connector_client"))).getText(),expectedresult);
+			break;
+		}
+		case"brand":
+		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			//counting the number of entry in the field
+			int iCount = driver.findElements(By.xpath(elementslocator.getProperty("connector_brand"))).size();
+			//getting the entry value
+			List<WebElement> iname = driver.findElements(By.xpath(elementslocator.getProperty("connector_brand")));
+			java.util.Iterator<WebElement> name = iname.iterator();
+			while(name.hasNext()) 
+			{
+				WebElement row = name.next();
+				System.out.println("**Brand: "+row.getText());
+			} 
+			//assert and verify
+			Assert.assertEquals(expectedresult,String.valueOf(iCount));
+			break;
+		}
+		case"program":
+		{
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			//counting the number of entry in the field
+			int iCount = driver.findElements(By.xpath(elementslocator.getProperty("connector_program"))).size();
+			//getting the entry value
+			List<WebElement> iname = driver.findElements(By.xpath(elementslocator.getProperty("connector_program")));
+			java.util.Iterator<WebElement> name = iname.iterator();
+			while(name.hasNext()) 
+			{
+				WebElement row = name.next();
+				System.out.println("**program: "+row.getText());
+			} 
+			//assert and verify
+			Assert.assertEquals(expectedresult,String.valueOf(iCount));
+			break;
+		}
+		case"name":
+		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e){
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("connector_name"))).getText(),expectedresult);
+			
+			break;
+		}
+		
+		case"status":
+		{
+			try {
+				Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("connector_status"))).getText(),expectedresult);
+			break;
+		}
+		case"workflow":
+		{
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			Assert.assertEquals(driver.findElement(By.xpath(elementslocator.getProperty("connector_workflow"))).getText(),expectedresult);
+			break;
+		}
+		default :
+		{
+			throw new InvalidParameterException(column +" is not a column for locales page.");
+		}
+		}
 		return new WorkflowStateEditPage(driver);
 	}
 }

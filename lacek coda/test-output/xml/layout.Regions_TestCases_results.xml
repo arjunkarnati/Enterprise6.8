@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="109.336">
+           time="105.147">
   <properties />
   
   
-            <testcase name="create_a_new_region_without_a_name" time="30.624" classname="layout.Regions_TestCases" />
-                <testcase name="create_a_new_region_with_a_duplicate_name" time="32.313" classname="layout.Regions_TestCases" />
-                <testcase name="database_delete_region" time="2.442" classname="layout.Regions_TestCases" />
-                <testcase name="create_a_new_region" time="43.957" classname="layout.Regions_TestCases" />
+            <testcase name="create_a_new_region_with_a_duplicate_name" time="30.981" classname="layout.Regions_TestCases" />
+                <testcase name="create_a_new_region" time="42.889" classname="layout.Regions_TestCases" />
+                <testcase name="database_delete_region" time="2.480" classname="layout.Regions_TestCases" />
+                <testcase name="create_a_new_region_without_a_name" time="28.797" classname="layout.Regions_TestCases" />
       
 </testsuite>

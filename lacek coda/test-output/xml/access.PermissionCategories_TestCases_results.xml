@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="242.209">
+           time="238.974">
   <properties />
   
   
-            <testcase name="click_cancel_in_permission_categories_add_page" time="28.834" classname="access.PermissionCategories_TestCases" />
-                <testcase name="delete_permission_category_from_database" time="2.142" classname="access.PermissionCategories_TestCases" />
-                <testcase name="return_to_permission_categories_main_page_from_add" time="30.047" classname="access.PermissionCategories_TestCases" />
-                <testcase name="create_a_new_permission_categories_without_name" time="39.456" classname="access.PermissionCategories_TestCases" />
-                <testcase name="create_a_new_permission_categories_without_controller_name" time="43.504" classname="access.PermissionCategories_TestCases" />
-                <testcase name="create_a_new_permission_categories" time="98.226" classname="access.PermissionCategories_TestCases" />
+            <testcase name="delete_permission_category_from_database" time="2.051" classname="access.PermissionCategories_TestCases" />
+                <testcase name="create_a_new_permission_categories_without_controller_name" time="39.264" classname="access.PermissionCategories_TestCases" />
+                <testcase name="return_to_permission_categories_main_page_from_add" time="29.051" classname="access.PermissionCategories_TestCases" />
+                <testcase name="create_a_new_permission_categories_without_name" time="39.814" classname="access.PermissionCategories_TestCases" />
+                <testcase name="create_a_new_permission_categories" time="98.855" classname="access.PermissionCategories_TestCases" />
+                <testcase name="click_cancel_in_permission_categories_add_page" time="29.939" classname="access.PermissionCategories_TestCases" />
       
 </testsuite>

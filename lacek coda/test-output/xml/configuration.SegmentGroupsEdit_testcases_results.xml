@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="570.987">
+           time="564.125">
   <properties />
-            <testcase name="update_segment_groups_brand" time="45.953" classname="configuration.SegmentGroupsEdit_testcases">
+            <testcase name="update_segment_groups_brand" time="47.679" classname="configuration.SegmentGroupsEdit_testcases">
                 <failure type="java.lang.AssertionError"
                   message="expected [2] but found [1]"
               >
@@ -45,19 +45,19 @@
           </testcase>
   
   
-            <testcase name="update_segment_groups_name" time="38.760" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_clientname" time="33.842" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_name_to_previous" time="39.853" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_description" time="38.287" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_type" time="39.297" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="archive_segment_groups" time="19.171" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_type_to_previous" time="39.269" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="empty_name_field_in_segmentGroups_edit_page" time="38.347" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="inactivate_segment_groups" time="39.365" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="activate_segment_groups" time="38.878" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="restore_segment_groups" time="28.774" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_brand_to_previous" time="52.023" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="select_button_cancel_in_segmentgroups_edit_page" time="31.209" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_clientname_to_previous" time="47.959" classname="configuration.SegmentGroupsEdit_testcases" />
+            <testcase name="update_segment_groups_name" time="38.777" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_clientname" time="34.681" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_clientname_to_previous" time="48.539" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="activate_segment_groups" time="38.307" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_description" time="36.004" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_type" time="38.277" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_name_to_previous" time="39.580" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="inactivate_segment_groups" time="38.627" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="empty_name_field_in_segmentGroups_edit_page" time="37.189" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="archive_segment_groups" time="17.356" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="restore_segment_groups" time="28.510" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="select_button_cancel_in_segmentgroups_edit_page" time="31.055" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_brand_to_previous" time="49.040" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_type_to_previous" time="40.504" classname="configuration.SegmentGroupsEdit_testcases" />
       
 </testsuite>

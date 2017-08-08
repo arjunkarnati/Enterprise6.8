@@ -17,156 +17,55 @@ public class DataBaseAccess extends PageBase{
 	{
 		readconfig();
 		System.out.println("**CONNECTING TO SQL SERVER DATABASE");
-//		try {  
-//			// Establish the connection.  
-//			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
-//			con = DriverManager.getConnection(connectionUrl);  
-//
-//			// Create and execute an SQL statement 
-//			String SQLquery = "DELETE FROM dbo.UserSetting WHERE RowInsertBy="+testconfig.getProperty("db_user_id");			                                 
-//			//update
-//			stmt = con.createStatement();
-//			rs = stmt.executeQuery((String) SQLquery);  
-//		}  
-//		// Handle sql server exception
-//		catch (SQLServerException e) {  
-//			System.out.println("********** record deleted");  
-//		}
-//		// Handle any errors that may have occurred.  
-//		catch (Exception e) {  
-//			e.printStackTrace();  
-//		}
-//		finally {  
-//			if (rs != null) 
-//				try { rs.close(); } catch(Exception e) {}  
-//			if (stmt != null) try { stmt.close(); } catch(Exception e) {}  
-//			if (con != null) try { con.close(); } catch(Exception e) {}  
-//		} 
-//		try {  
-//			// Establish the connection.  
-//			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
-//			con = DriverManager.getConnection(connectionUrl);  
-//
-//			// Create and execute an SQL statement 
-//			String SQLquery = "DELETE FROM dbo.userrole WHERE RowInsertBy="+testconfig.getProperty("db_user_id");
-//			//update
-//			stmt = con.createStatement();
-//			rs = stmt.executeQuery((String) SQLquery);  
-//		}  
-//		// Handle sql server exception
-//		catch (SQLServerException e) {  
-//			System.out.println("********** record deleted");  
-//		}
-//		// Handle any errors that may have occurred.  
-//		catch (Exception e) {  
-//			e.printStackTrace();  
-//		}
-//		finally {  
-//			if (rs != null) 
-//				try { rs.close(); } catch(Exception e) {}  
-//			if (stmt != null) try { stmt.close(); } catch(Exception e) {}  
-//			if (con != null) try { con.close(); } catch(Exception e) {}  
-//		}  
-//		try {  
-//			// Establish the connection.  
-//			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
-//			con = DriverManager.getConnection(connectionUrl);  
-//
-//			// Create and execute an SQL statement 
-//			String SQLquery = "DELETE FROM dbo.userpasswordhistory WHERE RowInsertBy="+testconfig.getProperty("db_user_id");
-//			//update
-//			stmt = con.createStatement();
-//			rs = stmt.executeQuery((String) SQLquery);  
-//		}  
-//		// Handle sql server exception
-//		catch (SQLServerException e) {  
-//			System.out.println("********** record deleted");  
-//		}
-//		// Handle any errors that may have occurred.  
-//		catch (Exception e) {  
-//			e.printStackTrace();  
-//		}
-//		finally {  
-//			if (rs != null) 
-//				try { rs.close(); } catch(Exception e) {}  
-//			if (stmt != null) try { stmt.close(); } catch(Exception e) {}  
-//			if (con != null) try { con.close(); } catch(Exception e) {}  
-//		}  
-//		try {  
-//			// Establish the connection.  
-//			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
-//			con = DriverManager.getConnection(connectionUrl);  
-//
-//			// Create and execute an SQL statement 
-//			String SQLquery = "DELETE FROM dbo.userclient WHERE RowInsertBy="+testconfig.getProperty("db_user_id");
-//			//update
-//			stmt = con.createStatement();
-//			rs = stmt.executeQuery((String) SQLquery);  
-//		}  
-//		// Handle sql server exception
-//		catch (SQLServerException e) {  
-//			System.out.println("********** record deleted");  
-//		}
-//		// Handle any errors that may have occurred.  
-//		catch (Exception e) {  
-//			e.printStackTrace();  
-//		}
-//		finally {  
-//			if (rs != null) 
-//				try { rs.close(); } catch(Exception e) {}  
-//			if (stmt != null) try { stmt.close(); } catch(Exception e) {}  
-//			if (con != null) try { con.close(); } catch(Exception e) {}  
-//		}  
 		try {  
 			// Establish the connection.  
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
 			con = DriverManager.getConnection(connectionUrl);  
 
-			// Create and execute an SQL statement 
-			String SQLquery = "DELETE FROM dbo.userclient WHERE RowInsertBy="+testconfig.getProperty("db_user_id");
-			//update
-			stmt = con.createStatement();
-			rs = stmt.executeQuery(SQLquery);  
+			// Create and execute SQL statement 
+			ps = con.prepareStatement("DELETE FROM UserClient WHERE UserID IN(SELECT UserID FROM [TLG_CMP_B5].[dbo].[User] WHERE RowInsertBy="+testconfig.getProperty("db_user_id")+")");
+			ps.executeUpdate();  
 		}  
 		// Handle sql server exception
 		catch (SQLServerException e) {  
-			System.out.println("********** record deleted");  
+			e.printStackTrace(); 
 		}
 		// Handle any errors that may have occurred.  
-		catch (Exception e) {  
+		catch (Exception e) { 
+			System.out.println("Could not delete:\tUserClient");
 			e.printStackTrace();  
-		}
+		}  	
 		finally {  
-			if (rs != null) 
-				try { rs.close(); } catch(Exception e) {}  
+			if (rs != null) try { rs.close(); } catch(Exception e) {}  
 			if (stmt != null) try { stmt.close(); } catch(Exception e) {}  
-			if (con != null) try { con.close(); } catch(Exception e) {}  
-		}  
+			if (con != null) try { con.close(); } catch(Exception e) {} 
+			if (ps != null) try {ps.close(); } catch(Exception e) {}
+		}
+		
 		try {  
 			// Establish the connection.  
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");  
 			con = DriverManager.getConnection(connectionUrl);  
 
-			// Create and execute an SQL statement 
-			String SQLquery = "DELETE FROM dbo.[user] WHERE RowInsertBy="+testconfig.getProperty("db_user_id");
-			//update
-			stmt = con.createStatement();
-			rs = stmt.executeQuery(SQLquery);  
+			// Create and execute SQL statement 
+			ps = con.prepareStatement("DELETE FROM [TLG_CMP_B5].[dbo].[User] WHERE RowInsertBy="+testconfig.getProperty("db_user_id"));
+			ps.executeUpdate();  
 		}  
 		// Handle sql server exception
 		catch (SQLServerException e) {  
-			System.out.println("********** record deleted");  
+			e.printStackTrace(); 
 		}
 		// Handle any errors that may have occurred.  
-		catch (Exception e) {  
+		catch (Exception e) { 
+			System.out.println("Could not delete:\tUser");
 			e.printStackTrace();  
-		}
+		}  	
 		finally {  
-			if (rs != null) 
-				try { rs.close(); } catch(Exception e) {}  
+			if (rs != null) try { rs.close(); } catch(Exception e) {}  
 			if (stmt != null) try { stmt.close(); } catch(Exception e) {}  
-			if (con != null) try { con.close(); } catch(Exception e) {}  
-		}  
+			if (con != null) try { con.close(); } catch(Exception e) {} 
+			if (ps != null) try {ps.close(); } catch(Exception e) {}
+		}
 	}
 	//sql delete role
 	public static void deleteRole()

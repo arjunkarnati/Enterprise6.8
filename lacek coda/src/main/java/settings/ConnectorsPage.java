@@ -7,8 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import Utility.PageBase;
-import library.MessagesAddPage;
-import library.VariablesAddPage;
+
 
 
 
@@ -143,7 +142,7 @@ public class ConnectorsPage extends PageBase{
 			driver.findElement(By.xpath("//i[@class='fa fa-pencil-square-o']")).click();
 			break;
 		}
-		case "edit_conn_test_1":
+		case "edit_conn_test_01":
 		{
 			driver.findElement(By.xpath("//i[@class='fa fa-pencil-square-o']")).click();
 			sleep();
@@ -406,6 +405,24 @@ public class ConnectorsPage extends PageBase{
 			}
 			return new ConnectorsPage(driver);
 
+		}
+
+		public ConnectorsPage archiveConnector(String searchconnector) {
+			
+			readconfig();
+			driver.findElement(By.xpath("//input[@type='search']")).clear();
+			sleep();
+			driver.findElement(By.xpath("//input[@type='search']")).sendKeys(searchconnector);
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e){
+				e.printStackTrace();
+			}	
+			driver.findElement(By.xpath(elementslocator.getProperty("archive_connector"))).click();
+			driver.findElement(By.xpath(elementslocator.getProperty("archive_pop-yes"))).click();
+
+
+			return new ConnectorsPage(driver);
 		}
 
 }

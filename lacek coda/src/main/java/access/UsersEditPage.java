@@ -199,7 +199,7 @@ public class UsersEditPage extends PageBase {
 		else if (answer==true)
 		{
 			driver.findElement(By.xpath(elementslocator.getProperty("user_edit_all_access"))).click();
-			Assert.assertFalse(driver.findElement(By.id(elementslocator.getProperty("user_add_role"))).isDisplayed());
+			//Assert.assertFalse(driver.findElement(By.id(elementslocator.getProperty("user_add_role"))).isDisplayed());
 			Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("user_edit_page_title"));
 		}
 		else

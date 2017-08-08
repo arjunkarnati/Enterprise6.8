@@ -482,9 +482,10 @@ public class MessagesPage extends PageBase{
 		readconfig();
 		driver.findElement(By.xpath(library.getProperty("message_clone"))).click();
 		driver.findElement(By.xpath(library.getProperty("save_as_name"))).clear();
-		driver.findElement(By.xpath(library.getProperty("save_as_name"))).sendKeys(newname);
 		try{
 			Thread.sleep(3000);
+		driver.findElement(By.xpath(library.getProperty("save_as_name"))).sendKeys(newname);
+		
 			driver.findElement(By.xpath("html/body/div[7]/div/div/div[3]/button[1]")).click();
 			
 		}

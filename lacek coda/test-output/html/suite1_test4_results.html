@@ -12,7 +12,7 @@
 <body>
 <h1>CAMPAIGN TESTCASES</h1>
 <p>
-  Test duration: 2759.242s
+  Test duration: 1302.394s
 </p>
 
 
@@ -28,24 +28,22 @@
                   create_a_new_campaign
       </td>
   <td class="duration">
-    32.114s
+    23.697s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;s2id_autogen81&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element &lt;input type=&quot;text&quot; autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; spellcheck=&quot;false&quot; class=&quot;select2-input select2-focused&quot; id=&quot;s2id_autogen79&quot; placeholder=&quot;&quot; style=&quot;width: 1315px;&quot; aria-activedescendant=&quot;select2-result-label-81&quot;&gt; is not clickable at point (1201, 448). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=60.0.3112.90)<br/>
 &nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.06 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Command duration or timeout: 54 milliseconds<br/>
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir25484_30358}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: f75c6e9c12105a5eb299c08249e14ae3<br/>
-*** Element info: {Using=id, value=s2id_autogen81}</b></a><br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir60780_5133}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
+Session ID: 8d0c7872373915a24d2be7f9f5bc58d4</b></a><br />
     <div class="stackTrace" id="exception-0">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
@@ -54,72 +52,10 @@ Session ID: f75c6e9c12105a5eb299c08249e14ae3<br/>
               org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
               org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
               org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)<br />
-              org.openqa.selenium.By$ById.findElement(By.java:218)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)<br />
               library.CampaignAddPage.addBrand(CampaignAddPage.java:22)<br />
-              library.Campaigns_Testcases.create_a_new_campaign(Campaigns_Testcases.java:19)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  create_a_new_campaign_without_campaignname
-      </td>
-  <td class="duration">
-    31.830s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;s2id_autogen81&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.04 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir28656_17959}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: edcbf2b4b489a745194a6d0f46fa7f1a<br/>
-*** Element info: {Using=id, value=s2id_autogen81}</b></a><br />
-    <div class="stackTrace" id="exception-1">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)<br />
-              org.openqa.selenium.By$ById.findElement(By.java:218)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignAddPage.addBrand(CampaignAddPage.java:22)<br />
-              library.Campaigns_Testcases.create_a_new_campaign_without_campaignname(Campaigns_Testcases.java:59)<br />
+              library.Campaigns_Testcases.create_a_new_campaign(Campaigns_Testcases.java:20)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -148,38 +84,23 @@ Session ID: edcbf2b4b489a745194a6d0f46fa7f1a<br/>
                   create_a_new_campaign_without_series
       </td>
   <td class="duration">
-    30.851s
+    38.172s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;s2id_autogen81&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.04 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir59092_13687}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: 945bc24cabb576263fab097ee113174a<br/>
-*** Element info: {Using=id, value=s2id_autogen81}</b></a><br />
-    <div class="stackTrace" id="exception-2">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)<br />
-              org.openqa.selenium.By$ById.findElement(By.java:218)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignAddPage.addBrand(CampaignAddPage.java:22)<br />
-              library.Campaigns_Testcases.create_a_new_campaign_without_series(Campaigns_Testcases.java:111)<br />
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [1] but found [0]</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              library.CampaignPage.validateUpdates(CampaignPage.java:244)<br />
+              library.Campaigns_Testcases.create_a_new_campaign_without_series(Campaigns_Testcases.java:115)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -209,27 +130,87 @@ Session ID: 945bc24cabb576263fab097ee113174a<br/>
             
 <tr>
   <td class="method">
-                  activate_campaign
+                  update_campaign_brands
       </td>
   <td class="duration">
-    24.533s
+    29.894s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen80&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=60.0.3112.90)<br/>
 &nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.01 seconds<br/>
+Command duration or timeout: 10.04 seconds<br/>
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir12372_2330}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: cf49dec9ec29183f0c20489c3b43b5fd<br/>
-*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]}</b></a><br />
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir68980_3442}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
+Session ID: 853f6ad7a7b6efd8a8e965bd75a9dfa9<br/>
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen80&apos;]}</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              library.CampaignEditPage.deleteEntryInBrandField(CampaignEditPage.java:203)<br />
+              library.CanpaignsEdit_TestCases.update_campaign_brands(CanpaignsEdit_TestCases.java:72)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
+              org.testng.TestRunner.run(TestRunner.java:610)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_brands_to_previous
+      </td>
+  <td class="duration">
+    29.614s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen80&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=60.0.3112.90)<br/>
+&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 10.03 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir71188_11062}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
+Session ID: 8b18aa004b984e115330a4ca5d64f6b9<br/>
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen80&apos;]}</b></a><br />
     <div class="stackTrace" id="exception-3">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
@@ -242,368 +223,8 @@ Session ID: cf49dec9ec29183f0c20489c3b43b5fd<br/>
               org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
               org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
               org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.editCampaign(CampaignPage.java:90)<br />
-              library.CanpaignsEdit_TestCases.activate_campaign(CanpaignsEdit_TestCases.java:195)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  archive_campaign
-      </td>
-  <td class="duration">
-    24.658s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;datatable&apos;]/tbody/tr/td[14]/div/div/a[5]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.05 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir48904_12400}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: a2ab51fe9e0be661d93f1e0b43c95df0<br/>
-*** Element info: {Using=xpath, value=//*[@id=&apos;datatable&apos;]/tbody/tr/td[14]/div/div/a[5]}</b></a><br />
-    <div class="stackTrace" id="exception-4">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.archiveCampaign(CampaignPage.java:147)<br />
-              library.CanpaignsEdit_TestCases.archive_campaign(CanpaignsEdit_TestCases.java:208)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  camp_mass_advance_workflow
-      </td>
-  <td class="duration">
-    26.838s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;datatable&apos;]/tbody/tr[1]/td[14]/div/div/a[3]/i&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.05 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir40216_8487}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: 16c7136c9d82166f61b3411bbbcef1e9<br/>
-*** Element info: {Using=xpath, value=.//*[@id=&apos;datatable&apos;]/tbody/tr[1]/td[14]/div/div/a[3]/i}</b></a><br />
-    <div class="stackTrace" id="exception-5">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.clickMassadvanceworkflow(CampaignPage.java:283)<br />
-              library.CanpaignsEdit_TestCases.camp_mass_advance_workflow(CanpaignsEdit_TestCases.java:227)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  inactivate_campaign
-      </td>
-  <td class="duration">
-    24.499s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.04 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir35812_6010}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: 76130548d82552d1f2889793e43a0d73<br/>
-*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]}</b></a><br />
-    <div class="stackTrace" id="exception-6">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.editCampaign(CampaignPage.java:90)<br />
-              library.CanpaignsEdit_TestCases.inactivate_campaign(CanpaignsEdit_TestCases.java:182)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  restorte_campaign
-      </td>
-  <td class="duration">
-    32.016s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Restore&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.02 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir21392_30351}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: f82c18dfb17a235cc66ce6ccea85d059<br/>
-*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Restore&apos;)]}</b></a><br />
-    <div class="stackTrace" id="exception-7">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.restoreCampaign(CampaignPage.java:121)<br />
-              library.CanpaignsEdit_TestCases.restorte_campaign(CanpaignsEdit_TestCases.java:217)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_camp_mass_advance_workflow
-      </td>
-  <td class="duration">
-    26.821s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;datatable&apos;]/tbody/tr[1]/td[14]/div/div/a[3]/i&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.06 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir18740_9191}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: 694c0194a3060fac0782f1c6bd1a4496<br/>
-*** Element info: {Using=xpath, value=.//*[@id=&apos;datatable&apos;]/tbody/tr[1]/td[14]/div/div/a[3]/i}</b></a><br />
-    <div class="stackTrace" id="exception-8">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.clickMassadvanceworkflow(CampaignPage.java:283)<br />
-              library.CanpaignsEdit_TestCases.update_camp_mass_advance_workflow(CanpaignsEdit_TestCases.java:239)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_campaign_clientname_to_previous_client
-      </td>
-  <td class="duration">
-    31.186s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;btnSubmit&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.05 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir27180_784}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: 1607243b667dd890a02e54165b9505c8<br/>
-*** Element info: {Using=xpath, value=btnSubmit}</b></a><br />
-    <div class="stackTrace" id="exception-9">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignEditPage.updateClientNameTo(CampaignEditPage.java:44)<br />
-              library.CanpaignsEdit_TestCases.update_campaign_clientname_to_previous_client(CanpaignsEdit_TestCases.java:56)<br />
+              library.CampaignEditPage.deleteEntryInBrandField(CampaignEditPage.java:203)<br />
+              library.CanpaignsEdit_TestCases.update_campaign_brands_to_previous(CanpaignsEdit_TestCases.java:87)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -632,23 +253,25 @@ Session ID: 1607243b667dd890a02e54165b9505c8<br/>
                   update_campaign_programs
       </td>
   <td class="duration">
-    24.426s
+    30.762s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-10', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button id=&quot;btnSubmit&quot; name=&quot;btnSubmit&quot; type=&quot;submit&quot; class=&quot;btn blue&quot;&gt;...&lt;/button&gt; is not clickable at point (1812, 918). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen79&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=60.0.3112.90)<br/>
 &nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 117 milliseconds<br/>
+Command duration or timeout: 10.03 seconds<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir11740_15023}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: 42e0ce2ae289624e98219630eb47e1b9</b></a><br />
-    <div class="stackTrace" id="exception-10">
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir23708_16785}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
+Session ID: 6cd12f81fdf9d378fb62575821af6fc8<br/>
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen79&apos;]}</b></a><br />
+    <div class="stackTrace" id="exception-4">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
               sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
@@ -656,10 +279,12 @@ Session ID: 42e0ce2ae289624e98219630eb47e1b9</b></a><br />
               org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
               org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
               org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)<br />
-              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)<br />
-              library.CampaignEditPage.clickSubmit(CampaignEditPage.java:155)<br />
-              library.CanpaignsEdit_TestCases.update_campaign_programs(CanpaignsEdit_TestCases.java:103)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
+              library.CampaignEditPage.deleteEntryInProgramField(CampaignEditPage.java:216)<br />
+              library.CanpaignsEdit_TestCases.update_campaign_programs(CanpaignsEdit_TestCases.java:101)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -688,25 +313,25 @@ Session ID: 42e0ce2ae289624e98219630eb47e1b9</b></a><br />
                   update_campaign_programs_to_previous
       </td>
   <td class="duration">
-    24.747s
+    30.341s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-11', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen79&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=60.0.3112.90)<br/>
 &nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.05 seconds<br/>
+Command duration or timeout: 10.04 seconds<br/>
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir47760_32340}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: 0b956cff1f149587b9772ab5a6361e2b<br/>
-*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]}</b></a><br />
-    <div class="stackTrace" id="exception-11">
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir8328_11585}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
+Session ID: e9fbf4d8f5defb3bc053cd72feb50bb1<br/>
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen79&apos;]}</b></a><br />
+    <div class="stackTrace" id="exception-5">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
               sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
@@ -718,188 +343,8 @@ Session ID: 0b956cff1f149587b9772ab5a6361e2b<br/>
               org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
               org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
               org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.editCampaign(CampaignPage.java:90)<br />
-              library.CanpaignsEdit_TestCases.update_campaign_programs_to_previous(CanpaignsEdit_TestCases.java:114)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_campaign_series
-      </td>
-  <td class="duration">
-    25.589s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-12', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.03 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir43740_31298}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: e47ec84b90bdf893e0d51741fc85c277<br/>
-*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]}</b></a><br />
-    <div class="stackTrace" id="exception-12">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.editCampaign(CampaignPage.java:90)<br />
-              library.CanpaignsEdit_TestCases.update_campaign_series(CanpaignsEdit_TestCases.java:128)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_campaign_series_to_previous
-      </td>
-  <td class="duration">
-    24.371s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-13', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.02 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir24192_2003}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: ab7ca02731385d3d4bf6299797e3083b<br/>
-*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]}</b></a><br />
-    <div class="stackTrace" id="exception-13">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.editCampaign(CampaignPage.java:90)<br />
-              library.CanpaignsEdit_TestCases.update_campaign_series_to_previous(CanpaignsEdit_TestCases.java:144)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
-              org.testng.TestRunner.run(TestRunner.java:610)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
-              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
-              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
-              java.lang.Thread.run(Thread.java:745)<br />
-                </div>
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_campaign_workflow_to_approved
-      </td>
-  <td class="duration">
-    24.707s
-  </td>
-  <td class="result">
-        
-    
-        
-
-        <a href="javascript:toggleElement('exception-14', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
-&nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.05 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir9300_22638}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: 74b496a0366e6f4490b45de2ef511a57<br/>
-*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]}</b></a><br />
-    <div class="stackTrace" id="exception-14">
-              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.editCampaign(CampaignPage.java:90)<br />
-              library.CanpaignsEdit_TestCases.update_campaign_workflow_to_approved(CanpaignsEdit_TestCases.java:158)<br />
+              library.CampaignEditPage.deleteEntryInProgramField(CampaignEditPage.java:216)<br />
+              library.CanpaignsEdit_TestCases.update_campaign_programs_to_previous(CanpaignsEdit_TestCases.java:115)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -928,25 +373,23 @@ Session ID: 74b496a0366e6f4490b45de2ef511a57<br/>
                   update_campaign_workflow_to_draft
       </td>
   <td class="duration">
-    24.569s
+    20.247s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-15', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=59.0.3071.115)<br/>
+        <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;/campaign&quot;&gt;...&lt;/a&gt; is not clickable at point (117, 184). Other element would receive the click: &lt;a href=&quot;javascript:;&quot;&gt;...&lt;/a&gt;<br/>
+&nbsp; (Session info: chrome=60.0.3112.90)<br/>
 &nbsp; (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 10.06 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Command duration or timeout: 76 milliseconds<br/>
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;<br/>
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;<br/>
 Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir71420_10345}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
-Session ID: f240ebefb4f751cb65432471035c7922<br/>
-*** Element info: {Using=xpath, value=//a[contains(@href, &apos;/campaign/edit/10000007&apos;)]}</b></a><br />
-    <div class="stackTrace" id="exception-15">
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir13080_27513}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]<br/>
+Session ID: 263d8c563d50bf4c956a3e7b93b30474</b></a><br />
+    <div class="stackTrace" id="exception-6">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
               sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
@@ -954,12 +397,10 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
               org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
               org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
               org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              library.CampaignPage.editCampaign(CampaignPage.java:90)<br />
-              library.CanpaignsEdit_TestCases.update_campaign_workflow_to_draft(CanpaignsEdit_TestCases.java:170)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)<br />
+              login.DashboardPage.clickCampaignsLink(DashboardPage.java:100)<br />
+              library.CanpaignsEdit_TestCases.update_campaign_workflow_to_draft(CanpaignsEdit_TestCases.java:169)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -1036,7 +477,7 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
                   cancel_publish_campaign
       </td>
   <td class="duration">
-    46.933s
+    27.183s
   </td>
   <td class="result">
         
@@ -1050,7 +491,7 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
                   publish_campaign
       </td>
   <td class="duration">
-    1851.835s
+    165.887s
   </td>
   <td class="result">
         
@@ -1068,7 +509,7 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
                   test_is_empty
       </td>
   <td class="duration">
-    8.404s
+    8.783s
   </td>
   <td class="result">
         
@@ -1086,7 +527,21 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
                   click_cancel_button_in_campaign_add_page
       </td>
   <td class="duration">
-    21.223s
+    20.499s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  create_a_new_campaign_without_campaignname
+      </td>
+  <td class="duration">
+    33.655s
   </td>
   <td class="result">
         
@@ -1100,7 +555,7 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
                   create_a_new_campaign_without_clientname
       </td>
   <td class="duration">
-    26.005s
+    25.292s
   </td>
   <td class="result">
         
@@ -1114,7 +569,7 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
                   delete_campaign_from_db
       </td>
   <td class="duration">
-    3.193s
+    3.629s
   </td>
   <td class="result">
         
@@ -1129,10 +584,10 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
             
 <tr>
   <td class="method">
-                  update_campaign_brands
+                  activate_campaign
       </td>
   <td class="duration">
-    39.438s
+    32.683s
   </td>
   <td class="result">
         
@@ -1143,10 +598,94 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
 </tr>
 <tr>
   <td class="method">
-                  update_campaign_brands_to_previous
+                  archive_campaign
       </td>
   <td class="duration">
-    35.476s
+    18.629s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  camp_mass_advance_workflow
+      </td>
+  <td class="duration">
+    85.117s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  inactivate_campaign
+      </td>
+  <td class="duration">
+    33.044s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  restorte_campaign
+      </td>
+  <td class="duration">
+    31.774s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_camp_mass_advance_workflow
+      </td>
+  <td class="duration">
+    81.599s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_client
+      </td>
+  <td class="duration">
+    36.114s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_clientname_to_previous_client
+      </td>
+  <td class="duration">
+    41.485s
   </td>
   <td class="result">
         
@@ -1160,7 +699,7 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
                   update_campaign_name
       </td>
   <td class="duration">
-    34.482s
+    33.511s
   </td>
   <td class="result">
         
@@ -1174,7 +713,49 @@ Session ID: f240ebefb4f751cb65432471035c7922<br/>
                   update_campaign_name_to_previous_name
       </td>
   <td class="duration">
-    34.390s
+    34.229s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_series
+      </td>
+  <td class="duration">
+    42.851s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_series_to_previous
+      </td>
+  <td class="duration">
+    36.001s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  update_campaign_workflow_to_approved
+      </td>
+  <td class="duration">
+    30.474s
   </td>
   <td class="result">
         

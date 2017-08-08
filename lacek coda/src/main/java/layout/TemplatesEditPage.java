@@ -72,8 +72,8 @@ public class TemplatesEditPage extends PageBase {
 	public TemplatesEditPage updateTemplateName(String newtemplatename)
 	{
 		readconfig();
-		driver.findElement(By.id(elementslocator.getProperty("template_edit_name"))).clear();
-		driver.findElement(By.id(elementslocator.getProperty("template_edit_name"))).sendKeys(newtemplatename);
+		driver.findElement(By.xpath(elementslocator.getProperty("template_edit_name"))).clear();
+		driver.findElement(By.xpath(elementslocator.getProperty("template_edit_name"))).sendKeys(newtemplatename);
 		Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("template_edit_page_title"));
 		//return Templates Edit Page
 		return new TemplatesEditPage(driver);
@@ -238,4 +238,110 @@ public class TemplatesEditPage extends PageBase {
 		Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("template_edit_page_title"));
 		return new TemplatesEditPage(driver);
 	}
+	public TemplatesEditPage selectTemplatehistory() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(layout.getProperty("temp_history"))).click();
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage latestTemplatehistory() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(layout.getProperty("temp_latest_record"))).click();
+		
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage compareTemplate() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(layout.getProperty("temp_compare"))).click();
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage validateTemp_count() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(layout.getProperty("temp_compare_count"))).getText();
+		return new TemplatesEditPage(driver);
+		
+		
+	}
+	public TemplatesEditPage selectTemp_media_add() {
+		readconfig();
+		driver.findElement(By.xpath(layout.getProperty("temp_media_add"))).click();
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage add_media_to_temp(String medianame) {
+		readconfig();
+		driver.findElement(By.xpath(layout.getProperty("filet_in_temp_media"))).clear();
+		driver.findElement(By.xpath(layout.getProperty("filet_in_temp_media"))).sendKeys(medianame);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		driver.findElement(By.xpath(layout.getProperty("temp_media_select"))).click();
+		driver.findElement(By.xpath(layout.getProperty("temp_media_close"))).click();
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage  rollbackTemplate() 
+	{
+		readconfig();
+		
+		driver.findElement(By.xpath(layout.getProperty("temp_rollback"))).click();
+		driver.findElement(By.xpath(layout.getProperty("temp_rollback_yes"))).click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage addmarkup_to_Template(String newmarkup) 
+	{
+        readconfig();
+		
+		driver.findElement(By.xpath(layout.getProperty("temp_add_markup"))).sendKeys(newmarkup);
+		
+		
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage selectTemp_region_header() {
+          readconfig();
+		
+		driver.findElement(By.xpath(layout.getProperty("temp_region_header"))).click();
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage click_comm_temp() {
+		 readconfig();
+			
+			driver.findElement(By.xpath(layout.getProperty("comm_temp_select"))).click();
+			driver.findElement(By.xpath(layout.getProperty("comm_temp_select_region"))).click();
+		return new TemplatesEditPage(driver);
+	}
+	public TemplatesEditPage deleteTemp_media() 
+	{
+		 readconfig();
+			
+			driver.findElement(By.xpath(layout.getProperty("temp_media_delete"))).click();
+			driver.findElement(By.xpath(layout.getProperty("temp_media_delete_yes"))).click();
+		return new TemplatesEditPage(driver);	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

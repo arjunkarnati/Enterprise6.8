@@ -4,35 +4,35 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1420.857">
+           time="1448.402">
   <properties />
   
   
-            <testcase name="update_media_gallery_workflow_to_draft" time="54.251" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_workflow_to_approved_Carnival_AE" time="54.121" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_Alt_Tag" time="63.073" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_name_to_previous_name" time="60.857" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_workflow_to_draft_EHI_AE" time="63.112" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="inactivate_media_gallery" time="61.704" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="restore_media_gallery" time="42.201" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="delete_messagemedia_connectors" time="46.156" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_program" time="61.780" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_manage_workflow_in_media" time="24.760" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_brand_to_previous" time="69.025" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_clientname_to_previous" time="77.742" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="activate_media_gallery" time="61.517" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_clientname" time="41.872" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_brand" time="65.576" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="manage_workflow_in_media" time="25.452" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="archive_media_gallery" time="32.914" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_program_to_previous" time="61.026" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_workflow_to_approved_EHI_AE" time="60.411" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_workflow_to_draft_Carnival_AE" time="48.794" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_workflow_to_approved" time="56.073" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_messagemedia_connectors" time="53.034" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_name" time="63.787" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_Alt_Tag_to_previous" time="62.380" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_connectors" time="57.301" classname="assets.MediaGalleryEdit_testcases" />
-                <testcase name="update_media_gallery_description" time="51.938" classname="assets.MediaGalleryEdit_testcases" />
+            <testcase name="update_media_gallery_program_to_previous" time="64.579" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_messagemedia_connectors" time="51.565" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_draft_Carnival_AE" time="46.697" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_clientname_to_previous" time="81.488" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_draft" time="56.391" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="restore_media_gallery" time="45.368" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_approved_Carnival_AE" time="47.347" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_name_to_previous_name" time="64.043" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="delete_messagemedia_connectors" time="45.052" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_description" time="52.787" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="manage_workflow_in_media" time="23.350" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_clientname" time="40.752" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_Alt_Tag" time="65.179" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_manage_workflow_in_media" time="24.816" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_name" time="62.711" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="inactivate_media_gallery" time="63.349" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_program" time="62.020" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_brand" time="67.426" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_brand_to_previous" time="70.066" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_approved_EHI_AE" time="61.529" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="archive_media_gallery" time="32.655" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="activate_media_gallery" time="63.612" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_Alt_Tag_to_previous" time="63.656" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_approved" time="57.845" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_connectors" time="71.642" classname="assets.MediaGalleryEdit_testcases" />
+                <testcase name="update_media_gallery_workflow_to_draft_EHI_AE" time="62.477" classname="assets.MediaGalleryEdit_testcases" />
       
 </testsuite>

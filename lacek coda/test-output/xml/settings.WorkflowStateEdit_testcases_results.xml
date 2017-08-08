@@ -1,26 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WORKFLOW STATES TESTCASES"
+<testsuite name="WORKFLOW STATE TESTCASES"
            tests="14"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="515.504">
+           time="533.137">
   <properties />
+            <testcase name="restore_wf_state" time="33.812" classname="settings.WorkflowStateEdit_testcases">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Restore&apos;)]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir40876_15}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 238221cc3fff0af6c6e9890c86c54bc6
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Restore&apos;)]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Restore')]"}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir40876_15}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 238221cc3fff0af6c6e9890c86c54bc6
+*** Element info: {Using=xpath, value=//a[contains(text(),'Restore')]}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+  settings.WorkflowStatePage.restoreWorkflowState(WorkflowStatePage.java:144)
+  settings.WorkflowStateEdit_testcases.restore_wf_state(WorkflowStateEdit_testcases.java:173)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="return_to_wf_state_main_page_from_edit" time="33.726" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="restore_wf_state" time="30.503" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="empty_color_field_in_wf_state_edit_page" time="38.162" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_name" time="42.017" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_description" time="40.567" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="empty_name_field_in_wf_state_edit_page" time="38.273" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="activate_workflow_state" time="42.611" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_description_to_previous" time="40.532" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="inactivate_workflow_state" time="41.623" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_name_to_previous" time="42.200" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_color" time="38.096" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="click_cancel_in_wf_state_edit_page" time="31.481" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="update_workflow_state_color_to_previous" time="37.228" classname="settings.WorkflowStateEdit_testcases" />
-                <testcase name="archive_wf_state" time="18.485" classname="settings.WorkflowStateEdit_testcases" />
+            <testcase name="empty_name_field_in_wf_state_edit_page" time="37.691" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_description" time="40.333" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="activate_workflow_state" time="41.929" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_name_to_previous" time="54.056" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_description_to_previous" time="40.310" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="empty_color_field_in_wf_state_edit_page" time="37.575" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="archive_wf_state" time="19.839" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="click_cancel_in_wf_state_edit_page" time="31.163" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_color" time="38.763" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_color_to_previous" time="38.066" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="return_to_wf_state_main_page_from_edit" time="34.205" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="update_workflow_state_name" time="42.628" classname="settings.WorkflowStateEdit_testcases" />
+                <testcase name="inactivate_workflow_state" time="42.767" classname="settings.WorkflowStateEdit_testcases" />
       
 </testsuite>

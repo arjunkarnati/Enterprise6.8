@@ -434,10 +434,13 @@ public class ComunicationsEditPage extends PageBase{
 	public  ComunicationsEditPage deleteMessage(String msgname) {
 	
 		readconfig();
+		
+		driver.findElement(By.xpath(library.getProperty("click_message_library"))).click();
 			driver.findElement(By.xpath(library.getProperty("click_select_messages"))).click();
+			//driver.findElement(By.xpath(library.getProperty("clear_msg-filters"))).clear();
 		    driver.findElement(By.xpath(library.getProperty("filter_slect_messages"))).sendKeys(msgname);
 		    try{
-		    	Thread.sleep(3000);
+		    	Thread.sleep(1000);
 		    }catch(Exception e){
 		    		e.printStackTrace();
 		    	}
@@ -449,7 +452,7 @@ public class ComunicationsEditPage extends PageBase{
 	public ComunicationsEditPage selectRemovemessage() {
 		// TODO Auto-generated method stub
 		readconfig();
-		driver.findElement(By.xpath(library.getProperty("select_yes"))).click();
+		driver.findElement(By.xpath(library.getProperty("remove_select_yes"))).click();
 		return new ComunicationsEditPage(driver);
 	}
 	

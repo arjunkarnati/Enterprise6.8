@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import Utility.PageBase;
+import library.MessagesPage;
 import library.VariablesAddPage;
 
 public class ConnectorsEditPage extends PageBase {
@@ -75,6 +76,7 @@ public class ConnectorsEditPage extends PageBase {
 	//delete one entry in brand field
 	public ConnectorsEditPage deleteBrand()
 	{
+		readconfig();
 		driver.findElement(By.xpath(".//*[@id='s2id_autogen7']")).sendKeys(Keys.BACK_SPACE);
 		driver.findElement(By.xpath(".//*[@id='s2id_autogen7']")).sendKeys(Keys.BACK_SPACE);
 		sleep();
@@ -84,7 +86,8 @@ public class ConnectorsEditPage extends PageBase {
 	}
 	//delete one entry in program field
 	public ConnectorsEditPage deleteProgram()
-	{
+	{ 
+		readconfig();
 		driver.findElement(By.xpath(".//*[@id='s2id_autogen8']")).sendKeys(Keys.BACK_SPACE);
 		driver.findElement(By.xpath(".//*[@id='s2id_autogen8']")).sendKeys(Keys.BACK_SPACE);
 		sleep();
@@ -174,4 +177,65 @@ public class ConnectorsEditPage extends PageBase {
 		return new ConnectorsEditPage(driver);
 	
 	}
+	public ConnectorsEditPage editConnectorname(String newname) {
+		// TODO Auto-generated method stub
+		
+		readconfig();
+		driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_name"))).clear();
+		driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_name"))).sendKeys(newname);
+		
+		
+		
+
+		return new ConnectorsEditPage(driver);	
+	}
+	public ConnectorsEditPage updateConnector_brand(String newbrand) {
+		// TODO Auto-generated method stub
+		readconfig();
+		
+		driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_brand"))).clear();
+		driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_brand"))).sendKeys(newbrand);
+		driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_brand"))).sendKeys(Keys.ENTER);
+		return new ConnectorsEditPage(driver);	
+
+	}
+	public ConnectorsEditPage updateConnector_program(String newprogram) {
+		// TODO Auto-generated method stub
+        readconfig();
+		
+		driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_program"))).clear();
+		driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_program"))).sendKeys(newprogram);
+		driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_program"))).sendKeys(Keys.ENTER);
+		return new ConnectorsEditPage(driver);	
+	}
+	public ConnectorsEditPage updateConnector_workflow(String workflowname, String messagename)
+	{
+		readconfig();
+		switch(workflowname)
+		{
+		case "DRAFT":
+		{
+			driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_workflow"))).sendKeys("D");
+			//driver.findElement(By.xpath(library.getProperty("mes_edit_submit"))).click();
+			//Assert.assertEquals(driver.getTitle(),library.getProperty("mess_page_title"));
+			break;
+		}
+		case "APPROVED":
+		{
+			driver.findElement(By.xpath(elementslocator.getProperty("conn_edit_workflow"))).sendKeys("A");
+			//driver.findElement(By.xpath(library.getProperty("mes_edit_submit"))).click();
+			//Assert.assertEquals(driver.getTitle(),library.getProperty("mess_page_title"));
+			break;
+		}
+		default: 
+		{
+			throw new InvalidParameterException("Please verify the workflow name");
+		}
+		}
+		return new ConnectorsEditPage(driver);	
+	
+		
+			
+	}
+	
 }

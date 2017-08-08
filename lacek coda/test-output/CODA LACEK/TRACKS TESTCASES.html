@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TRACKS TESTCASES</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 26 15:53:20 CDT 2017</td>
+<td>Started on:</td><td>Mon Aug 07 16:07:46 CDT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>1116 seconds (1116494 ms)</td>
+<tr><td>Total time:</td><td>1076 seconds (1076023 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='library.Tracks_Testcases.create_a_new_track()'><b>create_a_new_track</b><br>Test class: library.Tracks_Testcases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen6&apos;]&quot;}
-Command duration or timeout: 10.10 seconds
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen81&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9.98 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d16665c4-6ec0-43f4-8cfa-fa2a38d557eb
-*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen6&apos;]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir8500_8597}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: bf69304935003363af93536afb1b7a36
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen81&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -98,23 +100,18 @@ Session ID: d16665c4-6ec0-43f4-8cfa-fa2a38d557eb
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen6&apos;]&quot;}
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1615361956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1615361956'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen81&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 9.98 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous2418171186821189398webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous2418171186821189398webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace904232286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace904232286'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen6&apos;]&quot;}
-Command duration or timeout: 10.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d16665c4-6ec0-43f4-8cfa-fa2a38d557eb
-*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen6&apos;]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir8500_8597}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: bf69304935003363af93536afb1b7a36
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen81&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -148,27 +145,22 @@ Session ID: d16665c4-6ec0-43f4-8cfa-fa2a38d557eb
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen6&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous2418171186821189398webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous2418171186821189398webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
-<td>40</td>
+<td>38</td>
 <td>library.Tracks_Testcases@710726a3</td></tr>
 <tr>
 <td title='library.Tracks_Testcases.create_a_new_track_without_brand()'><b>create_a_new_track_without_brand</b><br>Test class: library.Tracks_Testcases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen7&apos;]&quot;}
-Command duration or timeout: 10.16 seconds
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen82&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 87231614-6fd1-4aa3-aaf4-df871b4897f5
-*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen7&apos;]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir65436_25471}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: d6fdf5011927725d77010d07fde7ba7a
+*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen82&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -182,23 +174,18 @@ Session ID: 87231614-6fd1-4aa3-aaf4-df871b4897f5
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen7&apos;]&quot;}
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1154053766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1154053766'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen82&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous886831638844759525webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous886831638844759525webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace400827057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace400827057'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen7&apos;]&quot;}
-Command duration or timeout: 10.16 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 87231614-6fd1-4aa3-aaf4-df871b4897f5
-*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen7&apos;]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir65436_25471}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: d6fdf5011927725d77010d07fde7ba7a
+*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen82&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -232,27 +219,22 @@ Session ID: 87231614-6fd1-4aa3-aaf4-df871b4897f5
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen7&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous886831638844759525webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous886831638844759525webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
-<td>40</td>
+<td>38</td>
 <td>library.Tracks_Testcases@710726a3</td></tr>
 <tr>
 <td title='library.Tracks_Testcases.create_a_new_track_without_tracksnname()'><b>create_a_new_track_without_tracksnname</b><br>Test class: library.Tracks_Testcases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen6&apos;]&quot;}
-Command duration or timeout: 10.09 seconds
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen81&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2e5fed49-53cb-4aa0-a390-20cb5e52754a
-*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen6&apos;]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir56084_8962}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 6b7946ed1b7f1641f5deccebda098aa7
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen81&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -266,23 +248,18 @@ Session ID: 2e5fed49-53cb-4aa0-a390-20cb5e52754a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen6&apos;]&quot;}
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1814101171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1814101171'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen81&apos;]&quot;}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous6015726622761938664webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous6015726622761938664webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace310358996", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace310358996'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen6&apos;]&quot;}
-Command duration or timeout: 10.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2e5fed49-53cb-4aa0-a390-20cb5e52754a
-*** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen6&apos;]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir56084_8962}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 6b7946ed1b7f1641f5deccebda098aa7
+*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen81&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -316,57 +293,41 @@ Session ID: 2e5fed49-53cb-4aa0-a390-20cb5e52754a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen6&apos;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous6015726622761938664webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous6015726622761938664webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
 <td>39</td>
 <td>library.Tracks_Testcases@710726a3</td></tr>
 <tr>
 <td title='library.TracksPublish_Testcases.publish_tracks()'><b>publish_tracks</b><br>Test class: library.TracksPublish_Testcases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Submit&apos;)]&quot;}
-Command duration or timeout: 10.39 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a id=&quot;publish-button&quot; class=&quot;btn blue&quot; disabled=&quot;disabled&quot;&gt;...&lt;/a&gt; is not clickable at point (316, 355). Other element would receive the click: &lt;div class=&quot;portlet-body&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 62 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8632b77a-89b9-41ea-b28e-0cf200aa4c42
-*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Submit&apos;)]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir9584_17944}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 303e91090995ccf6335f002e36f7520f
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at library.TracksPublishPage.clickPublishButton(TracksPublishPage.java:46)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at library.TracksPublishPage.clickPublishButton(TracksPublishPage.java:36)
 	at library.TracksPublish_Testcases.publish_tracks(TracksPublish_Testcases.java:17)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Submit&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace481538747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace481538747'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a id=&quot;publish-button&quot; class=&quot;btn blue&quot; disabled=&quot;disabled&quot;&gt;...&lt;/a&gt; is not clickable at point (316, 355). Other element would receive the click: &lt;div class=&quot;portlet-body&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 62 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous372945228760436874webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous372945228760436874webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1981037335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1981037335'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Submit&apos;)]&quot;}
-Command duration or timeout: 10.39 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8632b77a-89b9-41ea-b28e-0cf200aa4c42
-*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Submit&apos;)]}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir9584_17944}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 303e91090995ccf6335f002e36f7520f
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -374,11 +335,9 @@ Session ID: 8632b77a-89b9-41ea-b28e-0cf200aa4c42
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at library.TracksPublishPage.clickPublishButton(TracksPublishPage.java:46)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at library.TracksPublishPage.clickPublishButton(TracksPublishPage.java:36)
 	at library.TracksPublish_Testcases.publish_tracks(TracksPublish_Testcases.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -400,109 +359,20 @@ Session ID: 8632b77a-89b9-41ea-b28e-0cf200aa4c42
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(),&apos;Submit&apos;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous372945228760436874webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous372945228760436874webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
-<td>67</td>
+<td>43</td>
 <td>library.TracksPublish_Testcases@78186a70</td></tr>
 <tr>
-<td title='library.TracksEdit_Testcases.update_track_workflow_to_draft()'><b>update_track_workflow_to_draft</b><br>Test class: library.TracksEdit_Testcases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;datatable&apos;]/tbody/tr/td[12]/span&quot;}
-Command duration or timeout: 10.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e0806469-05ab-4b55-917c-f2046646936a
-*** Element info: {Using=xpath, value=.//*[@id=&apos;datatable&apos;]/tbody/tr/td[12]/span}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at library.TracksPage.validateUpdates(TracksPage.java:249)
-	at library.TracksEdit_Testcases.update_track_workflow_to_draft(TracksEdit_Testcases.java:185)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;datatable&apos;]/tbody/tr/td[12]/span&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous961905938515609420webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous961905938515609420webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1500741236", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1500741236'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;datatable&apos;]/tbody/tr/td[12]/span&quot;}
-Command duration or timeout: 10.09 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: e0806469-05ab-4b55-917c-f2046646936a
-*** Element info: {Using=xpath, value=.//*[@id=&apos;datatable&apos;]/tbody/tr/td[12]/span}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at library.TracksPage.validateUpdates(TracksPage.java:249)
-	at library.TracksEdit_Testcases.update_track_workflow_to_draft(TracksEdit_Testcases.java:185)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;datatable&apos;]/tbody/tr/td[12]/span&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
-System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous961905938515609420webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ARJUN~1.KAR/AppData/Local/Temp/anonymous961905938515609420webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-</pre></div></td>
-<td>41</td>
-<td>library.TracksEdit_Testcases@646007f4</td></tr>
-<tr>
 <td title='library.TracksEdit_Testcases.update_tracks_programs_to_previous()'><b>update_tracks_programs_to_previous</b><br>Test class: library.TracksEdit_Testcases</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (1813, 790.7000122070312). Other element would receive the click: &lt;div style=&quot;display: block;&quot; class=&quot;select2-drop-mask&quot; id=&quot;select2-drop-mask&quot;&gt;&lt;/div&gt;
-Command duration or timeout: 201 milliseconds
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button id=&quot;btnSubmit&quot; name=&quot;btnSubmit&quot; type=&quot;submit&quot; class=&quot;btn blue&quot;&gt;...&lt;/button&gt; is not clickable at point (1812, 918). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 121 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 794f1232-1f5a-4e7c-9ebd-8616f9c1dadc
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir68204_2797}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 47483997bed42793fb19a2540aa60685
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -514,14 +384,16 @@ Session ID: 794f1232-1f5a-4e7c-9ebd-8616f9c1dadc
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1696563850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1696563850'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (1813, 790.7000122070312). Other element would receive the click: &lt;div style=&quot;display: block;&quot; class=&quot;select2-drop-mask&quot; id=&quot;select2-drop-mask&quot;&gt;&lt;/div&gt;
-Command duration or timeout: 201 milliseconds
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948886158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948886158'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button id=&quot;btnSubmit&quot; name=&quot;btnSubmit&quot; type=&quot;submit&quot; class=&quot;btn blue&quot;&gt;...&lt;/button&gt; is not clickable at point (1812, 918). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;display: block;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 121 milliseconds
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=42.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 794f1232-1f5a-4e7c-9ebd-8616f9c1dadc
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir68204_2797}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 47483997bed42793fb19a2540aa60685
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -554,7 +426,7 @@ Session ID: 794f1232-1f5a-4e7c-9ebd-8616f9c1dadc
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>34</td>
+<td>33</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -567,27 +439,27 @@ Session ID: 794f1232-1f5a-4e7c-9ebd-8616f9c1dadc
 <tr>
 <td title='library.TracksEdit_Testcases.activate_track()'><b>activate_track</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>43</td>
+<td>41</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.archive_track()'><b>archive_track</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>25</td>
+<td>21</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksPublish_Testcases.cancel_publish_tracks()'><b>cancel_publish_tracks</b><br>Test class: library.TracksPublish_Testcases</td>
 <td></td>
-<td>35</td>
+<td>33</td>
 <td>library.TracksPublish_Testcases@78186a70</td></tr>
 <tr>
 <td title='library.Tracks_Testcases.click_cancel_track_button()'><b>click_cancel_track_button</b><br>Test class: library.Tracks_Testcases</td>
 <td></td>
-<td>30</td>
+<td>28</td>
 <td>library.Tracks_Testcases@710726a3</td></tr>
 <tr>
 <td title='library.Tracks_Testcases.create_a_new_track_without_clientname()'><b>create_a_new_track_without_clientname</b><br>Test class: library.Tracks_Testcases</td>
 <td></td>
-<td>37</td>
+<td>36</td>
 <td>library.Tracks_Testcases@710726a3</td></tr>
 <tr>
 <td title='library.Tracks_Testcases.delete_tracks_from_db()'><b>delete_tracks_from_db</b><br>Test class: library.Tracks_Testcases</td>
@@ -612,47 +484,52 @@ Session ID: 794f1232-1f5a-4e7c-9ebd-8616f9c1dadc
 <tr>
 <td title='library.TracksEdit_Testcases.update_track_brands_to_previous()'><b>update_track_brands_to_previous</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>49</td>
+<td>51</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.update_track_client_field()'><b>update_track_client_field</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>42</td>
+<td>40</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.update_track_name()'><b>update_track_name</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>42</td>
+<td>43</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.update_track_name_by_EHI_AE()'><b>update_track_name_by_EHI_AE</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>17</td>
+<td>18</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.update_track_name_to_previous_name()'><b>update_track_name_to_previous_name</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>44</td>
+<td>43</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.update_track_series()'><b>update_track_series</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>45</td>
+<td>47</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.update_track_series_to_previous()'><b>update_track_series_to_previous</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>49</td>
+<td>47</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.update_track_workflow_to_approved()'><b>update_track_workflow_to_approved</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>33</td>
+<td>34</td>
+<td>library.TracksEdit_Testcases@646007f4</td></tr>
+<tr>
+<td title='library.TracksEdit_Testcases.update_track_workflow_to_draft()'><b>update_track_workflow_to_draft</b><br>Test class: library.TracksEdit_Testcases</td>
+<td></td>
+<td>32</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 <tr>
 <td title='library.TracksEdit_Testcases.update_tracks_programs()'><b>update_tracks_programs</b><br>Test class: library.TracksEdit_Testcases</td>
 <td></td>
-<td>48</td>
+<td>45</td>
 <td>library.TracksEdit_Testcases@646007f4</td></tr>
 </table><p>
 </body>

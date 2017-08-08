@@ -512,6 +512,8 @@ public class Users_TestCases extends TestBase{
 	{
 		login.loginAs("test.data","Monday#223")
 		.isSuccessfulLogin("test data")
+		//login.loginAs("automation.admin","Monday#223")
+		//.isSuccessfulLogin("automation admin")
 		.clickUsers()
 		.clickAddUserButton()
 		.addFirstName("ehi")
