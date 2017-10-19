@@ -3,12 +3,17 @@ package library;
 import org.testng.annotations.Test;
 
 import Utility.TestBase;
+import login.DashboardPage;
 
-public class CommunicationsPublish_Testcases extends TestBase{
+
+
+public class CommunicationsPublish_Testcases extends TestBase
+{
 
 	@Test(priority=0)
 	public void publish_Communication() 
 	{
+		
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickCommunicationsLink()
@@ -16,7 +21,9 @@ public class CommunicationsPublish_Testcases extends TestBase{
 		.checkAll()
 		.deletelocales()
 		.addlocales("en-us")
-		.clickPublishButton()	
+		.clickPublishButton()
+		//DashboardPage dashboard = new DashboardPage(driver);
+		//dashboard.clickMessagesLink()
 		.getTitle()
 		.logout();	
 	}
@@ -28,6 +35,8 @@ public class CommunicationsPublish_Testcases extends TestBase{
 		.clickCommunicationsLink()
 		.publishCommunications("publish_comm_test_01")
 		.clickCancelButton()
+		//DashboardPage dashboard = new DashboardPage(driver);
+		//dashboard.clickMessagesLink()
 		.getTitle()
 		.logout();	
 	}

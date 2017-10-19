@@ -1,28 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="SEGMENTS TESTCASES"
            tests="16"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="578.972">
+           time="618.815">
   <properties />
+            <testcase name="activate_segment" time="37.721" classname="configuration.SegmentsEdit_testcases">
+                <failure type="java.lang.IllegalArgumentException"
+                  message="Cannot find elements when the XPath expression is null."
+              >
+<![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.
+  org.openqa.selenium.By.xpath(By.java:113)
+  configuration.SegmentsPage.validateUpdates(SegmentsPage.java:135)
+  configuration.SegmentsEdit_testcases.activate_segment(SegmentsEdit_testcases.java:110)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="activate_segment" time="38.846" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="select_button_cancel_in_segments_edit_page" time="29.805" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="archive_segment" time="18.042" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_code" time="38.900" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="validate_restore_file" time="39.219" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_clientname_to_previous" time="44.892" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="empty_code_field_in_segements_edit_page" time="34.875" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_segment_group" time="39.601" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_segment_group_to_previous" time="39.353" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_name_to_previous" time="39.881" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="inactivate_segment" time="35.925" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_clientname" time="27.238" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_name" time="47.151" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="update_segment_code_to_previous" time="38.756" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="empty_name_field_in_segements_edit_page" time="36.010" classname="configuration.SegmentsEdit_testcases" />
-                <testcase name="restore_segment" time="30.478" classname="configuration.SegmentsEdit_testcases" />
+            <testcase name="archive_segment" time="22.942" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_clientname_to_previous" time="52.164" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="inactivate_segment" time="37.363" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_code" time="40.969" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="empty_name_field_in_segements_edit_page" time="38.893" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="validate_restore_file" time="44.932" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="select_button_cancel_in_segments_edit_page" time="32.822" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_segment_group_to_previous" time="42.792" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="empty_code_field_in_segements_edit_page" time="36.937" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_name_to_previous" time="43.851" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_segment_group" time="41.143" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="restore_segment" time="34.018" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_clientname" time="26.626" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_name" time="41.964" classname="configuration.SegmentsEdit_testcases" />
+                <testcase name="update_segment_code_to_previous" time="43.678" classname="configuration.SegmentsEdit_testcases" />
       
 </testsuite>

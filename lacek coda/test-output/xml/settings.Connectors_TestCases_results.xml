@@ -4,44 +4,44 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="75.851">
+           time="79.935">
   <properties />
-            <testcase name="add_connector_validate" time="33.152" classname="settings.Connectors_TestCases">
+            <testcase name="add_connector_validate" time="33.104" classname="settings.Connectors_TestCases">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;s2id_autogen7&apos;]&quot;}
-  (Session info: chrome=60.0.3112.90)
+                  message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#s2id_autogen79&quot;}
+  (Session info: chrome=61.0.3163.100)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.05 seconds
+Command duration or timeout: 10.10 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir8392_11856}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 01ed0ba7e51b7e0858f0368429795ad2
-*** Element info: {Using=xpath, value=.//*[@id=&apos;s2id_autogen7&apos;]}"
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir34508_17234}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: f86e97184e6d3174c9177831f6227763
+*** Element info: {Using=css selector, value=#s2id_autogen79}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='s2id_autogen7']"}
-  (Session info: chrome=60.0.3112.90)
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#s2id_autogen79"}
+  (Session info: chrome=61.0.3163.100)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.05 seconds
+Command duration or timeout: 10.10 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir8392_11856}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: 01ed0ba7e51b7e0858f0368429795ad2
-*** Element info: {Using=xpath, value=.//*[@id='s2id_autogen7']}
-  sun.reflect.GeneratedConstructorAccessor28.newInstance(Unknown Source)
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir34508_17234}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: f86e97184e6d3174c9177831f6227763
+*** Element info: {Using=css selector, value=#s2id_autogen79}
+  sun.reflect.GeneratedConstructorAccessor29.newInstance(Unknown Source)
   sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
   java.lang.reflect.Constructor.newInstance(Constructor.java:423)
   org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
   org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+  org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-  settings.ConnectorsPage.addBrand(ConnectorsPage.java:344)
+  settings.ConnectorsPage.addBrand(ConnectorsPage.java:345)
   settings.Connectors_TestCases.add_connector_validate(Connectors_TestCases.java:47)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -69,9 +69,9 @@ Session ID: 01ed0ba7e51b7e0858f0368429795ad2
           </testcase>
   
   
-            <testcase name="click_print_view_print" time="14.308" classname="settings.Connectors_TestCases" />
-                <testcase name="delete_connector_from_db" time="2.354" classname="settings.Connectors_TestCases" />
-                <testcase name="open_connector_page" time="13.125" classname="settings.Connectors_TestCases" />
-                <testcase name="relaod_workflow_page" time="12.912" classname="settings.Connectors_TestCases" />
+            <testcase name="open_connector_page" time="14.079" classname="settings.Connectors_TestCases" />
+                <testcase name="relaod_workflow_page" time="14.229" classname="settings.Connectors_TestCases" />
+                <testcase name="click_print_view_print" time="16.124" classname="settings.Connectors_TestCases" />
+                <testcase name="delete_connector_from_db" time="2.399" classname="settings.Connectors_TestCases" />
       
 </testsuite>

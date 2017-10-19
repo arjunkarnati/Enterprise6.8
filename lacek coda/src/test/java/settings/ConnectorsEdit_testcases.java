@@ -162,6 +162,15 @@ public class ConnectorsEdit_testcases extends TestBase{
 		.getTitle()
 		.logout();
 	}
-
+   @Test(priority=11)
+   public void restore_conncector()
+   {
+	  login.loginAs("automation.admin","Monday#223")
+	  .isSuccessfulLogin("automation admin")
+	  .clickConnectors()
+	  .restore_connector("edit_conn_test_01")
+	  .getTitle()
+	  .logout();
+  }
 	
 }

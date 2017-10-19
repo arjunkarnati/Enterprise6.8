@@ -1,27 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="PERMISSION ACTIONS TESTCASES"
            tests="15"
-           failures="0"
+           failures="2"
            errors="0"
            skipped="0"
-           time="1160.664">
+           time="1058.792">
   <properties />
+            <testcase name="update_permission_action_controller_action_name" time="13.636" classname="access.PermissionActionsEdit_TestCases">
+                <failure type="java.lang.IllegalArgumentException"
+                  message="Cannot find elements when the XPath expression is null."
+              >
+<![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.
+  org.openqa.selenium.By.xpath(By.java:113)
+  login.DashboardPage.clickPermissionActions(DashboardPage.java:359)
+  access.PermissionActionsEdit_TestCases.update_permission_action_controller_action_name(PermissionActionsEdit_TestCases.java:39)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="empty_name_field_in_permission_actions_edit_page" time="31.772" classname="access.PermissionActionsEdit_TestCases">
+                <failure type="java.lang.IllegalArgumentException"
+                  message="Cannot find elements with a null id attribute."
+              >
+<![CDATA[java.lang.IllegalArgumentException: Cannot find elements with a null id attribute.
+  org.openqa.selenium.By.id(By.java:53)
+  access.PermissionActionsEditPage.deleteName(PermissionActionsEditPage.java:28)
+  access.PermissionActionsEdit_TestCases.empty_name_field_in_permission_actions_edit_page(PermissionActionsEdit_TestCases.java:91)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="activate_permission_actions" time="92.889" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="empty_controller_action_field_in_permission_actions_edit_page" time="52.467" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="inactivate_permission_actions" time="93.162" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_name_to_previous" time="92.365" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="restore_permission_action" time="95.848" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="empty_name_field_in_permission_actions_edit_page" time="53.933" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_name" time="93.569" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_controller_action_name_to_previous" time="92.010" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="archive_permission_action" time="93.382" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_permission_to_previous" time="89.320" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="empty_permission_field_in_permission_actions_edit_page" time="55.664" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="click_cancel_in_permission_action_edit_page" time="38.323" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_permission" time="88.745" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="update_permission_action_controller_action_name" time="93.912" classname="access.PermissionActionsEdit_TestCases" />
-                <testcase name="return_to_permission_actions_main_page_from_edit_page" time="35.075" classname="access.PermissionActionsEdit_TestCases" />
+            <testcase name="update_permission_action_permission_to_previous" time="84.723" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_permission" time="90.719" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="archive_permission_action" time="92.923" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="inactivate_permission_actions" time="92.948" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="return_to_permission_actions_main_page_from_edit_page" time="35.603" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="activate_permission_actions" time="93.292" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="empty_permission_field_in_permission_actions_edit_page" time="53.627" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_controller_action_name_to_previous" time="92.293" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="click_cancel_in_permission_action_edit_page" time="38.326" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_name_to_previous" time="91.249" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="restore_permission_action" time="97.738" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="empty_controller_action_field_in_permission_actions_edit_page" time="53.062" classname="access.PermissionActionsEdit_TestCases" />
+                <testcase name="update_permission_action_name" time="96.881" classname="access.PermissionActionsEdit_TestCases" />
       
 </testsuite>

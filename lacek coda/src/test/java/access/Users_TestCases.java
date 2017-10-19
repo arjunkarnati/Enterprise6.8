@@ -481,7 +481,7 @@ public class Users_TestCases extends TestBase{
 	{			
 		DataBaseAccess.deleteUser();	
 	}
-	/*@Test(priority=90,enabled=true)
+   /* @Test(priority=90,enabled=true)
 	public void create_test_admin_user()
 	{
 		login.loginAs("test.data","Monday#223")
@@ -490,7 +490,7 @@ public class Users_TestCases extends TestBase{
 		.clickAddUserButton()
 		.addFirstName("automation")
 		.addLastName("edit_user_test_01")
-		.addEmail("arjun.karnati9@lacek.com")
+		.addEmail("arjun.karnati@lacek.com")
 		.addPhoneNumber(207000000)
 		.addUserName("edit_user_test_01")
 		.addPassWord("Monday#223")	
@@ -521,8 +521,8 @@ public class Users_TestCases extends TestBase{
 		.addEmail("arjunkarnati9@lacek.com")
 		.addPhoneNumber(207000000)
 		.addUserName("ehi.ae")
-		.addPassWord("09ht1a0480123")
-		.confirmPassWord("09ht1a0480123")
+		.addPassWord("09ht1a0480@123")
+		.confirmPassWord("09ht1a0480@123")
 		.addClient("Enterprise Holdings Inc")
 		.addRole("Ehi Account Executive")
 		.Submit()
@@ -563,7 +563,7 @@ public class Users_TestCases extends TestBase{
 		.clickAddUserButton()
 		.addFirstName("carnival")
 		.addLastName("account")
-		.addEmail("arjunkarnati9@lacek.com")
+		.addEmail("arjunkarnati@lacek.com")
 		.addPhoneNumber(207000000)
 		.addUserName("carnival.account")
 		.addPassWord("09ht1a0480")	
@@ -572,7 +572,7 @@ public class Users_TestCases extends TestBase{
 		.addRole("CCL Account Executive")
 		.Submit()	
 		.validateUpdates("carnival.account","last name","account")
-		.validateUpdates("carnival.account","email","arjun.karnati9@lacek.com")
+		.validateUpdates("carnival.account","email","arjunkarnati@lacek.com")
 		.validateUpdates("carnival.account","admin","NO")
 		.validateUpdates("carnival.account","status","ACTIVE")
 		.getTitle()

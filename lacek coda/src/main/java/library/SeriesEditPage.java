@@ -145,13 +145,13 @@ public class SeriesEditPage extends PageBase{
 		//no
 		if(answer==false)
 		{
-			driver.findElement(By.xpath(".//*[@id='series-form']/div[1]/div[12]/div/div/div/span[2]")).click();
+			driver.findElement(By.xpath(".//*[@id='series-form']/div[1]/div[13]/div/div/div/span[2]")).click();
 			Assert.assertEquals(driver.getTitle(),library.getProperty("series_edit_page_title"));
 		}	
 		//yes
 		else if(answer==true)
 		{
-			driver.findElement(By.xpath(".//*[@id='series-form']/div[1]/div[12]/div/div/div/span[2]")).click();
+			driver.findElement(By.xpath(".//*[@id='series-form']/div[1]/div[13]/div/div/div/span[2]")).click();
 			Assert.assertEquals(driver.getTitle(),library.getProperty("series_edit_page_title"));
 		}
 		else

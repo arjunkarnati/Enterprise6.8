@@ -4,7 +4,10 @@ import org.testng.annotations.Test;
 import DataBase.DataBaseLibrary;
 import Utility.TestBase;
 
-public class Campaigns_Testcases extends TestBase{
+
+
+
+public class Campaigns_Testcases  extends TestBase{
 
 	
 	//CREATE CAMPAIGN 
@@ -17,7 +20,7 @@ public class Campaigns_Testcases extends TestBase{
 		.clickAddCampaignButton()
 		.addClient("Carnival Corporation & PLC")
 		.addBrand("cunard")
-         .addBrand("Costa Cruises")
+        .addBrand("Costa Cruises")
 		.addProgram("VIFP")
 		.addCampaignName("selenium_campaign_regression_01")
 		.addDescription("selenioum testing")

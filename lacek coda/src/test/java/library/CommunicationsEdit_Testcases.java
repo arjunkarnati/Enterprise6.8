@@ -260,7 +260,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	}*/
 	@Test(priority=18)
 	public void Verify_access_EHIAE(){
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.previewCommunications("edit_ehi_comm_test_01")
@@ -398,7 +398,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=27)
 	public void clear_all_messagaes_from_comm()
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.editCommunications("edit_ehi_comm_test_01")
@@ -411,7 +411,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=28)
 	public void update_description()
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.editCommunications("edit_ehi_comm_test_01")
@@ -426,7 +426,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=29)
 	public void update_description_to_previous()
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.editCommunications("edit_ehi_comm_test_01")
@@ -439,7 +439,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=30)
 	public void clone_communication()
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.clonecommunication("edit_ehi_comm_test_01")
@@ -454,7 +454,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=31)
 	public void edit_clone_communication()
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()	
 		.editCommunications("cloned_comm_ehi_ae")
@@ -470,7 +470,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=32)
 	public void clone_comm_massadvance_workflow() throws Exception
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.searchCommunications("cloned_comm_ehi_ae")
@@ -485,7 +485,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=33)
 	public void clone_comm_massadvance_clienttesting_workflow() throws Exception
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.searchCommunications("cloned_comm_ehi_ae")
@@ -500,7 +500,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=34)
 	public void add_messageto_cloned_communication()
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.editCommunications("cloned_comm_ehi_ae")
@@ -513,7 +513,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	@Test(priority=35)
 	public void delete_messagefrom_cloned_communication()
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.editCommunications("cloned_comm_ehi_ae")
@@ -525,7 +525,7 @@ public class CommunicationsEdit_Testcases extends TestBase{
 	//@Test(enabled=false)
 	public void archive_clone_communication()
 	{
-		login.loginAs("ehi.ae","09ht1a0480123")
+		login.loginAs("ehi.ae","09ht1a0480@123")
 		.isSuccessfulLogin("ehi ae")
 		.clickCommunicationsLink()
 		.archiveCommunication("cloned_comm_ehi_ae")
@@ -533,6 +533,32 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.logout();	
 	}
 	
+	@Test(priority=37)
+	public void non_admin_preview_edit()
+	{
+		login.loginAs("ehi.ae","09ht1a0480@123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()
+		.searchCommunications("edit_ehi_comm_test_01")
+		.clickpreviewbutton()
+		.clickDownloadpreview()
+		.getTitle()
+		.logout();	
+		
+		
+	}
+	
+	@Test(priority=38)
+	public void non_admin_acf_edit()
+	{
+		login.loginAs("ehi.ae","09ht1a0480@123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()
+		.editCommunications("edit_ehi_comm_test_01")
+		.edit_acf_client("National")
+		.getTitle()
+		.logout();	
+	}
 	
 	
 	

@@ -73,8 +73,8 @@ public class PermissionCategories_TestCases extends TestBase {
 	{
 		DataBaseAccess.deletePermissionCategory();
 	}
-	/* No need to run
-	 @Test(priority=10,enabled=true)
+	//No need to run
+	/* @Test(priority=10,enabled=true)
 	public void create_test_permission_categories()
 	{
 		login.loginAs("test.data","Monday#223")

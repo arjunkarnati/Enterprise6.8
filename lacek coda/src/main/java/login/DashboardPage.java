@@ -1,6 +1,8 @@
 package login;
 
 import java.security.InvalidParameterException;
+
+import org.apache.http.entity.ContentType;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -25,6 +27,8 @@ import layout.TemplatesPage;
 import library.SeriesPage;
 import library.CampaignPage;
 import library.CommunicationsPage;
+import library.ContentcodeAddpage;
+import library.Contentcodes_Testcases;
 import library.MessagesPage;
 import library.TracksPage;
 import library.VariablesPage;
@@ -152,7 +156,7 @@ public class DashboardPage extends PageBase{
 		Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("mess_page_title"));
 		return new MessagesPage(driver);
 	}
-	/*open variables page*/
+	
 	public VariablesPage clickVariablesLink() 
 	{
 		readconfig(); 
@@ -547,6 +551,18 @@ public class DashboardPage extends PageBase{
 			//assert and verify
 			Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("profile_page_title"));
 		}
+	}
+	public ContentcodeAddpage clickonContentcodes() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(elementslocator.getProperty("library"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementslocator.getProperty("contentcode"))));
+		driver.findElement(By.xpath(elementslocator.getProperty("contentcode"))).click();
+		
+		waitForAjax(driver);
+		Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("contentcode_page_title"));
+		return new  ContentcodeAddpage(driver);
+		
 	}
 	
 	

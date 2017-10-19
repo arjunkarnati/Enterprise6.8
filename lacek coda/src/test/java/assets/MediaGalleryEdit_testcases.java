@@ -341,18 +341,6 @@ public class MediaGalleryEdit_testcases extends TestBase{
 		.logout();
 	}
 	@Test(priority=24)
-	public void update_media_gallery_workflow_to_draft_EHI_AE()
-	{
-		login.loginAs("ehi.ae","09ht1a0480123")
-		.isSuccessfulLogin("ehi ae")
-		.clickMediaGallery()
-		.editMediaGallery("edit_ehi_test_01")
-		.setWorkFlowTo("DRAFT","edit_ehi_test_01")
-		.validateUpdates("edit_ehi_test_01","workflow","DRAFT")
-		.getTitle()
-		.logout();
-	}
-	@Test(priority=25)
 	public void update_media_gallery_workflow_to_approved_EHI_AE()
 	{
 		login.loginAs("ehi.ae","09ht1a0480123")
@@ -364,6 +352,19 @@ public class MediaGalleryEdit_testcases extends TestBase{
 		.getTitle()
 		.logout();
 	}
+	@Test(priority=25)
+	public void update_media_gallery_workflow_to_draft_EHI_AE()
+	{
+		login.loginAs("ehi.ae","09ht1a0480123")
+		.isSuccessfulLogin("ehi ae")
+		.clickMediaGallery()
+		.editMediaGallery("edit_ehi_test_01")
+		.setWorkFlowTo("DRAFT","edit_ehi_test_01")
+		.validateUpdates("edit_ehi_test_01","workflow","DRAFT")
+		.getTitle()
+		.logout();
+	}
+	
 	
 	@Test(priority=26)
 	public void manage_workflow_in_media()
@@ -371,8 +372,8 @@ public class MediaGalleryEdit_testcases extends TestBase{
 		login.loginAs("automation.admin","Monday#223")
 		.isSuccessfulLogin("automation admin")
 		.clickMediaGallery()
-		//.manageworkflow("APPROVED","edit_image_test_01")
-		//.validateUpdates("edit_image_test_01","manage","APPROVED")
+		.manageworkflow("APPROVED","edit_image_test_01")
+		.validateUpdates("edit_image_test_01","manage","APPROVED")
 		.getTitle()
 		.logout();
 		

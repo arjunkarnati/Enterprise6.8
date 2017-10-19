@@ -490,6 +490,23 @@ public class ComunicationsEditPage extends PageBase{
 		}
 		return new CommunicationsPage(driver);
 	}
+	public CommunicationsPage edit_acf_client(String client_name) {
+		// TODO Auto-generated method stub
+		readconfig();
+		try {
+	        Thread.sleep((int) (3000));
+	    } catch (InterruptedException e) {
+	        //
+	        e.printStackTrace();
+	    }
+		driver.findElement(By.xpath(library.getProperty("ACF_client_edit"))).click();
+		driver.findElement(By.xpath(library.getProperty("ACF_client_add"))).sendKeys(client_name);
+		driver.findElement(By.xpath(library.getProperty("ACF_client_add"))).sendKeys(Keys.ENTER);
+		
+		return new CommunicationsPage(driver);
+		
+		
+	}
 	
 	
 	}

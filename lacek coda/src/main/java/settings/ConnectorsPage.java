@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import Utility.PageBase;
+import assets.MediaGalleryPage;
 
 
 
@@ -341,8 +342,8 @@ public class ConnectorsPage extends PageBase{
 		public ConnectorsPage addBrand(String brandname)
 		{
 			readconfig();
-			driver.findElement(By.xpath(".//*[@id='s2id_autogen7']")).sendKeys(brandname);
-			driver.findElement(By.xpath(".//*[@id='s2id_autogen7']")).sendKeys(Keys.ENTER);
+			driver.findElement(By.cssSelector("#s2id_autogen79")).sendKeys(brandname);
+			driver.findElement(By.cssSelector("#s2id_autogen79")).sendKeys(Keys.ENTER);
 			//assert and verify
 		//	Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("var_add_brand"))).isEnabled());
 			//return connectors add page
@@ -352,8 +353,8 @@ public class ConnectorsPage extends PageBase{
 		public ConnectorsPage addProgram(String programname)
 		{
 			readconfig();
-			driver.findElement(By.xpath(".//*[@id='s2id_autogen8']")).sendKeys(programname);
-			driver.findElement(By.xpath(".//*[@id='s2id_autogen8']")).sendKeys(Keys.ENTER);
+			driver.findElement(By.xpath(".//*[@id='s2id_autogen80']")).sendKeys(programname);
+			driver.findElement(By.xpath(".//*[@id='s2id_autogen80']")).sendKeys(Keys.ENTER);
 			//assert and verify
 		//	Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("mes_add_program"))).isEnabled());
 		//	Assert.assertEquals(driver.getTitle(),library.getProperty("mess_add_page_title"));
@@ -422,6 +423,26 @@ public class ConnectorsPage extends PageBase{
 			driver.findElement(By.xpath(elementslocator.getProperty("archive_pop-yes"))).click();
 
 
+			return new ConnectorsPage(driver);
+		}
+
+		public ConnectorsPage restore_connector(String connname) {
+			// TODO Auto-generated method stub
+			readconfig();
+			driver.findElement(By.xpath("html/body/div[4]/div[2]/div/div[3]/div[1]/div[2]/div/a[3]")).click();
+			sleep();
+			driver.findElement(By.xpath(".//*[@id='datatable_filter']/label/input")).clear();
+			sleep();
+			driver.findElement(By.xpath(".//*[@id='datatable_filter']/label/input")).sendKeys(connname);
+			sleep();
+			driver.findElement(By.xpath(".//*[@id='datatable']/tbody/tr/td[8]/div/div/a")).click();
+			sleep();
+			driver.findElement(By.xpath("html/body/div[7]/div/div/div[3]/button[1]")).click();
+			sleep();
+			driver.findElement(By.id("reload")).click();
+			sleep();		
+			//assert ad verify	
+			//Assert.assertEquals(driver.getTitle(), assets.getProperty("med_gallery_archive_page_title"));
 			return new ConnectorsPage(driver);
 		}
 

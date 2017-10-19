@@ -393,13 +393,15 @@ public class CommunicationsPage extends PageBase{
 		}
 		return new CommunicationsPage(driver);			
 	}
-	public void clickpreviewbutton() {
+	public CommunicationsPage clickpreviewbutton() {
 		// TODO Auto-generated method stub
 		readconfig();
 		driver.findElement(By.xpath(".//*[@id='button_preview']/i")).click();
 		driver.findElement(By.xpath(".//*[@id='button_preview']/i")).click();
 		driver.findElement(By.xpath(".//*[@id='button_preview']")).click();
 		driver.findElement(By.xpath(".//*[@id='communication-form']/div[2]/div/div/a[1]")).click();
+		
+		return new CommunicationsPage(driver);
 	}
 	public CommunicationsPage commMassadvanceworkflow() {
 		// TODO Auto-generated method stub
@@ -511,6 +513,7 @@ public class CommunicationsPage extends PageBase{
 		
 		{
 			readconfig();
+			driver.findElement(By.xpath(library.getProperty("filter"))).click();
 			driver.findElement(By.xpath(library.getProperty("filter"))).clear();
 			driver.findElement(By.xpath(library.getProperty("filter"))).sendKeys(name);
 			}
@@ -613,6 +616,12 @@ public class CommunicationsPage extends PageBase{
 		driver.findElement(By.xpath(library.getProperty("saveas_name"))).clear();
 		driver.findElement(By.xpath(library.getProperty("saveas_name"))).sendKeys(updatecommname);
 		driver.findElement(By.xpath(library.getProperty("select_saveas"))).click();
+		
+		return new CommunicationsPage(driver);
+	}
+	public CommunicationsPage clickDownloadpreview() {
+		// TODO Auto-generated method stub
+		driver.findElement(By.xpath(library.getProperty("download_preview"))).click();
 		
 		return new CommunicationsPage(driver);
 	}

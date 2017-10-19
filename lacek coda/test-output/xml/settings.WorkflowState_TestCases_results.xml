@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="WORKFLOW STATE TESTCASES"
            tests="6"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="168.400">
+           time="155.967">
   <properties />
+            <testcase name="create_a_new_wf_state_without_name" time="14.208" classname="settings.WorkflowState_TestCases">
+                <failure type="java.lang.AssertionError"
+                  message="expected [null] but found [CODA - Workflow]"
+              >
+<![CDATA[java.lang.AssertionError: expected [null] but found [CODA - Workflow]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:513)
+  org.testng.Assert.assertEqualsImpl(Assert.java:130)
+  org.testng.Assert.assertEquals(Assert.java:116)
+  org.testng.Assert.assertEquals(Assert.java:190)
+  org.testng.Assert.assertEquals(Assert.java:200)
+  login.DashboardPage.clickWorkflowState(DashboardPage.java:380)
+  settings.WorkflowState_TestCases.create_a_new_wf_state_without_name(WorkflowState_TestCases.java:31)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="create_a_new_wf_state_without_name" time="33.714" classname="settings.WorkflowState_TestCases" />
-                <testcase name="return_to_wf_state_main_page_from_add" time="26.745" classname="settings.WorkflowState_TestCases" />
-                <testcase name="delete_workflow_state_from_database" time="2.136" classname="settings.WorkflowState_TestCases" />
-                <testcase name="create_a_new_wf_state_without_color" time="33.484" classname="settings.WorkflowState_TestCases" />
-                <testcase name="click_cancel_in_wf_state_add_page" time="25.419" classname="settings.WorkflowState_TestCases" />
-                <testcase name="create_a_new_wf_state" time="46.902" classname="settings.WorkflowState_TestCases" />
+            <testcase name="create_a_new_wf_state" time="49.076" classname="settings.WorkflowState_TestCases" />
+                <testcase name="click_cancel_in_wf_state_add_page" time="27.213" classname="settings.WorkflowState_TestCases" />
+                <testcase name="return_to_wf_state_main_page_from_add" time="28.566" classname="settings.WorkflowState_TestCases" />
+                <testcase name="create_a_new_wf_state_without_color" time="34.466" classname="settings.WorkflowState_TestCases" />
+                <testcase name="delete_workflow_state_from_database" time="2.438" classname="settings.WorkflowState_TestCases" />
       
 </testsuite>

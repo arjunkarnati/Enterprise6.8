@@ -90,8 +90,8 @@ public class UsersAddPage extends PageBase {
 	public UsersAddPage addRole(String role)
 	{
 		readconfig(); 
-		driver.findElement(By.id(elementslocator.getProperty("user_add_role"))).sendKeys(role);
-		driver.findElement(By.id(elementslocator.getProperty("user_add_role"))).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath(elementslocator.getProperty("user_add_role"))).sendKeys(role);
+		driver.findElement(By.xpath(elementslocator.getProperty("user_add_role"))).sendKeys(Keys.ENTER);
 		Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("user_add_page_title"));
 		return new UsersAddPage(driver);
 	}
@@ -106,7 +106,7 @@ public class UsersAddPage extends PageBase {
 		else if (answer==true)
 		{
 			driver.findElement(By.xpath(elementslocator.getProperty("user_add_all_access"))).click();
-			Assert.assertFalse(driver.findElement(By.id(elementslocator.getProperty("user_add_role"))).isDisplayed());
+			//Assert.assertFalse(driver.findElement(By.id(elementslocator.getProperty("user_add_role"))).isDisplayed());
 			Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("user_add_page_title"));
 		}
 		else

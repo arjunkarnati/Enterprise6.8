@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="39.218">
+           time="42.528">
   <properties />
   
   
-            <testcase name="login_with_valid_username_and_valid_password" time="8.337" classname="login.Login_testcases" />
-                <testcase name="login_with_empty_username_password" time="6.895" classname="login.Login_testcases" />
-                <testcase name="login_with_invalid_username" time="6.564" classname="login.Login_testcases" />
-                <testcase name="login_with_empty_username" time="5.179" classname="login.Login_testcases" />
-                <testcase name="login_with_empty_password" time="5.317" classname="login.Login_testcases" />
-                <testcase name="login_with_invalid_password" time="6.926" classname="login.Login_testcases" />
+            <testcase name="login_with_invalid_password" time="7.038" classname="login.Login_testcases" />
+                <testcase name="login_with_empty_username" time="6.740" classname="login.Login_testcases" />
+                <testcase name="login_with_valid_username_and_valid_password" time="9.477" classname="login.Login_testcases" />
+                <testcase name="login_with_empty_password" time="6.198" classname="login.Login_testcases" />
+                <testcase name="login_with_invalid_username" time="6.192" classname="login.Login_testcases" />
+                <testcase name="login_with_empty_username_password" time="6.883" classname="login.Login_testcases" />
       
 </testsuite>

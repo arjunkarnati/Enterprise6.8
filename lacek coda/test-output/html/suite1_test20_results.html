@@ -3,79 +3,74 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - CHANNELS TESTCASES</title>
+  <title>Test Results Report - MESSAGE TYPES TESTCASES</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>CHANNELS TESTCASES</h1>
+<h1>MESSAGE TYPES TESTCASES</h1>
 <p>
-  Test duration: 66.030s
+  Test duration: 22.621s
 </p>
 
 
 
-
-
   <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">settings.ChannelsEdit_testcases</td>
+        <td colspan="3" class="group">configuration.MessageTypes_TestCases</td>
       </tr>
             
 <tr>
   <td class="method">
-                  empty_test
+                  message_type_test_scripts_will_be_added_in_maintenace
       </td>
   <td class="duration">
-    12.600s
+    13.648s
   </td>
   <td class="result">
         
     
         
 
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">settings.ChannelsRestore_testcases</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  empty_test
-      </td>
-  <td class="duration">
-    13.461s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">settings.Channels_TestCases</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  test_is_empty
-      </td>
-  <td class="duration">
-    12.434s
-  </td>
-  <td class="result">
-        
-    
-        
-
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [(sta)CODA - Message Types] but found [CODA - Message Types]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:513)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
+              org.testng.Assert.assertEquals(Assert.java:116)<br />
+              org.testng.Assert.assertEquals(Assert.java:190)<br />
+              org.testng.Assert.assertEquals(Assert.java:200)<br />
+              login.DashboardPage.clickMessagesType(DashboardPage.java:308)<br />
+              configuration.MessageTypes_TestCases.message_type_test_scripts_will_be_added_in_maintenace(MessageTypes_TestCases.java:15)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:645)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:756)<br />
+              org.testng.TestRunner.run(TestRunner.java:610)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:387)<br />
+              org.testng.SuiteRunner.access$000(SuiteRunner.java:39)<br />
+              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)<br />
+              org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br />
+              java.util.concurrent.FutureTask.run(FutureTask.java:266)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br />
+              java.lang.Thread.run(Thread.java:745)<br />
+                </div>
       </td>
 </tr>
       </table>
+
+
   
 </body>
 </html>

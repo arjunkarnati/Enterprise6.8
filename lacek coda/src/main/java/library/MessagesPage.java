@@ -477,7 +477,7 @@ public class MessagesPage extends PageBase{
 		}
 		return new MessagesPage(driver);
 	}
-	public MessagesPage editcopymessagename(String newname) {
+	public MessagesPage editcopymessagename(String newname, String newdescription) {
 		// TODO Auto-generated method stub
 		readconfig();
 		driver.findElement(By.xpath(library.getProperty("message_clone"))).click();
@@ -485,6 +485,7 @@ public class MessagesPage extends PageBase{
 		try{
 			Thread.sleep(3000);
 		driver.findElement(By.xpath(library.getProperty("save_as_name"))).sendKeys(newname);
+		driver.findElement(By.xpath(library.getProperty("save_as_description"))).sendKeys(newdescription);
 		
 			driver.findElement(By.xpath("html/body/div[7]/div/div/div[3]/button[1]")).click();
 			

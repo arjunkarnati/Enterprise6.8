@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="SEGMENT GROUPS TESTCASES"
            tests="15"
-           failures="1"
+           failures="2"
            errors="0"
            skipped="0"
-           time="564.125">
+           time="572.721">
   <properties />
-            <testcase name="update_segment_groups_brand" time="47.679" classname="configuration.SegmentGroupsEdit_testcases">
+            <testcase name="update_segment_groups_type_to_previous" time="15.056" classname="configuration.SegmentGroupsEdit_testcases">
+                <failure type="java.lang.IllegalArgumentException"
+                  message="Cannot find elements when the XPath expression is null."
+              >
+<![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.
+  org.openqa.selenium.By.xpath(By.java:113)
+  login.DashboardPage.clickSegmentGroups(DashboardPage.java:269)
+  configuration.SegmentGroupsEdit_testcases.update_segment_groups_type_to_previous(SegmentGroupsEdit_testcases.java:83)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+  org.testng.TestRunner.privateRun(TestRunner.java:756)
+  org.testng.TestRunner.run(TestRunner.java:610)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="update_segment_groups_brand" time="47.645" classname="configuration.SegmentGroupsEdit_testcases">
                 <failure type="java.lang.AssertionError"
                   message="expected [2] but found [1]"
               >
@@ -45,19 +77,18 @@
           </testcase>
   
   
-            <testcase name="update_segment_groups_name" time="38.777" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_clientname" time="34.681" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_clientname_to_previous" time="48.539" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="activate_segment_groups" time="38.307" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_description" time="36.004" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_type" time="38.277" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_name_to_previous" time="39.580" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="inactivate_segment_groups" time="38.627" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="empty_name_field_in_segmentGroups_edit_page" time="37.189" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="archive_segment_groups" time="17.356" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="restore_segment_groups" time="28.510" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="select_button_cancel_in_segmentgroups_edit_page" time="31.055" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_brand_to_previous" time="49.040" classname="configuration.SegmentGroupsEdit_testcases" />
-                <testcase name="update_segment_groups_type_to_previous" time="40.504" classname="configuration.SegmentGroupsEdit_testcases" />
+            <testcase name="update_segment_groups_clientname" time="35.050" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_clientname_to_previous" time="51.152" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_name" time="41.989" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="select_button_cancel_in_segmentgroups_edit_page" time="33.509" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_name_to_previous" time="42.602" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="restore_segment_groups" time="33.329" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_description" time="39.530" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="empty_name_field_in_segmentGroups_edit_page" time="42.241" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="activate_segment_groups" time="38.611" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_brand_to_previous" time="48.079" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="update_segment_groups_type" time="44.349" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="inactivate_segment_groups" time="39.962" classname="configuration.SegmentGroupsEdit_testcases" />
+                <testcase name="archive_segment_groups" time="19.617" classname="configuration.SegmentGroupsEdit_testcases" />
       
 </testsuite>

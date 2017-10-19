@@ -21,7 +21,7 @@ public class Tracks_Testcases extends TestBase{
 		.addSeries("opt_in")
 		.addTracksName("series_selenium001")
 		.addDescription("Test regression series with selenium webdriver")	
-		//.addCommunication("16054CCLLIVESAMHUNT20160815")
+		.addCommunication("16054CCLLIVESAMHUNT20160815")
 		//.addCommunication("CCLCBA16031-May-Core-Casino")
 		//.addCommunication("CCLNON16055BIRTHDAY")
 		.clickSubmitButton()

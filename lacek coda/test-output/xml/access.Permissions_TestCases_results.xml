@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="262.311">
+           time="285.262">
   <properties />
   
   
-            <testcase name="create_a_new_permissions_without_name" time="40.385" classname="access.Permissions_TestCases" />
-                <testcase name="create_a_new_permissions" time="119.063" classname="access.Permissions_TestCases" />
-                <testcase name="delete_permissions_from_database" time="2.055" classname="access.Permissions_TestCases" />
-                <testcase name="return_to_permissions_main_page_from_add" time="29.587" classname="access.Permissions_TestCases" />
-                <testcase name="create_a_new_permissions_without_permission_category" time="41.312" classname="access.Permissions_TestCases" />
-                <testcase name="click_cancel_in_permissions_add_page" time="29.909" classname="access.Permissions_TestCases" />
+            <testcase name="delete_permissions_from_database" time="2.208" classname="access.Permissions_TestCases" />
+                <testcase name="return_to_permissions_main_page_from_add" time="31.029" classname="access.Permissions_TestCases" />
+                <testcase name="create_a_new_permissions_without_permission_category" time="42.878" classname="access.Permissions_TestCases" />
+                <testcase name="create_a_new_permissions_without_name" time="42.401" classname="access.Permissions_TestCases" />
+                <testcase name="click_cancel_in_permissions_add_page" time="30.697" classname="access.Permissions_TestCases" />
+                <testcase name="create_a_new_permissions" time="136.049" classname="access.Permissions_TestCases" />
       
 </testsuite>

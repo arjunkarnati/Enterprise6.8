@@ -19,8 +19,9 @@ public class CampaignAddPage extends PageBase{
 	{	
 		readconfig();
 		
-		driver.findElement(By.id(library.getProperty("canp_add_brand"))).click();
-		driver.findElement(By.id(library.getProperty("canp_add_brand"))).sendKeys(brandname);
+		driver.findElement(By.cssSelector(library.getProperty("camp_add_brand"))).click();
+		driver.findElement(By.cssSelector(library.getProperty("camp_add_brand"))).sendKeys(brandname);
+		
 		System.out.println("Clicking on the brand field");
 	//	
 

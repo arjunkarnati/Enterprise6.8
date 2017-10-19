@@ -3,6 +3,8 @@ package library;
 import org.testng.annotations.Test;
 import Utility.TestBase;
 
+
+
 public class MessagesEdit_Testcases extends TestBase{
 
 	@Test(priority=0)
@@ -428,7 +430,7 @@ public class MessagesEdit_Testcases extends TestBase{
 		.isSuccessfulLogin("automation admin")
 		.clickMessagesLink()
 		.copyMessage("publish_message_test_01")
-		.editcopymessagename("cloned_message")
+		.editcopymessagename("cloned_message","clone_description")
 		.validateUpdates("cloned_message","workflow","DRAFT")
 		.getTitle()
 		.logout();

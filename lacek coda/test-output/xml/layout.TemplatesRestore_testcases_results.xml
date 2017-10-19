@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.984">
+           time="17.354">
   <properties />
   
   
-            <testcase name="validate_template_page" time="21.984" classname="layout.TemplatesRestore_testcases" />
+            <testcase name="validate_template_page" time="17.354" classname="layout.TemplatesRestore_testcases" />
       
 </testsuite>
