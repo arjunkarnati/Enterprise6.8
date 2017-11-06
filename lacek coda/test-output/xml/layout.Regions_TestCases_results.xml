@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="107.283">
+           time="94.813">
   <properties />
-            <testcase name="create_a_new_region" time="36.136" classname="layout.Regions_TestCases">
+            <testcase name="create_a_new_region" time="30.846" classname="layout.Regions_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [CODA - Regions] but found [CODA - Regions - Add]"
               >
@@ -45,8 +45,8 @@
           </testcase>
   
   
-            <testcase name="database_delete_region" time="2.756" classname="layout.Regions_TestCases" />
-                <testcase name="create_a_new_region_without_a_name" time="33.464" classname="layout.Regions_TestCases" />
-                <testcase name="create_a_new_region_with_a_duplicate_name" time="34.927" classname="layout.Regions_TestCases" />
+            <testcase name="database_delete_region" time="2.903" classname="layout.Regions_TestCases" />
+                <testcase name="create_a_new_region_without_a_name" time="28.820" classname="layout.Regions_TestCases" />
+                <testcase name="create_a_new_region_with_a_duplicate_name" time="32.244" classname="layout.Regions_TestCases" />
       
 </testsuite>

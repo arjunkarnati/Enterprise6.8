@@ -560,6 +560,16 @@ public class CommunicationsEdit_Testcases extends TestBase{
 		.logout();	
 	}
 	
+	@Test(priority=38)
+	public void add_message_ehi_ae()
+	{
+		login.loginAs("ehi.ae","09ht1a0480@123")
+		.isSuccessfulLogin("ehi ae")
+		.clickCommunicationsLink()
+		.editCommunications("edit_ehi_comm_test_01")
+		.search_msg_to_region_ehi_ae("H00000044")
+		.click_add_buton();
+	}
 	
 	
 	

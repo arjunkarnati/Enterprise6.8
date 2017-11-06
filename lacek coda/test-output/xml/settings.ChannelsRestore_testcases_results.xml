@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="13.725">
+           time="12.035">
   <properties />
   
   
-            <testcase name="empty_test" time="13.725" classname="settings.ChannelsRestore_testcases" />
+            <testcase name="empty_test" time="12.035" classname="settings.ChannelsRestore_testcases" />
       
 </testsuite>

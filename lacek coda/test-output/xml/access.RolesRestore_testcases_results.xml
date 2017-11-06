@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="29.626">
+           time="21.951">
   <properties />
   
   
-            <testcase name="verify_roles_archive_page" time="29.626" classname="access.RolesRestore_testcases" />
+            <testcase name="verify_roles_archive_page" time="21.951" classname="access.RolesRestore_testcases" />
       
 </testsuite>

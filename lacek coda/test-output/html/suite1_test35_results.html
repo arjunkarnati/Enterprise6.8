@@ -3,16 +3,16 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - WORKFLOW STATE TESTCASES</title>
+  <title>Test Results Report - INTEGRATION TEST RBAC</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>WORKFLOW STATE TESTCASES</h1>
+<h1>INTEGRATION TEST RBAC</h1>
 <p>
-  Test duration: 923.768s
+  Test duration: 62.821s
 </p>
 
 
@@ -20,31 +20,31 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">settings.WorkflowState_TestCases</td>
+        <td colspan="3" class="group">integration.rbac_testcases</td>
       </tr>
             
 <tr>
   <td class="method">
-                  create_a_new_wf_state_without_name
+                  integration_create_a_permission_groups_1
       </td>
   <td class="duration">
-    14.208s
+    24.816s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [null] but found [CODA - Workflow]</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [CODA - Permission Groups] but found [CODA - Permissiongroups - Add]</b></a><br />
     <div class="stackTrace" id="exception-0">
               org.testng.Assert.fail(Assert.java:94)<br />
               org.testng.Assert.failNotEquals(Assert.java:513)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:130)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:135)<br />
               org.testng.Assert.assertEquals(Assert.java:116)<br />
               org.testng.Assert.assertEquals(Assert.java:190)<br />
               org.testng.Assert.assertEquals(Assert.java:200)<br />
-              login.DashboardPage.clickWorkflowState(DashboardPage.java:380)<br />
-              settings.WorkflowState_TestCases.create_a_new_wf_state_without_name(WorkflowState_TestCases.java:31)<br />
+              access.PermissionGroupsAddPage.clickSave(PermissionGroupsAddPage.java:67)<br />
+              integration.rbac_testcases.integration_create_a_permission_groups_1(rbac_testcases.java:18)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -74,33 +74,15 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">settings.WorkflowRestore_testcases</td>
+        <td colspan="3" class="group">integration.rbac_testcases</td>
       </tr>
             
 <tr>
   <td class="method">
-                  test_is_empty
+                  delete_role_from_database_2
       </td>
   <td class="duration">
-    8.781s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">settings.WorkflowStateEdit_testcases</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  activate_workflow_state
-      </td>
-  <td class="duration">
-    46.139s
+    2.280s
   </td>
   <td class="result">
         
@@ -111,252 +93,10 @@
 </tr>
 <tr>
   <td class="method">
-                  archive_wf_state
+                  validate_user_wit_testrole2
       </td>
   <td class="duration">
-    21.745s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  click_cancel_in_wf_state_edit_page
-      </td>
-  <td class="duration">
-    32.596s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  empty_color_field_in_wf_state_edit_page
-      </td>
-  <td class="duration">
-    37.702s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  empty_name_field_in_wf_state_edit_page
-      </td>
-  <td class="duration">
-    39.545s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  inactivate_workflow_state
-      </td>
-  <td class="duration">
-    45.808s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  restore_wf_state
-      </td>
-  <td class="duration">
-    33.719s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  return_to_wf_state_main_page_from_edit
-      </td>
-  <td class="duration">
-    34.574s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_workflow_state_color
-      </td>
-  <td class="duration">
-    42.355s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_workflow_state_color_to_previous
-      </td>
-  <td class="duration">
-    39.706s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_workflow_state_description
-      </td>
-  <td class="duration">
-    42.484s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_workflow_state_description_to_previous
-      </td>
-  <td class="duration">
-    46.406s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_workflow_state_name
-      </td>
-  <td class="duration">
-    45.804s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  update_workflow_state_name_to_previous
-      </td>
-  <td class="duration">
-    44.970s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">settings.WorkflowState_TestCases</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  click_cancel_in_wf_state_add_page
-      </td>
-  <td class="duration">
-    27.213s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  create_a_new_wf_state
-      </td>
-  <td class="duration">
-    49.076s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  create_a_new_wf_state_without_color
-      </td>
-  <td class="duration">
-    34.466s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  delete_workflow_state_from_database
-      </td>
-  <td class="duration">
-    2.438s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  return_to_wf_state_main_page_from_add
-      </td>
-  <td class="duration">
-    28.566s
+    8.186s
   </td>
   <td class="result">
         

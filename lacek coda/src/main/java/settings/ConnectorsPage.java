@@ -342,8 +342,8 @@ public class ConnectorsPage extends PageBase{
 		public ConnectorsPage addBrand(String brandname)
 		{
 			readconfig();
-			driver.findElement(By.cssSelector("#s2id_autogen79")).sendKeys(brandname);
-			driver.findElement(By.cssSelector("#s2id_autogen79")).sendKeys(Keys.ENTER);
+			driver.findElement(By.cssSelector("#s2id_autogen81")).sendKeys(brandname);
+			driver.findElement(By.cssSelector("#s2id_autogen81")).sendKeys(Keys.ENTER);
 			//assert and verify
 		//	Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("var_add_brand"))).isEnabled());
 			//return connectors add page

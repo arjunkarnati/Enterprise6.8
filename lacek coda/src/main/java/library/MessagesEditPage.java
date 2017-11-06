@@ -258,7 +258,7 @@ public class MessagesEditPage extends PageBase{
 	public MessagesPage clickSubmitButton()
 	{
 		readconfig();
-		driver.findElement(By.xpath(library.getProperty("mes_edit_submit"))).click();
+		driver.findElement(By.id(library.getProperty("mes_edit_submit"))).click();
 		try {
 			Thread.sleep(15000);
 		} catch (InterruptedException e) {

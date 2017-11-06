@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="13.648">
+           time="13.293">
   <properties />
-            <testcase name="message_type_test_scripts_will_be_added_in_maintenace" time="13.648" classname="configuration.MessageTypes_TestCases">
+            <testcase name="message_type_test_scripts_will_be_added_in_maintenace" time="13.293" classname="configuration.MessageTypes_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [(sta)CODA - Message Types] but found [CODA - Message Types]"
               >
@@ -17,7 +17,7 @@
   org.testng.Assert.assertEquals(Assert.java:116)
   org.testng.Assert.assertEquals(Assert.java:190)
   org.testng.Assert.assertEquals(Assert.java:200)
-  login.DashboardPage.clickMessagesType(DashboardPage.java:308)
+  login.DashboardPage.clickMessagesType(DashboardPage.java:312)
   configuration.MessageTypes_TestCases.message_type_test_scripts_will_be_added_in_maintenace(MessageTypes_TestCases.java:15)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

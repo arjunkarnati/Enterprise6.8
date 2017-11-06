@@ -4,32 +4,32 @@
            failures="2"
            errors="0"
            skipped="0"
-           time="169.899">
+           time="178.973">
   <properties />
-            <testcase name="create_a_new_serie" time="44.120" classname="library.Series_Testcases">
+            <testcase name="create_a_new_serie" time="35.851" classname="library.Series_Testcases">
                 <failure type="org.openqa.selenium.NoSuchElementException"
                   message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;s2id_autogen82&apos;]&quot;}
   (Session info: chrome=61.0.3163.100)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.08 seconds
+Command duration or timeout: 10.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;remote-wkstn3&apos;, ip: &apos;10.16.1.107&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir41112_31162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: b634c7d4183d0d31ecdcb8b6516edb7e
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir33248_1269}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 931688d8b1ed4bd08a7e6c2272659686
 *** Element info: {Using=xpath, value=//input[@id=&apos;s2id_autogen82&apos;]}"
               >
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='s2id_autogen82']"}
   (Session info: chrome=61.0.3163.100)
   (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.08 seconds
+Command duration or timeout: 10.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'remote-wkstn3', ip: '10.16.1.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_121'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir41112_31162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
-Session ID: b634c7d4183d0d31ecdcb8b6516edb7e
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\ARJUN~1.KAR\AppData\Local\Temp\scoped_dir33248_1269}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=accept}]
+Session ID: 931688d8b1ed4bd08a7e6c2272659686
 *** Element info: {Using=xpath, value=//input[@id='s2id_autogen82']}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
   sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -68,14 +68,19 @@ Session ID: b634c7d4183d0d31ecdcb8b6516edb7e
       </failure>
 
           </testcase>
-            <testcase name="create_a_new_series_without_brand" time="12.763" classname="library.Series_Testcases">
-                <failure type="java.lang.IllegalArgumentException"
-                  message="Cannot find elements when the XPath expression is null."
+            <testcase name="create_a_new_series_without_brand" time="45.479" classname="library.Series_Testcases">
+                <failure type="java.lang.AssertionError"
+                  message="expected [] but found [vifp]"
               >
-<![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath expression is null.
-  org.openqa.selenium.By.xpath(By.java:113)
-  login.DashboardPage.clickSertiesLink(DashboardPage.java:111)
-  library.Series_Testcases.create_a_new_series_without_brand(Series_Testcases.java:75)
+<![CDATA[java.lang.AssertionError: expected [] but found [vifp]
+  org.testng.Assert.fail(Assert.java:94)
+  org.testng.Assert.failNotEquals(Assert.java:513)
+  org.testng.Assert.assertEqualsImpl(Assert.java:135)
+  org.testng.Assert.assertEquals(Assert.java:116)
+  org.testng.Assert.assertEquals(Assert.java:190)
+  org.testng.Assert.assertEquals(Assert.java:200)
+  library.SeriesPage.validateUpdates(SeriesPage.java:229)
+  library.Series_Testcases.create_a_new_series_without_brand(Series_Testcases.java:83)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,9 +107,9 @@ Session ID: b634c7d4183d0d31ecdcb8b6516edb7e
           </testcase>
   
   
-            <testcase name="click_cancel_series_button" time="29.579" classname="library.Series_Testcases" />
-                <testcase name="delete_series_from_db" time="3.021" classname="library.Series_Testcases" />
-                <testcase name="create_a_new_serie_without_clientname" time="41.747" classname="library.Series_Testcases" />
-                <testcase name="create_a_new_series_without_seriesnname" time="38.669" classname="library.Series_Testcases" />
+            <testcase name="click_cancel_series_button" time="25.253" classname="library.Series_Testcases" />
+                <testcase name="create_a_new_series_without_seriesnname" time="35.016" classname="library.Series_Testcases" />
+                <testcase name="create_a_new_serie_without_clientname" time="34.447" classname="library.Series_Testcases" />
+                <testcase name="delete_series_from_db" time="2.927" classname="library.Series_Testcases" />
       
 </testsuite>

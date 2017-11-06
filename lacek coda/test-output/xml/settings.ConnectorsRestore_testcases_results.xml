@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="11.409">
+           time="8.394">
   <properties />
   
   
-            <testcase name="test_is_empty" time="11.409" classname="settings.ConnectorsRestore_testcases" />
+            <testcase name="test_is_empty" time="8.394" classname="settings.ConnectorsRestore_testcases" />
       
 </testsuite>

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="131.832">
+           time="126.275">
   <properties />
-            <testcase name="create_a_new_permission_groups" time="42.919" classname="access.PermissionGroups_TestCases">
+            <testcase name="create_a_new_permission_groups" time="38.049" classname="access.PermissionGroups_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [CODA - Permission Groups] but found [CODA - Permissiongroups - Add]"
               >
@@ -45,9 +45,9 @@
           </testcase>
   
   
-            <testcase name="click_cancel_in_permission_groups_add_page" time="22.700" classname="access.PermissionGroups_TestCases" />
-                <testcase name="returm_to_permission_groups_main_page" time="19.881" classname="access.PermissionGroups_TestCases" />
-                <testcase name="delete_permission_groups_in_database" time="2.213" classname="access.PermissionGroups_TestCases" />
-                <testcase name="create_a_new_permission_groups_without_name" time="44.119" classname="access.PermissionGroups_TestCases" />
+            <testcase name="delete_permission_groups_in_database" time="2.272" classname="access.PermissionGroups_TestCases" />
+                <testcase name="returm_to_permission_groups_main_page" time="21.180" classname="access.PermissionGroups_TestCases" />
+                <testcase name="click_cancel_in_permission_groups_add_page" time="22.360" classname="access.PermissionGroups_TestCases" />
+                <testcase name="create_a_new_permission_groups_without_name" time="42.414" classname="access.PermissionGroups_TestCases" />
       
 </testsuite>

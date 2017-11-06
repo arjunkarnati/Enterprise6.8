@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="library.CanpaignsEdit_TestCases">
+      <class name="library.CommunicationsEdit_Testcases">
         <methods>
           <include name="BeforeSuite"/>
-          <include name="update_campaign_name"/>
           <include name="tearDown"/>
+          <include name="add_message_ehi_ae"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- library.CanpaignsEdit_TestCases -->
+      </class> <!-- library.CommunicationsEdit_Testcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

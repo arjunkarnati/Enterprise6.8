@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="16.297">
+           time="14.258">
   <properties />
   
   
-            <testcase name="validate_region_page" time="16.297" classname="library.VariablesRestore_Testcases" />
+            <testcase name="validate_region_page" time="14.258" classname="library.VariablesRestore_Testcases" />
       
 </testsuite>

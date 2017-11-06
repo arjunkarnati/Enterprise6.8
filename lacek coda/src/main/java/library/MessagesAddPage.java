@@ -73,8 +73,11 @@ public class MessagesAddPage extends PageBase {
 	public MessagesAddPage addVariables(String variablename)
 	{
 		readconfig();
-		driver.findElement(By.xpath(library.getProperty("mes_add_variable"))).sendKeys(variablename);
-		driver.findElement(By.xpath(library.getProperty("mes_add_variable"))).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath(library.getProperty("mes_add_variable"))).click();
+		driver.findElement(By.xpath(library.getProperty("mes_add_variable_add"))).click();
+		driver.findElement(By.xpath(library.getProperty("mes_add_variable_search"))).click();
+		driver.findElement(By.xpath(library.getProperty("mes_add_variable_search"))).sendKeys(variablename);
+		driver.findElement(By.xpath(library.getProperty("mes_add_variable_search"))).sendKeys(Keys.ENTER);
 		//assert and verify
 		Assert.assertTrue(driver.findElement(By.xpath(library.getProperty("mes_add_variable"))).isEnabled());
 		Assert.assertEquals(driver.getTitle(),library.getProperty("mess_add_page_title"));

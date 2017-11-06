@@ -1,89 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="PROGRAMS TESTCASES"
            tests="15"
-           failures="2"
+           failures="0"
            errors="0"
            skipped="0"
-           time="485.405">
+           time="529.186">
   <properties />
-            <testcase name="update_program_url" time="2.221" classname="manage.ProgramsEdit_testcases">
-                <failure type="java.lang.IllegalArgumentException"
-                  message="Cannot find elements with a null id attribute."
-              >
-<![CDATA[java.lang.IllegalArgumentException: Cannot find elements with a null id attribute.
-  org.openqa.selenium.By.id(By.java:53)
-  login.LoginPage.loginAs(LoginPage.java:22)
-  manage.ProgramsEdit_testcases.update_program_url(ProgramsEdit_testcases.java:70)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-  org.testng.TestRunner.privateRun(TestRunner.java:756)
-  org.testng.TestRunner.run(TestRunner.java:610)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
-]]>
-      </failure>
-
-          </testcase>
-            <testcase name="update_program_brands_to_previous" time="2.873" classname="manage.ProgramsEdit_testcases">
-                <failure type="java.lang.IllegalArgumentException"
-                  message="Cannot find elements with a null id attribute."
-              >
-<![CDATA[java.lang.IllegalArgumentException: Cannot find elements with a null id attribute.
-  org.openqa.selenium.By.id(By.java:53)
-  login.LoginPage.loginAs(LoginPage.java:27)
-  manage.ProgramsEdit_testcases.update_program_brands_to_previous(ProgramsEdit_testcases.java:55)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-  org.testng.TestRunner.privateRun(TestRunner.java:756)
-  org.testng.TestRunner.run(TestRunner.java:610)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-  org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
-  org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-  java.util.concurrent.FutureTask.run(FutureTask.java:266)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-  java.lang.Thread.run(Thread.java:745)
-]]>
-      </failure>
-
-          </testcase>
   
   
-            <testcase name="update_program_clientname_to_previous" time="26.496" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_url_to_previous" time="40.531" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_description" time="37.383" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="activate_program" time="42.984" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="empty_name_field_in_programs_edit_page" time="39.912" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="inactivate_program" time="42.695" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_brands" time="51.766" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_name" time="41.070" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_clientname" time="27.265" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="select_cancel_button_in_program_edit_page" time="33.257" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="restore_program" time="31.958" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="update_program_name_to_previous" time="41.064" classname="manage.ProgramsEdit_testcases" />
-                <testcase name="archive_program" time="23.930" classname="manage.ProgramsEdit_testcases" />
+            <testcase name="update_program_url" time="41.030" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="activate_program" time="38.021" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_name" time="38.601" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_clientname_to_previous" time="26.894" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="archive_program" time="19.237" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_name_to_previous" time="40.154" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="empty_name_field_in_programs_edit_page" time="35.087" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_description" time="35.065" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_brands" time="49.066" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_clientname" time="26.997" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="inactivate_program" time="37.034" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_brands_to_previous" time="43.302" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="update_program_url_to_previous" time="38.151" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="select_cancel_button_in_program_edit_page" time="30.439" classname="manage.ProgramsEdit_testcases" />
+                <testcase name="restore_program" time="30.108" classname="manage.ProgramsEdit_testcases" />
       
 </testsuite>

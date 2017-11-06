@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="39.435">
+           time="35.282">
   <properties />
-            <testcase name="integration_create_a_permission_groups_1" time="27.690" classname="integration.rbac_testcases">
+            <testcase name="integration_create_a_permission_groups_1" time="24.816" classname="integration.rbac_testcases">
                 <failure type="java.lang.AssertionError"
                   message="expected [CODA - Permission Groups] but found [CODA - Permissiongroups - Add]"
               >
@@ -45,7 +45,7 @@
           </testcase>
   
   
-            <testcase name="delete_role_from_database_2" time="2.351" classname="integration.rbac_testcases" />
-                <testcase name="validate_user_wit_testrole2" time="9.394" classname="integration.rbac_testcases" />
+            <testcase name="validate_user_wit_testrole2" time="8.186" classname="integration.rbac_testcases" />
+                <testcase name="delete_role_from_database_2" time="2.280" classname="integration.rbac_testcases" />
       
 </testsuite>

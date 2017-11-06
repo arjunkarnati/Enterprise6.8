@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="168.762">
+           time="167.719">
   <properties />
   
   
-            <testcase name="click_cancel_in_locales_add_page" time="25.884" classname="localization.Locales_TestCases" />
-                <testcase name="return_to_locales_main_page_from_add_page" time="28.170" classname="localization.Locales_TestCases" />
-                <testcase name="create_a_new_locales" time="52.642" classname="localization.Locales_TestCases" />
-                <testcase name="create_a_new_locales_without_code" time="30.242" classname="localization.Locales_TestCases" />
-                <testcase name="delete_locale_from_database" time="2.207" classname="localization.Locales_TestCases" />
-                <testcase name="create_a_new_locales_without_name" time="29.617" classname="localization.Locales_TestCases" />
+            <testcase name="delete_locale_from_database" time="2.214" classname="localization.Locales_TestCases" />
+                <testcase name="create_a_new_locales" time="51.843" classname="localization.Locales_TestCases" />
+                <testcase name="create_a_new_locales_without_name" time="31.653" classname="localization.Locales_TestCases" />
+                <testcase name="create_a_new_locales_without_code" time="30.563" classname="localization.Locales_TestCases" />
+                <testcase name="return_to_locales_main_page_from_add_page" time="26.483" classname="localization.Locales_TestCases" />
+                <testcase name="click_cancel_in_locales_add_page" time="24.963" classname="localization.Locales_TestCases" />
       
 </testsuite>

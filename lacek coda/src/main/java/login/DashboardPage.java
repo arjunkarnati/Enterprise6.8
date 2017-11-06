@@ -151,7 +151,7 @@ public class DashboardPage extends PageBase{
 		driver.findElement(By.xpath(elementslocator.getProperty("library"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementslocator.getProperty("messages"))));
 		driver.findElement(By.xpath(elementslocator.getProperty("messages"))).click();
-		waitForAjax(driver);
+		//waitForAjax(driver);
 		//assert that system naviagtes in messages page
 		Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("mess_page_title"));
 		return new MessagesPage(driver);

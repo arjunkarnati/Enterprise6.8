@@ -11,7 +11,7 @@ public class DataBaseManage extends PageBase {
 
 	public DataBaseManage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 	//sql delete client
 	public static void deleteClient()

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="192.434">
+           time="190.694">
   <properties />
-            <testcase name="create_a_new_permission_categories" time="50.727" classname="access.PermissionCategories_TestCases">
+            <testcase name="create_a_new_permission_categories" time="50.786" classname="access.PermissionCategories_TestCases">
                 <failure type="java.lang.AssertionError"
                   message="expected [CODA - Permission Categories] but found [CODA - PermissionCategories - Add]"
               >
@@ -45,10 +45,10 @@
           </testcase>
   
   
-            <testcase name="create_a_new_permission_categories_without_name" time="40.094" classname="access.PermissionCategories_TestCases" />
-                <testcase name="create_a_new_permission_categories_without_controller_name" time="41.015" classname="access.PermissionCategories_TestCases" />
-                <testcase name="return_to_permission_categories_main_page_from_add" time="28.464" classname="access.PermissionCategories_TestCases" />
-                <testcase name="delete_permission_category_from_database" time="2.180" classname="access.PermissionCategories_TestCases" />
-                <testcase name="click_cancel_in_permission_categories_add_page" time="29.954" classname="access.PermissionCategories_TestCases" />
+            <testcase name="create_a_new_permission_categories_without_name" time="41.301" classname="access.PermissionCategories_TestCases" />
+                <testcase name="click_cancel_in_permission_categories_add_page" time="28.875" classname="access.PermissionCategories_TestCases" />
+                <testcase name="return_to_permission_categories_main_page_from_add" time="28.009" classname="access.PermissionCategories_TestCases" />
+                <testcase name="delete_permission_category_from_database" time="2.193" classname="access.PermissionCategories_TestCases" />
+                <testcase name="create_a_new_permission_categories_without_controller_name" time="39.530" classname="access.PermissionCategories_TestCases" />
       
 </testsuite>

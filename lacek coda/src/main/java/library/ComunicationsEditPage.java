@@ -507,6 +507,21 @@ public class ComunicationsEditPage extends PageBase{
 		
 		
 	}
+	public ComunicationsEditPage search_msg_to_region_ehi_ae(String msg_name) {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("search_header_ehi_ae"))).click();
+		driver.findElement(By.xpath(library.getProperty("search_header_ehi_ae"))).sendKeys(msg_name);
+		
+		return new ComunicationsEditPage(driver);
+	}
 	
+	public ComunicationsEditPage click_add_buton() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(library.getProperty("add_ehi_ae"))).click();
+		
+		return new ComunicationsEditPage(driver);
+	}
 	
 	}
