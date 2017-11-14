@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="library.CommunicationsEdit_Testcases">
+      <class name="layout.TemplatesEdit_testcases">
         <methods>
           <include name="BeforeSuite"/>
+          <include name="enable_column_search"/>
           <include name="tearDown"/>
-          <include name="add_message_ehi_ae"/>
           <include name="AfterLogin"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- library.CommunicationsEdit_Testcases -->
+      </class> <!-- layout.TemplatesEdit_testcases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -564,6 +564,20 @@ public class DashboardPage extends PageBase{
 		return new  ContentcodeAddpage(driver);
 		
 	}
+	public TemplatesPage edit_own_profile() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.xpath(elementslocator.getProperty("profile"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elementslocator.getProperty("myprofile"))));
+		driver.findElement(By.xpath(elementslocator.getProperty("myprofile"))).click();
+		driver.findElement(By.xpath(elementslocator.getProperty("preferences"))).click();
+		waitForAjax(driver);
+		//assert and verify
+		Assert.assertEquals(driver.getTitle(),elementslocator.getProperty("profile_page_title"));
+		driver.findElement(By.xpath(elementslocator.getProperty("Search_by_column_yes"))).click();
+		
+		return new TemplatesPage(driver);
+	}
 	
 	
 }

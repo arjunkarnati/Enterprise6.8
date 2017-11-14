@@ -257,4 +257,21 @@ public class TemplatesPage extends PageBase{
 		}
 		return new TemplatesPage(driver);			
 	}
+	public TemplatesPage searchtempby_ID(String IDnumber) {
+		
+		readconfig();
+		driver.findElement(By.xpath(elementslocator.getProperty("template_ID_filter"))).clear();
+		//driver.findElement(By.xpath(elementslocator.getProperty("template_ID_filter"))).click();
+		driver.findElement(By.xpath(elementslocator.getProperty("template_ID_filter"))).sendKeys(IDnumber);
+		
+		return new TemplatesPage(driver);	
+	}
+	public TemplatesEditPage edit_temp_ehi_ae() {
+		// TODO Auto-generated method stub
+		readconfig();
+		driver.findElement(By.cssSelector(elementslocator.getProperty("template_edit_ehi_ae"))).click();
+		
+		return new TemplatesEditPage(driver);
+		
+	}
 }

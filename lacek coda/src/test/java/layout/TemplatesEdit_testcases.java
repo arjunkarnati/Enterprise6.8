@@ -324,8 +324,9 @@ public class TemplatesEdit_testcases extends TestBase{
 		.clickTemplates()
 		.editTemplate("edit_ehi_temp-01")
 		.selectTemp_region_header()
-		.addmarkup_to_Template("template");
-		
+		.addmarkup_to_Template("template")
+		.getTitle()
+		.logout();
         
 		
 	}
@@ -341,8 +342,51 @@ public class TemplatesEdit_testcases extends TestBase{
 	
 	
 	}
+	@Test(priority=23)
+	public void enable_column_search()
+	{
+		login.loginAs("ehi.ae","09ht1a0480@123")
+		.isSuccessfulLogin("ehi ae")
+		.edit_own_profile()
+		.logout();
+			
+	}
 	
-	
+	@Test(priority=24)
+	public void temp_column_search()
+	{
+		login.loginAs("ehi.ae","09ht1a0480@123")
+		.isSuccessfulLogin("ehi ae")
+		.clickTemplates()
+		.searchtempby_ID("10000002")
+		.edit_temp_ehi_ae()
+		.setWorkFlow_ehi_aeTo("APPROVED","edit_ehi_template_01")
+		.validateUpdates("edit_ehi_template_01","workflow","APPROVED")
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=25)
+	public void temp_column_search_update()
+	{
+		login.loginAs("ehi.ae","09ht1a0480@123")
+		.isSuccessfulLogin("ehi ae")
+		.clickTemplates()
+		.searchtempby_ID("10000002")
+		.edit_temp_ehi_ae()
+		.setWorkFlow_ehi_aeTo("DRAFT","edit_ehi_template_01")
+		.validateUpdates("edit_ehi_template_01","workflow","DRAFT")
+		.getTitle()
+		.logout();
+	}
+	@Test(priority=23)
+	public void disable_column_search()
+	{
+		login.loginAs("ehi.ae","09ht1a0480@123")
+		.isSuccessfulLogin("ehi ae")
+		.edit_own_profile()
+		.logout();
+			
+	}
 	
 	
 	

@@ -327,6 +327,40 @@ public class TemplatesEditPage extends PageBase {
 			driver.findElement(By.xpath(layout.getProperty("temp_media_delete_yes"))).click();
 		return new TemplatesEditPage(driver);	
 	}
+	public TemplatesPage setWorkFlow_ehi_aeTo(String workflowname, String templatename) 
+		
+		{
+			readconfig();
+			switch(workflowname)
+			{
+			case "DRAFT":
+			{
+				driver.findElement(By.id(elementslocator.getProperty("template_edit_workflow"))).sendKeys("D");
+				driver.findElement(By.id(elementslocator.getProperty("template_edit_submit"))).click();
+				break;
+			}
+			case "APPROVED":
+			{
+				driver.findElement(By.id(elementslocator.getProperty("template_edit_workflow"))).sendKeys("A");
+				driver.findElement(By.id(elementslocator.getProperty("template_edit_submit"))).click();
+				break;
+			}
+			case "Qatest1":
+			{
+				driver.findElement(By.id(elementslocator.getProperty("template_edit_workflow"))).sendKeys("Q");
+				driver.findElement(By.id(elementslocator.getProperty("template_edit_submit"))).click();
+				break;
+			}
+			default: 
+			{
+				throw new InvalidParameterException("Please verify the workflow name");
+			}
+			}
+			return new TemplatesPage(driver);
+		}
+	}
+	
+
 	
 	
 	
@@ -342,6 +376,3 @@ public class TemplatesEditPage extends PageBase {
 	
 	
 	
-	
-	
-}
