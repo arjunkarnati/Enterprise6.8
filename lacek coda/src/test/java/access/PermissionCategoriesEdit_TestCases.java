@@ -1,8 +1,7 @@
 package access;
 
-import org.testng.annotations.Test;
-
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class PermissionCategoriesEdit_TestCases extends TestBase{
 

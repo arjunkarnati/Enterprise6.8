@@ -1,8 +1,7 @@
 package assets;
 
-import org.openqa.selenium.WebDriver;
-
 import Utility.PageBase;
+import org.openqa.selenium.WebDriver;
 
 public class MediaGalleryArchivePage extends PageBase {
 

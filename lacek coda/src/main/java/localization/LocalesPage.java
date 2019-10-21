@@ -1,15 +1,16 @@
 package localization;
 
-import java.security.InvalidParameterException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import Utility.PageBase;
 import access.PermissionActionsPage;
 import access.PermissionGroupsArchivePage;
 import access.RolesArchivePage;
 import localization.LocalesAddPage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import java.security.InvalidParameterException;
 
 public class LocalesPage extends PageBase {
 

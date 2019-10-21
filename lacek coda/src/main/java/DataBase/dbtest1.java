@@ -1,9 +1,9 @@
 package DataBase;
 
-import java.sql.DriverManager;
+import Utility.PageBase;
 import org.openqa.selenium.WebDriver;
 
-import Utility.PageBase;
+import java.sql.DriverManager;
 
 
 public class dbtest1 extends PageBase {

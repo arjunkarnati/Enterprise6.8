@@ -1,11 +1,10 @@
 package DataBase;
 
-import java.sql.DriverManager;
+import Utility.PageBase;
+import com.microsoft.sqlserver.jdbc.SQLServerException;
 import org.openqa.selenium.WebDriver;
 
-import com.microsoft.sqlserver.jdbc.SQLServerException;
-
-import Utility.PageBase;
+import java.sql.DriverManager;
 
 public class DataBaseConfiguration extends PageBase {
 

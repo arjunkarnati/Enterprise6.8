@@ -1,8 +1,8 @@
 package assets;
 
-import org.testng.annotations.Test;
 import DataBase.DataBaseAssets;
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class MediaGallery_TestCases extends TestBase{
 

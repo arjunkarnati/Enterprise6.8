@@ -1,8 +1,7 @@
 package configuration;
 
-import org.testng.annotations.Test;
-
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class SegmentsEdit_testcases extends TestBase{
 

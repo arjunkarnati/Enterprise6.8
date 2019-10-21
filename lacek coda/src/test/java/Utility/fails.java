@@ -1,7 +1,8 @@
 package Utility;
 
-import java.util.ArrayList;
 import org.testng.TestNG;
+
+import java.util.ArrayList;
 
 public class fails extends TestBase {
 

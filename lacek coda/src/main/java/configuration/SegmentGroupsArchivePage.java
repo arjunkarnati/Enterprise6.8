@@ -1,7 +1,7 @@
 package configuration;
 
-import org.openqa.selenium.WebDriver;
 import Utility.PageBase;
+import org.openqa.selenium.WebDriver;
 
 
 public class SegmentGroupsArchivePage extends PageBase {

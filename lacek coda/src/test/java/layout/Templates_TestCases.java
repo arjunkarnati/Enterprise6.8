@@ -1,8 +1,8 @@
 package layout;
 
-import org.testng.annotations.Test;
 import DataBase.DataBaseLayout;
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class Templates_TestCases extends TestBase{
 

@@ -1,8 +1,8 @@
 package configuration;
 
-import org.testng.annotations.Test;
 import DataBase.DataBaseConfiguration;
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class Segments_TestCases extends TestBase{
 

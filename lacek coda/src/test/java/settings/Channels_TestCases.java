@@ -1,8 +1,7 @@
 package settings;
 
-import org.testng.annotations.Test;
-
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class Channels_TestCases extends TestBase{
 	

@@ -1,12 +1,12 @@
 package library;
 
-import java.security.InvalidParameterException;
+import Utility.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import Utility.PageBase;
+import java.security.InvalidParameterException;
 
 public class VariablesAddPage extends PageBase{
 

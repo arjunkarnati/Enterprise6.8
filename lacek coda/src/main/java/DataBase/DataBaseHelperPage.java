@@ -1,18 +1,23 @@
 package DataBase;
 
 
-import java.sql.DriverManager;
+import Utility.PageBase;
+import com.microsoft.sqlserver.jdbc.SQLServerException;
 import org.openqa.selenium.WebDriver;
 
-import com.microsoft.sqlserver.jdbc.SQLServerException;
-
-import Utility.PageBase;
+import java.sql.DriverManager;
 
 public class DataBaseHelperPage extends PageBase {
 
-	public DataBaseHelperPage(WebDriver driver) 
+	private DataBaseHelperPage(WebDriver driver)
 	{
 		super(driver);
+	}
+
+
+	public static DataBaseHelperPage newDataBaseHelperPage(WebDriver driver)
+	{
+		return new DataBaseHelperPage(driver);
 	}
 
 

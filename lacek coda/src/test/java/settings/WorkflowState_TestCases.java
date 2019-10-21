@@ -1,8 +1,8 @@
 package settings;
 
-import org.testng.annotations.Test;
 import DataBase.DataBaseSettings;
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class WorkflowState_TestCases extends TestBase{
 
