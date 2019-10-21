@@ -1,11 +1,10 @@
 package library;
 
+import Utility.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
-import Utility.PageBase;
 
 public class TracksPublishPage extends PageBase {
 

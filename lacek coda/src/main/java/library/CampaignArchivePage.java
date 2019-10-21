@@ -1,7 +1,7 @@
 package library;
 
-import org.openqa.selenium.WebDriver;
 import Utility.PageBase;
+import org.openqa.selenium.WebDriver;
 
 public class CampaignArchivePage extends PageBase {
 

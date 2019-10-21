@@ -1,16 +1,13 @@
 package Utility;
 
-import java.util.Properties;
+import org.openqa.selenium.WebDriver;
+
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
 import javax.mail.*;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
-import org.openqa.selenium.WebDriver;
+import javax.mail.internet.*;
+import java.util.Properties;
 
 public class email extends TestBase{
 	/*constructor*/

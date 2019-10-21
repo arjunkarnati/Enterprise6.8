@@ -1,8 +1,7 @@
 package logs;
 
-import org.testng.annotations.Test;
-
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class Sessions_TestCases extends TestBase{
 	

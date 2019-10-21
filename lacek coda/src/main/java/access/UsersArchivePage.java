@@ -1,9 +1,10 @@
 package access;
 
-import java.security.InvalidParameterException;
+import Utility.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import Utility.PageBase;
+
+import java.security.InvalidParameterException;
 
 public class UsersArchivePage extends PageBase {
 

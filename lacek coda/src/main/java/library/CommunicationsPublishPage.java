@@ -1,14 +1,13 @@
 package library;
 
-import java.util.concurrent.TimeUnit;
-
+import Utility.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import Utility.PageBase;
+import java.util.concurrent.TimeUnit;
 
 public class CommunicationsPublishPage extends PageBase {
 

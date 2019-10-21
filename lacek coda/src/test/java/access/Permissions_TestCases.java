@@ -1,8 +1,8 @@
 package access;
 
-import org.testng.annotations.Test;
 import DataBase.DataBaseAccess;
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class Permissions_TestCases extends TestBase {
 

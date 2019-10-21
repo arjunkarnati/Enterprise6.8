@@ -1,48 +1,31 @@
 package login;
 
-import java.security.InvalidParameterException;
-
-import org.apache.http.entity.ContentType;
+import Utility.PageBase;
+import access.*;
+import assets.MediaGalleryPage;
+import configuration.*;
+import layout.RegionsPage;
+import layout.TemplatesPage;
+import library.*;
+import localization.ExportPage;
+import localization.ImportPage;
+import localization.LocalesPage;
+import logs.SessionsPage;
+import manage.BrandsPage;
+import manage.ClientsPage;
+import manage.ProgramsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import Utility.PageBase;
-import access.PermissionActionsPage;
-import access.PermissionCategoriesPage;
-import access.PermissionGroupsPage;
-import access.PermissionsPage;
-import access.RolesPage;
-import access.UsersPage;
-import assets.MediaGalleryPage;
-import configuration.ACFPage;
-import configuration.MessageTypesPage;
-import configuration.SegmentGroupsPage;
-import configuration.SegmentsPage;
-import configuration.TargetingCriteriaPage;
-import layout.RegionsPage;
-import layout.TemplatesPage;
-import library.SeriesPage;
-import library.CampaignPage;
-import library.CommunicationsPage;
-import library.ContentcodeAddpage;
-import library.Contentcodes_Testcases;
-import library.MessagesPage;
-import library.TracksPage;
-import library.VariablesPage;
-import localization.ImportPage;
-import localization.ExportPage;
-import localization.LocalesPage;
-import logs.SessionsPage;
-import manage.BrandsPage;
-import manage.ClientsPage;
-import manage.ProgramsPage;
 import settings.ChannelsPage;
 import settings.ConnectorsPage;
-import settings.WorkflowStatePage;
 import settings.WorkflowManagerPage;
+import settings.WorkflowStatePage;
+
+import java.security.InvalidParameterException;
 
 /*this page inherit page base class*/
 public class DashboardPage extends PageBase{

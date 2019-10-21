@@ -1,17 +1,10 @@
 package settings;
 
-import java.security.InvalidParameterException;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import Utility.PageBase;
+import org.openqa.selenium.*;
 import org.testng.Assert;
 
-import Utility.PageBase;
-import library.MessagesPage;
-import library.VariablesAddPage;
+import java.security.InvalidParameterException;
 
 public class ConnectorsEditPage extends PageBase {
 

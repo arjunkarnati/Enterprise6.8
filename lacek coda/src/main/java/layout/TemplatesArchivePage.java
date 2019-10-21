@@ -1,8 +1,7 @@
 package layout;
 
-import org.openqa.selenium.WebDriver;
-
 import Utility.PageBase;
+import org.openqa.selenium.WebDriver;
 
 public class TemplatesArchivePage extends PageBase {
 

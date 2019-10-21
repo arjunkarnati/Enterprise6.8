@@ -1,8 +1,7 @@
 package login;
 
-import org.testng.annotations.Test;
-
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class Reset_your_password_testcases extends TestBase {
 

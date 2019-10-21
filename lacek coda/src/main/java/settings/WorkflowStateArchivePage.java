@@ -1,8 +1,7 @@
 package settings;
 
-import org.openqa.selenium.WebDriver;
-
 import Utility.PageBase;
+import org.openqa.selenium.WebDriver;
 
 public class WorkflowStateArchivePage extends PageBase {
 

@@ -1,9 +1,10 @@
 package DataBase;
 
+import Utility.PageBase;
+import org.openqa.selenium.WebDriver;
+
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import org.openqa.selenium.WebDriver;
-import Utility.PageBase;
 
 public class CountObjects extends PageBase {
 

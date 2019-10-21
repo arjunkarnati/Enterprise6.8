@@ -1,9 +1,8 @@
 package library;
 
+import Utility.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import Utility.PageBase;
 
 public class CommunicationsPreviewPage extends PageBase {
 

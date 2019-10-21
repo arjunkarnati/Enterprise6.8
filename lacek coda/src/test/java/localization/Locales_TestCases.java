@@ -1,8 +1,8 @@
 package localization;
 
-import org.testng.annotations.Test;
 import DataBase.DataBaseLocalization;
 import Utility.TestBase;
+import org.testng.annotations.Test;
 
 public class Locales_TestCases extends TestBase {
 	
